@@ -1,0 +1,81 @@
+theme_slug,university,short_name,group,country,city,year,mode,bg,fg,accent_keyword,accent_cursor,accent_status_bar,fg_bg_wcag,fg_bg_apca_lc,comment_bg_wcag,min_syntax_wcag,min_syntax_role,mean_syntax_oklch_L,mean_syntax_oklch_C,cvd_severe_count,cvd_warning_count
+oxford-light,University of Oxford,Oxford,Global Classics,UK,"Oxford, UK",1096,light,#F7F1E7,#1D170F,#8A2336,#002147,#002147,15.82,96.6,6.12,5.43,accentNumber,0.4124,0.1108,0,0
+oxford-dark,University of Oxford,Oxford,Global Classics,UK,"Oxford, UK",1096,dark,#081624,#DCE6F0,#CE8795,#CE8795,#002147,14.45,89.9,6.36,5.69,colorError,0.7766,0.1056,0,0
+cambridge-light,University of Cambridge,Cambridge,Global Classics,UK,"Cambridge, UK",1209,light,#EAF7F4,#101B18,#004E48,#007A74,#133844,16.03,97.9,6.16,5.55,accentNumber,0.4086,0.1048,0,0
+cambridge-dark,University of Cambridge,Cambridge,Global Classics,UK,"Cambridge, UK",1209,dark,#001E23,#D8E8EB,#6DC7B8,#8EE8D8,#133844,13.77,89.5,6.10,4.85,accentString,0.7527,0.1056,0,0
+eth-light,ETH Zurich,ETH Zurich,Global Classics,Switzerland,"Zurich, Switzerland",1855,light,#F0F1F2,#16191B,#882E67,#215CAF,#215CAF,15.62,96.1,6.00,5.37,accentNumber,0.4289,0.1129,0,0
+eth-dark,ETH Zurich,ETH Zurich,Global Classics,Switzerland,"Zurich, Switzerland",1855,dark,#121618,#DFE6EB,#FB86CB,#FB86CB,#003981,14.44,90.1,6.35,5.39,accentStorage,0.7548,0.1130,0,0
+utokyo-light,University of Tokyo,UTokyo,Global Classics,Japan,"Tokyo, Japan",1877,light,#EFF5F7,#13191C,#960418,#187FC3,#187FC3,16.12,97.9,6.16,5.50,accentNumber,0.4234,0.1087,0,0
+utokyo-dark,University of Tokyo,UTokyo,Global Classics,Japan,"Tokyo, Japan",1877,dark,#081822,#DAE7EF,#FB928B,#5BDEFF,#004069,14.31,90.0,6.30,5.60,colorError,0.7889,0.1201,0,0
+harvard-light,Harvard University,Harvard,Ivy League,USA,"Cambridge, MA",1636,light,#F7F1EE,#1D1714,#950425,#A51C30,#A51C30,15.84,96.8,6.15,4.87,accentNumber,0.4409,0.1081,0,0
+harvard-dark,Harvard University,Harvard,Ivy League,USA,"Cambridge, MA",1636,dark,#1F1414,#F0E0E0,#F66979,#F66979,#75061C,14.07,89.1,6.19,5.60,colorError,0.7727,0.1160,0,0
+yale-light,Yale University,Yale,Ivy League,USA,"New Haven, CT",1701,light,#EFF4F7,#14191D,#0066A5,#00356B,#00356B,15.97,97.5,6.16,5.50,accentKeyword,0.4355,0.1176,0,0
+yale-dark,Yale University,Yale,Ivy League,USA,"New Haven, CT",1701,dark,#0B1724,#DCE6F1,#879FC8,#879FC8,#00356B,14.31,89.9,6.31,5.61,colorError,0.7761,0.1109,0,0
+upenn-light,University of Pennsylvania,UPenn,Ivy League,USA,"Philadelphia, PA",1740,light,#EFF3F7,#15191D,#720F09,#990000,#011F5B,15.84,97.0,6.08,5.44,accentNumber,0.4107,0.1101,0,0
+upenn-dark,University of Pennsylvania,UPenn,Ivy League,USA,"Philadelphia, PA",1740,dark,#0B1425,#DEE5F1,#FB9384,#FB9384,#011F5B,14.53,89.9,6.40,5.71,colorError,0.7815,0.1134,0,0
+princeton-light,Princeton University,Princeton,Ivy League,USA,"Princeton, NJ",1746,light,#F8F2EB,#1D1712,#5B2E1A,#E77500,#E77500,15.96,97.3,6.17,5.37,accentNumber,0.4285,0.1131,0,0
+princeton-dark,Princeton University,Princeton,Ivy League,USA,"Princeton, NJ",1746,dark,#1A1411,#EDE2DC,#FB9850,#FB9850,#602D00,14.33,89.5,6.29,5.68,colorError,0.7689,0.1186,0,0
+columbia-light,Columbia University,Columbia,Ivy League,USA,"New York, NY",1754,light,#EEF5F9,#13191D,#3C5682,#1D4F91,#1D4F91,16.10,97.9,6.16,5.53,accentNumber,0.4215,0.1069,0,0
+columbia-dark,Columbia University,Columbia,Ivy League,USA,"New York, NY",1754,dark,#091822,#DBE6F0,#7BA5BA,#B9D9EB,#053B7B,14.23,89.7,6.25,4.75,colorError,0.7795,0.1049,0,0
+brown-light,Brown University,Brown,Ivy League,USA,"Providence, RI",1764,light,#F8EFE9,#1E1711,#960417,#C00404,#4E3629,15.61,95.9,6.07,5.40,accentNumber,0.4122,0.1029,0,0
+brown-dark,Brown University,Brown,Ivy League,USA,"Providence, RI",1764,dark,#22130D,#F0E1DB,#FB918F,#FB918F,#4E3629,14.14,89.3,6.21,5.59,colorError,0.7707,0.1126,0,0
+dartmouth-light,Dartmouth College,Dartmouth,Ivy League,USA,"Hanover, NH",1769,light,#EFF5F1,#141A16,#405E45,#00693E,#00693E,15.98,97.6,6.10,6.02,accentType,0.4172,0.1042,0,0
+dartmouth-dark,Dartmouth College,Dartmouth,Ivy League,USA,"Hanover, NH",1769,dark,#091D17,#D9E9E3,#74C997,#74C997,#004A2A,13.93,89.9,6.12,5.43,colorError,0.7672,0.1232,0,0
+cornell-light,Cornell University,Cornell,Ivy League,USA,"Ithaca, NY",1865,light,#F8F1ED,#1D1713,#97030B,#B31B1B,#B31B1B,15.87,96.9,6.16,6.02,colorWarning,0.3910,0.0903,0,0
+cornell-dark,Cornell University,Cornell,Ivy League,USA,"Ithaca, NY",1865,dark,#1E1412,#F0E0DE,#CF8788,#CF8788,#76090B,14.11,89.0,6.20,4.76,colorError,0.7690,0.1094,0,0
+unc-light,University of North Carolina,UNC,US Public Flagships,USA,"Chapel Hill, NC",1789,light,#EDF5F9,#121A1D,#334E7A,#1E6CA8,#13294B,15.98,97.7,6.15,5.98,accentType,0.4171,0.1000,0,0
+unc-dark,University of North Carolina,UNC,US Public Flagships,USA,"Chapel Hill, NC",1789,dark,#091724,#DCE6F0,#6CA7C3,#4B9CD3,#13294B,14.33,89.9,6.31,4.78,colorError,0.7693,0.1074,0,0
+umich-light,University of Michigan,UMich,US Public Flagships,USA,"Ann Arbor, MI",1817,light,#EEF3F8,#14191D,#4B418D,#00274C,#00274C,15.85,96.9,6.11,5.92,accentType,0.4070,0.1008,0,0
+umich-dark,University of Michigan,UMich,US Public Flagships,USA,"Ann Arbor, MI",1817,dark,#071724,#DBE6F0,#AEA8FB,#FFCB05,#00274C,14.34,89.7,6.32,5.63,colorError,0.7707,0.1217,0,0
+uva-light,University of Virginia,UVA,US Public Flagships,USA,"Charlottesville, VA",1819,light,#F8F1ED,#1D1713,#803502,#E57200,#232D4B,15.87,96.9,6.17,4.86,accentNumber,0.4138,0.1079,0,0
+uva-dark,University of Virginia,UVA,US Public Flagships,USA,"Charlottesville, VA",1819,dark,#0D1524,#DEE5F1,#FB975A,#FF8633,#232D4B,14.42,89.8,6.36,5.66,colorError,0.7725,0.1134,0,0
+uw-light,University of Washington,UW,US Public Flagships,USA,"Seattle, WA",1861,light,#F2F2F8,#18181D,#563A90,#4B2E83,#4B2E83,15.86,97.0,6.11,5.41,accentNumber,0.4231,0.1147,0,0
+uw-dark,University of Washington,UW,US Public Flagships,USA,"Seattle, WA",1861,dark,#151327,#E3E3F0,#B9A3FB,#E8D3A2,#45277B,14.30,89.5,6.27,5.66,colorError,0.7710,0.1164,0,0
+berkeley-light,UC Berkeley,UC Berkeley,US Public Flagships,USA,"Berkeley, CA",1868,light,#EFF3F9,#15191E,#5F3391,#002676,#002676,15.85,97.1,6.15,4.77,accentString,0.4339,0.1161,0,0
+berkeley-dark,UC Berkeley,UC Berkeley,US Public Flagships,USA,"Berkeley, CA",1868,dark,#0C1428,#DFE5F1,#C49EFB,#FDB515,#012775,14.49,90.0,6.33,5.68,colorError,0.7692,0.1174,0,0
+utaustin-light,University of Texas at Austin,UT Austin,US Public Flagships,USA,"Austin, TX",1883,light,#F8F2EC,#1D1712,#7E3702,#BF5700,#BF5700,15.97,97.3,6.17,4.81,accentNumber,0.4088,0.0983,0,0
+utaustin-dark,University of Texas at Austin,UT Austin,US Public Flagships,USA,"Austin, TX",1883,dark,#0E191E,#D9E7EF,#FB975D,#FF8433,#642A00,14.13,89.8,6.22,5.53,colorError,0.7619,0.1123,0,0
+gatech-light,Georgia Tech,Georgia Tech,US Public Flagships,USA,"Atlanta, GA",1885,light,#F6F3EC,#1B1812,#405778,#003057,#003057,15.98,97.4,6.16,5.99,accentType,0.4159,0.0962,0,0
+gatech-dark,Georgia Tech,Georgia Tech,US Public Flagships,USA,"Atlanta, GA",1885,dark,#071723,#DBE6F0,#5AA1F7,#EAAA00,#003057,14.35,89.8,6.31,4.83,colorError,0.7692,0.1065,0,0
+ucla-light,UCLA,UCLA,US Public Flagships,USA,"Los Angeles, CA",1919,light,#EEF5F8,#13191C,#37587C,#2774AE,#2774AE,16.10,97.8,6.14,5.49,accentType,0.4218,0.0964,0,0
+ucla-dark,UCLA,UCLA,US Public Flagships,USA,"Los Angeles, CA",1919,dark,#051824,#DAE7EF,#65A8C3,#FFD100,#00406A,14.33,90.0,6.30,4.76,colorError,0.7635,0.1152,0,0
+nyu-light,New York University,NYU,US Private Research & STEM,USA,"New York, NY",1831,light,#F4F2F8,#19171D,#66229F,#57068C,#57068C,16.00,97.3,6.17,5.49,accentNumber,0.4231,0.1211,0,0
+nyu-dark,New York University,NYU,US Private Research & STEM,USA,"New York, NY",1831,dark,#1A1126,#E7E2EF,#CB9AFB,#C688FF,#4E2177,14.34,89.5,6.28,5.26,accentStorage,0.7616,0.1164,0,0
+duke-light,Duke University,Duke,US Private Research & STEM,USA,"Durham, NC",1838,light,#EFF4F8,#15191D,#064F92,#00539B,#012169,15.96,97.5,6.13,5.46,accentNumber,0.4175,0.1266,0,0
+duke-dark,Duke University,Duke,US Private Research & STEM,USA,"Durham, NC",1838,dark,#091528,#DDE5F1,#659CFF,#659CFF,#012169,14.40,89.7,6.34,5.44,accentStorage,0.7630,0.1174,0,0
+northwestern-light,Northwestern University,Northwestern,US Private Research & STEM,USA,"Evanston, IL",1851,light,#F3F3F8,#18181D,#593792,#4E2A84,#4E2A84,15.99,97.6,6.17,5.51,accentNumber,0.4001,0.1068,0,0
+northwestern-dark,Northwestern University,Northwestern,US Private Research & STEM,USA,"Evanston, IL",1851,dark,#161325,#E4E3F0,#C0A1FB,#C0A1FB,#48247B,14.34,89.6,6.29,4.82,colorError,0.7746,0.1166,0,0
+mit-light,MIT,MIT,US Private Research & STEM,USA,"Cambridge, MA",1861,light,#EFF3F5,#14191C,#940B1F,#A3001D,#750014,15.86,97.0,6.11,5.46,accentNumber,0.4193,0.1190,0,0
+mit-dark,MIT,MIT,US Private Research & STEM,USA,"Cambridge, MA",1861,dark,#111518,#DDE6EC,#FB9192,#FB9192,#740415,14.51,90.0,6.39,5.70,colorError,0.7688,0.1130,0,0
+stanford-light,Stanford University,Stanford,US Private Research & STEM,USA,"Stanford, CA",1885,light,#F8F1E9,#1D1710,#901A19,#8C1515,#8C1515,15.86,96.8,6.13,5.40,accentNumber,0.4341,0.1197,0,0
+stanford-dark,Stanford University,Stanford,US Private Research & STEM,USA,"Stanford, CA",1885,dark,#1C1610,#EDE2D9,#FB9287,#FB9287,#76080C,14.07,89.2,6.22,5.55,colorError,0.7723,0.1209,0,0
+uchicago-light,University of Chicago,UChicago,US Private Research & STEM,USA,"Chicago, IL",1890,light,#F5F1EE,#1C1714,#730B12,#800000,#800000,15.82,96.6,6.08,5.42,accentNumber,0.4244,0.1042,0,0
+uchicago-dark,University of Chicago,UChicago,US Private Research & STEM,USA,"Chicago, IL",1890,dark,#1D1312,#F0E0E0,#FB9384,#FB9384,#760A05,14.25,89.2,6.27,5.07,accentString,0.7584,0.1088,0,0
+caltech-light,Caltech,Caltech,US Private Research & STEM,USA,"Pasadena, CA",1891,light,#EFF4F5,#14191B,#752300,#E55A00,#003B4C,15.98,97.4,6.11,6.10,colorWarning,0.4151,0.1024,0,0
+caltech-dark,Caltech,Caltech,US Private Research & STEM,USA,"Pasadena, CA",1891,dark,#031B23,#D8E8ED,#FB975E,#FF6C0C,#003B4C,14.08,89.8,6.20,5.49,colorError,0.7705,0.1106,0,0
+georgetown-light,Georgetown University,Georgetown,Liberal Arts & Regional Gems,USA,"Washington, DC",1789,light,#F0F3F7,#15191D,#284E85,#041E42,#041E42,15.87,97.1,6.10,4.92,accentType,0.4211,0.1095,0,0
+georgetown-dark,Georgetown University,Georgetown,Liberal Arts & Regional Gems,USA,"Washington, DC",1789,dark,#0B1622,#DCE6F0,#81A2C2,#81A2C2,#062145,14.43,89.9,6.36,5.66,colorError,0.7758,0.1087,0,0
+williams-light,Williams College,Williams,Liberal Arts & Regional Gems,USA,"Williamstown, MA",1793,light,#F4F2F8,#19171D,#66259C,#500082,#500082,16.00,97.3,6.17,5.48,accentNumber,0.4340,0.1191,0,0
+williams-dark,Williams College,Williams,Liberal Arts & Regional Gems,USA,"Williamstown, MA",1793,dark,#191127,#E6E2EF,#C89CFB,#FFBE0A,#4B1C72,14.33,89.4,6.28,5.66,colorError,0.7710,0.1171,0,0
+notredame-light,University of Notre Dame,Notre Dame,Liberal Arts & Regional Gems,USA,"Notre Dame, IN",1842,light,#F7F2EA,#1C1811,#035F2E,#0C2340,#0C2340,15.86,97.0,6.12,4.84,accentType,0.4158,0.1035,0,0
+notredame-dark,University of Notre Dame,Notre Dame,Liberal Arts & Regional Gems,USA,"Notre Dame, IN",1842,dark,#091723,#DCE6F0,#53B573,#E8BC38,#0C2340,14.35,89.9,6.31,5.63,colorError,0.7595,0.1157,0,0
+stedwards-light,St. Edward's University,St. Edward's,Liberal Arts & Regional Gems,USA,"Austin, TX",1885,light,#F7F2EB,#1C1811,#941302,#192E56,#192E56,15.87,97.1,6.11,5.77,accentString,0.3998,0.0959,0,0
+stedwards-dark,St. Edward's University,St. Edward's,Liberal Arts & Regional Gems,USA,"Austin, TX",1885,dark,#0B1727,#DDE5F1,#FB9381,#EDB920,#192E56,14.19,89.5,6.25,4.77,colorError,0.7856,0.1070,0,0
+rice-light,Rice University,Rice,Liberal Arts & Regional Gems,USA,"Houston, TX",1912,light,#F7F1EE,#1D1714,#1B4B98,#00205B,#00205B,15.84,96.8,6.15,5.89,accentType,0.4048,0.0991,0,0
+rice-dark,Rice University,Rice,Liberal Arts & Regional Gems,USA,"Houston, TX",1912,dark,#0A1624,#DDE6F1,#8AB5FB,#8AB5FB,#00205B,14.45,90.1,6.30,4.84,colorError,0.7826,0.1091,0,0
+mcgill-light,McGill University,McGill,Canadian Universities,Canada,"Montreal, QC",1821,light,#F7F1F0,#1D1716,#960419,#D9162B,#C81428,15.84,96.9,6.16,5.48,accentNumber,0.4230,0.1151,0,0
+mcgill-dark,McGill University,McGill,Canadian Universities,Canada,"Montreal, QC",1821,dark,#1C1414,#EFE1E0,#FB9194,#FB9194,#760713,14.24,89.5,6.20,5.63,colorError,0.7674,0.1128,0,0
+utoronto-light,University of Toronto,U of T,Canadian Universities,Canada,"Toronto, ON",1827,light,#F0F3F8,#15191D,#334E7E,#1E3765,#1E3765,15.88,97.2,6.10,5.18,accentString,0.4247,0.1038,0,0
+utoronto-dark,University of Toronto,U of T,Canadian Universities,Canada,"Toronto, ON",1827,dark,#0C1623,#DDE5F1,#86A0C0,#86A0C0,#1E3765,14.34,89.6,6.31,4.80,colorError,0.7582,0.1090,0,0
+queens-light,Queen's University,Queen's,Canadian Universities,Canada,"Kingston, ON",1841,light,#F5F1EC,#1C1813,#950425,#002452,#002452,15.70,96.4,6.04,5.42,accentNumber,0.4269,0.1146,0,0
+queens-dark,Queen's University,Queen's,Canadian Universities,Canada,"Kingston, ON",1841,dark,#0A1623,#DDE6F1,#FB9192,#FABD0F,#002452,14.47,90.1,6.31,4.79,colorError,0.7708,0.1117,0,0
+western-light,Western University,Western,Canadian Universities,Canada,"London, ON",1878,light,#F3F2F8,#18171D,#5C3592,#4F2683,#4F2683,16.00,97.2,6.18,5.98,accentType,0.4122,0.1011,0,0
+western-dark,Western University,Western,Canadian Universities,Canada,"London, ON",1878,dark,#181328,#E5E3F0,#C39FFB,#C39FFB,#49237A,14.26,89.7,6.25,5.60,colorError,0.7672,0.1141,0,0
+ualberta-light,University of Alberta,UAlberta,Canadian Universities,Canada,"Edmonton, AB",1908,light,#F0F4EE,#161A14,#265B36,#275D38,#275D38,15.84,97.1,6.12,4.93,accentType,0.4154,0.0948,0,0
+ualberta-dark,University of Alberta,UAlberta,Canadian Universities,Canada,"Edmonton, AB",1908,dark,#0C1B11,#DCE8DF,#88C598,#FECB00,#104926,14.11,89.8,6.25,5.20,colorError,0.7529,0.1251,0,0
+ubc-light,University of British Columbia,UBC,Canadian Universities,Canada,"Vancouver, BC",1908,light,#EFF5F8,#13191D,#114C98,#0055B7,#002145,16.11,97.9,6.20,4.98,accentNumber,0.4343,0.1280,0,0
+ubc-dark,University of British Columbia,UBC,Canadian Universities,Canada,"Vancouver, BC",1908,dark,#071725,#DCE6F0,#68A9C0,#40B4E5,#002145,14.35,89.9,6.31,5.63,colorError,0.7797,0.1098,0,0
+waterloo-light,University of Waterloo,Waterloo,Canadian Universities,Canada,"Waterloo, ON",1957,light,#F5F3EF,#1A1813,#8D045C,#C28A00,#1E1E22,16.00,97.5,6.12,5.46,accentNumber,0.4451,0.1151,0,0
+waterloo-dark,University of Waterloo,Waterloo,Canadian Universities,Canada,"Waterloo, ON",1957,dark,#161511,#E7E4DD,#FB88C0,#FED34C,#212125,14.39,89.7,6.35,4.82,colorError,0.7688,0.1263,0,0
+uvic-light,University of Victoria,UVic,Canadian Universities,Canada,"Victoria, BC",1963,light,#EDF5F7,#121A1B,#034493,#005493,#005493,15.98,97.6,6.11,5.20,accentString,0.4235,0.1082,0,0
+uvic-dark,University of Victoria,UVic,Canadian Universities,Canada,"Victoria, BC",1963,dark,#051824,#DAE7EF,#69A8C0,#F5AA1C,#003E70,14.33,90.0,6.31,5.67,colorError,0.7652,0.1182,0,0

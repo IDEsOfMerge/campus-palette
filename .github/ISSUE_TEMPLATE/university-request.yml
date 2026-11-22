@@ -1,0 +1,84 @@
+name: Request a University
+description: Propose a new Light & Dark university palette or refinement for Campus Palette
+title: "[University]: "
+labels:
+  - enhancement
+  - university-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a university for **Campus Palette**!
+        Every campus ships as a matched **Light & Dark** pair anchored in the institution's official published brand color guide, synthesized in **OKLCH**, and verified against **WCAG 2.1 AA**, **APCA-W3**, **CIEDE2000**, and **Machado et al. (2009)** CVD gates with zero errors and zero warnings.
+
+  - type: input
+    id: university_name
+    attributes:
+      label: University name & location
+      description: Full institutional name, common short name, city/state or province, and country.
+      placeholder: "e.g., Carnegie Mellon University (CMU) — Pittsburgh, PA, USA · or University of Edinburgh — Edinburgh, UK"
+    validations:
+      required: true
+
+  - type: input
+    id: founding_year_group
+    attributes:
+      label: Founding year & collegiate grouping
+      description: Founding year and the best-fit collegiate grouping (Ivy League, Canadian Universities, US Public Flagships, US Private Research & STEM, Liberal Arts & Regional Gems, or Global Classics).
+      placeholder: "e.g., 1900 — US Private Research & STEM · or 1583 — Global Classics"
+    validations:
+      required: true
+
+  - type: input
+    id: brand_guidelines_url
+    attributes:
+      label: Official brand guidelines URL
+      description: Link to the university's official published communications, visual identity, or brand color guidelines page listing official hex/Pantone specifications.
+      placeholder: "e.g., https://www.cmu.edu/brand/brand-guidelines/visual-identity/colors.html"
+    validations:
+      required: true
+
+  - type: textarea
+    id: official_colors
+    attributes:
+      label: Official institutional primary & secondary colors
+      description: Official color names and published hex/Pantone values from the brand guide. Please do not upload or link university seals, crests, athletic wordmarks, or mascots.
+      placeholder: "e.g., Carnegie Red (#C41230), Iron Gray (#6D6E71), Scots Rose (#EF3A47), Gold Thread (#FDB515), Teal (#008F91)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: light_surface
+    attributes:
+      label: Light mode campus atmosphere & surface inspiration
+      description: Campus stone, brick, quad foliage, or library paper tones that should anchor the Light theme background and chrome.
+      placeholder: "e.g., Warm Pittsburgh limestone and sunlit Cut lawn parchment framing Carnegie Red keywords"
+    validations:
+      required: true
+
+  - type: textarea
+    id: dark_surface
+    attributes:
+      label: Dark mode campus atmosphere & surface inspiration
+      description: Late-night reading room, slate roof, ironwork, or evening campus atmosphere that should anchor the Dark theme.
+      placeholder: "e.g., Deep Hunt Library charcoal slate with luminous crimson keywords and gold-thread accents"
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra_context
+    attributes:
+      label: Additional context (optional)
+      description: Campus architecture, seasonal color traditions, or syntax-role mapping suggestions.
+      placeholder: "Optional notes on campus materials, secondary web palettes, or syntax role pairings"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: ip_guidelines
+    attributes:
+      label: Zero copyrighted marks & official brand-guide policy
+      description: Campus Palette celebrates institutional color traditions and campus architecture without third-party trademarks or artwork.
+      options:
+        - label: I understand that Campus Palette draws strictly from official published color guidelines and campus atmosphere — zero university seals, crests, logos, mascots, athletic marks, or copyrighted photography will be included or requested.
+          required: true

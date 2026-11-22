@@ -1,0 +1,6482 @@
+[
+  {
+    "slug": "harvard-light",
+    "label": "Harvard Light",
+    "university": "Harvard University",
+    "shortName": "Harvard",
+    "group": "Ivy League",
+    "country": "USA",
+    "city": "Cambridge, MA",
+    "year": 1636,
+    "subtitle": "Harvard Yard parchment, Crimson #A51C30, Widener slate & ivy green",
+    "mode": "light",
+    "pairSlug": "harvard-dark",
+    "bg": "#F7F1EE",
+    "fg": "#1D1714",
+    "accentKeyword": "#950425",
+    "accentFunction": "#33406E",
+    "accentString": "#9A3908",
+    "accentType": "#2B683B",
+    "accentNumber": "#85642D",
+    "accentStatusBar": "#A51C30",
+    "metrics": {
+      "fgBg": 15.84,
+      "fgLc": 96.8,
+      "commentBg": 6.15,
+      "sidebarFgBg": 14.01,
+      "minSyntaxCr": 4.87,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "princeton-light",
+        "label": "Princeton Light",
+        "shortName": "Princeton",
+        "group": "Ivy League",
+        "de00": 7.1
+      },
+      {
+        "slug": "uva-light",
+        "label": "UVA Light",
+        "shortName": "UVA",
+        "group": "US Public Flagships",
+        "de00": 8
+      },
+      {
+        "slug": "berkeley-light",
+        "label": "UC Berkeley Light",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 8
+      },
+      {
+        "slug": "mit-light",
+        "label": "MIT Light",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 8.3
+      },
+      {
+        "slug": "mcgill-light",
+        "label": "McGill Light",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 8.3
+      },
+      {
+        "slug": "eth-light",
+        "label": "ETH Zurich Light",
+        "shortName": "ETH Zurich",
+        "group": "Global Classics",
+        "de00": 8.6
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-light",
+      "label": "Dartmouth Light",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 15.1
+    }
+  },
+  {
+    "slug": "harvard-dark",
+    "label": "Harvard Dark",
+    "university": "Harvard University",
+    "shortName": "Harvard",
+    "group": "Ivy League",
+    "country": "USA",
+    "city": "Cambridge, MA",
+    "year": 1636,
+    "subtitle": "Crimson-lit Cambridge night, Harvard Yard brick, deep indigo & saffron",
+    "mode": "dark",
+    "pairSlug": "harvard-light",
+    "bg": "#1F1414",
+    "fg": "#F0E0E0",
+    "accentKeyword": "#F66979",
+    "accentFunction": "#A6BCF9",
+    "accentString": "#FB8A5E",
+    "accentType": "#99D8A5",
+    "accentNumber": "#FFCC88",
+    "accentStatusBar": "#75061C",
+    "metrics": {
+      "fgBg": 14.07,
+      "fgLc": 89.1,
+      "commentBg": 6.19,
+      "sidebarFgBg": 13.31,
+      "minSyntaxCr": 5.6,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "cornell-dark",
+        "label": "Cornell Dark",
+        "shortName": "Cornell",
+        "group": "Ivy League",
+        "de00": 6.7
+      },
+      {
+        "slug": "upenn-dark",
+        "label": "UPenn Dark",
+        "shortName": "UPenn",
+        "group": "Ivy League",
+        "de00": 7.2
+      },
+      {
+        "slug": "berkeley-dark",
+        "label": "UC Berkeley Dark",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 7.3
+      },
+      {
+        "slug": "uva-dark",
+        "label": "UVA Dark",
+        "shortName": "UVA",
+        "group": "US Public Flagships",
+        "de00": 7.4
+      },
+      {
+        "slug": "mcgill-dark",
+        "label": "McGill Dark",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 7.6
+      },
+      {
+        "slug": "williams-dark",
+        "label": "Williams Dark",
+        "shortName": "Williams",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 7.7
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-dark",
+      "label": "Dartmouth Dark",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 16.3
+    }
+  },
+  {
+    "slug": "yale-light",
+    "label": "Yale Light",
+    "university": "Yale University",
+    "shortName": "Yale",
+    "group": "Ivy League",
+    "country": "USA",
+    "city": "New Haven, CT",
+    "year": 1701,
+    "subtitle": "Sterling limestone, Yale Blue #00356B, Harkness moss & autumn brick",
+    "mode": "light",
+    "pairSlug": "yale-dark",
+    "bg": "#EFF4F7",
+    "fg": "#14191D",
+    "accentKeyword": "#0066A5",
+    "accentFunction": "#003D91",
+    "accentString": "#963E08",
+    "accentType": "#35682E",
+    "accentNumber": "#804700",
+    "accentStatusBar": "#00356B",
+    "metrics": {
+      "fgBg": 15.97,
+      "fgLc": 97.5,
+      "commentBg": 6.16,
+      "sidebarFgBg": 14.05,
+      "minSyntaxCr": 5.5,
+      "minSyntaxRole": "accentKeyword",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "duke-light",
+        "label": "Duke Light",
+        "shortName": "Duke",
+        "group": "US Private Research & STEM",
+        "de00": 5.3
+      },
+      {
+        "slug": "ubc-light",
+        "label": "UBC Light",
+        "shortName": "UBC",
+        "group": "Canadian Universities",
+        "de00": 6
+      },
+      {
+        "slug": "unc-light",
+        "label": "UNC Light",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 7.1
+      },
+      {
+        "slug": "ucla-light",
+        "label": "UCLA Light",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 7.3
+      },
+      {
+        "slug": "umich-light",
+        "label": "UMich Light",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 7.3
+      },
+      {
+        "slug": "rice-light",
+        "label": "Rice Light",
+        "shortName": "Rice",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 8.5
+      }
+    ],
+    "farthest": {
+      "slug": "stedwards-light",
+      "label": "St. Edward's Light",
+      "shortName": "St. Edward's",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 16.3
+    }
+  },
+  {
+    "slug": "yale-dark",
+    "label": "Yale Dark",
+    "university": "Yale University",
+    "shortName": "Yale",
+    "group": "Ivy League",
+    "country": "USA",
+    "city": "New Haven, CT",
+    "year": 1701,
+    "subtitle": "Collegiate Gothic Yale Blue midnight, New Haven sky azure & copper",
+    "mode": "dark",
+    "pairSlug": "yale-light",
+    "bg": "#0B1724",
+    "fg": "#DCE6F1",
+    "accentKeyword": "#879FC8",
+    "accentFunction": "#8FCDFF",
+    "accentString": "#FB8B58",
+    "accentType": "#A0D798",
+    "accentNumber": "#FFCC84",
+    "accentStatusBar": "#00356B",
+    "metrics": {
+      "fgBg": 14.31,
+      "fgLc": 89.9,
+      "commentBg": 6.31,
+      "sidebarFgBg": 13.5,
+      "minSyntaxCr": 5.61,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "ubc-dark",
+        "label": "UBC Dark",
+        "shortName": "UBC",
+        "group": "Canadian Universities",
+        "de00": 4.9
+      },
+      {
+        "slug": "duke-dark",
+        "label": "Duke Dark",
+        "shortName": "Duke",
+        "group": "US Private Research & STEM",
+        "de00": 4.9
+      },
+      {
+        "slug": "umich-dark",
+        "label": "UMich Dark",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 5.9
+      },
+      {
+        "slug": "cornell-dark",
+        "label": "Cornell Dark",
+        "shortName": "Cornell",
+        "group": "Ivy League",
+        "de00": 5.9
+      },
+      {
+        "slug": "unc-dark",
+        "label": "UNC Dark",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 6.5
+      },
+      {
+        "slug": "rice-dark",
+        "label": "Rice Dark",
+        "shortName": "Rice",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 6.7
+      }
+    ],
+    "farthest": {
+      "slug": "stedwards-dark",
+      "label": "St. Edward's Dark",
+      "shortName": "St. Edward's",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 14.4
+    }
+  },
+  {
+    "slug": "upenn-light",
+    "label": "UPenn Light",
+    "university": "University of Pennsylvania",
+    "shortName": "UPenn",
+    "group": "Ivy League",
+    "country": "USA",
+    "city": "Philadelphia, PA",
+    "year": 1740,
+    "subtitle": "Locust Walk sandstone, Penn Red #990000, Penn Blue #011F5B & teal",
+    "mode": "light",
+    "pairSlug": "upenn-dark",
+    "bg": "#EFF3F7",
+    "fg": "#15191D",
+    "accentKeyword": "#720F09",
+    "accentFunction": "#002E83",
+    "accentString": "#0B6879",
+    "accentType": "#2F5024",
+    "accentNumber": "#835B06",
+    "accentStatusBar": "#011F5B",
+    "metrics": {
+      "fgBg": 15.84,
+      "fgLc": 97,
+      "commentBg": 6.08,
+      "sidebarFgBg": 13.94,
+      "minSyntaxCr": 5.44,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "mcgill-light",
+        "label": "McGill Light",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 4.8
+      },
+      {
+        "slug": "utokyo-light",
+        "label": "UTokyo Light",
+        "shortName": "UTokyo",
+        "group": "Global Classics",
+        "de00": 4.9
+      },
+      {
+        "slug": "mit-light",
+        "label": "MIT Light",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 5.1
+      },
+      {
+        "slug": "queens-light",
+        "label": "Queen's Light",
+        "shortName": "Queen's",
+        "group": "Canadian Universities",
+        "de00": 5.7
+      },
+      {
+        "slug": "stedwards-light",
+        "label": "St. Edward's Light",
+        "shortName": "St. Edward's",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 6.1
+      },
+      {
+        "slug": "oxford-light",
+        "label": "Oxford Light",
+        "shortName": "Oxford",
+        "group": "Global Classics",
+        "de00": 6.6
+      }
+    ],
+    "farthest": {
+      "slug": "waterloo-light",
+      "label": "Waterloo Light",
+      "shortName": "Waterloo",
+      "group": "Canadian Universities",
+      "de00": 16.6
+    }
+  },
+  {
+    "slug": "upenn-dark",
+    "label": "UPenn Dark",
+    "university": "University of Pennsylvania",
+    "shortName": "UPenn",
+    "group": "Ivy League",
+    "country": "USA",
+    "city": "Philadelphia, PA",
+    "year": 1740,
+    "subtitle": "Deep Penn Blue midnight, Penn Red beacons, Schuylkill teal & gold",
+    "mode": "dark",
+    "pairSlug": "upenn-light",
+    "bg": "#0B1425",
+    "fg": "#DEE5F1",
+    "accentKeyword": "#FB9384",
+    "accentFunction": "#ACC5FB",
+    "accentString": "#64BCD1",
+    "accentType": "#93D9A7",
+    "accentNumber": "#FECD80",
+    "accentStatusBar": "#011F5B",
+    "metrics": {
+      "fgBg": 14.53,
+      "fgLc": 89.9,
+      "commentBg": 6.4,
+      "sidebarFgBg": 13.72,
+      "minSyntaxCr": 5.71,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "mcgill-dark",
+        "label": "McGill Dark",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 4.5
+      },
+      {
+        "slug": "mit-dark",
+        "label": "MIT Dark",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 5
+      },
+      {
+        "slug": "utokyo-dark",
+        "label": "UTokyo Dark",
+        "shortName": "UTokyo",
+        "group": "Global Classics",
+        "de00": 5.3
+      },
+      {
+        "slug": "oxford-dark",
+        "label": "Oxford Dark",
+        "shortName": "Oxford",
+        "group": "Global Classics",
+        "de00": 5.7
+      },
+      {
+        "slug": "stedwards-dark",
+        "label": "St. Edward's Dark",
+        "shortName": "St. Edward's",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 5.9
+      },
+      {
+        "slug": "queens-dark",
+        "label": "Queen's Dark",
+        "shortName": "Queen's",
+        "group": "Canadian Universities",
+        "de00": 6.1
+      }
+    ],
+    "farthest": {
+      "slug": "ualberta-dark",
+      "label": "UAlberta Dark",
+      "shortName": "UAlberta",
+      "group": "Canadian Universities",
+      "de00": 17.4
+    }
+  },
+  {
+    "slug": "princeton-light",
+    "label": "Princeton Light",
+    "university": "Princeton University",
+    "shortName": "Princeton",
+    "group": "Ivy League",
+    "country": "USA",
+    "city": "Princeton, NJ",
+    "year": 1746,
+    "subtitle": "Nassau Hall Gothic sandstone, Princeton Orange #F58025 & iron ink",
+    "mode": "light",
+    "pairSlug": "princeton-dark",
+    "bg": "#F8F2EB",
+    "fg": "#1D1712",
+    "accentKeyword": "#5B2E1A",
+    "accentFunction": "#004186",
+    "accentString": "#A62237",
+    "accentType": "#1B6A42",
+    "accentNumber": "#786111",
+    "accentStatusBar": "#E77500",
+    "metrics": {
+      "fgBg": 15.96,
+      "fgLc": 97.3,
+      "commentBg": 6.17,
+      "sidebarFgBg": 13.99,
+      "minSyntaxCr": 5.37,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "uva-light",
+        "label": "UVA Light",
+        "shortName": "UVA",
+        "group": "US Public Flagships",
+        "de00": 5.2
+      },
+      {
+        "slug": "harvard-light",
+        "label": "Harvard Light",
+        "shortName": "Harvard",
+        "group": "Ivy League",
+        "de00": 7.1
+      },
+      {
+        "slug": "unc-light",
+        "label": "UNC Light",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 7.7
+      },
+      {
+        "slug": "eth-light",
+        "label": "ETH Zurich Light",
+        "shortName": "ETH Zurich",
+        "group": "Global Classics",
+        "de00": 7.8
+      },
+      {
+        "slug": "duke-light",
+        "label": "Duke Light",
+        "shortName": "Duke",
+        "group": "US Private Research & STEM",
+        "de00": 8.1
+      },
+      {
+        "slug": "berkeley-light",
+        "label": "UC Berkeley Light",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 8.1
+      }
+    ],
+    "farthest": {
+      "slug": "uvic-light",
+      "label": "UVic Light",
+      "shortName": "UVic",
+      "group": "Canadian Universities",
+      "de00": 15
+    }
+  },
+  {
+    "slug": "princeton-dark",
+    "label": "Princeton Dark",
+    "university": "Princeton University",
+    "shortName": "Princeton",
+    "group": "Ivy League",
+    "country": "USA",
+    "city": "Princeton, NJ",
+    "year": 1746,
+    "subtitle": "FitzRandolph Gate obsidian, glowing Princeton Orange & cobalt",
+    "mode": "dark",
+    "pairSlug": "princeton-light",
+    "bg": "#1A1411",
+    "fg": "#EDE2DC",
+    "accentKeyword": "#FB9850",
+    "accentFunction": "#69BFFF",
+    "accentString": "#CD7C91",
+    "accentType": "#8FDAAD",
+    "accentNumber": "#EED48C",
+    "accentStatusBar": "#602D00",
+    "metrics": {
+      "fgBg": 14.33,
+      "fgLc": 89.5,
+      "commentBg": 6.29,
+      "sidebarFgBg": 13.5,
+      "minSyntaxCr": 5.68,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "uva-dark",
+        "label": "UVA Dark",
+        "shortName": "UVA",
+        "group": "US Public Flagships",
+        "de00": 3.4
+      },
+      {
+        "slug": "utaustin-dark",
+        "label": "UT Austin Dark",
+        "shortName": "UT Austin",
+        "group": "US Public Flagships",
+        "de00": 4.6
+      },
+      {
+        "slug": "caltech-dark",
+        "label": "Caltech Dark",
+        "shortName": "Caltech",
+        "group": "US Private Research & STEM",
+        "de00": 5.3
+      },
+      {
+        "slug": "mit-dark",
+        "label": "MIT Dark",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 7.3
+      },
+      {
+        "slug": "cornell-dark",
+        "label": "Cornell Dark",
+        "shortName": "Cornell",
+        "group": "Ivy League",
+        "de00": 7.8
+      },
+      {
+        "slug": "eth-dark",
+        "label": "ETH Zurich Dark",
+        "shortName": "ETH Zurich",
+        "group": "Global Classics",
+        "de00": 7.9
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-dark",
+      "label": "Dartmouth Dark",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 14.7
+    }
+  },
+  {
+    "slug": "columbia-light",
+    "label": "Columbia Light",
+    "university": "Columbia University",
+    "shortName": "Columbia",
+    "group": "Ivy League",
+    "country": "USA",
+    "city": "New York, NY",
+    "year": 1754,
+    "subtitle": "Butler Library limestone, Columbia Primary Blue #1D4F91 & copper dome",
+    "mode": "light",
+    "pairSlug": "columbia-dark",
+    "bg": "#EEF5F9",
+    "fg": "#13191D",
+    "accentKeyword": "#3C5682",
+    "accentFunction": "#02354E",
+    "accentString": "#7E2A00",
+    "accentType": "#006A52",
+    "accentNumber": "#865906",
+    "accentStatusBar": "#1D4F91",
+    "metrics": {
+      "fgBg": 16.1,
+      "fgLc": 97.9,
+      "commentBg": 6.16,
+      "sidebarFgBg": 14.17,
+      "minSyntaxCr": 5.53,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "gatech-light",
+        "label": "Georgia Tech Light",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 3.5
+      },
+      {
+        "slug": "utoronto-light",
+        "label": "U of T Light",
+        "shortName": "U of T",
+        "group": "Canadian Universities",
+        "de00": 4.4
+      },
+      {
+        "slug": "unc-light",
+        "label": "UNC Light",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 4.8
+      },
+      {
+        "slug": "ucla-light",
+        "label": "UCLA Light",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 5.7
+      },
+      {
+        "slug": "georgetown-light",
+        "label": "Georgetown Light",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 6.1
+      },
+      {
+        "slug": "uvic-light",
+        "label": "UVic Light",
+        "shortName": "UVic",
+        "group": "Canadian Universities",
+        "de00": 7
+      }
+    ],
+    "farthest": {
+      "slug": "stedwards-light",
+      "label": "St. Edward's Light",
+      "shortName": "St. Edward's",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 15.3
+    }
+  },
+  {
+    "slug": "columbia-dark",
+    "label": "Columbia Dark",
+    "university": "Columbia University",
+    "shortName": "Columbia",
+    "group": "Ivy League",
+    "country": "USA",
+    "city": "New York, NY",
+    "year": 1754,
+    "subtitle": "Morningside Heights navy, Philolexian Columbia Blue #B9D9EB & bronze",
+    "mode": "dark",
+    "pairSlug": "columbia-light",
+    "bg": "#091822",
+    "fg": "#DBE6F0",
+    "accentKeyword": "#7BA5BA",
+    "accentFunction": "#BDD5FF",
+    "accentString": "#FB8970",
+    "accentType": "#7FD9CB",
+    "accentNumber": "#FFCC88",
+    "accentStatusBar": "#053B7B",
+    "metrics": {
+      "fgBg": 14.23,
+      "fgLc": 89.7,
+      "commentBg": 6.25,
+      "sidebarFgBg": 13.42,
+      "minSyntaxCr": 4.75,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "unc-dark",
+        "label": "UNC Dark",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 4.2
+      },
+      {
+        "slug": "utoronto-dark",
+        "label": "U of T Dark",
+        "shortName": "U of T",
+        "group": "Canadian Universities",
+        "de00": 4.8
+      },
+      {
+        "slug": "georgetown-dark",
+        "label": "Georgetown Dark",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 5
+      },
+      {
+        "slug": "gatech-dark",
+        "label": "Georgia Tech Dark",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 5.3
+      },
+      {
+        "slug": "ucla-dark",
+        "label": "UCLA Dark",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 6.4
+      },
+      {
+        "slug": "rice-dark",
+        "label": "Rice Dark",
+        "shortName": "Rice",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 6.8
+      }
+    ],
+    "farthest": {
+      "slug": "stedwards-dark",
+      "label": "St. Edward's Dark",
+      "shortName": "St. Edward's",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 15
+    }
+  },
+  {
+    "slug": "brown-light",
+    "label": "Brown Light",
+    "university": "Brown University",
+    "shortName": "Brown",
+    "group": "Ivy League",
+    "country": "USA",
+    "city": "Providence, RI",
+    "year": 1764,
+    "subtitle": "College Hill warm taupe-cream, Brown #4E3629, heraldic red & emerald",
+    "mode": "light",
+    "pairSlug": "brown-dark",
+    "bg": "#F8EFE9",
+    "fg": "#1E1711",
+    "accentKeyword": "#960417",
+    "accentFunction": "#002433",
+    "accentString": "#643F34",
+    "accentType": "#046957",
+    "accentNumber": "#855907",
+    "accentStatusBar": "#4E3629",
+    "metrics": {
+      "fgBg": 15.61,
+      "fgLc": 95.9,
+      "commentBg": 6.07,
+      "sidebarFgBg": 13.78,
+      "minSyntaxCr": 5.4,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "stanford-light",
+        "label": "Stanford Light",
+        "shortName": "Stanford",
+        "group": "US Private Research & STEM",
+        "de00": 5.6
+      },
+      {
+        "slug": "uchicago-light",
+        "label": "UChicago Light",
+        "shortName": "UChicago",
+        "group": "US Private Research & STEM",
+        "de00": 8
+      },
+      {
+        "slug": "columbia-light",
+        "label": "Columbia Light",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 8.2
+      },
+      {
+        "slug": "cornell-light",
+        "label": "Cornell Light",
+        "shortName": "Cornell",
+        "group": "Ivy League",
+        "de00": 8.8
+      },
+      {
+        "slug": "utoronto-light",
+        "label": "U of T Light",
+        "shortName": "U of T",
+        "group": "Canadian Universities",
+        "de00": 8.9
+      },
+      {
+        "slug": "mcgill-light",
+        "label": "McGill Light",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 9.1
+      }
+    ],
+    "farthest": {
+      "slug": "yale-light",
+      "label": "Yale Light",
+      "shortName": "Yale",
+      "group": "Ivy League",
+      "de00": 15.8
+    }
+  },
+  {
+    "slug": "brown-dark",
+    "label": "Brown Dark",
+    "university": "Brown University",
+    "shortName": "Brown",
+    "group": "Ivy League",
+    "country": "USA",
+    "city": "Providence, RI",
+    "year": 1764,
+    "subtitle": "Rich walnut-espresso #4E3629 dark, heraldic crimson, gold & sky",
+    "mode": "dark",
+    "pairSlug": "brown-light",
+    "bg": "#22130D",
+    "fg": "#F0E1DB",
+    "accentKeyword": "#FB918F",
+    "accentFunction": "#70B5BD",
+    "accentString": "#EBAD7D",
+    "accentType": "#83DAC3",
+    "accentNumber": "#FFCF5A",
+    "accentStatusBar": "#4E3629",
+    "metrics": {
+      "fgBg": 14.14,
+      "fgLc": 89.3,
+      "commentBg": 6.21,
+      "sidebarFgBg": 13.29,
+      "minSyntaxCr": 5.59,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "stanford-dark",
+        "label": "Stanford Dark",
+        "shortName": "Stanford",
+        "group": "US Private Research & STEM",
+        "de00": 6.7
+      },
+      {
+        "slug": "uchicago-dark",
+        "label": "UChicago Dark",
+        "shortName": "UChicago",
+        "group": "US Private Research & STEM",
+        "de00": 7.9
+      },
+      {
+        "slug": "mit-dark",
+        "label": "MIT Dark",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 9.3
+      },
+      {
+        "slug": "caltech-dark",
+        "label": "Caltech Dark",
+        "shortName": "Caltech",
+        "group": "US Private Research & STEM",
+        "de00": 9.7
+      },
+      {
+        "slug": "cornell-dark",
+        "label": "Cornell Dark",
+        "shortName": "Cornell",
+        "group": "Ivy League",
+        "de00": 9.9
+      },
+      {
+        "slug": "utokyo-dark",
+        "label": "UTokyo Dark",
+        "shortName": "UTokyo",
+        "group": "Global Classics",
+        "de00": 10.1
+      }
+    ],
+    "farthest": {
+      "slug": "cambridge-dark",
+      "label": "Cambridge Dark",
+      "shortName": "Cambridge",
+      "group": "Global Classics",
+      "de00": 14.8
+    }
+  },
+  {
+    "slug": "dartmouth-light",
+    "label": "Dartmouth Light",
+    "university": "Dartmouth College",
+    "shortName": "Dartmouth",
+    "group": "Ivy League",
+    "country": "USA",
+    "city": "Hanover, NH",
+    "year": 1769,
+    "subtitle": "Hanover snow-birch, Dartmouth Green #00693E, River Blue & Bonfire",
+    "mode": "light",
+    "pairSlug": "dartmouth-dark",
+    "bg": "#EFF5F1",
+    "fg": "#141A16",
+    "accentKeyword": "#405E45",
+    "accentFunction": "#002A71",
+    "accentString": "#8F4509",
+    "accentType": "#076673",
+    "accentNumber": "#5D4422",
+    "accentStatusBar": "#00693E",
+    "metrics": {
+      "fgBg": 15.98,
+      "fgLc": 97.6,
+      "commentBg": 6.1,
+      "sidebarFgBg": 14.05,
+      "minSyntaxCr": 6.02,
+      "minSyntaxRole": "accentType",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "ualberta-light",
+        "label": "UAlberta Light",
+        "shortName": "UAlberta",
+        "group": "Canadian Universities",
+        "de00": 7.9
+      },
+      {
+        "slug": "gatech-light",
+        "label": "Georgia Tech Light",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 8.8
+      },
+      {
+        "slug": "notredame-light",
+        "label": "Notre Dame Light",
+        "shortName": "Notre Dame",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 9
+      },
+      {
+        "slug": "stanford-light",
+        "label": "Stanford Light",
+        "shortName": "Stanford",
+        "group": "US Private Research & STEM",
+        "de00": 10
+      },
+      {
+        "slug": "georgetown-light",
+        "label": "Georgetown Light",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 10.4
+      },
+      {
+        "slug": "columbia-light",
+        "label": "Columbia Light",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 11.5
+      }
+    ],
+    "farthest": {
+      "slug": "northwestern-light",
+      "label": "Northwestern Light",
+      "shortName": "Northwestern",
+      "group": "US Private Research & STEM",
+      "de00": 18.5
+    }
+  },
+  {
+    "slug": "dartmouth-dark",
+    "label": "Dartmouth Dark",
+    "university": "Dartmouth College",
+    "shortName": "Dartmouth",
+    "group": "Ivy League",
+    "country": "USA",
+    "city": "Hanover, NH",
+    "year": 1769,
+    "subtitle": "Official Rich Forest #0D1E1C, pine emerald, Bonfire amber & River Blue",
+    "mode": "dark",
+    "pairSlug": "dartmouth-light",
+    "bg": "#091D17",
+    "fg": "#D9E9E3",
+    "accentKeyword": "#74C997",
+    "accentFunction": "#67ACF7",
+    "accentString": "#F19600",
+    "accentType": "#7AD8DC",
+    "accentNumber": "#EFD663",
+    "accentStatusBar": "#004A2A",
+    "metrics": {
+      "fgBg": 13.93,
+      "fgLc": 89.9,
+      "commentBg": 6.12,
+      "sidebarFgBg": 13.01,
+      "minSyntaxCr": 5.43,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "ualberta-dark",
+        "label": "UAlberta Dark",
+        "shortName": "UAlberta",
+        "group": "Canadian Universities",
+        "de00": 7.9
+      },
+      {
+        "slug": "notredame-dark",
+        "label": "Notre Dame Dark",
+        "shortName": "Notre Dame",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 8.3
+      },
+      {
+        "slug": "stanford-dark",
+        "label": "Stanford Dark",
+        "shortName": "Stanford",
+        "group": "US Private Research & STEM",
+        "de00": 10.8
+      },
+      {
+        "slug": "ubc-dark",
+        "label": "UBC Dark",
+        "shortName": "UBC",
+        "group": "Canadian Universities",
+        "de00": 10.8
+      },
+      {
+        "slug": "georgetown-dark",
+        "label": "Georgetown Dark",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 11.2
+      },
+      {
+        "slug": "umich-dark",
+        "label": "UMich Dark",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 12.1
+      }
+    ],
+    "farthest": {
+      "slug": "northwestern-dark",
+      "label": "Northwestern Dark",
+      "shortName": "Northwestern",
+      "group": "US Private Research & STEM",
+      "de00": 18.9
+    }
+  },
+  {
+    "slug": "cornell-light",
+    "label": "Cornell Light",
+    "university": "Cornell University",
+    "shortName": "Cornell",
+    "group": "Ivy League",
+    "country": "USA",
+    "city": "Ithaca, NY",
+    "year": 1865,
+    "subtitle": "Finger Lakes warm shale, Carnelian #B31B1B, Cayuga Blue & gorge sage",
+    "mode": "light",
+    "pairSlug": "cornell-dark",
+    "bg": "#F8F1ED",
+    "fg": "#1D1713",
+    "accentKeyword": "#97030B",
+    "accentFunction": "#002432",
+    "accentString": "#5D3B2B",
+    "accentType": "#40634C",
+    "accentNumber": "#5B3B27",
+    "accentStatusBar": "#B31B1B",
+    "metrics": {
+      "fgBg": 15.87,
+      "fgLc": 96.9,
+      "commentBg": 6.16,
+      "sidebarFgBg": 14,
+      "minSyntaxCr": 6.02,
+      "minSyntaxRole": "colorWarning",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "uchicago-light",
+        "label": "UChicago Light",
+        "shortName": "UChicago",
+        "group": "US Private Research & STEM",
+        "de00": 7.5
+      },
+      {
+        "slug": "brown-light",
+        "label": "Brown Light",
+        "shortName": "Brown",
+        "group": "Ivy League",
+        "de00": 8.8
+      },
+      {
+        "slug": "rice-light",
+        "label": "Rice Light",
+        "shortName": "Rice",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 9.5
+      },
+      {
+        "slug": "umich-light",
+        "label": "UMich Light",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 9.5
+      },
+      {
+        "slug": "ucla-light",
+        "label": "UCLA Light",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 9.8
+      },
+      {
+        "slug": "uva-light",
+        "label": "UVA Light",
+        "shortName": "UVA",
+        "group": "US Public Flagships",
+        "de00": 9.9
+      }
+    ],
+    "farthest": {
+      "slug": "uvic-light",
+      "label": "UVic Light",
+      "shortName": "UVic",
+      "group": "Canadian Universities",
+      "de00": 15.3
+    }
+  },
+  {
+    "slug": "cornell-dark",
+    "label": "Cornell Dark",
+    "university": "Cornell University",
+    "shortName": "Cornell",
+    "group": "Ivy League",
+    "country": "USA",
+    "city": "Ithaca, NY",
+    "year": 1865,
+    "subtitle": "Ithaca gorge obsidian, glowing Carnelian #B31B1B, lake blue & autumn gold",
+    "mode": "dark",
+    "pairSlug": "cornell-light",
+    "bg": "#1E1412",
+    "fg": "#F0E0DE",
+    "accentKeyword": "#CF8788",
+    "accentFunction": "#7BC7FD",
+    "accentString": "#F1925D",
+    "accentType": "#99D9A0",
+    "accentNumber": "#FBCF84",
+    "accentStatusBar": "#76090B",
+    "metrics": {
+      "fgBg": 14.11,
+      "fgLc": 89,
+      "commentBg": 6.2,
+      "sidebarFgBg": 13.35,
+      "minSyntaxCr": 4.76,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "uchicago-dark",
+        "label": "UChicago Dark",
+        "shortName": "UChicago",
+        "group": "US Private Research & STEM",
+        "de00": 5.3
+      },
+      {
+        "slug": "yale-dark",
+        "label": "Yale Dark",
+        "shortName": "Yale",
+        "group": "Ivy League",
+        "de00": 5.9
+      },
+      {
+        "slug": "harvard-dark",
+        "label": "Harvard Dark",
+        "shortName": "Harvard",
+        "group": "Ivy League",
+        "de00": 6.7
+      },
+      {
+        "slug": "umich-dark",
+        "label": "UMich Dark",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 7.1
+      },
+      {
+        "slug": "stanford-dark",
+        "label": "Stanford Dark",
+        "shortName": "Stanford",
+        "group": "US Private Research & STEM",
+        "de00": 7.4
+      },
+      {
+        "slug": "mit-dark",
+        "label": "MIT Dark",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 7.6
+      }
+    ],
+    "farthest": {
+      "slug": "ualberta-dark",
+      "label": "UAlberta Dark",
+      "shortName": "UAlberta",
+      "group": "Canadian Universities",
+      "de00": 14
+    }
+  },
+  {
+    "slug": "mcgill-light",
+    "label": "McGill Light",
+    "university": "McGill University",
+    "shortName": "McGill",
+    "group": "Canadian Universities",
+    "country": "Canada",
+    "city": "Montreal, QC",
+    "year": 1821,
+    "subtitle": "Montreal greystone, McGill Red #ED1B2F, St. Lawrence teal & spruce",
+    "mode": "light",
+    "pairSlug": "mcgill-dark",
+    "bg": "#F7F1F0",
+    "fg": "#1D1716",
+    "accentKeyword": "#960419",
+    "accentFunction": "#03247D",
+    "accentString": "#0B687B",
+    "accentType": "#2E4F38",
+    "accentNumber": "#875806",
+    "accentStatusBar": "#C81428",
+    "metrics": {
+      "fgBg": 15.84,
+      "fgLc": 96.9,
+      "commentBg": 6.16,
+      "sidebarFgBg": 13.98,
+      "minSyntaxCr": 5.48,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "mit-light",
+        "label": "MIT Light",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 1.9
+      },
+      {
+        "slug": "queens-light",
+        "label": "Queen's Light",
+        "shortName": "Queen's",
+        "group": "Canadian Universities",
+        "de00": 4.1
+      },
+      {
+        "slug": "utokyo-light",
+        "label": "UTokyo Light",
+        "shortName": "UTokyo",
+        "group": "Global Classics",
+        "de00": 4.2
+      },
+      {
+        "slug": "upenn-light",
+        "label": "UPenn Light",
+        "shortName": "UPenn",
+        "group": "Ivy League",
+        "de00": 4.8
+      },
+      {
+        "slug": "oxford-light",
+        "label": "Oxford Light",
+        "shortName": "Oxford",
+        "group": "Global Classics",
+        "de00": 6.7
+      },
+      {
+        "slug": "stedwards-light",
+        "label": "St. Edward's Light",
+        "shortName": "St. Edward's",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 7.1
+      }
+    ],
+    "farthest": {
+      "slug": "waterloo-light",
+      "label": "Waterloo Light",
+      "shortName": "Waterloo",
+      "group": "Canadian Universities",
+      "de00": 16.5
+    }
+  },
+  {
+    "slug": "mcgill-dark",
+    "label": "McGill Dark",
+    "university": "McGill University",
+    "shortName": "McGill",
+    "group": "Canadian Universities",
+    "country": "Canada",
+    "city": "Montreal, QC",
+    "year": 1821,
+    "subtitle": "Mount Royal greystone night, vivid McGill Red #ED1B2F & Martlet gold",
+    "mode": "dark",
+    "pairSlug": "mcgill-light",
+    "bg": "#1C1414",
+    "fg": "#EFE1E0",
+    "accentKeyword": "#FB9194",
+    "accentFunction": "#91C1FF",
+    "accentString": "#6FA3A7",
+    "accentType": "#21CDA3",
+    "accentNumber": "#FFCC89",
+    "accentStatusBar": "#760713",
+    "metrics": {
+      "fgBg": 14.24,
+      "fgLc": 89.5,
+      "commentBg": 6.2,
+      "sidebarFgBg": 13.49,
+      "minSyntaxCr": 5.63,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "mit-dark",
+        "label": "MIT Dark",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 2.9
+      },
+      {
+        "slug": "upenn-dark",
+        "label": "UPenn Dark",
+        "shortName": "UPenn",
+        "group": "Ivy League",
+        "de00": 4.5
+      },
+      {
+        "slug": "queens-dark",
+        "label": "Queen's Dark",
+        "shortName": "Queen's",
+        "group": "Canadian Universities",
+        "de00": 6.1
+      },
+      {
+        "slug": "oxford-dark",
+        "label": "Oxford Dark",
+        "shortName": "Oxford",
+        "group": "Global Classics",
+        "de00": 6.3
+      },
+      {
+        "slug": "utokyo-dark",
+        "label": "UTokyo Dark",
+        "shortName": "UTokyo",
+        "group": "Global Classics",
+        "de00": 7
+      },
+      {
+        "slug": "harvard-dark",
+        "label": "Harvard Dark",
+        "shortName": "Harvard",
+        "group": "Ivy League",
+        "de00": 7.6
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-dark",
+      "label": "Dartmouth Dark",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 16.2
+    }
+  },
+  {
+    "slug": "utoronto-light",
+    "label": "U of T Light",
+    "university": "University of Toronto",
+    "shortName": "U of T",
+    "group": "Canadian Universities",
+    "country": "Canada",
+    "city": "Toronto, ON",
+    "year": 1827,
+    "subtitle": "Hart House stone, U of T Blue #1E3765, Boundless teal & terracotta",
+    "mode": "light",
+    "pairSlug": "utoronto-dark",
+    "bg": "#F0F3F8",
+    "fg": "#15191D",
+    "accentKeyword": "#334E7E",
+    "accentFunction": "#033844",
+    "accentString": "#A54B2F",
+    "accentType": "#036954",
+    "accentNumber": "#894A00",
+    "accentStatusBar": "#1E3765",
+    "metrics": {
+      "fgBg": 15.88,
+      "fgLc": 97.2,
+      "commentBg": 6.1,
+      "sidebarFgBg": 14.07,
+      "minSyntaxCr": 5.18,
+      "minSyntaxRole": "accentString",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "columbia-light",
+        "label": "Columbia Light",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 4.4
+      },
+      {
+        "slug": "gatech-light",
+        "label": "Georgia Tech Light",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 5.9
+      },
+      {
+        "slug": "unc-light",
+        "label": "UNC Light",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 6.2
+      },
+      {
+        "slug": "uvic-light",
+        "label": "UVic Light",
+        "shortName": "UVic",
+        "group": "Canadian Universities",
+        "de00": 6.8
+      },
+      {
+        "slug": "georgetown-light",
+        "label": "Georgetown Light",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 6.9
+      },
+      {
+        "slug": "ucla-light",
+        "label": "UCLA Light",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 7
+      }
+    ],
+    "farthest": {
+      "slug": "oxford-light",
+      "label": "Oxford Light",
+      "shortName": "Oxford",
+      "group": "Global Classics",
+      "de00": 17
+    }
+  },
+  {
+    "slug": "utoronto-dark",
+    "label": "U of T Dark",
+    "university": "University of Toronto",
+    "shortName": "U of T",
+    "group": "Canadian Universities",
+    "country": "Canada",
+    "city": "Toronto, ON",
+    "year": 1827,
+    "subtitle": "Convocation midnight U of T Blue #1E3765, Boundless cyan & amber",
+    "mode": "dark",
+    "pairSlug": "utoronto-light",
+    "bg": "#0C1623",
+    "fg": "#DDE5F1",
+    "accentKeyword": "#86A0C0",
+    "accentFunction": "#7BC9EF",
+    "accentString": "#FB8877",
+    "accentType": "#65AB92",
+    "accentNumber": "#FFCC89",
+    "accentStatusBar": "#1E3765",
+    "metrics": {
+      "fgBg": 14.34,
+      "fgLc": 89.6,
+      "commentBg": 6.31,
+      "sidebarFgBg": 13.52,
+      "minSyntaxCr": 4.8,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "gatech-dark",
+        "label": "Georgia Tech Dark",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 4.7
+      },
+      {
+        "slug": "columbia-dark",
+        "label": "Columbia Dark",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 4.8
+      },
+      {
+        "slug": "georgetown-dark",
+        "label": "Georgetown Dark",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 4.8
+      },
+      {
+        "slug": "rice-dark",
+        "label": "Rice Dark",
+        "shortName": "Rice",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 5.3
+      },
+      {
+        "slug": "unc-dark",
+        "label": "UNC Dark",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 5.6
+      },
+      {
+        "slug": "ucla-dark",
+        "label": "UCLA Dark",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 6.5
+      }
+    ],
+    "farthest": {
+      "slug": "stedwards-dark",
+      "label": "St. Edward's Dark",
+      "shortName": "St. Edward's",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 14.9
+    }
+  },
+  {
+    "slug": "queens-light",
+    "label": "Queen's Light",
+    "university": "Queen's University",
+    "shortName": "Queen's",
+    "group": "Canadian Universities",
+    "country": "Canada",
+    "city": "Kingston, ON",
+    "year": 1841,
+    "subtitle": "Kingston Limestone, Queen's Tricolour Blue #002452, Gold & Red",
+    "mode": "light",
+    "pairSlug": "queens-dark",
+    "bg": "#F5F1EC",
+    "fg": "#1C1813",
+    "accentKeyword": "#950425",
+    "accentFunction": "#102C83",
+    "accentString": "#0B6B66",
+    "accentType": "#324F2D",
+    "accentNumber": "#845A06",
+    "accentStatusBar": "#002452",
+    "metrics": {
+      "fgBg": 15.7,
+      "fgLc": 96.4,
+      "commentBg": 6.04,
+      "sidebarFgBg": 13.84,
+      "minSyntaxCr": 5.42,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "oxford-light",
+        "label": "Oxford Light",
+        "shortName": "Oxford",
+        "group": "Global Classics",
+        "de00": 3.8
+      },
+      {
+        "slug": "mcgill-light",
+        "label": "McGill Light",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 4.1
+      },
+      {
+        "slug": "mit-light",
+        "label": "MIT Light",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 4.6
+      },
+      {
+        "slug": "utokyo-light",
+        "label": "UTokyo Light",
+        "shortName": "UTokyo",
+        "group": "Global Classics",
+        "de00": 5.2
+      },
+      {
+        "slug": "upenn-light",
+        "label": "UPenn Light",
+        "shortName": "UPenn",
+        "group": "Ivy League",
+        "de00": 5.7
+      },
+      {
+        "slug": "stedwards-light",
+        "label": "St. Edward's Light",
+        "shortName": "St. Edward's",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 6.8
+      }
+    ],
+    "farthest": {
+      "slug": "waterloo-light",
+      "label": "Waterloo Light",
+      "shortName": "Waterloo",
+      "group": "Canadian Universities",
+      "de00": 17.3
+    }
+  },
+  {
+    "slug": "queens-dark",
+    "label": "Queen's Dark",
+    "university": "Queen's University",
+    "shortName": "Queen's",
+    "group": "Canadian Universities",
+    "country": "Canada",
+    "city": "Kingston, ON",
+    "year": 1841,
+    "subtitle": "Lake Ontario Tricolour Navy, Queen's Red #B90E31 & Gold #FABD0F",
+    "mode": "dark",
+    "pairSlug": "queens-light",
+    "bg": "#0A1623",
+    "fg": "#DDE6F1",
+    "accentKeyword": "#FB9192",
+    "accentFunction": "#A9BFE2",
+    "accentString": "#62C0BA",
+    "accentType": "#7FCF72",
+    "accentNumber": "#FFCE65",
+    "accentStatusBar": "#002452",
+    "metrics": {
+      "fgBg": 14.47,
+      "fgLc": 90.1,
+      "commentBg": 6.31,
+      "sidebarFgBg": 13.63,
+      "minSyntaxCr": 4.79,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "oxford-dark",
+        "label": "Oxford Dark",
+        "shortName": "Oxford",
+        "group": "Global Classics",
+        "de00": 4.9
+      },
+      {
+        "slug": "stedwards-dark",
+        "label": "St. Edward's Dark",
+        "shortName": "St. Edward's",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 5
+      },
+      {
+        "slug": "upenn-dark",
+        "label": "UPenn Dark",
+        "shortName": "UPenn",
+        "group": "Ivy League",
+        "de00": 6.1
+      },
+      {
+        "slug": "mcgill-dark",
+        "label": "McGill Dark",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 6.1
+      },
+      {
+        "slug": "mit-dark",
+        "label": "MIT Dark",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 7
+      },
+      {
+        "slug": "utokyo-dark",
+        "label": "UTokyo Dark",
+        "shortName": "UTokyo",
+        "group": "Global Classics",
+        "de00": 8.1
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-dark",
+      "label": "Dartmouth Dark",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 18.6
+    }
+  },
+  {
+    "slug": "western-light",
+    "label": "Western Light",
+    "university": "Western University",
+    "shortName": "Western",
+    "group": "Canadian Universities",
+    "country": "Canada",
+    "city": "London, ON",
+    "year": 1878,
+    "subtitle": "University College silver-ivory, Western Purple #4F2683 & Thames teal",
+    "mode": "light",
+    "pairSlug": "western-dark",
+    "bg": "#F3F2F8",
+    "fg": "#18171D",
+    "accentKeyword": "#5C3592",
+    "accentFunction": "#003553",
+    "accentString": "#904409",
+    "accentType": "#036954",
+    "accentNumber": "#644B29",
+    "accentStatusBar": "#4F2683",
+    "metrics": {
+      "fgBg": 16,
+      "fgLc": 97.2,
+      "commentBg": 6.18,
+      "sidebarFgBg": 14.1,
+      "minSyntaxCr": 5.98,
+      "minSyntaxRole": "accentType",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "umich-light",
+        "label": "UMich Light",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 4.7
+      },
+      {
+        "slug": "unc-light",
+        "label": "UNC Light",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 7.7
+      },
+      {
+        "slug": "williams-light",
+        "label": "Williams Light",
+        "shortName": "Williams",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 8.2
+      },
+      {
+        "slug": "northwestern-light",
+        "label": "Northwestern Light",
+        "shortName": "Northwestern",
+        "group": "US Private Research & STEM",
+        "de00": 8.2
+      },
+      {
+        "slug": "ucla-light",
+        "label": "UCLA Light",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 8.4
+      },
+      {
+        "slug": "berkeley-light",
+        "label": "UC Berkeley Light",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 8.5
+      }
+    ],
+    "farthest": {
+      "slug": "caltech-light",
+      "label": "Caltech Light",
+      "shortName": "Caltech",
+      "group": "US Private Research & STEM",
+      "de00": 15.9
+    }
+  },
+  {
+    "slug": "western-dark",
+    "label": "Western Dark",
+    "university": "Western University",
+    "shortName": "Western",
+    "group": "Canadian Universities",
+    "country": "Canada",
+    "city": "London, ON",
+    "year": 1878,
+    "subtitle": "Deep Western Haiti violet #201436, lilac keywords & emerald types",
+    "mode": "dark",
+    "pairSlug": "western-light",
+    "bg": "#181328",
+    "fg": "#E5E3F0",
+    "accentKeyword": "#C39FFB",
+    "accentFunction": "#85ADCC",
+    "accentString": "#ED9560",
+    "accentType": "#84DAC0",
+    "accentNumber": "#F2D387",
+    "accentStatusBar": "#49237A",
+    "metrics": {
+      "fgBg": 14.26,
+      "fgLc": 89.7,
+      "commentBg": 6.25,
+      "sidebarFgBg": 13.46,
+      "minSyntaxCr": 5.6,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "williams-dark",
+        "label": "Williams Dark",
+        "shortName": "Williams",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 4.5
+      },
+      {
+        "slug": "umich-dark",
+        "label": "UMich Dark",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 5.5
+      },
+      {
+        "slug": "berkeley-dark",
+        "label": "UC Berkeley Dark",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 5.9
+      },
+      {
+        "slug": "northwestern-dark",
+        "label": "Northwestern Dark",
+        "shortName": "Northwestern",
+        "group": "US Private Research & STEM",
+        "de00": 7.3
+      },
+      {
+        "slug": "nyu-dark",
+        "label": "NYU Dark",
+        "shortName": "NYU",
+        "group": "US Private Research & STEM",
+        "de00": 7.9
+      },
+      {
+        "slug": "uw-dark",
+        "label": "UW Dark",
+        "shortName": "UW",
+        "group": "US Public Flagships",
+        "de00": 8.3
+      }
+    ],
+    "farthest": {
+      "slug": "uvic-dark",
+      "label": "UVic Dark",
+      "shortName": "UVic",
+      "group": "Canadian Universities",
+      "de00": 15.7
+    }
+  },
+  {
+    "slug": "ualberta-light",
+    "label": "UAlberta Light",
+    "university": "University of Alberta",
+    "shortName": "UAlberta",
+    "group": "Canadian Universities",
+    "country": "Canada",
+    "city": "Edmonton, AB",
+    "year": 1908,
+    "subtitle": "Pembina Hall linen, U of A Green #275D38, Prairie Gold & River Blue",
+    "mode": "light",
+    "pairSlug": "ualberta-dark",
+    "bg": "#F0F4EE",
+    "fg": "#161A14",
+    "accentKeyword": "#265B36",
+    "accentFunction": "#0A3647",
+    "accentString": "#753300",
+    "accentType": "#20756E",
+    "accentNumber": "#7F5D06",
+    "accentStatusBar": "#275D38",
+    "metrics": {
+      "fgBg": 15.84,
+      "fgLc": 97.1,
+      "commentBg": 6.12,
+      "sidebarFgBg": 14.01,
+      "minSyntaxCr": 4.93,
+      "minSyntaxRole": "accentType",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "notredame-light",
+        "label": "Notre Dame Light",
+        "shortName": "Notre Dame",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 6.1
+      },
+      {
+        "slug": "gatech-light",
+        "label": "Georgia Tech Light",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 6.9
+      },
+      {
+        "slug": "dartmouth-light",
+        "label": "Dartmouth Light",
+        "shortName": "Dartmouth",
+        "group": "Ivy League",
+        "de00": 7.9
+      },
+      {
+        "slug": "columbia-light",
+        "label": "Columbia Light",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 8
+      },
+      {
+        "slug": "ucla-light",
+        "label": "UCLA Light",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 9.2
+      },
+      {
+        "slug": "georgetown-light",
+        "label": "Georgetown Light",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 9.5
+      }
+    ],
+    "farthest": {
+      "slug": "queens-light",
+      "label": "Queen's Light",
+      "shortName": "Queen's",
+      "group": "Canadian Universities",
+      "de00": 15.9
+    }
+  },
+  {
+    "slug": "ualberta-dark",
+    "label": "UAlberta Dark",
+    "university": "University of Alberta",
+    "shortName": "UAlberta",
+    "group": "Canadian Universities",
+    "country": "Canada",
+    "city": "Edmonton, AB",
+    "year": 1908,
+    "subtitle": "Boreal spruce dark canvas, emerald keywords, U of A Gold #FECB00 & sky",
+    "mode": "dark",
+    "pairSlug": "ualberta-light",
+    "bg": "#0C1B11",
+    "fg": "#DCE8DF",
+    "accentKeyword": "#88C598",
+    "accentFunction": "#419CFF",
+    "accentString": "#FB896B",
+    "accentType": "#05CBB5",
+    "accentNumber": "#FFD140",
+    "accentStatusBar": "#104926",
+    "metrics": {
+      "fgBg": 14.11,
+      "fgLc": 89.8,
+      "commentBg": 6.25,
+      "sidebarFgBg": 13.22,
+      "minSyntaxCr": 5.2,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "notredame-dark",
+        "label": "Notre Dame Dark",
+        "shortName": "Notre Dame",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 7.2
+      },
+      {
+        "slug": "dartmouth-dark",
+        "label": "Dartmouth Dark",
+        "shortName": "Dartmouth",
+        "group": "Ivy League",
+        "de00": 7.9
+      },
+      {
+        "slug": "ucla-dark",
+        "label": "UCLA Dark",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 9.3
+      },
+      {
+        "slug": "utoronto-dark",
+        "label": "U of T Dark",
+        "shortName": "U of T",
+        "group": "Canadian Universities",
+        "de00": 9.3
+      },
+      {
+        "slug": "columbia-dark",
+        "label": "Columbia Dark",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 9.8
+      },
+      {
+        "slug": "unc-dark",
+        "label": "UNC Dark",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 9.9
+      }
+    ],
+    "farthest": {
+      "slug": "utokyo-dark",
+      "label": "UTokyo Dark",
+      "shortName": "UTokyo",
+      "group": "Global Classics",
+      "de00": 17.6
+    }
+  },
+  {
+    "slug": "ubc-light",
+    "label": "UBC Light",
+    "university": "University of British Columbia",
+    "shortName": "UBC",
+    "group": "Canadian Universities",
+    "country": "Canada",
+    "city": "Vancouver, BC",
+    "year": 1908,
+    "subtitle": "Point Grey mist, UBC Blue #002145, UBC Mid Blue #0055B7 & Coast cedar",
+    "mode": "light",
+    "pairSlug": "ubc-dark",
+    "bg": "#EFF5F8",
+    "fg": "#13191D",
+    "accentKeyword": "#114C98",
+    "accentFunction": "#0B2295",
+    "accentString": "#993A08",
+    "accentType": "#046A4F",
+    "accentNumber": "#8C6032",
+    "accentStatusBar": "#002145",
+    "metrics": {
+      "fgBg": 16.11,
+      "fgLc": 97.9,
+      "commentBg": 6.2,
+      "sidebarFgBg": 14.18,
+      "minSyntaxCr": 4.98,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "duke-light",
+        "label": "Duke Light",
+        "shortName": "Duke",
+        "group": "US Private Research & STEM",
+        "de00": 4.6
+      },
+      {
+        "slug": "yale-light",
+        "label": "Yale Light",
+        "shortName": "Yale",
+        "group": "Ivy League",
+        "de00": 6
+      },
+      {
+        "slug": "unc-light",
+        "label": "UNC Light",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 6.9
+      },
+      {
+        "slug": "ucla-light",
+        "label": "UCLA Light",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 7.6
+      },
+      {
+        "slug": "columbia-light",
+        "label": "Columbia Light",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 7.7
+      },
+      {
+        "slug": "umich-light",
+        "label": "UMich Light",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 7.9
+      }
+    ],
+    "farthest": {
+      "slug": "stedwards-light",
+      "label": "St. Edward's Light",
+      "shortName": "St. Edward's",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 16.5
+    }
+  },
+  {
+    "slug": "ubc-dark",
+    "label": "UBC Dark",
+    "university": "University of British Columbia",
+    "shortName": "UBC",
+    "group": "Canadian Universities",
+    "country": "Canada",
+    "city": "Vancouver, BC",
+    "year": 1908,
+    "subtitle": "Pacific midnight UBC Blue #002145, Sky #40B4E5, Coast cedar & amber",
+    "mode": "dark",
+    "pairSlug": "ubc-light",
+    "bg": "#071725",
+    "fg": "#DCE6F0",
+    "accentKeyword": "#68A9C0",
+    "accentFunction": "#AED0F3",
+    "accentString": "#EE9557",
+    "accentType": "#87DAB9",
+    "accentNumber": "#F2D387",
+    "accentStatusBar": "#002145",
+    "metrics": {
+      "fgBg": 14.35,
+      "fgLc": 89.9,
+      "commentBg": 6.31,
+      "sidebarFgBg": 13.54,
+      "minSyntaxCr": 5.63,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "yale-dark",
+        "label": "Yale Dark",
+        "shortName": "Yale",
+        "group": "Ivy League",
+        "de00": 4.9
+      },
+      {
+        "slug": "duke-dark",
+        "label": "Duke Dark",
+        "shortName": "Duke",
+        "group": "US Private Research & STEM",
+        "de00": 5.7
+      },
+      {
+        "slug": "unc-dark",
+        "label": "UNC Dark",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 5.7
+      },
+      {
+        "slug": "ucla-dark",
+        "label": "UCLA Dark",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 6.7
+      },
+      {
+        "slug": "umich-dark",
+        "label": "UMich Dark",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 6.9
+      },
+      {
+        "slug": "columbia-dark",
+        "label": "Columbia Dark",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 7.6
+      }
+    ],
+    "farthest": {
+      "slug": "queens-dark",
+      "label": "Queen's Dark",
+      "shortName": "Queen's",
+      "group": "Canadian Universities",
+      "de00": 14.8
+    }
+  },
+  {
+    "slug": "waterloo-light",
+    "label": "Waterloo Light",
+    "university": "University of Waterloo",
+    "shortName": "Waterloo",
+    "group": "Canadian Universities",
+    "country": "Canada",
+    "city": "Waterloo, ON",
+    "year": 1957,
+    "subtitle": "Studio concrete white, Waterloo Gold #FED34C & the 6 faculty colours",
+    "mode": "light",
+    "pairSlug": "waterloo-dark",
+    "bg": "#F5F3EF",
+    "fg": "#1A1813",
+    "accentKeyword": "#8D045C",
+    "accentFunction": "#325A7E",
+    "accentString": "#964B32",
+    "accentType": "#015D71",
+    "accentNumber": "#7F5D06",
+    "accentStatusBar": "#1E1E22",
+    "metrics": {
+      "fgBg": 16,
+      "fgLc": 97.5,
+      "commentBg": 6.12,
+      "sidebarFgBg": 14.09,
+      "minSyntaxCr": 5.46,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "nyu-light",
+        "label": "NYU Light",
+        "shortName": "NYU",
+        "group": "US Private Research & STEM",
+        "de00": 11.4
+      },
+      {
+        "slug": "uw-light",
+        "label": "UW Light",
+        "shortName": "UW",
+        "group": "US Public Flagships",
+        "de00": 11.5
+      },
+      {
+        "slug": "stanford-light",
+        "label": "Stanford Light",
+        "shortName": "Stanford",
+        "group": "US Private Research & STEM",
+        "de00": 11.7
+      },
+      {
+        "slug": "gatech-light",
+        "label": "Georgia Tech Light",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 11.9
+      },
+      {
+        "slug": "western-light",
+        "label": "Western Light",
+        "shortName": "Western",
+        "group": "Canadian Universities",
+        "de00": 12.2
+      },
+      {
+        "slug": "dartmouth-light",
+        "label": "Dartmouth Light",
+        "shortName": "Dartmouth",
+        "group": "Ivy League",
+        "de00": 12.4
+      }
+    ],
+    "farthest": {
+      "slug": "stedwards-light",
+      "label": "St. Edward's Light",
+      "shortName": "St. Edward's",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 19.4
+    }
+  },
+  {
+    "slug": "waterloo-dark",
+    "label": "Waterloo Dark",
+    "university": "University of Waterloo",
+    "shortName": "Waterloo",
+    "group": "Canadian Universities",
+    "country": "Canada",
+    "city": "Waterloo, ON",
+    "year": 1957,
+    "subtitle": "Black & Gold #FED34C technical graphite with Math pink & Science blue",
+    "mode": "dark",
+    "pairSlug": "waterloo-light",
+    "bg": "#161511",
+    "fg": "#E7E4DD",
+    "accentKeyword": "#FB88C0",
+    "accentFunction": "#8CC2FF",
+    "accentString": "#FB8A64",
+    "accentType": "#62C1C8",
+    "accentNumber": "#FCD14A",
+    "accentStatusBar": "#212125",
+    "metrics": {
+      "fgBg": 14.39,
+      "fgLc": 89.7,
+      "commentBg": 6.35,
+      "sidebarFgBg": 13.68,
+      "minSyntaxCr": 4.82,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "stanford-dark",
+        "label": "Stanford Dark",
+        "shortName": "Stanford",
+        "group": "US Private Research & STEM",
+        "de00": 9.4
+      },
+      {
+        "slug": "cornell-dark",
+        "label": "Cornell Dark",
+        "shortName": "Cornell",
+        "group": "Ivy League",
+        "de00": 9.5
+      },
+      {
+        "slug": "yale-dark",
+        "label": "Yale Dark",
+        "shortName": "Yale",
+        "group": "Ivy League",
+        "de00": 10.5
+      },
+      {
+        "slug": "nyu-dark",
+        "label": "NYU Dark",
+        "shortName": "NYU",
+        "group": "US Private Research & STEM",
+        "de00": 10.5
+      },
+      {
+        "slug": "uw-dark",
+        "label": "UW Dark",
+        "shortName": "UW",
+        "group": "US Public Flagships",
+        "de00": 10.5
+      },
+      {
+        "slug": "gatech-dark",
+        "label": "Georgia Tech Dark",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 10.6
+      }
+    ],
+    "farthest": {
+      "slug": "cambridge-dark",
+      "label": "Cambridge Dark",
+      "shortName": "Cambridge",
+      "group": "Global Classics",
+      "de00": 18.6
+    }
+  },
+  {
+    "slug": "uvic-light",
+    "label": "UVic Light",
+    "university": "University of Victoria",
+    "shortName": "UVic",
+    "group": "Canadian Universities",
+    "country": "Canada",
+    "city": "Victoria, BC",
+    "year": 1963,
+    "subtitle": "Salish Sea blue #005493, Mystic Vale green #008538 & Island sun gold",
+    "mode": "light",
+    "pairSlug": "uvic-dark",
+    "bg": "#EDF5F7",
+    "fg": "#121A1B",
+    "accentKeyword": "#034493",
+    "accentFunction": "#063746",
+    "accentString": "#4D6F3B",
+    "accentType": "#035539",
+    "accentNumber": "#875806",
+    "accentStatusBar": "#005493",
+    "metrics": {
+      "fgBg": 15.98,
+      "fgLc": 97.6,
+      "commentBg": 6.11,
+      "sidebarFgBg": 14.15,
+      "minSyntaxCr": 5.2,
+      "minSyntaxRole": "accentString",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "utoronto-light",
+        "label": "U of T Light",
+        "shortName": "U of T",
+        "group": "Canadian Universities",
+        "de00": 6.8
+      },
+      {
+        "slug": "columbia-light",
+        "label": "Columbia Light",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 7
+      },
+      {
+        "slug": "gatech-light",
+        "label": "Georgia Tech Light",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 8.8
+      },
+      {
+        "slug": "unc-light",
+        "label": "UNC Light",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 9.8
+      },
+      {
+        "slug": "ucla-light",
+        "label": "UCLA Light",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 9.8
+      },
+      {
+        "slug": "utokyo-light",
+        "label": "UTokyo Light",
+        "shortName": "UTokyo",
+        "group": "Global Classics",
+        "de00": 9.9
+      }
+    ],
+    "farthest": {
+      "slug": "waterloo-light",
+      "label": "Waterloo Light",
+      "shortName": "Waterloo",
+      "group": "Canadian Universities",
+      "de00": 15.5
+    }
+  },
+  {
+    "slug": "uvic-dark",
+    "label": "UVic Dark",
+    "university": "University of Victoria",
+    "shortName": "UVic",
+    "group": "Canadian Universities",
+    "country": "Canada",
+    "city": "Victoria, BC",
+    "year": 1963,
+    "subtitle": "Deep Ocean #002754 night, Sky #57B7E7, rainforest green & #F5AA1C sun",
+    "mode": "dark",
+    "pairSlug": "uvic-light",
+    "bg": "#051824",
+    "fg": "#DAE7EF",
+    "accentKeyword": "#69A8C0",
+    "accentFunction": "#78D3FC",
+    "accentString": "#7FA46D",
+    "accentType": "#81C647",
+    "accentNumber": "#FFCD75",
+    "accentStatusBar": "#003E70",
+    "metrics": {
+      "fgBg": 14.33,
+      "fgLc": 90,
+      "commentBg": 6.31,
+      "sidebarFgBg": 13.53,
+      "minSyntaxCr": 5.67,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "utoronto-dark",
+        "label": "U of T Dark",
+        "shortName": "U of T",
+        "group": "Canadian Universities",
+        "de00": 8.9
+      },
+      {
+        "slug": "georgetown-dark",
+        "label": "Georgetown Dark",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 10.1
+      },
+      {
+        "slug": "columbia-dark",
+        "label": "Columbia Dark",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 10.1
+      },
+      {
+        "slug": "ucla-dark",
+        "label": "UCLA Dark",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 10.2
+      },
+      {
+        "slug": "gatech-dark",
+        "label": "Georgia Tech Dark",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 10.4
+      },
+      {
+        "slug": "unc-dark",
+        "label": "UNC Dark",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 10.6
+      }
+    ],
+    "farthest": {
+      "slug": "waterloo-dark",
+      "label": "Waterloo Dark",
+      "shortName": "Waterloo",
+      "group": "Canadian Universities",
+      "de00": 16.5
+    }
+  },
+  {
+    "slug": "unc-light",
+    "label": "UNC Light",
+    "university": "University of North Carolina",
+    "shortName": "UNC",
+    "group": "US Public Flagships",
+    "country": "USA",
+    "city": "Chapel Hill, NC",
+    "year": 1789,
+    "subtitle": "Old Well cloud-paper, Chapel Hill Navy #13294B & Carolina Blue #4B9CD3",
+    "mode": "light",
+    "pairSlug": "unc-dark",
+    "bg": "#EDF5F9",
+    "fg": "#121A1D",
+    "accentKeyword": "#334E7A",
+    "accentFunction": "#09354A",
+    "accentString": "#9F3314",
+    "accentType": "#116A4A",
+    "accentNumber": "#6A472A",
+    "accentStatusBar": "#13294B",
+    "metrics": {
+      "fgBg": 15.98,
+      "fgLc": 97.7,
+      "commentBg": 6.15,
+      "sidebarFgBg": 14.15,
+      "minSyntaxCr": 5.98,
+      "minSyntaxRole": "accentType",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "ucla-light",
+        "label": "UCLA Light",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 1.9
+      },
+      {
+        "slug": "rice-light",
+        "label": "Rice Light",
+        "shortName": "Rice",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 3
+      },
+      {
+        "slug": "gatech-light",
+        "label": "Georgia Tech Light",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 3.8
+      },
+      {
+        "slug": "umich-light",
+        "label": "UMich Light",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 4.5
+      },
+      {
+        "slug": "columbia-light",
+        "label": "Columbia Light",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 4.8
+      },
+      {
+        "slug": "utoronto-light",
+        "label": "U of T Light",
+        "shortName": "U of T",
+        "group": "Canadian Universities",
+        "de00": 6.2
+      }
+    ],
+    "farthest": {
+      "slug": "waterloo-light",
+      "label": "Waterloo Light",
+      "shortName": "Waterloo",
+      "group": "Canadian Universities",
+      "de00": 14
+    }
+  },
+  {
+    "slug": "unc-dark",
+    "label": "UNC Dark",
+    "university": "University of North Carolina",
+    "shortName": "UNC",
+    "group": "US Public Flagships",
+    "country": "USA",
+    "city": "Chapel Hill, NC",
+    "year": 1789,
+    "subtitle": "Chapel Hill Navy #13294B midnight, glowing Carolina Blue #4B9CD3 & pine",
+    "mode": "dark",
+    "pairSlug": "unc-light",
+    "bg": "#091724",
+    "fg": "#DCE6F0",
+    "accentKeyword": "#6CA7C3",
+    "accentFunction": "#A3C0EA",
+    "accentString": "#FB896C",
+    "accentType": "#8BDAB5",
+    "accentNumber": "#FFCC88",
+    "accentStatusBar": "#13294B",
+    "metrics": {
+      "fgBg": 14.33,
+      "fgLc": 89.9,
+      "commentBg": 6.31,
+      "sidebarFgBg": 13.52,
+      "minSyntaxCr": 4.78,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "ucla-dark",
+        "label": "UCLA Dark",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 3.1
+      },
+      {
+        "slug": "rice-dark",
+        "label": "Rice Dark",
+        "shortName": "Rice",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 3.8
+      },
+      {
+        "slug": "columbia-dark",
+        "label": "Columbia Dark",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 4.2
+      },
+      {
+        "slug": "utoronto-dark",
+        "label": "U of T Dark",
+        "shortName": "U of T",
+        "group": "Canadian Universities",
+        "de00": 5.6
+      },
+      {
+        "slug": "ubc-dark",
+        "label": "UBC Dark",
+        "shortName": "UBC",
+        "group": "Canadian Universities",
+        "de00": 5.7
+      },
+      {
+        "slug": "berkeley-dark",
+        "label": "UC Berkeley Dark",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 6.4
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-dark",
+      "label": "Dartmouth Dark",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 13.6
+    }
+  },
+  {
+    "slug": "umich-light",
+    "label": "UMich Light",
+    "university": "University of Michigan",
+    "shortName": "UMich",
+    "group": "US Public Flagships",
+    "country": "USA",
+    "city": "Ann Arbor, MI",
+    "year": 1817,
+    "subtitle": "Law Quad parchment, Michigan Blue #00274C, Maize #FFCB05 & Tappan Red",
+    "mode": "light",
+    "pairSlug": "umich-dark",
+    "bg": "#EEF3F8",
+    "fg": "#14191D",
+    "accentKeyword": "#4B418D",
+    "accentFunction": "#13354A",
+    "accentString": "#963E08",
+    "accentType": "#186A41",
+    "accentNumber": "#51371C",
+    "accentStatusBar": "#00274C",
+    "metrics": {
+      "fgBg": 15.85,
+      "fgLc": 96.9,
+      "commentBg": 6.11,
+      "sidebarFgBg": 14.06,
+      "minSyntaxCr": 5.92,
+      "minSyntaxRole": "accentType",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "unc-light",
+        "label": "UNC Light",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 4.5
+      },
+      {
+        "slug": "western-light",
+        "label": "Western Light",
+        "shortName": "Western",
+        "group": "Canadian Universities",
+        "de00": 4.7
+      },
+      {
+        "slug": "rice-light",
+        "label": "Rice Light",
+        "shortName": "Rice",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 5.2
+      },
+      {
+        "slug": "ucla-light",
+        "label": "UCLA Light",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 5.3
+      },
+      {
+        "slug": "gatech-light",
+        "label": "Georgia Tech Light",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 6.7
+      },
+      {
+        "slug": "yale-light",
+        "label": "Yale Light",
+        "shortName": "Yale",
+        "group": "Ivy League",
+        "de00": 7.3
+      }
+    ],
+    "farthest": {
+      "slug": "caltech-light",
+      "label": "Caltech Light",
+      "shortName": "Caltech",
+      "group": "US Private Research & STEM",
+      "de00": 14.9
+    }
+  },
+  {
+    "slug": "umich-dark",
+    "label": "UMich Dark",
+    "university": "University of Michigan",
+    "shortName": "UMich",
+    "group": "US Public Flagships",
+    "country": "USA",
+    "city": "Ann Arbor, MI",
+    "year": 1817,
+    "subtitle": "Big House Michigan Blue #00274C night, glowing Maize #FFCB05 & azure",
+    "mode": "dark",
+    "pairSlug": "umich-light",
+    "bg": "#071724",
+    "fg": "#DBE6F0",
+    "accentKeyword": "#AEA8FB",
+    "accentFunction": "#7DB7E0",
+    "accentString": "#F68E5E",
+    "accentType": "#8DDAAA",
+    "accentNumber": "#FFD041",
+    "accentStatusBar": "#00274C",
+    "metrics": {
+      "fgBg": 14.34,
+      "fgLc": 89.7,
+      "commentBg": 6.32,
+      "sidebarFgBg": 13.54,
+      "minSyntaxCr": 5.63,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "berkeley-dark",
+        "label": "UC Berkeley Dark",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 4.7
+      },
+      {
+        "slug": "western-dark",
+        "label": "Western Dark",
+        "shortName": "Western",
+        "group": "Canadian Universities",
+        "de00": 5.5
+      },
+      {
+        "slug": "williams-dark",
+        "label": "Williams Dark",
+        "shortName": "Williams",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 5.6
+      },
+      {
+        "slug": "yale-dark",
+        "label": "Yale Dark",
+        "shortName": "Yale",
+        "group": "Ivy League",
+        "de00": 5.9
+      },
+      {
+        "slug": "ucla-dark",
+        "label": "UCLA Dark",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 6.3
+      },
+      {
+        "slug": "duke-dark",
+        "label": "Duke Dark",
+        "shortName": "Duke",
+        "group": "US Private Research & STEM",
+        "de00": 6.4
+      }
+    ],
+    "farthest": {
+      "slug": "stedwards-dark",
+      "label": "St. Edward's Dark",
+      "shortName": "St. Edward's",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 13.5
+    }
+  },
+  {
+    "slug": "uva-light",
+    "label": "UVA Light",
+    "university": "University of Virginia",
+    "shortName": "UVA",
+    "group": "US Public Flagships",
+    "country": "USA",
+    "city": "Charlottesville, VA",
+    "year": 1819,
+    "subtitle": "Rotunda warm paper, Jefferson Blue #232D4B, Rotunda Orange & Lawn green",
+    "mode": "light",
+    "pairSlug": "uva-dark",
+    "bg": "#F8F1ED",
+    "fg": "#1D1713",
+    "accentKeyword": "#803502",
+    "accentFunction": "#092139",
+    "accentString": "#A3263A",
+    "accentType": "#186A41",
+    "accentNumber": "#89631C",
+    "accentStatusBar": "#232D4B",
+    "metrics": {
+      "fgBg": 15.87,
+      "fgLc": 96.9,
+      "commentBg": 6.17,
+      "sidebarFgBg": 14,
+      "minSyntaxCr": 4.86,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "princeton-light",
+        "label": "Princeton Light",
+        "shortName": "Princeton",
+        "group": "Ivy League",
+        "de00": 5.2
+      },
+      {
+        "slug": "utaustin-light",
+        "label": "UT Austin Light",
+        "shortName": "UT Austin",
+        "group": "US Public Flagships",
+        "de00": 6.1
+      },
+      {
+        "slug": "harvard-light",
+        "label": "Harvard Light",
+        "shortName": "Harvard",
+        "group": "Ivy League",
+        "de00": 8
+      },
+      {
+        "slug": "eth-light",
+        "label": "ETH Zurich Light",
+        "shortName": "ETH Zurich",
+        "group": "Global Classics",
+        "de00": 8.4
+      },
+      {
+        "slug": "berkeley-light",
+        "label": "UC Berkeley Light",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 8.5
+      },
+      {
+        "slug": "cambridge-light",
+        "label": "Cambridge Light",
+        "shortName": "Cambridge",
+        "group": "Global Classics",
+        "de00": 8.9
+      }
+    ],
+    "farthest": {
+      "slug": "waterloo-light",
+      "label": "Waterloo Light",
+      "shortName": "Waterloo",
+      "group": "Canadian Universities",
+      "de00": 16.2
+    }
+  },
+  {
+    "slug": "uva-dark",
+    "label": "UVA Dark",
+    "university": "University of Virginia",
+    "shortName": "UVA",
+    "group": "US Public Flagships",
+    "country": "USA",
+    "city": "Charlottesville, VA",
+    "year": 1819,
+    "subtitle": "Jefferson Blue #232D4B night, Rotunda Orange #E57200 & Blue Ridge cyan",
+    "mode": "dark",
+    "pairSlug": "uva-light",
+    "bg": "#0D1524",
+    "fg": "#DEE5F1",
+    "accentKeyword": "#FB975A",
+    "accentFunction": "#B2BCE5",
+    "accentString": "#CD7C91",
+    "accentType": "#8DDAAA",
+    "accentNumber": "#EDD58B",
+    "accentStatusBar": "#232D4B",
+    "metrics": {
+      "fgBg": 14.42,
+      "fgLc": 89.8,
+      "commentBg": 6.36,
+      "sidebarFgBg": 13.59,
+      "minSyntaxCr": 5.66,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "princeton-dark",
+        "label": "Princeton Dark",
+        "shortName": "Princeton",
+        "group": "Ivy League",
+        "de00": 3.4
+      },
+      {
+        "slug": "utaustin-dark",
+        "label": "UT Austin Dark",
+        "shortName": "UT Austin",
+        "group": "US Public Flagships",
+        "de00": 4.9
+      },
+      {
+        "slug": "upenn-dark",
+        "label": "UPenn Dark",
+        "shortName": "UPenn",
+        "group": "Ivy League",
+        "de00": 7.4
+      },
+      {
+        "slug": "harvard-dark",
+        "label": "Harvard Dark",
+        "shortName": "Harvard",
+        "group": "Ivy League",
+        "de00": 7.4
+      },
+      {
+        "slug": "caltech-dark",
+        "label": "Caltech Dark",
+        "shortName": "Caltech",
+        "group": "US Private Research & STEM",
+        "de00": 7.5
+      },
+      {
+        "slug": "mcgill-dark",
+        "label": "McGill Dark",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 8.6
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-dark",
+      "label": "Dartmouth Dark",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 16.3
+    }
+  },
+  {
+    "slug": "uw-light",
+    "label": "UW Light",
+    "university": "University of Washington",
+    "shortName": "UW",
+    "group": "US Public Flagships",
+    "country": "USA",
+    "city": "Seattle, WA",
+    "year": 1861,
+    "subtitle": "Suzzallo mist, Husky Purple #4B2E83, Husky Gold #85754D & Puget teal",
+    "mode": "light",
+    "pairSlug": "uw-dark",
+    "bg": "#F2F2F8",
+    "fg": "#18181D",
+    "accentKeyword": "#563A90",
+    "accentFunction": "#002C6E",
+    "accentString": "#A32447",
+    "accentType": "#00676D",
+    "accentNumber": "#795F26",
+    "accentStatusBar": "#4B2E83",
+    "metrics": {
+      "fgBg": 15.86,
+      "fgLc": 97,
+      "commentBg": 6.11,
+      "sidebarFgBg": 13.98,
+      "minSyntaxCr": 5.41,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "nyu-light",
+        "label": "NYU Light",
+        "shortName": "NYU",
+        "group": "US Private Research & STEM",
+        "de00": 2.9
+      },
+      {
+        "slug": "georgetown-light",
+        "label": "Georgetown Light",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 5.4
+      },
+      {
+        "slug": "berkeley-light",
+        "label": "UC Berkeley Light",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 6.6
+      },
+      {
+        "slug": "williams-light",
+        "label": "Williams Light",
+        "shortName": "Williams",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 7.3
+      },
+      {
+        "slug": "gatech-light",
+        "label": "Georgia Tech Light",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 7.7
+      },
+      {
+        "slug": "columbia-light",
+        "label": "Columbia Light",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 7.9
+      }
+    ],
+    "farthest": {
+      "slug": "stedwards-light",
+      "label": "St. Edward's Light",
+      "shortName": "St. Edward's",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 16.8
+    }
+  },
+  {
+    "slug": "uw-dark",
+    "label": "UW Dark",
+    "university": "University of Washington",
+    "shortName": "UW",
+    "group": "US Public Flagships",
+    "country": "USA",
+    "city": "Seattle, WA",
+    "year": 1861,
+    "subtitle": "Deep Husky Spirit Purple #32006E, metallic gold #E8D3A2 & Puget cyan",
+    "mode": "dark",
+    "pairSlug": "uw-light",
+    "bg": "#151327",
+    "fg": "#E3E3F0",
+    "accentKeyword": "#B9A3FB",
+    "accentFunction": "#80B7E1",
+    "accentString": "#FB8398",
+    "accentType": "#7AD8DF",
+    "accentNumber": "#EFD391",
+    "accentStatusBar": "#45277B",
+    "metrics": {
+      "fgBg": 14.3,
+      "fgLc": 89.5,
+      "commentBg": 6.27,
+      "sidebarFgBg": 13.42,
+      "minSyntaxCr": 5.66,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "nyu-dark",
+        "label": "NYU Dark",
+        "shortName": "NYU",
+        "group": "US Private Research & STEM",
+        "de00": 3.4
+      },
+      {
+        "slug": "georgetown-dark",
+        "label": "Georgetown Dark",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 4.4
+      },
+      {
+        "slug": "berkeley-dark",
+        "label": "UC Berkeley Dark",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 6.2
+      },
+      {
+        "slug": "williams-dark",
+        "label": "Williams Dark",
+        "shortName": "Williams",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 6.5
+      },
+      {
+        "slug": "notredame-dark",
+        "label": "Notre Dame Dark",
+        "shortName": "Notre Dame",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 7.1
+      },
+      {
+        "slug": "utoronto-dark",
+        "label": "U of T Dark",
+        "shortName": "U of T",
+        "group": "Canadian Universities",
+        "de00": 7.7
+      }
+    ],
+    "farthest": {
+      "slug": "stedwards-dark",
+      "label": "St. Edward's Dark",
+      "shortName": "St. Edward's",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 16.8
+    }
+  },
+  {
+    "slug": "berkeley-light",
+    "label": "UC Berkeley Light",
+    "university": "UC Berkeley",
+    "shortName": "UC Berkeley",
+    "group": "US Public Flagships",
+    "country": "USA",
+    "city": "Berkeley, CA",
+    "year": 1868,
+    "subtitle": "Campanile stone, Berkeley Blue #002676, California Gold & Bay green",
+    "mode": "light",
+    "pairSlug": "berkeley-dark",
+    "bg": "#EFF3F9",
+    "fg": "#15191E",
+    "accentKeyword": "#5F3391",
+    "accentFunction": "#00325E",
+    "accentString": "#B6435D",
+    "accentType": "#1F684C",
+    "accentNumber": "#865906",
+    "accentStatusBar": "#002676",
+    "metrics": {
+      "fgBg": 15.85,
+      "fgLc": 97.1,
+      "commentBg": 6.15,
+      "sidebarFgBg": 14.06,
+      "minSyntaxCr": 4.77,
+      "minSyntaxRole": "accentString",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "williams-light",
+        "label": "Williams Light",
+        "shortName": "Williams",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 5.9
+      },
+      {
+        "slug": "uw-light",
+        "label": "UW Light",
+        "shortName": "UW",
+        "group": "US Public Flagships",
+        "de00": 6.6
+      },
+      {
+        "slug": "nyu-light",
+        "label": "NYU Light",
+        "shortName": "NYU",
+        "group": "US Private Research & STEM",
+        "de00": 7
+      },
+      {
+        "slug": "umich-light",
+        "label": "UMich Light",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 7.5
+      },
+      {
+        "slug": "unc-light",
+        "label": "UNC Light",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 7.5
+      },
+      {
+        "slug": "columbia-light",
+        "label": "Columbia Light",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 7.8
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-light",
+      "label": "Dartmouth Light",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 15.5
+    }
+  },
+  {
+    "slug": "berkeley-dark",
+    "label": "UC Berkeley Dark",
+    "university": "UC Berkeley",
+    "shortName": "UC Berkeley",
+    "group": "US Public Flagships",
+    "country": "USA",
+    "city": "Berkeley, CA",
+    "year": 1868,
+    "subtitle": "Berkeley Blue Dark #010133 twilight, California Gold #FDB515 & rose",
+    "mode": "dark",
+    "pairSlug": "berkeley-light",
+    "bg": "#0C1428",
+    "fg": "#DFE5F1",
+    "accentKeyword": "#C49EFB",
+    "accentFunction": "#7EADD9",
+    "accentString": "#F29A95",
+    "accentType": "#8DD9B6",
+    "accentNumber": "#FFCD7A",
+    "accentStatusBar": "#012775",
+    "metrics": {
+      "fgBg": 14.49,
+      "fgLc": 90,
+      "commentBg": 6.33,
+      "sidebarFgBg": 13.67,
+      "minSyntaxCr": 5.68,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "williams-dark",
+        "label": "Williams Dark",
+        "shortName": "Williams",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 4.1
+      },
+      {
+        "slug": "umich-dark",
+        "label": "UMich Dark",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 4.7
+      },
+      {
+        "slug": "western-dark",
+        "label": "Western Dark",
+        "shortName": "Western",
+        "group": "Canadian Universities",
+        "de00": 5.9
+      },
+      {
+        "slug": "uw-dark",
+        "label": "UW Dark",
+        "shortName": "UW",
+        "group": "US Public Flagships",
+        "de00": 6.2
+      },
+      {
+        "slug": "unc-dark",
+        "label": "UNC Dark",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 6.4
+      },
+      {
+        "slug": "nyu-dark",
+        "label": "NYU Dark",
+        "shortName": "NYU",
+        "group": "US Private Research & STEM",
+        "de00": 6.8
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-dark",
+      "label": "Dartmouth Dark",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 14.5
+    }
+  },
+  {
+    "slug": "utaustin-light",
+    "label": "UT Austin Light",
+    "university": "University of Texas at Austin",
+    "shortName": "UT Austin",
+    "group": "US Public Flagships",
+    "country": "USA",
+    "city": "Austin, TX",
+    "year": 1883,
+    "subtitle": "UT Tower limestone, Burnt Orange #BF5700, Charcoal #333F48 & turquoise",
+    "mode": "light",
+    "pairSlug": "utaustin-dark",
+    "bg": "#F8F2EC",
+    "fg": "#1D1712",
+    "accentKeyword": "#7E3702",
+    "accentFunction": "#00252B",
+    "accentString": "#6C3645",
+    "accentType": "#236A39",
+    "accentNumber": "#7D692C",
+    "accentStatusBar": "#BF5700",
+    "metrics": {
+      "fgBg": 15.97,
+      "fgLc": 97.3,
+      "commentBg": 6.17,
+      "sidebarFgBg": 14.11,
+      "minSyntaxCr": 4.81,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "uva-light",
+        "label": "UVA Light",
+        "shortName": "UVA",
+        "group": "US Public Flagships",
+        "de00": 6.1
+      },
+      {
+        "slug": "princeton-light",
+        "label": "Princeton Light",
+        "shortName": "Princeton",
+        "group": "Ivy League",
+        "de00": 8.6
+      },
+      {
+        "slug": "cambridge-light",
+        "label": "Cambridge Light",
+        "shortName": "Cambridge",
+        "group": "Global Classics",
+        "de00": 9.6
+      },
+      {
+        "slug": "northwestern-light",
+        "label": "Northwestern Light",
+        "shortName": "Northwestern",
+        "group": "US Private Research & STEM",
+        "de00": 10
+      },
+      {
+        "slug": "utokyo-light",
+        "label": "UTokyo Light",
+        "shortName": "UTokyo",
+        "group": "Global Classics",
+        "de00": 10.1
+      },
+      {
+        "slug": "brown-light",
+        "label": "Brown Light",
+        "shortName": "Brown",
+        "group": "Ivy League",
+        "de00": 10.2
+      }
+    ],
+    "farthest": {
+      "slug": "waterloo-light",
+      "label": "Waterloo Light",
+      "shortName": "Waterloo",
+      "group": "Canadian Universities",
+      "de00": 18.8
+    }
+  },
+  {
+    "slug": "utaustin-dark",
+    "label": "UT Austin Dark",
+    "university": "University of Texas at Austin",
+    "shortName": "UT Austin",
+    "group": "US Public Flagships",
+    "country": "USA",
+    "city": "Austin, TX",
+    "year": 1883,
+    "subtitle": "UT Charcoal #333F48 night, glowing Burnt Orange #BF5700 & Barton cyan",
+    "mode": "dark",
+    "pairSlug": "utaustin-light",
+    "bg": "#0E191E",
+    "fg": "#D9E7EF",
+    "accentKeyword": "#FB975D",
+    "accentFunction": "#80B1BE",
+    "accentString": "#CD7C91",
+    "accentType": "#93DAA3",
+    "accentNumber": "#EDD58B",
+    "accentStatusBar": "#642A00",
+    "metrics": {
+      "fgBg": 14.13,
+      "fgLc": 89.8,
+      "commentBg": 6.22,
+      "sidebarFgBg": 13.3,
+      "minSyntaxCr": 5.53,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "princeton-dark",
+        "label": "Princeton Dark",
+        "shortName": "Princeton",
+        "group": "Ivy League",
+        "de00": 4.6
+      },
+      {
+        "slug": "uva-dark",
+        "label": "UVA Dark",
+        "shortName": "UVA",
+        "group": "US Public Flagships",
+        "de00": 4.9
+      },
+      {
+        "slug": "caltech-dark",
+        "label": "Caltech Dark",
+        "shortName": "Caltech",
+        "group": "US Private Research & STEM",
+        "de00": 6.8
+      },
+      {
+        "slug": "cambridge-dark",
+        "label": "Cambridge Dark",
+        "shortName": "Cambridge",
+        "group": "Global Classics",
+        "de00": 8.8
+      },
+      {
+        "slug": "uchicago-dark",
+        "label": "UChicago Dark",
+        "shortName": "UChicago",
+        "group": "US Private Research & STEM",
+        "de00": 9
+      },
+      {
+        "slug": "eth-dark",
+        "label": "ETH Zurich Dark",
+        "shortName": "ETH Zurich",
+        "group": "Global Classics",
+        "de00": 9.3
+      }
+    ],
+    "farthest": {
+      "slug": "waterloo-dark",
+      "label": "Waterloo Dark",
+      "shortName": "Waterloo",
+      "group": "Canadian Universities",
+      "de00": 17.1
+    }
+  },
+  {
+    "slug": "gatech-light",
+    "label": "Georgia Tech Light",
+    "university": "Georgia Tech",
+    "shortName": "Georgia Tech",
+    "group": "US Public Flagships",
+    "country": "USA",
+    "city": "Atlanta, GA",
+    "year": 1885,
+    "subtitle": "Tech Tower brass paper, Navy Blue #003057, Tech Gold & Piedmont teal",
+    "mode": "light",
+    "pairSlug": "gatech-dark",
+    "bg": "#F6F3EC",
+    "fg": "#1B1812",
+    "accentKeyword": "#405778",
+    "accentFunction": "#09354A",
+    "accentString": "#892E02",
+    "accentType": "#0A6860",
+    "accentNumber": "#634B2C",
+    "accentStatusBar": "#003057",
+    "metrics": {
+      "fgBg": 15.98,
+      "fgLc": 97.4,
+      "commentBg": 6.16,
+      "sidebarFgBg": 14.09,
+      "minSyntaxCr": 5.99,
+      "minSyntaxRole": "accentType",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "columbia-light",
+        "label": "Columbia Light",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 3.5
+      },
+      {
+        "slug": "unc-light",
+        "label": "UNC Light",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 3.8
+      },
+      {
+        "slug": "ucla-light",
+        "label": "UCLA Light",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 4
+      },
+      {
+        "slug": "rice-light",
+        "label": "Rice Light",
+        "shortName": "Rice",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 5.5
+      },
+      {
+        "slug": "georgetown-light",
+        "label": "Georgetown Light",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 5.8
+      },
+      {
+        "slug": "utoronto-light",
+        "label": "U of T Light",
+        "shortName": "U of T",
+        "group": "Canadian Universities",
+        "de00": 5.9
+      }
+    ],
+    "farthest": {
+      "slug": "oxford-light",
+      "label": "Oxford Light",
+      "shortName": "Oxford",
+      "group": "Global Classics",
+      "de00": 14.7
+    }
+  },
+  {
+    "slug": "gatech-dark",
+    "label": "Georgia Tech Dark",
+    "university": "Georgia Tech",
+    "shortName": "Georgia Tech",
+    "group": "US Public Flagships",
+    "country": "USA",
+    "city": "Atlanta, GA",
+    "year": 1885,
+    "subtitle": "Deep Tech Navy #003057, metallic Tech Gold #B3A369, Buzz Gold & cyan",
+    "mode": "dark",
+    "pairSlug": "gatech-light",
+    "bg": "#071723",
+    "fg": "#DBE6F0",
+    "accentKeyword": "#5AA1F7",
+    "accentFunction": "#A9DDFA",
+    "accentString": "#FB8872",
+    "accentType": "#88BCB4",
+    "accentNumber": "#F2D472",
+    "accentStatusBar": "#003057",
+    "metrics": {
+      "fgBg": 14.35,
+      "fgLc": 89.8,
+      "commentBg": 6.31,
+      "sidebarFgBg": 13.56,
+      "minSyntaxCr": 4.83,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "utoronto-dark",
+        "label": "U of T Dark",
+        "shortName": "U of T",
+        "group": "Canadian Universities",
+        "de00": 4.7
+      },
+      {
+        "slug": "columbia-dark",
+        "label": "Columbia Dark",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 5.3
+      },
+      {
+        "slug": "georgetown-dark",
+        "label": "Georgetown Dark",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 5.8
+      },
+      {
+        "slug": "ucla-dark",
+        "label": "UCLA Dark",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 5.8
+      },
+      {
+        "slug": "rice-dark",
+        "label": "Rice Dark",
+        "shortName": "Rice",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 5.9
+      },
+      {
+        "slug": "unc-dark",
+        "label": "UNC Dark",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 6.7
+      }
+    ],
+    "farthest": {
+      "slug": "oxford-dark",
+      "label": "Oxford Dark",
+      "shortName": "Oxford",
+      "group": "Global Classics",
+      "de00": 15.6
+    }
+  },
+  {
+    "slug": "ucla-light",
+    "label": "UCLA Light",
+    "university": "UCLA",
+    "shortName": "UCLA",
+    "group": "US Public Flagships",
+    "country": "USA",
+    "city": "Los Angeles, CA",
+    "year": 1919,
+    "subtitle": "Royce Hall California sun, UCLA Blue #2774AE, Gold & terracotta",
+    "mode": "light",
+    "pairSlug": "ucla-dark",
+    "bg": "#EEF5F8",
+    "fg": "#13191C",
+    "accentKeyword": "#37587C",
+    "accentFunction": "#0C3648",
+    "accentString": "#9F3314",
+    "accentType": "#4B6A4D",
+    "accentNumber": "#67492A",
+    "accentStatusBar": "#2774AE",
+    "metrics": {
+      "fgBg": 16.1,
+      "fgLc": 97.8,
+      "commentBg": 6.14,
+      "sidebarFgBg": 14.19,
+      "minSyntaxCr": 5.49,
+      "minSyntaxRole": "accentType",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "unc-light",
+        "label": "UNC Light",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 1.9
+      },
+      {
+        "slug": "rice-light",
+        "label": "Rice Light",
+        "shortName": "Rice",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 3.2
+      },
+      {
+        "slug": "gatech-light",
+        "label": "Georgia Tech Light",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 4
+      },
+      {
+        "slug": "umich-light",
+        "label": "UMich Light",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 5.3
+      },
+      {
+        "slug": "columbia-light",
+        "label": "Columbia Light",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 5.7
+      },
+      {
+        "slug": "duke-light",
+        "label": "Duke Light",
+        "shortName": "Duke",
+        "group": "US Private Research & STEM",
+        "de00": 6.9
+      }
+    ],
+    "farthest": {
+      "slug": "waterloo-light",
+      "label": "Waterloo Light",
+      "shortName": "Waterloo",
+      "group": "Canadian Universities",
+      "de00": 14.3
+    }
+  },
+  {
+    "slug": "ucla-dark",
+    "label": "UCLA Dark",
+    "university": "UCLA",
+    "shortName": "UCLA",
+    "group": "US Public Flagships",
+    "country": "USA",
+    "city": "Los Angeles, CA",
+    "year": 1919,
+    "subtitle": "Westwood Pacific Darkest Blue #003B5C, UCLA Gold #FFD100 & sky",
+    "mode": "dark",
+    "pairSlug": "ucla-light",
+    "bg": "#051824",
+    "fg": "#DAE7EF",
+    "accentKeyword": "#65A8C3",
+    "accentFunction": "#7EC6FF",
+    "accentString": "#FB896C",
+    "accentType": "#8BDAB1",
+    "accentNumber": "#FBD242",
+    "accentStatusBar": "#00406A",
+    "metrics": {
+      "fgBg": 14.33,
+      "fgLc": 90,
+      "commentBg": 6.3,
+      "sidebarFgBg": 13.43,
+      "minSyntaxCr": 4.76,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "unc-dark",
+        "label": "UNC Dark",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 3.1
+      },
+      {
+        "slug": "rice-dark",
+        "label": "Rice Dark",
+        "shortName": "Rice",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 4.8
+      },
+      {
+        "slug": "gatech-dark",
+        "label": "Georgia Tech Dark",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 5.8
+      },
+      {
+        "slug": "umich-dark",
+        "label": "UMich Dark",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 6.3
+      },
+      {
+        "slug": "columbia-dark",
+        "label": "Columbia Dark",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 6.4
+      },
+      {
+        "slug": "utoronto-dark",
+        "label": "U of T Dark",
+        "shortName": "U of T",
+        "group": "Canadian Universities",
+        "de00": 6.5
+      }
+    ],
+    "farthest": {
+      "slug": "oxford-dark",
+      "label": "Oxford Dark",
+      "shortName": "Oxford",
+      "group": "Global Classics",
+      "de00": 14
+    }
+  },
+  {
+    "slug": "nyu-light",
+    "label": "NYU Light",
+    "university": "New York University",
+    "shortName": "NYU",
+    "group": "US Private Research & STEM",
+    "country": "USA",
+    "city": "New York, NY",
+    "year": 1831,
+    "subtitle": "Washington Square stone, NYU Violet #57068C, Village rose & teal",
+    "mode": "light",
+    "pairSlug": "nyu-dark",
+    "bg": "#F4F2F8",
+    "fg": "#19171D",
+    "accentKeyword": "#66229F",
+    "accentFunction": "#132C69",
+    "accentString": "#A91444",
+    "accentType": "#00676B",
+    "accentNumber": "#865906",
+    "accentStatusBar": "#57068C",
+    "metrics": {
+      "fgBg": 16,
+      "fgLc": 97.3,
+      "commentBg": 6.17,
+      "sidebarFgBg": 14.11,
+      "minSyntaxCr": 5.49,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "uw-light",
+        "label": "UW Light",
+        "shortName": "UW",
+        "group": "US Public Flagships",
+        "de00": 2.9
+      },
+      {
+        "slug": "williams-light",
+        "label": "Williams Light",
+        "shortName": "Williams",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 5.6
+      },
+      {
+        "slug": "georgetown-light",
+        "label": "Georgetown Light",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 6.6
+      },
+      {
+        "slug": "berkeley-light",
+        "label": "UC Berkeley Light",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 7
+      },
+      {
+        "slug": "columbia-light",
+        "label": "Columbia Light",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 9
+      },
+      {
+        "slug": "gatech-light",
+        "label": "Georgia Tech Light",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 9.8
+      }
+    ],
+    "farthest": {
+      "slug": "stedwards-light",
+      "label": "St. Edward's Light",
+      "shortName": "St. Edward's",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 18
+    }
+  },
+  {
+    "slug": "nyu-dark",
+    "label": "NYU Dark",
+    "university": "New York University",
+    "shortName": "NYU",
+    "group": "US Private Research & STEM",
+    "country": "USA",
+    "city": "New York, NY",
+    "year": 1831,
+    "subtitle": "Deep Violet #330662 Greenwich night, Ultra Violet #8900E1 & cyan",
+    "mode": "dark",
+    "pairSlug": "nyu-light",
+    "bg": "#1A1126",
+    "fg": "#E7E2EF",
+    "accentKeyword": "#CB9AFB",
+    "accentFunction": "#8CABCE",
+    "accentString": "#FB8398",
+    "accentType": "#7AD8DC",
+    "accentNumber": "#FFCC88",
+    "accentStatusBar": "#4E2177",
+    "metrics": {
+      "fgBg": 14.34,
+      "fgLc": 89.5,
+      "commentBg": 6.28,
+      "sidebarFgBg": 13.6,
+      "minSyntaxCr": 5.26,
+      "minSyntaxRole": "accentStorage",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "uw-dark",
+        "label": "UW Dark",
+        "shortName": "UW",
+        "group": "US Public Flagships",
+        "de00": 3.4
+      },
+      {
+        "slug": "williams-dark",
+        "label": "Williams Dark",
+        "shortName": "Williams",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 5.6
+      },
+      {
+        "slug": "georgetown-dark",
+        "label": "Georgetown Dark",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 6
+      },
+      {
+        "slug": "berkeley-dark",
+        "label": "UC Berkeley Dark",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 6.8
+      },
+      {
+        "slug": "western-dark",
+        "label": "Western Dark",
+        "shortName": "Western",
+        "group": "Canadian Universities",
+        "de00": 7.9
+      },
+      {
+        "slug": "notredame-dark",
+        "label": "Notre Dame Dark",
+        "shortName": "Notre Dame",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 8.5
+      }
+    ],
+    "farthest": {
+      "slug": "stedwards-dark",
+      "label": "St. Edward's Dark",
+      "shortName": "St. Edward's",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 18.5
+    }
+  },
+  {
+    "slug": "duke-light",
+    "label": "Duke Light",
+    "university": "Duke University",
+    "shortName": "Duke",
+    "group": "US Private Research & STEM",
+    "country": "USA",
+    "city": "Durham, NC",
+    "year": 1838,
+    "subtitle": "Duke Chapel limestone, Duke Royal #00539B, Duke Navy & copper",
+    "mode": "light",
+    "pairSlug": "duke-dark",
+    "bg": "#EFF4F8",
+    "fg": "#15191D",
+    "accentKeyword": "#064F92",
+    "accentFunction": "#082082",
+    "accentString": "#8D0707",
+    "accentType": "#1D6A38",
+    "accentNumber": "#7F5D06",
+    "accentStatusBar": "#012169",
+    "metrics": {
+      "fgBg": 15.96,
+      "fgLc": 97.5,
+      "commentBg": 6.13,
+      "sidebarFgBg": 14.08,
+      "minSyntaxCr": 5.46,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "ubc-light",
+        "label": "UBC Light",
+        "shortName": "UBC",
+        "group": "Canadian Universities",
+        "de00": 4.6
+      },
+      {
+        "slug": "yale-light",
+        "label": "Yale Light",
+        "shortName": "Yale",
+        "group": "Ivy League",
+        "de00": 5.3
+      },
+      {
+        "slug": "unc-light",
+        "label": "UNC Light",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 6.4
+      },
+      {
+        "slug": "ucla-light",
+        "label": "UCLA Light",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 6.9
+      },
+      {
+        "slug": "umich-light",
+        "label": "UMich Light",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 7.4
+      },
+      {
+        "slug": "rice-light",
+        "label": "Rice Light",
+        "shortName": "Rice",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 7.6
+      }
+    ],
+    "farthest": {
+      "slug": "stedwards-light",
+      "label": "St. Edward's Light",
+      "shortName": "St. Edward's",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 16.3
+    }
+  },
+  {
+    "slug": "duke-dark",
+    "label": "Duke Dark",
+    "university": "Duke University",
+    "shortName": "Duke",
+    "group": "US Private Research & STEM",
+    "country": "USA",
+    "city": "Durham, NC",
+    "year": 1838,
+    "subtitle": "Gothic Duke Navy #012169 night, Piedmont azure, copper & garden green",
+    "mode": "dark",
+    "pairSlug": "duke-light",
+    "bg": "#091528",
+    "fg": "#DDE5F1",
+    "accentKeyword": "#659CFF",
+    "accentFunction": "#A8B3DD",
+    "accentString": "#FB8B5C",
+    "accentType": "#90DAA2",
+    "accentNumber": "#F7D086",
+    "accentStatusBar": "#012169",
+    "metrics": {
+      "fgBg": 14.4,
+      "fgLc": 89.7,
+      "commentBg": 6.34,
+      "sidebarFgBg": 13.6,
+      "minSyntaxCr": 5.44,
+      "minSyntaxRole": "accentStorage",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "yale-dark",
+        "label": "Yale Dark",
+        "shortName": "Yale",
+        "group": "Ivy League",
+        "de00": 4.9
+      },
+      {
+        "slug": "ubc-dark",
+        "label": "UBC Dark",
+        "shortName": "UBC",
+        "group": "Canadian Universities",
+        "de00": 5.7
+      },
+      {
+        "slug": "umich-dark",
+        "label": "UMich Dark",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 6.4
+      },
+      {
+        "slug": "unc-dark",
+        "label": "UNC Dark",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 6.5
+      },
+      {
+        "slug": "ucla-dark",
+        "label": "UCLA Dark",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 7.6
+      },
+      {
+        "slug": "cornell-dark",
+        "label": "Cornell Dark",
+        "shortName": "Cornell",
+        "group": "Ivy League",
+        "de00": 8
+      }
+    ],
+    "farthest": {
+      "slug": "stedwards-dark",
+      "label": "St. Edward's Dark",
+      "shortName": "St. Edward's",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 15.5
+    }
+  },
+  {
+    "slug": "northwestern-light",
+    "label": "Northwestern Light",
+    "university": "Northwestern University",
+    "shortName": "Northwestern",
+    "group": "US Private Research & STEM",
+    "country": "USA",
+    "city": "Evanston, IL",
+    "year": 1851,
+    "subtitle": "Evanston pearl-stone, Northwestern Purple #4E2A84 & Lakefill teal",
+    "mode": "light",
+    "pairSlug": "northwestern-dark",
+    "bg": "#F3F3F8",
+    "fg": "#18181D",
+    "accentKeyword": "#593792",
+    "accentFunction": "#001A1E",
+    "accentString": "#7C2E00",
+    "accentType": "#1C6A40",
+    "accentNumber": "#865906",
+    "accentStatusBar": "#4E2A84",
+    "metrics": {
+      "fgBg": 15.99,
+      "fgLc": 97.6,
+      "commentBg": 6.17,
+      "sidebarFgBg": 14.1,
+      "minSyntaxCr": 5.51,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "williams-light",
+        "label": "Williams Light",
+        "shortName": "Williams",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 7.8
+      },
+      {
+        "slug": "western-light",
+        "label": "Western Light",
+        "shortName": "Western",
+        "group": "Canadian Universities",
+        "de00": 8.2
+      },
+      {
+        "slug": "berkeley-light",
+        "label": "UC Berkeley Light",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 9.3
+      },
+      {
+        "slug": "columbia-light",
+        "label": "Columbia Light",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 9.7
+      },
+      {
+        "slug": "rice-light",
+        "label": "Rice Light",
+        "shortName": "Rice",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 9.7
+      },
+      {
+        "slug": "umich-light",
+        "label": "UMich Light",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 9.8
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-light",
+      "label": "Dartmouth Light",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 18.5
+    }
+  },
+  {
+    "slug": "northwestern-dark",
+    "label": "Northwestern Dark",
+    "university": "Northwestern University",
+    "shortName": "Northwestern",
+    "group": "US Private Research & STEM",
+    "country": "USA",
+    "city": "Evanston, IL",
+    "year": 1851,
+    "subtitle": "Rich Purple #401F68 Lake Michigan night, bright lavender & warm amber",
+    "mode": "dark",
+    "pairSlug": "northwestern-light",
+    "bg": "#161325",
+    "fg": "#E4E3F0",
+    "accentKeyword": "#C0A1FB",
+    "accentFunction": "#76CCE5",
+    "accentString": "#FB8877",
+    "accentType": "#90DAAA",
+    "accentNumber": "#FFCC88",
+    "accentStatusBar": "#48247B",
+    "metrics": {
+      "fgBg": 14.34,
+      "fgLc": 89.6,
+      "commentBg": 6.29,
+      "sidebarFgBg": 13.55,
+      "minSyntaxCr": 4.82,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "williams-dark",
+        "label": "Williams Dark",
+        "shortName": "Williams",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 5.3
+      },
+      {
+        "slug": "rice-dark",
+        "label": "Rice Dark",
+        "shortName": "Rice",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 6.6
+      },
+      {
+        "slug": "berkeley-dark",
+        "label": "UC Berkeley Dark",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 7.2
+      },
+      {
+        "slug": "western-dark",
+        "label": "Western Dark",
+        "shortName": "Western",
+        "group": "Canadian Universities",
+        "de00": 7.3
+      },
+      {
+        "slug": "umich-dark",
+        "label": "UMich Dark",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 8.5
+      },
+      {
+        "slug": "uw-dark",
+        "label": "UW Dark",
+        "shortName": "UW",
+        "group": "US Public Flagships",
+        "de00": 8.7
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-dark",
+      "label": "Dartmouth Dark",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 18.9
+    }
+  },
+  {
+    "slug": "mit-light",
+    "label": "MIT Light",
+    "university": "MIT",
+    "shortName": "MIT",
+    "group": "US Private Research & STEM",
+    "country": "USA",
+    "city": "Cambridge, MA",
+    "year": 1861,
+    "subtitle": "Infinite Corridor brushed silver, MIT Red #750014 & Silver Gray #8B959E",
+    "mode": "light",
+    "pairSlug": "mit-dark",
+    "bg": "#EFF3F5",
+    "fg": "#14191C",
+    "accentKeyword": "#940B1F",
+    "accentFunction": "#03237F",
+    "accentString": "#0C677D",
+    "accentType": "#054710",
+    "accentNumber": "#865906",
+    "accentStatusBar": "#750014",
+    "metrics": {
+      "fgBg": 15.86,
+      "fgLc": 97,
+      "commentBg": 6.11,
+      "sidebarFgBg": 13.94,
+      "minSyntaxCr": 5.46,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "mcgill-light",
+        "label": "McGill Light",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 1.9
+      },
+      {
+        "slug": "utokyo-light",
+        "label": "UTokyo Light",
+        "shortName": "UTokyo",
+        "group": "Global Classics",
+        "de00": 4
+      },
+      {
+        "slug": "queens-light",
+        "label": "Queen's Light",
+        "shortName": "Queen's",
+        "group": "Canadian Universities",
+        "de00": 4.6
+      },
+      {
+        "slug": "upenn-light",
+        "label": "UPenn Light",
+        "shortName": "UPenn",
+        "group": "Ivy League",
+        "de00": 5.1
+      },
+      {
+        "slug": "oxford-light",
+        "label": "Oxford Light",
+        "shortName": "Oxford",
+        "group": "Global Classics",
+        "de00": 6.5
+      },
+      {
+        "slug": "stedwards-light",
+        "label": "St. Edward's Light",
+        "shortName": "St. Edward's",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 7.9
+      }
+    ],
+    "farthest": {
+      "slug": "waterloo-light",
+      "label": "Waterloo Light",
+      "shortName": "Waterloo",
+      "group": "Canadian Universities",
+      "de00": 17.2
+    }
+  },
+  {
+    "slug": "mit-dark",
+    "label": "MIT Dark",
+    "university": "MIT",
+    "shortName": "MIT",
+    "group": "US Private Research & STEM",
+    "country": "USA",
+    "city": "Cambridge, MA",
+    "year": 1861,
+    "subtitle": "Stata Center carbon obsidian, Bright MIT Red #FF1423 & silver telemetry",
+    "mode": "dark",
+    "pairSlug": "mit-light",
+    "bg": "#111518",
+    "fg": "#DDE6EC",
+    "accentKeyword": "#FB9192",
+    "accentFunction": "#5EC0FF",
+    "accentString": "#6FA2A9",
+    "accentType": "#8ADBAF",
+    "accentNumber": "#FFCC88",
+    "accentStatusBar": "#740415",
+    "metrics": {
+      "fgBg": 14.51,
+      "fgLc": 90,
+      "commentBg": 6.39,
+      "sidebarFgBg": 13.61,
+      "minSyntaxCr": 5.7,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "mcgill-dark",
+        "label": "McGill Dark",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 2.9
+      },
+      {
+        "slug": "upenn-dark",
+        "label": "UPenn Dark",
+        "shortName": "UPenn",
+        "group": "Ivy League",
+        "de00": 5
+      },
+      {
+        "slug": "utokyo-dark",
+        "label": "UTokyo Dark",
+        "shortName": "UTokyo",
+        "group": "Global Classics",
+        "de00": 5.6
+      },
+      {
+        "slug": "oxford-dark",
+        "label": "Oxford Dark",
+        "shortName": "Oxford",
+        "group": "Global Classics",
+        "de00": 6.8
+      },
+      {
+        "slug": "queens-dark",
+        "label": "Queen's Dark",
+        "shortName": "Queen's",
+        "group": "Canadian Universities",
+        "de00": 7
+      },
+      {
+        "slug": "princeton-dark",
+        "label": "Princeton Dark",
+        "shortName": "Princeton",
+        "group": "Ivy League",
+        "de00": 7.3
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-dark",
+      "label": "Dartmouth Dark",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 15.6
+    }
+  },
+  {
+    "slug": "stanford-light",
+    "label": "Stanford Light",
+    "university": "Stanford University",
+    "shortName": "Stanford",
+    "group": "US Private Research & STEM",
+    "country": "USA",
+    "city": "Stanford, CA",
+    "year": 1885,
+    "subtitle": "Main Quad California sandstone, Cardinal #8C1515 & Palo Alto #175E54",
+    "mode": "light",
+    "pairSlug": "stanford-dark",
+    "bg": "#F8F1E9",
+    "fg": "#1D1710",
+    "accentKeyword": "#901A19",
+    "accentFunction": "#002F81",
+    "accentString": "#905212",
+    "accentType": "#0F685C",
+    "accentNumber": "#7F5D06",
+    "accentStatusBar": "#8C1515",
+    "metrics": {
+      "fgBg": 15.86,
+      "fgLc": 96.8,
+      "commentBg": 6.13,
+      "sidebarFgBg": 13.97,
+      "minSyntaxCr": 5.4,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "brown-light",
+        "label": "Brown Light",
+        "shortName": "Brown",
+        "group": "Ivy League",
+        "de00": 5.6
+      },
+      {
+        "slug": "uchicago-light",
+        "label": "UChicago Light",
+        "shortName": "UChicago",
+        "group": "US Private Research & STEM",
+        "de00": 7.6
+      },
+      {
+        "slug": "queens-light",
+        "label": "Queen's Light",
+        "shortName": "Queen's",
+        "group": "Canadian Universities",
+        "de00": 8.7
+      },
+      {
+        "slug": "harvard-light",
+        "label": "Harvard Light",
+        "shortName": "Harvard",
+        "group": "Ivy League",
+        "de00": 8.9
+      },
+      {
+        "slug": "mcgill-light",
+        "label": "McGill Light",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 9.2
+      },
+      {
+        "slug": "columbia-light",
+        "label": "Columbia Light",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 9.7
+      }
+    ],
+    "farthest": {
+      "slug": "northwestern-light",
+      "label": "Northwestern Light",
+      "shortName": "Northwestern",
+      "group": "US Private Research & STEM",
+      "de00": 15.6
+    }
+  },
+  {
+    "slug": "stanford-dark",
+    "label": "Stanford Dark",
+    "university": "Stanford University",
+    "shortName": "Stanford",
+    "group": "US Private Research & STEM",
+    "country": "USA",
+    "city": "Stanford, CA",
+    "year": 1885,
+    "subtitle": "Process Black #2E2D29 espresso, Cardinal crimson & Palo Verde #279989",
+    "mode": "dark",
+    "pairSlug": "stanford-light",
+    "bg": "#1C1610",
+    "fg": "#EDE2D9",
+    "accentKeyword": "#FB9287",
+    "accentFunction": "#87C3FF",
+    "accentString": "#E57342",
+    "accentType": "#58E0CB",
+    "accentNumber": "#F7D086",
+    "accentStatusBar": "#76080C",
+    "metrics": {
+      "fgBg": 14.07,
+      "fgLc": 89.2,
+      "commentBg": 6.22,
+      "sidebarFgBg": 13.2,
+      "minSyntaxCr": 5.55,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "brown-dark",
+        "label": "Brown Dark",
+        "shortName": "Brown",
+        "group": "Ivy League",
+        "de00": 6.7
+      },
+      {
+        "slug": "cornell-dark",
+        "label": "Cornell Dark",
+        "shortName": "Cornell",
+        "group": "Ivy League",
+        "de00": 7.4
+      },
+      {
+        "slug": "uchicago-dark",
+        "label": "UChicago Dark",
+        "shortName": "UChicago",
+        "group": "US Private Research & STEM",
+        "de00": 7.5
+      },
+      {
+        "slug": "caltech-dark",
+        "label": "Caltech Dark",
+        "shortName": "Caltech",
+        "group": "US Private Research & STEM",
+        "de00": 8.5
+      },
+      {
+        "slug": "georgetown-dark",
+        "label": "Georgetown Dark",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 8.8
+      },
+      {
+        "slug": "mcgill-dark",
+        "label": "McGill Dark",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 9
+      }
+    ],
+    "farthest": {
+      "slug": "cambridge-dark",
+      "label": "Cambridge Dark",
+      "shortName": "Cambridge",
+      "group": "Global Classics",
+      "de00": 14.4
+    }
+  },
+  {
+    "slug": "uchicago-light",
+    "label": "UChicago Light",
+    "university": "University of Chicago",
+    "shortName": "UChicago",
+    "group": "US Private Research & STEM",
+    "country": "USA",
+    "city": "Chicago, IL",
+    "year": 1890,
+    "subtitle": "Harper Gothic greystone, Phoenix Maroon #800000 & Lakefront blue",
+    "mode": "light",
+    "pairSlug": "uchicago-dark",
+    "bg": "#F5F1EE",
+    "fg": "#1C1714",
+    "accentKeyword": "#730B12",
+    "accentFunction": "#063745",
+    "accentString": "#8F5000",
+    "accentType": "#2A683F",
+    "accentNumber": "#825B07",
+    "accentStatusBar": "#800000",
+    "metrics": {
+      "fgBg": 15.82,
+      "fgLc": 96.6,
+      "commentBg": 6.08,
+      "sidebarFgBg": 13.95,
+      "minSyntaxCr": 5.42,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "cornell-light",
+        "label": "Cornell Light",
+        "shortName": "Cornell",
+        "group": "Ivy League",
+        "de00": 7.5
+      },
+      {
+        "slug": "stanford-light",
+        "label": "Stanford Light",
+        "shortName": "Stanford",
+        "group": "US Private Research & STEM",
+        "de00": 7.6
+      },
+      {
+        "slug": "brown-light",
+        "label": "Brown Light",
+        "shortName": "Brown",
+        "group": "Ivy League",
+        "de00": 8
+      },
+      {
+        "slug": "harvard-light",
+        "label": "Harvard Light",
+        "shortName": "Harvard",
+        "group": "Ivy League",
+        "de00": 8.8
+      },
+      {
+        "slug": "utokyo-light",
+        "label": "UTokyo Light",
+        "shortName": "UTokyo",
+        "group": "Global Classics",
+        "de00": 9.4
+      },
+      {
+        "slug": "ubc-light",
+        "label": "UBC Light",
+        "shortName": "UBC",
+        "group": "Canadian Universities",
+        "de00": 9.9
+      }
+    ],
+    "farthest": {
+      "slug": "notredame-light",
+      "label": "Notre Dame Light",
+      "shortName": "Notre Dame",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 15.4
+    }
+  },
+  {
+    "slug": "uchicago-dark",
+    "label": "UChicago Dark",
+    "university": "University of Chicago",
+    "shortName": "UChicago",
+    "group": "US Private Research & STEM",
+    "country": "USA",
+    "city": "Chicago, IL",
+    "year": 1890,
+    "subtitle": "Hyde Park obsidian-maroon, Phoenix crimson, goldenrod & lake azure",
+    "mode": "dark",
+    "pairSlug": "uchicago-light",
+    "bg": "#1D1312",
+    "fg": "#F0E0E0",
+    "accentKeyword": "#FB9384",
+    "accentFunction": "#82B0C1",
+    "accentString": "#C67232",
+    "accentType": "#98D8A9",
+    "accentNumber": "#FCCE85",
+    "accentStatusBar": "#760A05",
+    "metrics": {
+      "fgBg": 14.25,
+      "fgLc": 89.2,
+      "commentBg": 6.27,
+      "sidebarFgBg": 13.5,
+      "minSyntaxCr": 5.07,
+      "minSyntaxRole": "accentString",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "cornell-dark",
+        "label": "Cornell Dark",
+        "shortName": "Cornell",
+        "group": "Ivy League",
+        "de00": 5.3
+      },
+      {
+        "slug": "stanford-dark",
+        "label": "Stanford Dark",
+        "shortName": "Stanford",
+        "group": "US Private Research & STEM",
+        "de00": 7.5
+      },
+      {
+        "slug": "brown-dark",
+        "label": "Brown Dark",
+        "shortName": "Brown",
+        "group": "Ivy League",
+        "de00": 7.9
+      },
+      {
+        "slug": "mit-dark",
+        "label": "MIT Dark",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 8.7
+      },
+      {
+        "slug": "utaustin-dark",
+        "label": "UT Austin Dark",
+        "shortName": "UT Austin",
+        "group": "US Public Flagships",
+        "de00": 9
+      },
+      {
+        "slug": "harvard-dark",
+        "label": "Harvard Dark",
+        "shortName": "Harvard",
+        "group": "Ivy League",
+        "de00": 9.1
+      }
+    ],
+    "farthest": {
+      "slug": "ualberta-dark",
+      "label": "UAlberta Dark",
+      "shortName": "UAlberta",
+      "group": "Canadian Universities",
+      "de00": 15.9
+    }
+  },
+  {
+    "slug": "caltech-light",
+    "label": "Caltech Light",
+    "university": "Caltech",
+    "shortName": "Caltech",
+    "group": "US Private Research & STEM",
+    "country": "USA",
+    "city": "Pasadena, CA",
+    "year": 1891,
+    "subtitle": "Pasadena crisp white, Caltech Orange #FF6C0C, Deep Teal & JPL Red",
+    "mode": "light",
+    "pairSlug": "caltech-dark",
+    "bg": "#EFF4F5",
+    "fg": "#14191B",
+    "accentKeyword": "#752300",
+    "accentFunction": "#00508F",
+    "accentString": "#7B224B",
+    "accentType": "#053D36",
+    "accentNumber": "#54522A",
+    "accentStatusBar": "#003B4C",
+    "metrics": {
+      "fgBg": 15.98,
+      "fgLc": 97.4,
+      "commentBg": 6.11,
+      "sidebarFgBg": 14.08,
+      "minSyntaxCr": 6.1,
+      "minSyntaxRole": "colorWarning",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "princeton-light",
+        "label": "Princeton Light",
+        "shortName": "Princeton",
+        "group": "Ivy League",
+        "de00": 8.8
+      },
+      {
+        "slug": "uva-light",
+        "label": "UVA Light",
+        "shortName": "UVA",
+        "group": "US Public Flagships",
+        "de00": 10.1
+      },
+      {
+        "slug": "brown-light",
+        "label": "Brown Light",
+        "shortName": "Brown",
+        "group": "Ivy League",
+        "de00": 10.7
+      },
+      {
+        "slug": "utaustin-light",
+        "label": "UT Austin Light",
+        "shortName": "UT Austin",
+        "group": "US Public Flagships",
+        "de00": 10.7
+      },
+      {
+        "slug": "uw-light",
+        "label": "UW Light",
+        "shortName": "UW",
+        "group": "US Public Flagships",
+        "de00": 10.7
+      },
+      {
+        "slug": "eth-light",
+        "label": "ETH Zurich Light",
+        "shortName": "ETH Zurich",
+        "group": "Global Classics",
+        "de00": 10.8
+      }
+    ],
+    "farthest": {
+      "slug": "northwestern-light",
+      "label": "Northwestern Light",
+      "shortName": "Northwestern",
+      "group": "US Private Research & STEM",
+      "de00": 18.2
+    }
+  },
+  {
+    "slug": "caltech-dark",
+    "label": "Caltech Dark",
+    "university": "Caltech",
+    "shortName": "Caltech",
+    "group": "US Private Research & STEM",
+    "country": "USA",
+    "city": "Pasadena, CA",
+    "year": 1891,
+    "subtitle": "JPL Deep Space Teal #003B4C, Caltech Orange #FF6C0C & Bright Sky",
+    "mode": "dark",
+    "pairSlug": "caltech-light",
+    "bg": "#031B23",
+    "fg": "#D8E8ED",
+    "accentKeyword": "#FB975E",
+    "accentFunction": "#61CBFF",
+    "accentString": "#C97D9A",
+    "accentType": "#94C9C9",
+    "accentNumber": "#EED58A",
+    "accentStatusBar": "#003B4C",
+    "metrics": {
+      "fgBg": 14.08,
+      "fgLc": 89.8,
+      "commentBg": 6.2,
+      "sidebarFgBg": 13.16,
+      "minSyntaxCr": 5.49,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "princeton-dark",
+        "label": "Princeton Dark",
+        "shortName": "Princeton",
+        "group": "Ivy League",
+        "de00": 5.3
+      },
+      {
+        "slug": "utaustin-dark",
+        "label": "UT Austin Dark",
+        "shortName": "UT Austin",
+        "group": "US Public Flagships",
+        "de00": 6.8
+      },
+      {
+        "slug": "georgetown-dark",
+        "label": "Georgetown Dark",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 7.5
+      },
+      {
+        "slug": "uva-dark",
+        "label": "UVA Dark",
+        "shortName": "UVA",
+        "group": "US Public Flagships",
+        "de00": 7.5
+      },
+      {
+        "slug": "uw-dark",
+        "label": "UW Dark",
+        "shortName": "UW",
+        "group": "US Public Flagships",
+        "de00": 8.3
+      },
+      {
+        "slug": "notredame-dark",
+        "label": "Notre Dame Dark",
+        "shortName": "Notre Dame",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 8.3
+      }
+    ],
+    "farthest": {
+      "slug": "queens-dark",
+      "label": "Queen's Dark",
+      "shortName": "Queen's",
+      "group": "Canadian Universities",
+      "de00": 14.9
+    }
+  },
+  {
+    "slug": "georgetown-light",
+    "label": "Georgetown Light",
+    "university": "Georgetown University",
+    "shortName": "Georgetown",
+    "group": "Liberal Arts & Regional Gems",
+    "country": "USA",
+    "city": "Washington, DC",
+    "year": 1789,
+    "subtitle": "Healy Hall granite, Georgetown Blue #041E42, Gray #63666A & Potomac teal",
+    "mode": "light",
+    "pairSlug": "georgetown-dark",
+    "bg": "#F0F3F7",
+    "fg": "#15191D",
+    "accentKeyword": "#284E85",
+    "accentFunction": "#092777",
+    "accentString": "#A12940",
+    "accentType": "#1F756F",
+    "accentNumber": "#865906",
+    "accentStatusBar": "#041E42",
+    "metrics": {
+      "fgBg": 15.87,
+      "fgLc": 97.1,
+      "commentBg": 6.1,
+      "sidebarFgBg": 13.95,
+      "minSyntaxCr": 4.92,
+      "minSyntaxRole": "accentType",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "uw-light",
+        "label": "UW Light",
+        "shortName": "UW",
+        "group": "US Public Flagships",
+        "de00": 5.4
+      },
+      {
+        "slug": "gatech-light",
+        "label": "Georgia Tech Light",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 5.8
+      },
+      {
+        "slug": "columbia-light",
+        "label": "Columbia Light",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 6.1
+      },
+      {
+        "slug": "nyu-light",
+        "label": "NYU Light",
+        "shortName": "NYU",
+        "group": "US Private Research & STEM",
+        "de00": 6.6
+      },
+      {
+        "slug": "notredame-light",
+        "label": "Notre Dame Light",
+        "shortName": "Notre Dame",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 6.7
+      },
+      {
+        "slug": "utoronto-light",
+        "label": "U of T Light",
+        "shortName": "U of T",
+        "group": "Canadian Universities",
+        "de00": 6.9
+      }
+    ],
+    "farthest": {
+      "slug": "stedwards-light",
+      "label": "St. Edward's Light",
+      "shortName": "St. Edward's",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 15.7
+    }
+  },
+  {
+    "slug": "georgetown-dark",
+    "label": "Georgetown Dark",
+    "university": "Georgetown University",
+    "shortName": "Georgetown",
+    "group": "Liberal Arts & Regional Gems",
+    "country": "USA",
+    "city": "Washington, DC",
+    "year": 1789,
+    "subtitle": "Hilltop Georgetown Blue #041E42 night, slate silver, brick & Potomac cyan",
+    "mode": "dark",
+    "pairSlug": "georgetown-light",
+    "bg": "#0B1622",
+    "fg": "#DCE6F0",
+    "accentKeyword": "#81A2C2",
+    "accentFunction": "#96CCF9",
+    "accentString": "#FB8492",
+    "accentType": "#7AD8DF",
+    "accentNumber": "#FFCC88",
+    "accentStatusBar": "#062145",
+    "metrics": {
+      "fgBg": 14.43,
+      "fgLc": 89.9,
+      "commentBg": 6.36,
+      "sidebarFgBg": 13.63,
+      "minSyntaxCr": 5.66,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "uw-dark",
+        "label": "UW Dark",
+        "shortName": "UW",
+        "group": "US Public Flagships",
+        "de00": 4.4
+      },
+      {
+        "slug": "utoronto-dark",
+        "label": "U of T Dark",
+        "shortName": "U of T",
+        "group": "Canadian Universities",
+        "de00": 4.8
+      },
+      {
+        "slug": "columbia-dark",
+        "label": "Columbia Dark",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 5
+      },
+      {
+        "slug": "notredame-dark",
+        "label": "Notre Dame Dark",
+        "shortName": "Notre Dame",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 5.7
+      },
+      {
+        "slug": "gatech-dark",
+        "label": "Georgia Tech Dark",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 5.8
+      },
+      {
+        "slug": "nyu-dark",
+        "label": "NYU Dark",
+        "shortName": "NYU",
+        "group": "US Private Research & STEM",
+        "de00": 6
+      }
+    ],
+    "farthest": {
+      "slug": "stedwards-dark",
+      "label": "St. Edward's Dark",
+      "shortName": "St. Edward's",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 15.1
+    }
+  },
+  {
+    "slug": "williams-light",
+    "label": "Williams Light",
+    "university": "Williams College",
+    "shortName": "Williams",
+    "group": "Liberal Arts & Regional Gems",
+    "country": "USA",
+    "city": "Williamstown, MA",
+    "year": 1793,
+    "subtitle": "Mount Greylock alabaster, Williams Purple #500082, Gold & Berkshire pine",
+    "mode": "light",
+    "pairSlug": "williams-dark",
+    "bg": "#F4F2F8",
+    "fg": "#19171D",
+    "accentKeyword": "#66259C",
+    "accentFunction": "#00447E",
+    "accentString": "#A62331",
+    "accentType": "#136B3E",
+    "accentNumber": "#825B07",
+    "accentStatusBar": "#500082",
+    "metrics": {
+      "fgBg": 16,
+      "fgLc": 97.3,
+      "commentBg": 6.17,
+      "sidebarFgBg": 14.1,
+      "minSyntaxCr": 5.48,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "nyu-light",
+        "label": "NYU Light",
+        "shortName": "NYU",
+        "group": "US Private Research & STEM",
+        "de00": 5.6
+      },
+      {
+        "slug": "berkeley-light",
+        "label": "UC Berkeley Light",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 5.9
+      },
+      {
+        "slug": "uw-light",
+        "label": "UW Light",
+        "shortName": "UW",
+        "group": "US Public Flagships",
+        "de00": 7.3
+      },
+      {
+        "slug": "eth-light",
+        "label": "ETH Zurich Light",
+        "shortName": "ETH Zurich",
+        "group": "Global Classics",
+        "de00": 7.5
+      },
+      {
+        "slug": "northwestern-light",
+        "label": "Northwestern Light",
+        "shortName": "Northwestern",
+        "group": "US Private Research & STEM",
+        "de00": 7.8
+      },
+      {
+        "slug": "princeton-light",
+        "label": "Princeton Light",
+        "shortName": "Princeton",
+        "group": "Ivy League",
+        "de00": 8.1
+      }
+    ],
+    "farthest": {
+      "slug": "stedwards-light",
+      "label": "St. Edward's Light",
+      "shortName": "St. Edward's",
+      "group": "Liberal Arts & Regional Gems",
+      "de00": 17.4
+    }
+  },
+  {
+    "slug": "williams-dark",
+    "label": "Williams Dark",
+    "university": "Williams College",
+    "shortName": "Williams",
+    "group": "Liberal Arts & Regional Gems",
+    "country": "USA",
+    "city": "Williamstown, MA",
+    "year": 1793,
+    "subtitle": "Berkshire midnight purple #500082, glowing Williams Gold #FFBE0A & pine",
+    "mode": "dark",
+    "pairSlug": "williams-light",
+    "bg": "#191127",
+    "fg": "#E6E2EF",
+    "accentKeyword": "#C89CFB",
+    "accentFunction": "#8FB4D7",
+    "accentString": "#E79681",
+    "accentType": "#8BDBA9",
+    "accentNumber": "#FFCE6B",
+    "accentStatusBar": "#4B1C72",
+    "metrics": {
+      "fgBg": 14.33,
+      "fgLc": 89.4,
+      "commentBg": 6.28,
+      "sidebarFgBg": 13.55,
+      "minSyntaxCr": 5.66,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "berkeley-dark",
+        "label": "UC Berkeley Dark",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 4.1
+      },
+      {
+        "slug": "western-dark",
+        "label": "Western Dark",
+        "shortName": "Western",
+        "group": "Canadian Universities",
+        "de00": 4.5
+      },
+      {
+        "slug": "northwestern-dark",
+        "label": "Northwestern Dark",
+        "shortName": "Northwestern",
+        "group": "US Private Research & STEM",
+        "de00": 5.3
+      },
+      {
+        "slug": "nyu-dark",
+        "label": "NYU Dark",
+        "shortName": "NYU",
+        "group": "US Private Research & STEM",
+        "de00": 5.6
+      },
+      {
+        "slug": "umich-dark",
+        "label": "UMich Dark",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 5.6
+      },
+      {
+        "slug": "uw-dark",
+        "label": "UW Dark",
+        "shortName": "UW",
+        "group": "US Public Flagships",
+        "de00": 6.5
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-dark",
+      "label": "Dartmouth Dark",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 15.1
+    }
+  },
+  {
+    "slug": "notredame-light",
+    "label": "Notre Dame Light",
+    "university": "University of Notre Dame",
+    "shortName": "Notre Dame",
+    "group": "Liberal Arts & Regional Gems",
+    "country": "USA",
+    "city": "Notre Dame, IN",
+    "year": 1842,
+    "subtitle": "Golden Dome cream brick, Notre Dame Blue #0C2340, Irish Green & gold",
+    "mode": "light",
+    "pairSlug": "notredame-dark",
+    "bg": "#F7F2EA",
+    "fg": "#1C1811",
+    "accentKeyword": "#035F2E",
+    "accentFunction": "#022237",
+    "accentString": "#A42633",
+    "accentType": "#3F7278",
+    "accentNumber": "#7F5D06",
+    "accentStatusBar": "#0C2340",
+    "metrics": {
+      "fgBg": 15.86,
+      "fgLc": 97,
+      "commentBg": 6.12,
+      "sidebarFgBg": 13.98,
+      "minSyntaxCr": 4.84,
+      "minSyntaxRole": "accentType",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "ualberta-light",
+        "label": "UAlberta Light",
+        "shortName": "UAlberta",
+        "group": "Canadian Universities",
+        "de00": 6.1
+      },
+      {
+        "slug": "georgetown-light",
+        "label": "Georgetown Light",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 6.7
+      },
+      {
+        "slug": "gatech-light",
+        "label": "Georgia Tech Light",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 6.9
+      },
+      {
+        "slug": "columbia-light",
+        "label": "Columbia Light",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 8
+      },
+      {
+        "slug": "uw-light",
+        "label": "UW Light",
+        "shortName": "UW",
+        "group": "US Public Flagships",
+        "de00": 8.4
+      },
+      {
+        "slug": "ucla-light",
+        "label": "UCLA Light",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 8.9
+      }
+    ],
+    "farthest": {
+      "slug": "oxford-light",
+      "label": "Oxford Light",
+      "shortName": "Oxford",
+      "group": "Global Classics",
+      "de00": 16.9
+    }
+  },
+  {
+    "slug": "notredame-dark",
+    "label": "Notre Dame Dark",
+    "university": "University of Notre Dame",
+    "shortName": "Notre Dame",
+    "group": "Liberal Arts & Regional Gems",
+    "country": "USA",
+    "city": "Notre Dame, IN",
+    "year": 1842,
+    "subtitle": "South Bend midnight #0C2340, Dome Gold #C99700 & Irish Green #00843D",
+    "mode": "dark",
+    "pairSlug": "notredame-light",
+    "bg": "#091723",
+    "fg": "#DCE6F0",
+    "accentKeyword": "#53B573",
+    "accentFunction": "#85ADCC",
+    "accentString": "#DD8A9B",
+    "accentType": "#7AD8DC",
+    "accentNumber": "#FDD151",
+    "accentStatusBar": "#0C2340",
+    "metrics": {
+      "fgBg": 14.35,
+      "fgLc": 89.9,
+      "commentBg": 6.31,
+      "sidebarFgBg": 13.52,
+      "minSyntaxCr": 5.63,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "georgetown-dark",
+        "label": "Georgetown Dark",
+        "shortName": "Georgetown",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 5.7
+      },
+      {
+        "slug": "uw-dark",
+        "label": "UW Dark",
+        "shortName": "UW",
+        "group": "US Public Flagships",
+        "de00": 7.1
+      },
+      {
+        "slug": "ualberta-dark",
+        "label": "UAlberta Dark",
+        "shortName": "UAlberta",
+        "group": "Canadian Universities",
+        "de00": 7.2
+      },
+      {
+        "slug": "caltech-dark",
+        "label": "Caltech Dark",
+        "shortName": "Caltech",
+        "group": "US Private Research & STEM",
+        "de00": 8.3
+      },
+      {
+        "slug": "dartmouth-dark",
+        "label": "Dartmouth Dark",
+        "shortName": "Dartmouth",
+        "group": "Ivy League",
+        "de00": 8.3
+      },
+      {
+        "slug": "nyu-dark",
+        "label": "NYU Dark",
+        "shortName": "NYU",
+        "group": "US Private Research & STEM",
+        "de00": 8.5
+      }
+    ],
+    "farthest": {
+      "slug": "queens-dark",
+      "label": "Queen's Dark",
+      "shortName": "Queen's",
+      "group": "Canadian Universities",
+      "de00": 16.7
+    }
+  },
+  {
+    "slug": "stedwards-light",
+    "label": "St. Edward's Light",
+    "university": "St. Edward's University",
+    "shortName": "St. Edward's",
+    "group": "Liberal Arts & Regional Gems",
+    "country": "USA",
+    "city": "Austin, TX",
+    "year": 1885,
+    "subtitle": "Hilltop Limestone #F7F3ED, Sorin #192E56, Red Doors #EA4433 & Gold Medallion",
+    "mode": "light",
+    "pairSlug": "stedwards-dark",
+    "bg": "#F7F2EB",
+    "fg": "#1C1811",
+    "accentKeyword": "#941302",
+    "accentFunction": "#0D203A",
+    "accentString": "#0C6878",
+    "accentType": "#344F30",
+    "accentNumber": "#7C5226",
+    "accentStatusBar": "#192E56",
+    "metrics": {
+      "fgBg": 15.87,
+      "fgLc": 97.1,
+      "commentBg": 6.11,
+      "sidebarFgBg": 14,
+      "minSyntaxCr": 5.77,
+      "minSyntaxRole": "accentString",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "upenn-light",
+        "label": "UPenn Light",
+        "shortName": "UPenn",
+        "group": "Ivy League",
+        "de00": 6.1
+      },
+      {
+        "slug": "oxford-light",
+        "label": "Oxford Light",
+        "shortName": "Oxford",
+        "group": "Global Classics",
+        "de00": 6.2
+      },
+      {
+        "slug": "queens-light",
+        "label": "Queen's Light",
+        "shortName": "Queen's",
+        "group": "Canadian Universities",
+        "de00": 6.8
+      },
+      {
+        "slug": "mcgill-light",
+        "label": "McGill Light",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 7.1
+      },
+      {
+        "slug": "utokyo-light",
+        "label": "UTokyo Light",
+        "shortName": "UTokyo",
+        "group": "Global Classics",
+        "de00": 7.2
+      },
+      {
+        "slug": "mit-light",
+        "label": "MIT Light",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 7.9
+      }
+    ],
+    "farthest": {
+      "slug": "waterloo-light",
+      "label": "Waterloo Light",
+      "shortName": "Waterloo",
+      "group": "Canadian Universities",
+      "de00": 19.4
+    }
+  },
+  {
+    "slug": "stedwards-dark",
+    "label": "St. Edward's Dark",
+    "university": "St. Edward's University",
+    "shortName": "St. Edward's",
+    "group": "Liberal Arts & Regional Gems",
+    "country": "USA",
+    "city": "Austin, TX",
+    "year": 1885,
+    "subtitle": "Sorin Navy #192E56 night, Bluebonnet #8BCAEF, Red Doors & Gold Medallion",
+    "mode": "dark",
+    "pairSlug": "stedwards-light",
+    "bg": "#0B1727",
+    "fg": "#DDE5F1",
+    "accentKeyword": "#FB9381",
+    "accentFunction": "#B6DAF6",
+    "accentString": "#63BDD0",
+    "accentType": "#90DAAA",
+    "accentNumber": "#FFCF57",
+    "accentStatusBar": "#192E56",
+    "metrics": {
+      "fgBg": 14.19,
+      "fgLc": 89.5,
+      "commentBg": 6.25,
+      "sidebarFgBg": 13.36,
+      "minSyntaxCr": 4.77,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "queens-dark",
+        "label": "Queen's Dark",
+        "shortName": "Queen's",
+        "group": "Canadian Universities",
+        "de00": 5
+      },
+      {
+        "slug": "upenn-dark",
+        "label": "UPenn Dark",
+        "shortName": "UPenn",
+        "group": "Ivy League",
+        "de00": 5.9
+      },
+      {
+        "slug": "oxford-dark",
+        "label": "Oxford Dark",
+        "shortName": "Oxford",
+        "group": "Global Classics",
+        "de00": 6
+      },
+      {
+        "slug": "utokyo-dark",
+        "label": "UTokyo Dark",
+        "shortName": "UTokyo",
+        "group": "Global Classics",
+        "de00": 6.2
+      },
+      {
+        "slug": "mit-dark",
+        "label": "MIT Dark",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 7.5
+      },
+      {
+        "slug": "mcgill-dark",
+        "label": "McGill Dark",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 7.9
+      }
+    ],
+    "farthest": {
+      "slug": "nyu-dark",
+      "label": "NYU Dark",
+      "shortName": "NYU",
+      "group": "US Private Research & STEM",
+      "de00": 18.5
+    }
+  },
+  {
+    "slug": "rice-light",
+    "label": "Rice Light",
+    "university": "Rice University",
+    "shortName": "Rice",
+    "group": "Liberal Arts & Regional Gems",
+    "country": "USA",
+    "city": "Houston, TX",
+    "year": 1912,
+    "subtitle": "Lovett Hall rose-stone, Rice Blue #00205B, Gray #7C7E7F & Bayou azure",
+    "mode": "light",
+    "pairSlug": "rice-dark",
+    "bg": "#F7F1EE",
+    "fg": "#1D1714",
+    "accentKeyword": "#1B4B98",
+    "accentFunction": "#093647",
+    "accentString": "#9E3312",
+    "accentType": "#1C6A41",
+    "accentNumber": "#483213",
+    "accentStatusBar": "#00205B",
+    "metrics": {
+      "fgBg": 15.84,
+      "fgLc": 96.8,
+      "commentBg": 6.15,
+      "sidebarFgBg": 14.01,
+      "minSyntaxCr": 5.89,
+      "minSyntaxRole": "accentType",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "unc-light",
+        "label": "UNC Light",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 3
+      },
+      {
+        "slug": "ucla-light",
+        "label": "UCLA Light",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 3.2
+      },
+      {
+        "slug": "umich-light",
+        "label": "UMich Light",
+        "shortName": "UMich",
+        "group": "US Public Flagships",
+        "de00": 5.2
+      },
+      {
+        "slug": "gatech-light",
+        "label": "Georgia Tech Light",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 5.5
+      },
+      {
+        "slug": "columbia-light",
+        "label": "Columbia Light",
+        "shortName": "Columbia",
+        "group": "Ivy League",
+        "de00": 7.1
+      },
+      {
+        "slug": "utoronto-light",
+        "label": "U of T Light",
+        "shortName": "U of T",
+        "group": "Canadian Universities",
+        "de00": 7.5
+      }
+    ],
+    "farthest": {
+      "slug": "waterloo-light",
+      "label": "Waterloo Light",
+      "shortName": "Waterloo",
+      "group": "Canadian Universities",
+      "de00": 14.9
+    }
+  },
+  {
+    "slug": "rice-dark",
+    "label": "Rice Dark",
+    "university": "Rice University",
+    "shortName": "Rice",
+    "group": "Liberal Arts & Regional Gems",
+    "country": "USA",
+    "city": "Houston, TX",
+    "year": 1912,
+    "subtitle": "Houston Owl Navy #00205B night, Bayou cyan, live-oak green & rust",
+    "mode": "dark",
+    "pairSlug": "rice-light",
+    "bg": "#0A1624",
+    "fg": "#DDE6F1",
+    "accentKeyword": "#8AB5FB",
+    "accentFunction": "#88DBFF",
+    "accentString": "#FB896A",
+    "accentType": "#90DAAC",
+    "accentNumber": "#FFCC88",
+    "accentStatusBar": "#00205B",
+    "metrics": {
+      "fgBg": 14.45,
+      "fgLc": 90.1,
+      "commentBg": 6.3,
+      "sidebarFgBg": 13.63,
+      "minSyntaxCr": 4.84,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "unc-dark",
+        "label": "UNC Dark",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 3.8
+      },
+      {
+        "slug": "ucla-dark",
+        "label": "UCLA Dark",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 4.8
+      },
+      {
+        "slug": "utoronto-dark",
+        "label": "U of T Dark",
+        "shortName": "U of T",
+        "group": "Canadian Universities",
+        "de00": 5.3
+      },
+      {
+        "slug": "gatech-dark",
+        "label": "Georgia Tech Dark",
+        "shortName": "Georgia Tech",
+        "group": "US Public Flagships",
+        "de00": 5.9
+      },
+      {
+        "slug": "northwestern-dark",
+        "label": "Northwestern Dark",
+        "shortName": "Northwestern",
+        "group": "US Private Research & STEM",
+        "de00": 6.6
+      },
+      {
+        "slug": "yale-dark",
+        "label": "Yale Dark",
+        "shortName": "Yale",
+        "group": "Ivy League",
+        "de00": 6.7
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-dark",
+      "label": "Dartmouth Dark",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 15.2
+    }
+  },
+  {
+    "slug": "oxford-light",
+    "label": "Oxford Light",
+    "university": "University of Oxford",
+    "shortName": "Oxford",
+    "group": "Global Classics",
+    "country": "UK",
+    "city": "Oxford, UK",
+    "year": 1096,
+    "subtitle": "Cotswold honey limestone, Oxford Blue #002147, Bodleian burgundy & ochre",
+    "mode": "light",
+    "pairSlug": "oxford-dark",
+    "bg": "#F7F1E7",
+    "fg": "#1D170F",
+    "accentKeyword": "#8A2336",
+    "accentFunction": "#082778",
+    "accentString": "#0C6B65",
+    "accentType": "#1F3D0F",
+    "accentNumber": "#865906",
+    "accentStatusBar": "#002147",
+    "metrics": {
+      "fgBg": 15.82,
+      "fgLc": 96.6,
+      "commentBg": 6.12,
+      "sidebarFgBg": 13.96,
+      "minSyntaxCr": 5.43,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "queens-light",
+        "label": "Queen's Light",
+        "shortName": "Queen's",
+        "group": "Canadian Universities",
+        "de00": 3.8
+      },
+      {
+        "slug": "stedwards-light",
+        "label": "St. Edward's Light",
+        "shortName": "St. Edward's",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 6.2
+      },
+      {
+        "slug": "mit-light",
+        "label": "MIT Light",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 6.5
+      },
+      {
+        "slug": "upenn-light",
+        "label": "UPenn Light",
+        "shortName": "UPenn",
+        "group": "Ivy League",
+        "de00": 6.6
+      },
+      {
+        "slug": "mcgill-light",
+        "label": "McGill Light",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 6.7
+      },
+      {
+        "slug": "utokyo-light",
+        "label": "UTokyo Light",
+        "shortName": "UTokyo",
+        "group": "Global Classics",
+        "de00": 7.6
+      }
+    ],
+    "farthest": {
+      "slug": "waterloo-light",
+      "label": "Waterloo Light",
+      "shortName": "Waterloo",
+      "group": "Canadian Universities",
+      "de00": 18
+    }
+  },
+  {
+    "slug": "oxford-dark",
+    "label": "Oxford Dark",
+    "university": "University of Oxford",
+    "shortName": "Oxford",
+    "group": "Global Classics",
+    "country": "UK",
+    "city": "Oxford, UK",
+    "year": 1096,
+    "subtitle": "Dreaming Spires Oxford Blue #002147, Bodleian rose, Radcliffe teal & gold",
+    "mode": "dark",
+    "pairSlug": "oxford-light",
+    "bg": "#081624",
+    "fg": "#DCE6F0",
+    "accentKeyword": "#CE8795",
+    "accentFunction": "#AFC7EF",
+    "accentString": "#63C0B8",
+    "accentType": "#93D9AF",
+    "accentNumber": "#FFCC88",
+    "accentStatusBar": "#002147",
+    "metrics": {
+      "fgBg": 14.45,
+      "fgLc": 89.9,
+      "commentBg": 6.36,
+      "sidebarFgBg": 13.53,
+      "minSyntaxCr": 5.69,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "queens-dark",
+        "label": "Queen's Dark",
+        "shortName": "Queen's",
+        "group": "Canadian Universities",
+        "de00": 4.9
+      },
+      {
+        "slug": "upenn-dark",
+        "label": "UPenn Dark",
+        "shortName": "UPenn",
+        "group": "Ivy League",
+        "de00": 5.7
+      },
+      {
+        "slug": "stedwards-dark",
+        "label": "St. Edward's Dark",
+        "shortName": "St. Edward's",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 6
+      },
+      {
+        "slug": "mcgill-dark",
+        "label": "McGill Dark",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 6.3
+      },
+      {
+        "slug": "mit-dark",
+        "label": "MIT Dark",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 6.8
+      },
+      {
+        "slug": "utokyo-dark",
+        "label": "UTokyo Dark",
+        "shortName": "UTokyo",
+        "group": "Global Classics",
+        "de00": 8.5
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-dark",
+      "label": "Dartmouth Dark",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 17.6
+    }
+  },
+  {
+    "slug": "cambridge-light",
+    "label": "Cambridge Light",
+    "university": "University of Cambridge",
+    "shortName": "Cambridge",
+    "group": "Global Classics",
+    "country": "UK",
+    "city": "Cambridge, UK",
+    "year": 1209,
+    "subtitle": "River Cam Light Blue #D1F9F1 mist, Cambridge Dark Blue #133844 & Tudor rose",
+    "mode": "light",
+    "pairSlug": "cambridge-dark",
+    "bg": "#EAF7F4",
+    "fg": "#101B18",
+    "accentKeyword": "#004E48",
+    "accentFunction": "#002334",
+    "accentString": "#A01D64",
+    "accentType": "#374F1D",
+    "accentNumber": "#865906",
+    "accentStatusBar": "#133844",
+    "metrics": {
+      "fgBg": 16.03,
+      "fgLc": 97.9,
+      "commentBg": 6.16,
+      "sidebarFgBg": 14.17,
+      "minSyntaxCr": 5.55,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "eth-light",
+        "label": "ETH Zurich Light",
+        "shortName": "ETH Zurich",
+        "group": "Global Classics",
+        "de00": 8.6
+      },
+      {
+        "slug": "uva-light",
+        "label": "UVA Light",
+        "shortName": "UVA",
+        "group": "US Public Flagships",
+        "de00": 8.9
+      },
+      {
+        "slug": "ucla-light",
+        "label": "UCLA Light",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 9.1
+      },
+      {
+        "slug": "berkeley-light",
+        "label": "UC Berkeley Light",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 9.2
+      },
+      {
+        "slug": "notredame-light",
+        "label": "Notre Dame Light",
+        "shortName": "Notre Dame",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 9.2
+      },
+      {
+        "slug": "utaustin-light",
+        "label": "UT Austin Light",
+        "shortName": "UT Austin",
+        "group": "US Public Flagships",
+        "de00": 9.6
+      }
+    ],
+    "farthest": {
+      "slug": "waterloo-light",
+      "label": "Waterloo Light",
+      "shortName": "Waterloo",
+      "group": "Canadian Universities",
+      "de00": 18.7
+    }
+  },
+  {
+    "slug": "cambridge-dark",
+    "label": "Cambridge Dark",
+    "university": "University of Cambridge",
+    "shortName": "Cambridge",
+    "group": "Global Classics",
+    "country": "UK",
+    "city": "Cambridge, UK",
+    "year": 1209,
+    "subtitle": "Official Cambridge Dark Blue #133844, signature Cambridge Blue #8EE8D8 & gold",
+    "mode": "dark",
+    "pairSlug": "cambridge-light",
+    "bg": "#001E23",
+    "fg": "#D8E8EB",
+    "accentKeyword": "#6DC7B8",
+    "accentFunction": "#86AEC5",
+    "accentString": "#AD7989",
+    "accentType": "#92DD7C",
+    "accentNumber": "#DFB697",
+    "accentStatusBar": "#133844",
+    "metrics": {
+      "fgBg": 13.77,
+      "fgLc": 89.5,
+      "commentBg": 6.1,
+      "sidebarFgBg": 12.82,
+      "minSyntaxCr": 4.85,
+      "minSyntaxRole": "accentString",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "utaustin-dark",
+        "label": "UT Austin Dark",
+        "shortName": "UT Austin",
+        "group": "US Public Flagships",
+        "de00": 8.8
+      },
+      {
+        "slug": "notredame-dark",
+        "label": "Notre Dame Dark",
+        "shortName": "Notre Dame",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 9.1
+      },
+      {
+        "slug": "unc-dark",
+        "label": "UNC Dark",
+        "shortName": "UNC",
+        "group": "US Public Flagships",
+        "de00": 9.2
+      },
+      {
+        "slug": "eth-dark",
+        "label": "ETH Zurich Dark",
+        "shortName": "ETH Zurich",
+        "group": "Global Classics",
+        "de00": 9.3
+      },
+      {
+        "slug": "princeton-dark",
+        "label": "Princeton Dark",
+        "shortName": "Princeton",
+        "group": "Ivy League",
+        "de00": 9.5
+      },
+      {
+        "slug": "ucla-dark",
+        "label": "UCLA Dark",
+        "shortName": "UCLA",
+        "group": "US Public Flagships",
+        "de00": 9.9
+      }
+    ],
+    "farthest": {
+      "slug": "waterloo-dark",
+      "label": "Waterloo Dark",
+      "shortName": "Waterloo",
+      "group": "Canadian Universities",
+      "de00": 18.6
+    }
+  },
+  {
+    "slug": "eth-light",
+    "label": "ETH Zurich Light",
+    "university": "ETH Zurich",
+    "shortName": "ETH Zurich",
+    "group": "Global Classics",
+    "country": "Switzerland",
+    "city": "Zurich, Switzerland",
+    "year": 1855,
+    "subtitle": "Swiss Grid grey #F1F1F1, ETH Blue #215CAF, Petrol, Green, Bronze & Red",
+    "mode": "light",
+    "pairSlug": "eth-dark",
+    "bg": "#F0F1F2",
+    "fg": "#16191B",
+    "accentKeyword": "#882E67",
+    "accentFunction": "#003F8D",
+    "accentString": "#7D2635",
+    "accentType": "#50501F",
+    "accentNumber": "#805C10",
+    "accentStatusBar": "#215CAF",
+    "metrics": {
+      "fgBg": 15.62,
+      "fgLc": 96.1,
+      "commentBg": 6,
+      "sidebarFgBg": 13.75,
+      "minSyntaxCr": 5.37,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "williams-light",
+        "label": "Williams Light",
+        "shortName": "Williams",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 7.5
+      },
+      {
+        "slug": "princeton-light",
+        "label": "Princeton Light",
+        "shortName": "Princeton",
+        "group": "Ivy League",
+        "de00": 7.8
+      },
+      {
+        "slug": "berkeley-light",
+        "label": "UC Berkeley Light",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 8.3
+      },
+      {
+        "slug": "uva-light",
+        "label": "UVA Light",
+        "shortName": "UVA",
+        "group": "US Public Flagships",
+        "de00": 8.4
+      },
+      {
+        "slug": "cambridge-light",
+        "label": "Cambridge Light",
+        "shortName": "Cambridge",
+        "group": "Global Classics",
+        "de00": 8.6
+      },
+      {
+        "slug": "harvard-light",
+        "label": "Harvard Light",
+        "shortName": "Harvard",
+        "group": "Ivy League",
+        "de00": 8.6
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-light",
+      "label": "Dartmouth Light",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 17.3
+    }
+  },
+  {
+    "slug": "eth-dark",
+    "label": "ETH Zurich Dark",
+    "university": "ETH Zurich",
+    "shortName": "ETH Zurich",
+    "group": "Global Classics",
+    "country": "Switzerland",
+    "city": "Zurich, Switzerland",
+    "year": 1855,
+    "subtitle": "Zurich precision carbon, ETH Blue, Petrol #007894, Bronze & Purple",
+    "mode": "dark",
+    "pairSlug": "eth-light",
+    "bg": "#121618",
+    "fg": "#DFE6EB",
+    "accentKeyword": "#FB86CB",
+    "accentFunction": "#66B7FB",
+    "accentString": "#CF7D84",
+    "accentType": "#A7B787",
+    "accentNumber": "#F8D08B",
+    "accentStatusBar": "#003981",
+    "metrics": {
+      "fgBg": 14.44,
+      "fgLc": 90.1,
+      "commentBg": 6.35,
+      "sidebarFgBg": 13.6,
+      "minSyntaxCr": 5.39,
+      "minSyntaxRole": "accentStorage",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "berkeley-dark",
+        "label": "UC Berkeley Dark",
+        "shortName": "UC Berkeley",
+        "group": "US Public Flagships",
+        "de00": 7.7
+      },
+      {
+        "slug": "princeton-dark",
+        "label": "Princeton Dark",
+        "shortName": "Princeton",
+        "group": "Ivy League",
+        "de00": 7.9
+      },
+      {
+        "slug": "harvard-dark",
+        "label": "Harvard Dark",
+        "shortName": "Harvard",
+        "group": "Ivy League",
+        "de00": 8.6
+      },
+      {
+        "slug": "mit-dark",
+        "label": "MIT Dark",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 8.7
+      },
+      {
+        "slug": "cornell-dark",
+        "label": "Cornell Dark",
+        "shortName": "Cornell",
+        "group": "Ivy League",
+        "de00": 8.7
+      },
+      {
+        "slug": "williams-dark",
+        "label": "Williams Dark",
+        "shortName": "Williams",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 8.8
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-dark",
+      "label": "Dartmouth Dark",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 17.4
+    }
+  },
+  {
+    "slug": "utokyo-light",
+    "label": "UTokyo Light",
+    "university": "University of Tokyo",
+    "shortName": "UTokyo",
+    "group": "Global Classics",
+    "country": "Japan",
+    "city": "Tokyo, Japan",
+    "year": 1877,
+    "subtitle": "Hongo washi daylight, UTokyo Blue #187FC3, Akamon vermilion & ginkgo",
+    "mode": "light",
+    "pairSlug": "utokyo-dark",
+    "bg": "#EFF5F7",
+    "fg": "#13191C",
+    "accentKeyword": "#960418",
+    "accentFunction": "#07364C",
+    "accentString": "#096975",
+    "accentType": "#1F541F",
+    "accentNumber": "#815C06",
+    "accentStatusBar": "#187FC3",
+    "metrics": {
+      "fgBg": 16.12,
+      "fgLc": 97.9,
+      "commentBg": 6.16,
+      "sidebarFgBg": 14.18,
+      "minSyntaxCr": 5.5,
+      "minSyntaxRole": "accentNumber",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "mit-light",
+        "label": "MIT Light",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 4
+      },
+      {
+        "slug": "mcgill-light",
+        "label": "McGill Light",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 4.2
+      },
+      {
+        "slug": "upenn-light",
+        "label": "UPenn Light",
+        "shortName": "UPenn",
+        "group": "Ivy League",
+        "de00": 4.9
+      },
+      {
+        "slug": "queens-light",
+        "label": "Queen's Light",
+        "shortName": "Queen's",
+        "group": "Canadian Universities",
+        "de00": 5.2
+      },
+      {
+        "slug": "stedwards-light",
+        "label": "St. Edward's Light",
+        "shortName": "St. Edward's",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 7.2
+      },
+      {
+        "slug": "oxford-light",
+        "label": "Oxford Light",
+        "shortName": "Oxford",
+        "group": "Global Classics",
+        "de00": 7.6
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-light",
+      "label": "Dartmouth Light",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 18.2
+    }
+  },
+  {
+    "slug": "utokyo-dark",
+    "label": "UTokyo Dark",
+    "university": "University of Tokyo",
+    "shortName": "UTokyo",
+    "group": "Global Classics",
+    "country": "Japan",
+    "city": "Tokyo, Japan",
+    "year": 1877,
+    "subtitle": "Hongo Indigo night, UTokyo Sky #5BDEFF, autumn Ginkgo Gold & Akamon",
+    "mode": "dark",
+    "pairSlug": "utokyo-light",
+    "bg": "#081822",
+    "fg": "#DAE7EF",
+    "accentKeyword": "#FB928B",
+    "accentFunction": "#40EEFF",
+    "accentString": "#62BECD",
+    "accentType": "#8DDAAC",
+    "accentNumber": "#FFD046",
+    "accentStatusBar": "#004069",
+    "metrics": {
+      "fgBg": 14.31,
+      "fgLc": 90,
+      "commentBg": 6.3,
+      "sidebarFgBg": 13.5,
+      "minSyntaxCr": 5.6,
+      "minSyntaxRole": "colorError",
+      "severeCvdCount": 0
+    },
+    "neighbors": [
+      {
+        "slug": "upenn-dark",
+        "label": "UPenn Dark",
+        "shortName": "UPenn",
+        "group": "Ivy League",
+        "de00": 5.3
+      },
+      {
+        "slug": "mit-dark",
+        "label": "MIT Dark",
+        "shortName": "MIT",
+        "group": "US Private Research & STEM",
+        "de00": 5.6
+      },
+      {
+        "slug": "stedwards-dark",
+        "label": "St. Edward's Dark",
+        "shortName": "St. Edward's",
+        "group": "Liberal Arts & Regional Gems",
+        "de00": 6.2
+      },
+      {
+        "slug": "mcgill-dark",
+        "label": "McGill Dark",
+        "shortName": "McGill",
+        "group": "Canadian Universities",
+        "de00": 7
+      },
+      {
+        "slug": "queens-dark",
+        "label": "Queen's Dark",
+        "shortName": "Queen's",
+        "group": "Canadian Universities",
+        "de00": 8.1
+      },
+      {
+        "slug": "oxford-dark",
+        "label": "Oxford Dark",
+        "shortName": "Oxford",
+        "group": "Global Classics",
+        "de00": 8.5
+      }
+    ],
+    "farthest": {
+      "slug": "dartmouth-dark",
+      "label": "Dartmouth Dark",
+      "shortName": "Dartmouth",
+      "group": "Ivy League",
+      "de00": 18.7
+    }
+  }
+]

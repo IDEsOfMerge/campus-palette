@@ -1,0 +1,83 @@
+'use strict';
+
+// St. Edward's University (1885, Austin, TX) -- Light
+//
+// Built straight from St. Edward's University's Austin Hilltop visual identity:
+// official Limestone `#F7F3ED` (`bg`) and Waterloo `#E2DBC4`-inspired warm chrome
+// frame Sorin Navy `#192E56` (PMS 281 C, `accentStatusBar`, `accentFunction`), Main
+// Building Red Doors `#EA4433` (PMS 1788 C, AA-tuned for `accentKeyword` & exact on
+// badges), Gold Medallion `#EDB920` (PMS 7408 C, ochre-gold `accentNumber`), Texas
+// Live Oak green (`accentType`), and Bridge Bats / Grackle ink neutrals.
+
+module.exports = {
+  slug: 'stedwards-light',
+  label: "St. Edward's Light",
+  university: "St. Edward's University",
+  shortName: "St. Edward's",
+  group: "Liberal Arts & Regional Gems",
+  country: "USA",
+  city: "Austin, TX",
+  year: 1885,
+  subtitle: "Hilltop Limestone #F7F3ED, Sorin #192E56, Red Doors #EA4433 & Gold Medallion",
+  tokens: {
+    mode: 'light',
+    bg: '#F7F2EB',
+    fg: '#1C1811',
+    bgLine: '#EDE8E0',
+    bgWidget: '#FCF7F0',
+    bgInput: '#FEFAF3',
+    bgSidebar: '#EAE4DC',
+    bgPanel: '#E8E2DA',
+    bgActivity: '#E5DFD6',
+    tintHover: '#E7DBC8',
+    tintSelect: '#DBCBB3',
+    fgSecondary: '#474138',
+    fgMuted: '#7A736A',
+    fgVariable: '#29231A',
+    fgPunct: '#524C43',
+    fgComment: '#615A4F',
+    fgParameter: '#24523B',
+    fgProperty: '#204565',
+    borderSubtle: '#D2CDC5',
+    borderStrong: '#9E9991',
+    accentKeyword: '#941302',
+    accentStorage: '#521A6D',
+    accentString: '#0C6878',
+    accentRegex: '#8B3F00',
+    accentFunction: '#0D203A',
+    accentFunctionDim: '#1A274C',
+    accentType: '#344F30',
+    accentInterface: '#006180',
+    accentNumber: '#7C5226',
+    accentDecorator: '#8C1D61',
+    accentNamespace: '#4F523F',
+    accentCursor: '#192E56',
+    accentFocus: '#192E56',
+    accentBadge: '#EA4433',
+    accentButton: '#192E56',
+    accentStatusBar: '#192E56',
+    colorError: '#471026',
+    colorWarning: '#864F00',
+    colorInfo: '#025896',
+    gitAdd: '#186C40',
+    gitDelete: '#471026',
+    ansi: {
+      black: '#1C1811',
+      red: '#A21829',
+      green: '#086E22',
+      yellow: '#7E5900',
+      blue: '#00569D',
+      magenta: '#7B3290',
+      cyan: '#00686B',
+      white: '#474138',
+      brightBlack: '#615A4F',
+      brightRed: '#B31220',
+      brightGreen: '#007530',
+      brightYellow: '#7F5D00',
+      brightBlue: '#005AB7',
+      brightMagenta: '#8D319B',
+      brightCyan: '#006E75',
+      brightWhite: '#25211B',
+    },
+  },
+};

@@ -1,0 +1,577 @@
+{
+  "name": "campus-palette",
+  "displayName": "Campus Palette",
+  "description": "80 university-inspired Light & Dark color themes for VS Code & Positron across 40 iconic US, Canadian & global campuses, engineered in OKLCH with verified WCAG 2.1 AA, APCA, CIEDE2000 & colorblind safety.",
+  "version": "1.0.0",
+  "publisher": "idesofmerge",
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#192E56",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IDEsOfMerge/campus-palette.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IDEsOfMerge/campus-palette/issues"
+  },
+  "homepage": "https://github.com/IDEsOfMerge/campus-palette",
+  "engines": {
+    "vscode": "^1.80.0",
+    "positron": ">=2025.1.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "color theme",
+    "university",
+    "campus",
+    "college",
+    "academic",
+    "ivy league",
+    "harvard",
+    "yale",
+    "princeton",
+    "mit",
+    "stanford",
+    "berkeley",
+    "ucla",
+    "michigan",
+    "oxford",
+    "cambridge",
+    "eth zurich",
+    "utoronto",
+    "mcgill",
+    "ubc",
+    "waterloo",
+    "oklch",
+    "accessible",
+    "wcag",
+    "colorblind",
+    "dark theme",
+    "light theme",
+    "positron"
+  ],
+  "main": "./extension.js",
+  "scripts": {
+    "build": "node scripts/generate-themes.js && node scripts/generate-explorer.js",
+    "themes": "node scripts/generate-themes.js",
+    "explorer": "node scripts/generate-explorer.js",
+    "swatches": "node scripts/generate-swatches.js",
+    "validate": "node scripts/validate.js",
+    "test": "node --test test/*.test.js",
+    "package": "npx --yes @vscode/vsce package",
+    "export-data": "node scripts/export-color-data.js",
+    "catalog": "node scripts/generate-readme-catalog.js"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Brown Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/brown-dark.json"
+      },
+      {
+        "label": "Brown Light",
+        "uiTheme": "vs",
+        "path": "./themes/brown-light.json"
+      },
+      {
+        "label": "Caltech Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/caltech-dark.json"
+      },
+      {
+        "label": "Caltech Light",
+        "uiTheme": "vs",
+        "path": "./themes/caltech-light.json"
+      },
+      {
+        "label": "Cambridge Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cambridge-dark.json"
+      },
+      {
+        "label": "Cambridge Light",
+        "uiTheme": "vs",
+        "path": "./themes/cambridge-light.json"
+      },
+      {
+        "label": "Columbia Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/columbia-dark.json"
+      },
+      {
+        "label": "Columbia Light",
+        "uiTheme": "vs",
+        "path": "./themes/columbia-light.json"
+      },
+      {
+        "label": "Cornell Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cornell-dark.json"
+      },
+      {
+        "label": "Cornell Light",
+        "uiTheme": "vs",
+        "path": "./themes/cornell-light.json"
+      },
+      {
+        "label": "Dartmouth Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dartmouth-dark.json"
+      },
+      {
+        "label": "Dartmouth Light",
+        "uiTheme": "vs",
+        "path": "./themes/dartmouth-light.json"
+      },
+      {
+        "label": "Duke Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/duke-dark.json"
+      },
+      {
+        "label": "Duke Light",
+        "uiTheme": "vs",
+        "path": "./themes/duke-light.json"
+      },
+      {
+        "label": "ETH Zurich Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/eth-dark.json"
+      },
+      {
+        "label": "ETH Zurich Light",
+        "uiTheme": "vs",
+        "path": "./themes/eth-light.json"
+      },
+      {
+        "label": "Georgetown Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/georgetown-dark.json"
+      },
+      {
+        "label": "Georgetown Light",
+        "uiTheme": "vs",
+        "path": "./themes/georgetown-light.json"
+      },
+      {
+        "label": "Georgia Tech Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gatech-dark.json"
+      },
+      {
+        "label": "Georgia Tech Light",
+        "uiTheme": "vs",
+        "path": "./themes/gatech-light.json"
+      },
+      {
+        "label": "Harvard Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/harvard-dark.json"
+      },
+      {
+        "label": "Harvard Light",
+        "uiTheme": "vs",
+        "path": "./themes/harvard-light.json"
+      },
+      {
+        "label": "McGill Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/mcgill-dark.json"
+      },
+      {
+        "label": "McGill Light",
+        "uiTheme": "vs",
+        "path": "./themes/mcgill-light.json"
+      },
+      {
+        "label": "MIT Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/mit-dark.json"
+      },
+      {
+        "label": "MIT Light",
+        "uiTheme": "vs",
+        "path": "./themes/mit-light.json"
+      },
+      {
+        "label": "Northwestern Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/northwestern-dark.json"
+      },
+      {
+        "label": "Northwestern Light",
+        "uiTheme": "vs",
+        "path": "./themes/northwestern-light.json"
+      },
+      {
+        "label": "Notre Dame Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/notredame-dark.json"
+      },
+      {
+        "label": "Notre Dame Light",
+        "uiTheme": "vs",
+        "path": "./themes/notredame-light.json"
+      },
+      {
+        "label": "NYU Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/nyu-dark.json"
+      },
+      {
+        "label": "NYU Light",
+        "uiTheme": "vs",
+        "path": "./themes/nyu-light.json"
+      },
+      {
+        "label": "Oxford Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/oxford-dark.json"
+      },
+      {
+        "label": "Oxford Light",
+        "uiTheme": "vs",
+        "path": "./themes/oxford-light.json"
+      },
+      {
+        "label": "Princeton Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/princeton-dark.json"
+      },
+      {
+        "label": "Princeton Light",
+        "uiTheme": "vs",
+        "path": "./themes/princeton-light.json"
+      },
+      {
+        "label": "Queen's Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/queens-dark.json"
+      },
+      {
+        "label": "Queen's Light",
+        "uiTheme": "vs",
+        "path": "./themes/queens-light.json"
+      },
+      {
+        "label": "Rice Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/rice-dark.json"
+      },
+      {
+        "label": "Rice Light",
+        "uiTheme": "vs",
+        "path": "./themes/rice-light.json"
+      },
+      {
+        "label": "St. Edward's Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/stedwards-dark.json"
+      },
+      {
+        "label": "St. Edward's Light",
+        "uiTheme": "vs",
+        "path": "./themes/stedwards-light.json"
+      },
+      {
+        "label": "Stanford Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/stanford-dark.json"
+      },
+      {
+        "label": "Stanford Light",
+        "uiTheme": "vs",
+        "path": "./themes/stanford-light.json"
+      },
+      {
+        "label": "U of T Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/utoronto-dark.json"
+      },
+      {
+        "label": "U of T Light",
+        "uiTheme": "vs",
+        "path": "./themes/utoronto-light.json"
+      },
+      {
+        "label": "UAlberta Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ualberta-dark.json"
+      },
+      {
+        "label": "UAlberta Light",
+        "uiTheme": "vs",
+        "path": "./themes/ualberta-light.json"
+      },
+      {
+        "label": "UBC Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ubc-dark.json"
+      },
+      {
+        "label": "UBC Light",
+        "uiTheme": "vs",
+        "path": "./themes/ubc-light.json"
+      },
+      {
+        "label": "UC Berkeley Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/berkeley-dark.json"
+      },
+      {
+        "label": "UC Berkeley Light",
+        "uiTheme": "vs",
+        "path": "./themes/berkeley-light.json"
+      },
+      {
+        "label": "UChicago Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/uchicago-dark.json"
+      },
+      {
+        "label": "UChicago Light",
+        "uiTheme": "vs",
+        "path": "./themes/uchicago-light.json"
+      },
+      {
+        "label": "UCLA Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ucla-dark.json"
+      },
+      {
+        "label": "UCLA Light",
+        "uiTheme": "vs",
+        "path": "./themes/ucla-light.json"
+      },
+      {
+        "label": "UMich Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/umich-dark.json"
+      },
+      {
+        "label": "UMich Light",
+        "uiTheme": "vs",
+        "path": "./themes/umich-light.json"
+      },
+      {
+        "label": "UNC Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/unc-dark.json"
+      },
+      {
+        "label": "UNC Light",
+        "uiTheme": "vs",
+        "path": "./themes/unc-light.json"
+      },
+      {
+        "label": "UPenn Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/upenn-dark.json"
+      },
+      {
+        "label": "UPenn Light",
+        "uiTheme": "vs",
+        "path": "./themes/upenn-light.json"
+      },
+      {
+        "label": "UT Austin Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/utaustin-dark.json"
+      },
+      {
+        "label": "UT Austin Light",
+        "uiTheme": "vs",
+        "path": "./themes/utaustin-light.json"
+      },
+      {
+        "label": "UTokyo Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/utokyo-dark.json"
+      },
+      {
+        "label": "UTokyo Light",
+        "uiTheme": "vs",
+        "path": "./themes/utokyo-light.json"
+      },
+      {
+        "label": "UVA Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/uva-dark.json"
+      },
+      {
+        "label": "UVA Light",
+        "uiTheme": "vs",
+        "path": "./themes/uva-light.json"
+      },
+      {
+        "label": "UVic Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/uvic-dark.json"
+      },
+      {
+        "label": "UVic Light",
+        "uiTheme": "vs",
+        "path": "./themes/uvic-light.json"
+      },
+      {
+        "label": "UW Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/uw-dark.json"
+      },
+      {
+        "label": "UW Light",
+        "uiTheme": "vs",
+        "path": "./themes/uw-light.json"
+      },
+      {
+        "label": "Waterloo Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/waterloo-dark.json"
+      },
+      {
+        "label": "Waterloo Light",
+        "uiTheme": "vs",
+        "path": "./themes/waterloo-light.json"
+      },
+      {
+        "label": "Western Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/western-dark.json"
+      },
+      {
+        "label": "Western Light",
+        "uiTheme": "vs",
+        "path": "./themes/western-light.json"
+      },
+      {
+        "label": "Williams Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/williams-dark.json"
+      },
+      {
+        "label": "Williams Light",
+        "uiTheme": "vs",
+        "path": "./themes/williams-light.json"
+      },
+      {
+        "label": "Yale Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/yale-dark.json"
+      },
+      {
+        "label": "Yale Light",
+        "uiTheme": "vs",
+        "path": "./themes/yale-light.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "campusPalette.toggleTheme",
+        "title": "Campus Palette: Toggle Light / Dark Theme"
+      },
+      {
+        "command": "campusPalette.pickTheme",
+        "title": "Campus Palette: Choose University Theme"
+      },
+      {
+        "command": "campusPalette.pickSimilarTheme",
+        "title": "Campus Palette: Pick Chromatically Similar Theme"
+      },
+      {
+        "command": "campusPalette.randomTheme",
+        "title": "Campus Palette: Random University Theme"
+      },
+      {
+        "command": "campusPalette.randomThemeSameMode",
+        "title": "Campus Palette: Random Theme (Keep Light / Dark Mode)"
+      },
+      {
+        "command": "campusPalette.syncOsThemePair",
+        "title": "Campus Palette: Sync Light & Dark Pair with OS Appearance"
+      },
+      {
+        "command": "campusPalette.openExplorer",
+        "title": "Campus Palette: Open Interactive Theme Explorer"
+      }
+    ],
+    "configuration": {
+      "title": "Campus Palette",
+      "properties": {
+        "campusPalette.showStatusBarItem": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "Show or hide the **Campus Palette** university theme quick-picker item in the status bar."
+        }
+      }
+    },
+    "keybindings": [
+      {
+        "command": "campusPalette.toggleTheme",
+        "key": "ctrl+k ctrl+u",
+        "mac": "cmd+k cmd+u"
+      }
+    ],
+    "walkthroughs": [
+      {
+        "id": "campusPalette.gettingStarted",
+        "title": "Welcome to Campus Palette",
+        "description": "40 iconic universities across 6 collegiate groupings · 80 scientifically tuned Light & Dark themes — a quick tour.",
+        "steps": [
+          {
+            "id": "pickTheme",
+            "title": "Choose your campus theme (with live preview)",
+            "description": "Every one of the 40 universities across the Ivy League, Canadian Universities, US Public Flagships, US Private Research & STEM, Liberal Arts & Regional Gems, and Global Classics gets a matched Light and Dark pair crafted in OKLCH from official campus color palettes. Arrow through the list to preview live before committing.\n[Choose a University Theme](command:campusPalette.pickTheme)",
+            "media": {
+              "image": "icon.png",
+              "altText": "Campus Palette emblem"
+            },
+            "completionEvents": [
+              "onCommand:campusPalette.pickTheme"
+            ]
+          },
+          {
+            "id": "toggle",
+            "title": "Toggle Light and Dark for your active campus",
+            "description": "A smart, per-university toggle that flips cleanly between the sunlit quad Light variant and late-night library Dark variant of whichever campus theme is active. Bound to `ctrl+k ctrl+u` (`cmd+k cmd+u` on Mac), or run it from the Command Palette.\n[Toggle Light / Dark Theme](command:campusPalette.toggleTheme)",
+            "media": {
+              "markdown": "assets/walkthrough/toggle.md"
+            },
+            "completionEvents": [
+              "onCommand:campusPalette.toggleTheme"
+            ]
+          },
+          {
+            "id": "heritage",
+            "title": "Official institutional hues, engineered for long sessions",
+            "description": "From Harvard Crimson and Yale Blue to Oxford Navy, ETH Zurich Cobalt, U of T Blue, UT Austin Burnt Orange, and St. Edward's Hilltop Gold — each campus's official brand palette is harmonized in OKLCH with campus stone, brick, and slate surfaces so every syntax token stays unmistakable.",
+            "media": {
+              "image": "icon.png",
+              "altText": "Campus Palette Light and Dark emblem"
+            }
+          },
+          {
+            "id": "colorScience",
+            "title": "Launch the Interactive Theme & Colorimetry Explorer",
+            "description": "Inspect OKLCH coordinates, WCAG 2.1 + APCA contrast, perceptual CIEDE2000 similarity maps, and real-time protanopia/deuteranopia/tritanopia simulations across all 80 themes — and apply any campus straight into your editor.\n[Open Interactive Theme Explorer](command:campusPalette.openExplorer)",
+            "media": {
+              "markdown": "assets/walkthrough/color-science.md"
+            },
+            "completionEvents": [
+              "onCommand:campusPalette.openExplorer"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
