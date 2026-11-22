@@ -24,8 +24,8 @@ const GROUP_ORDER = [
   'Canadian Universities',
   'US Public Flagships',
   'US Private Research & STEM',
-  'Liberal Arts & Regional Gems',
-  'Global Classics',
+  'Liberal Arts & Independent',
+  'Global Universities',
 ];
 
 const SEARCH_ALIASES = {
@@ -2037,8 +2037,8 @@ function buildHtml({ dataset, campusGroups, mdsMeta, target }) {
           <button type="button" class="filter-chip" data-group="Canadian Universities" aria-pressed="false">Canadian Universities</button>
           <button type="button" class="filter-chip" data-group="US Public Flagships" aria-pressed="false">US Public Flagships</button>
           <button type="button" class="filter-chip" data-group="US Private Research &amp; STEM" aria-pressed="false">US Private Research &amp; STEM</button>
-          <button type="button" class="filter-chip" data-group="Liberal Arts &amp; Regional Gems" aria-pressed="false">Liberal Arts &amp; Regional Gems</button>
-          <button type="button" class="filter-chip" data-group="Global Classics" aria-pressed="false">Global Classics</button>
+          <button type="button" class="filter-chip" data-group="Liberal Arts &amp; Independent" aria-pressed="false">Liberal Arts &amp; Independent</button>
+          <button type="button" class="filter-chip" data-group="Global Universities" aria-pressed="false">Global Universities</button>
         </div>
         <span class="filter-count" id="filter-count" aria-live="polite">Showing ${totalCampuses} / ${totalCampuses} campuses</span>
       </div>
@@ -3527,8 +3527,8 @@ function buildHtml({ dataset, campusGroups, mdsMeta, target }) {
         'Canadian Universities': '#0077B6',
         'US Public Flagships': '#D97706',
         'US Private Research & STEM': '#7C3AED',
-        'Liberal Arts & Regional Gems': '#0F9D7A',
-        'Global Classics': '#C0267B',
+        'Liberal Arts & Independent': '#0F9D7A',
+        'Global Universities': '#C0267B',
       };
       const COUNTRY_COLORS_MAP = {
         'USA': '#2563EB',

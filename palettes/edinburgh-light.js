@@ -13,7 +13,7 @@ module.exports = {
   label: "Edinburgh Light",
   university: "University of Edinburgh",
   shortName: "Edinburgh",
-  group: "Global Classics",
+  group: "Global Universities",
   country: "UK",
   city: "Edinburgh, UK",
   year: 1583,

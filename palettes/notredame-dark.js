@@ -11,7 +11,7 @@ module.exports = {
   label: "Notre Dame Dark",
   university: "University of Notre Dame",
   shortName: "Notre Dame",
-  group: "Liberal Arts & Regional Gems",
+  group: "Liberal Arts & Independent",
   country: "USA",
   city: "Notre Dame, IN",
   year: 1842,

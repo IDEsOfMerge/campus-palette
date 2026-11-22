@@ -35,8 +35,8 @@ const VALID_GROUPS = new Set([
   'Canadian Universities',
   'US Public Flagships',
   'US Private Research & STEM',
-  'Liberal Arts & Regional Gems',
-  'Global Classics',
+  'Liberal Arts & Independent',
+  'Global Universities',
 ]);
 
 const VALID_COUNTRIES = new Set([

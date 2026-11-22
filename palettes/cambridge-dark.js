@@ -12,7 +12,7 @@ module.exports = {
   label: "Cambridge Dark",
   university: "University of Cambridge",
   shortName: "Cambridge",
-  group: "Global Classics",
+  group: "Global Universities",
   country: "UK",
   city: "Cambridge, UK",
   year: 1209,

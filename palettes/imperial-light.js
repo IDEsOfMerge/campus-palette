@@ -13,7 +13,7 @@ module.exports = {
   label: "Imperial Light",
   university: "Imperial College London",
   shortName: "Imperial",
-  group: "Global Classics",
+  group: "Global Universities",
   country: "UK",
   city: "London, UK",
   year: 1907,

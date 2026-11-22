@@ -13,19 +13,19 @@ library(ggrepel)
 dir.create("assets/color-science", showWarnings = FALSE, recursive = TRUE)
 
 GROUP_ORDER <- c(
-  "Global Classics",
+  "Global Universities",
   "Ivy League",
   "US Public Flagships",
-  "Liberal Arts & Regional Gems",
+  "Liberal Arts & Independent",
   "US Private Research & STEM",
   "Canadian Universities"
 )
 
 GROUP_COLORS <- c(
-  "Global Classics"              = "#B67B0C",
+  "Global Universities"          = "#B67B0C",
   "Ivy League"                   = "#B81D32",
   "US Public Flagships"          = "#1657B5",
-  "Liberal Arts & Regional Gems" = "#127D49",
+  "Liberal Arts & Independent"   = "#127D49",
   "US Private Research & STEM"   = "#6B3CB8",
   "Canadian Universities"        = "#0A7E86"
 )

@@ -13,7 +13,7 @@ module.exports = {
   label: "EPFL Light",
   university: "EPFL",
   shortName: "EPFL",
-  group: "Global Classics",
+  group: "Global Universities",
   country: "Switzerland",
   city: "Lausanne, Switzerland",
   year: 1853,

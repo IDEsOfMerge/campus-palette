@@ -11,7 +11,7 @@ module.exports = {
   label: "Amherst Dark",
   university: "Amherst College",
   shortName: "Amherst",
-  group: "Liberal Arts & Regional Gems",
+  group: "Liberal Arts & Independent",
   country: "USA",
   city: "Amherst, MA",
   year: 1821,

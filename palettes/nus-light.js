@@ -13,7 +13,7 @@ module.exports = {
   label: "NUS Light",
   university: "National University of Singapore",
   shortName: "NUS",
-  group: "Global Classics",
+  group: "Global Universities",
   country: "Singapore",
   city: "Singapore",
   year: 1905,

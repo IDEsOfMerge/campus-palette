@@ -596,8 +596,8 @@ describe('extension: pickTheme', () => {
       'Canadian Universities',
       'US Public Flagships',
       'US Private Research & STEM',
-      'Liberal Arts & Regional Gems',
-      'Global Classics',
+      'Liberal Arts & Independent',
+      'Global Universities',
     ];
     for (let i = 0; i < expectedGroups.length; i++) {
       assert.ok(

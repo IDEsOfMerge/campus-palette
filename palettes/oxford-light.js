@@ -14,7 +14,7 @@ module.exports = {
   label: "Oxford Light",
   university: "University of Oxford",
   shortName: "Oxford",
-  group: "Global Classics",
+  group: "Global Universities",
   country: "UK",
   city: "Oxford, UK",
   year: 1096,

@@ -13,7 +13,7 @@ module.exports = {
   label: "Melbourne Light",
   university: "University of Melbourne",
   shortName: "Melbourne",
-  group: "Global Classics",
+  group: "Global Universities",
   country: "Australia",
   city: "Melbourne, Australia",
   year: 1853,

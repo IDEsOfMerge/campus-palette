@@ -13,7 +13,7 @@ module.exports = {
   label: "ETH Zurich Light",
   university: "ETH Zurich",
   shortName: "ETH Zurich",
-  group: "Global Classics",
+  group: "Global Universities",
   country: "Switzerland",
   city: "Zurich, Switzerland",
   year: 1855,

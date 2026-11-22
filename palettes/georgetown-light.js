@@ -13,7 +13,7 @@ module.exports = {
   label: "Georgetown Light",
   university: "Georgetown University",
   shortName: "Georgetown",
-  group: "Liberal Arts & Regional Gems",
+  group: "Liberal Arts & Independent",
   country: "USA",
   city: "Washington, DC",
   year: 1789,

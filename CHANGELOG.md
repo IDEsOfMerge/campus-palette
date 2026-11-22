@@ -4,6 +4,14 @@ All notable changes to **Campus Palette** are documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+- **Neutral Collegiate Grouping Names**: Renamed two collegiate groupings across all palettes, metadata, QuickPick, Interactive Explorer, README catalog, color-science CSVs/R scripts, and visualizations:
+  - `Global Classics` → **`Global Universities`**
+  - `Liberal Arts & Regional Gems` → **`Liberal Arts & Independent`**
+- **Redesigned Collegiate Heritage Metro Map & Founding Timeline Polish**: Rebuilt `assets/timeline/timeline-metro.png` as a 2× Retina vector transit diagram with exact founding-year vertical alignment across all six lines, four shaded historical era bands, a fixed left transit rail, twin-interchange pills for same-year ties, and 1D PAVA zero-overlap labels; expanded top ruler breathing room on `assets/diagrams/founding-timeline-{dark,light}.png`.
+
 ## [1.1.0] — 2026-11-22
 
 ### Added

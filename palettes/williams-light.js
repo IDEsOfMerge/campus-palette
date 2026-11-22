@@ -12,7 +12,7 @@ module.exports = {
   label: "Williams Light",
   university: "Williams College",
   shortName: "Williams",
-  group: "Liberal Arts & Regional Gems",
+  group: "Liberal Arts & Independent",
   country: "USA",
   city: "Williamstown, MA",
   year: 1793,

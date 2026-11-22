@@ -14,7 +14,7 @@ module.exports = {
   label: "St. Edward's Light",
   university: "St. Edward's University",
   shortName: "St. Edward's",
-  group: "Liberal Arts & Regional Gems",
+  group: "Liberal Arts & Independent",
   country: "USA",
   city: "Austin, TX",
   year: 1885,

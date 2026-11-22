@@ -12,7 +12,7 @@ module.exports = {
   label: "UTokyo Dark",
   university: "University of Tokyo",
   shortName: "UTokyo",
-  group: "Global Classics",
+  group: "Global Universities",
   country: "Japan",
   city: "Tokyo, Japan",
   year: 1877,

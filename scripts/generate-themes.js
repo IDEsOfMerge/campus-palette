@@ -23,8 +23,8 @@ const GROUP_ORDER = [
   'Canadian Universities',
   'US Public Flagships',
   'US Private Research & STEM',
-  'Liberal Arts & Regional Gems',
-  'Global Classics',
+  'Liberal Arts & Independent',
+  'Global Universities',
 ];
 
 // Explicit canonical order of all 60 universities (grouped by collegiate
@@ -78,14 +78,14 @@ const UNIVERSITY_ORDER = [
   'University of Chicago',
   'Caltech',
   'Carnegie Mellon University',
-  // Liberal Arts & Regional Gems (6)
+  // Liberal Arts & Independent (6)
   'Georgetown University',
   'Williams College',
   'Amherst College',
   'University of Notre Dame',
   "St. Edward's University",
   'Rice University',
-  // Global Classics (10)
+  // Global Universities (10)
   'University of Oxford',
   'University of Cambridge',
   'University of Edinburgh',

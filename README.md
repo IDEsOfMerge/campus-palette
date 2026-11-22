@@ -50,14 +50,14 @@ Every palette is engineered and verified in **OKLCH** perceptual color space aga
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/diagrams/founding-timeline-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="assets/diagrams/founding-timeline-light.png">
-  <img alt="Campus Palette — 60 Universities by Founding Year (1096–1974) across 6 collegiate groupings: Ivy League (8), Canadian Universities (14), US Public Flagships (12), US Private Research &amp; STEM (10), Liberal Arts &amp; Regional Gems (6), and Global Classics (10)" src="assets/diagrams/founding-timeline-dark.png" width="900">
+  <img alt="Campus Palette — 60 Universities by Founding Year (1096–1974) across 6 collegiate groupings: Ivy League (8), Canadian Universities (14), US Public Flagships (12), US Private Research &amp; STEM (10), Liberal Arts &amp; Independent (6), and Global Universities (10)" src="assets/diagrams/founding-timeline-dark.png" width="900">
 </picture>
 
 ## ...and along the Collegiate Heritage Metro Map
 
-Organized as a six-line transit metro map spanning **1096 to 1974** across four historical eras — every station sits at its exact founding year so same-year contemporaries align vertically across **Global Classics**, **Ivy League**, **US Public Flagships**, **Liberal Arts & Regional Gems**, **US Private Research & STEM**, and **Canadian Universities**:
+Organized as a six-line transit metro map spanning **1096 to 1974** across four historical eras — every station sits at its exact founding year so same-year contemporaries align vertically across **Global Universities**, **Ivy League**, **US Public Flagships**, **Liberal Arts & Independent**, **US Private Research & STEM**, and **Canadian Universities**:
 
-<img src="assets/timeline/timeline-metro.png" alt="Campus Palette Collegiate Heritage Metro Map (1096–1974) pinning all 60 universities to exact founding years across four historical eras and six collegiate transit lines: Global Classics, Ivy League, US Public Flagships, Liberal Arts &amp; Regional Gems, US Private Research &amp; STEM, and Canadian Universities" width="900">
+<img src="assets/timeline/timeline-metro.png" alt="Campus Palette Collegiate Heritage Metro Map (1096–1974) pinning all 60 universities to exact founding years across four historical eras and six collegiate transit lines: Global Universities, Ivy League, US Public Flagships, Liberal Arts &amp; Independent, US Private Research &amp; STEM, and Canadian Universities" width="900">
 
 ```sh
 python3 scripts/generate-color-science-assets.py  # or: Rscript --vanilla analysis/timeline_metro.R
@@ -195,7 +195,7 @@ Each university name links directly to its published institutional brand guideli
 | **[Caltech](https://identity.caltech.edu/colors)** | Pasadena, CA · 1891 | ![Caltech Light](assets/swatches/caltech-light.png) | ![Caltech Dark](assets/swatches/caltech-dark.png) |
 | **[Carnegie Mellon University](https://brand.cmu.edu/visual-identity/colors)** | Pittsburgh, PA · 1900 | ![CMU Light](assets/swatches/cmu-light.png) | ![CMU Dark](assets/swatches/cmu-dark.png) |
 
-### Liberal Arts & Regional Gems (6 universities · 12 themes)
+### Liberal Arts & Independent (6 universities · 12 themes)
 
 | University (Official Brand Guide) | Location & Founded | Light (bg · kw · str · fn · type · num · bar) | Dark (bg · kw · str · fn · type · num · bar) |
 |---|---|---|---|
@@ -206,7 +206,7 @@ Each university name links directly to its published institutional brand guideli
 | **[St. Edward's University](https://www.stedwards.edu/faculty-staff/brand/visual-identity/color)** | Austin, TX · 1885 | ![St. Edward's Light](assets/swatches/stedwards-light.png) | ![St. Edward's Dark](assets/swatches/stedwards-dark.png) |
 | **[Rice University](https://brand.rice.edu/colors)** | Houston, TX · 1912 | ![Rice Light](assets/swatches/rice-light.png) | ![Rice Dark](assets/swatches/rice-dark.png) |
 
-### Global Classics (10 universities · 20 themes)
+### Global Universities (10 universities · 20 themes)
 
 | University (Official Brand Guide) | Location & Founded | Light (bg · kw · str · fn · type · num · bar) | Dark (bg · kw · str · fn · type · num · bar) |
 |---|---|---|---|
@@ -256,7 +256,7 @@ code --extensionDevelopmentPath="<full path to this folder>"
 
 ## Selecting & previewing themes
 
-- **Campus Palette: Open Interactive Theme Explorer** (Command Palette or Welcome walkthrough): opens a 100% offline interactive workbench & colorimetry studio directly inside VS Code / Positron — filter all 60 universities by name, city, country, founding year, or collegiate grouping (`All · Ivy League · Canadian Universities · US Public Flagships · US Private Research & STEM · Liberal Arts & Regional Gems · Global Classics`), click **Official Brand Guidelines ↗** directly in the active theme Story Bar or inside the MDS Inspector Panel to open any institution's source brand palette, launch the **Interactive 2D CIEDE2000 MDS Similarity Map** (`M`) colored by Theme Swatch, Grouping, or Country (7 countries) with live `ΔE₀₀` hover inspection, hop directly between **Nearest Chromatic Neighbors** chips, launch **Side-by-Side Compare** (`C`) with dual OKLab polygons, preview Python / R / TypeScript / SQL / Quarto buffers, simulate Protanopia / Deuteranopia / Tritanopia in real time, export palettes for **VS Code**, **Ghostty**, **WezTerm**, **Alacritty**, **Windows Terminal**, **Kitty**, **iTerm2**, or **CSS variables**, copy stateful shareable links, and click **Apply to Workbench** to switch your editor theme on the fly. The exact same explorer is hosted live via **[GitHub Pages](https://idesofmerge.github.io/campus-palette/)**.
+- **Campus Palette: Open Interactive Theme Explorer** (Command Palette or Welcome walkthrough): opens a 100% offline interactive workbench & colorimetry studio directly inside VS Code / Positron — filter all 60 universities by name, city, country, founding year, or collegiate grouping (`All · Ivy League · Canadian Universities · US Public Flagships · US Private Research & STEM · Liberal Arts & Independent · Global Universities`), click **Official Brand Guidelines ↗** directly in the active theme Story Bar or inside the MDS Inspector Panel to open any institution's source brand palette, launch the **Interactive 2D CIEDE2000 MDS Similarity Map** (`M`) colored by Theme Swatch, Grouping, or Country (7 countries) with live `ΔE₀₀` hover inspection, hop directly between **Nearest Chromatic Neighbors** chips, launch **Side-by-Side Compare** (`C`) with dual OKLab polygons, preview Python / R / TypeScript / SQL / Quarto buffers, simulate Protanopia / Deuteranopia / Tritanopia in real time, export palettes for **VS Code**, **Ghostty**, **WezTerm**, **Alacritty**, **Windows Terminal**, **Kitty**, **iTerm2**, or **CSS variables**, copy stateful shareable links, and click **Apply to Workbench** to switch your editor theme on the fly. The exact same explorer is hosted live via **[GitHub Pages](https://idesofmerge.github.io/campus-palette/)**.
 - **Campus Palette: Choose University Theme** (Command Palette or click the active theme badge in the bottom-right status bar): opens a grouping-organized quick-pick across all 60 universities (searchable by institution, city, country, founding year, or grouping) with **live theme preview** as you arrow up/down, architectural subtitle notes, an active indicator, and clean `Esc` rollback.
 - **Campus Palette: Pick Chromatically Similar Theme**: opens a live-preview quick-pick showing your active campus's 6 nearest chromatic siblings sorted by exact `ΔE₀₀`, its paired Light/Dark counterpart, and its farthest same-mode contrast university (with `Esc` rollback).
 - **Preferences: Color Theme** (`Ctrl+K Ctrl+T` / `Cmd+K Cmd+T`): standard alphabetical VS Code / Positron picker across all 120 themes.
@@ -323,7 +323,7 @@ Every theme's 13 adjacent syntax-relevant roles (`keyword`, `storage`, `string`,
 
 Plotting every theme's core syntax roles in the OKLab chromaticity plane and grouping their chromatic polygons across all six collegiate groupings reveals how each campus balances its signature brand hue with full-spectrum syntactic clarity:
 
-<img src="assets/color-science/family-fingerprint.png" alt="OKLab chromatic fingerprints of all 120 themes faceted across the 6 collegiate groupings: Ivy League, Canadian Universities, US Public Flagships, US Private Research &amp; STEM, Liberal Arts &amp; Regional Gems, and Global Classics" width="900">
+<img src="assets/color-science/family-fingerprint.png" alt="OKLab chromatic fingerprints of all 120 themes faceted across the 6 collegiate groupings: Ivy League, Canadian Universities, US Public Flagships, US Private Research &amp; STEM, Liberal Arts &amp; Independent, and Global Universities" width="900">
 
 <img src="assets/color-science/pca-global.png" alt="Global PCA of all 1,560 syntax tokens across 120 Campus Palette themes in OKLab space, colored by semantic role" width="750">
 

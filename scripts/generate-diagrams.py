@@ -47,14 +47,14 @@ GROUPS = [
         "accent": "violet",
     },
     {
-        "key": "Liberal Arts & Regional Gems",
-        "title": "LIBERAL ARTS & GEMS",
+        "key": "Liberal Arts & Independent",
+        "title": "LIBERAL ARTS & INDEPENDENT",
         "legend": "Liberal Arts",
         "accent": "emerald",
     },
     {
-        "key": "Global Classics",
-        "title": "GLOBAL CLASSICS",
+        "key": "Global Universities",
+        "title": "GLOBAL UNIVERSITIES",
         "legend": "Global",
         "accent": "gold",
     },
@@ -167,7 +167,7 @@ def build_founding_timeline_svg(mode: str, campuses: list) -> str:
     W, H = 960, 842
 
     # Piecewise chronological ruler:
-    #   Medieval classics [1096..1209] mapped to x = [56..136]
+    #   Medieval universities [1096..1209] mapped to x = [56..136]
     #   Subtle era break // at x = 166
     #   Modern founding era [1583..1974] mapped linearly to x = [198..906]
     rx0, rx1, spine_y = 56.0, 906.0, 113.0
@@ -333,7 +333,7 @@ def build_founding_timeline_svg(mode: str, campuses: list) -> str:
         cards_parts.append(render_card_shell(cx, row1_y, card_w, row1_h, g["title"], span, g["accent"]))
         render_card_rows(cx, row1_y, row1_h, items, a["fg"])
 
-    # Row 2: 3 equal cards (Private STEM 10, Liberal Arts 6, Global Classics 10)
+    # Row 2: 3 equal cards (Private STEM 10, Liberal Arts 6, Global Universities 10)
     row2_y, row2_h = 540.0, 280.0
     for i, g in enumerate(GROUPS[3:]):
         cx = 24.0 + i * (card_w + card_gap)

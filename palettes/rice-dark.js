@@ -11,7 +11,7 @@ module.exports = {
   label: "Rice Dark",
   university: "Rice University",
   shortName: "Rice",
-  group: "Liberal Arts & Regional Gems",
+  group: "Liberal Arts & Independent",
   country: "USA",
   city: "Houston, TX",
   year: 1912,

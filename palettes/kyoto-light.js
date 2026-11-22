@@ -12,7 +12,7 @@ module.exports = {
   label: "KyotoU Light",
   university: "Kyoto University",
   shortName: "KyotoU",
-  group: "Global Classics",
+  group: "Global Universities",
   country: "Japan",
   city: "Kyoto, Japan",
   year: 1897,

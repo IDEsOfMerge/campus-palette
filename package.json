@@ -730,7 +730,7 @@
           {
             "id": "pickTheme",
             "title": "Choose your campus theme (with live preview)",
-            "description": "Every one of the 60 universities across the Ivy League, Canadian Universities, US Public Flagships, US Private Research & STEM, Liberal Arts & Regional Gems, and Global Classics gets a matched Light and Dark pair crafted in OKLCH from official campus color palettes. Arrow through the list to preview live before committing.\n[Choose a University Theme](command:campusPalette.pickTheme)",
+            "description": "Every one of the 60 universities across the Ivy League, Canadian Universities, US Public Flagships, US Private Research & STEM, Liberal Arts & Independent, and Global Universities gets a matched Light and Dark pair crafted in OKLCH from official campus color palettes. Arrow through the list to preview live before committing.\n[Choose a University Theme](command:campusPalette.pickTheme)",
             "media": {
               "image": "icon.png",
               "altText": "Campus Palette emblem"

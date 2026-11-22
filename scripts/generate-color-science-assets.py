@@ -119,28 +119,28 @@ def simulate_cvd_hexes(hex_list, cvd_type: str):
 # ---------- Domain Metadata ----------
 
 GROUP_ORDER = [
-    "Global Classics",
+    "Global Universities",
     "Ivy League",
     "US Public Flagships",
-    "Liberal Arts & Regional Gems",
+    "Liberal Arts & Independent",
     "US Private Research & STEM",
     "Canadian Universities",
 ]
 
 GROUP_COLORS = {
-    "Global Classics":              "#B67B0C",
+    "Global Universities":          "#B67B0C",
     "Ivy League":                   "#B81D32",
     "US Public Flagships":          "#1657B5",
-    "Liberal Arts & Regional Gems": "#127D49",
+    "Liberal Arts & Independent":   "#127D49",
     "US Private Research & STEM":   "#6B3CB8",
     "Canadian Universities":        "#0A7E86",
 }
 
 GROUP_SHORT = {
-    "Global Classics":              "GLOBAL CLASSICS",
+    "Global Universities":          "GLOBAL UNIVERSITIES",
     "Ivy League":                   "IVY LEAGUE",
     "US Public Flagships":          "US PUBLIC FLAGSHIPS",
-    "Liberal Arts & Regional Gems": "LIBERAL ARTS & GEMS",
+    "Liberal Arts & Independent":   "LIBERAL ARTS & INDEPENDENT",
     "US Private Research & STEM":   "US PRIVATE STEM",
     "Canadian Universities":        "CANADIAN UNIVERSITIES",
 }
@@ -575,11 +575,11 @@ def render_timeline_metro(pal_meta: dict):
     # Render each of the 6 transit lines
     placed_boxes = []
     RAIL_LABELS = {
-        "Global Classics":              "Global Classics",
+        "Global Universities":          "Global Universities",
         "Ivy League":                   "Ivy League",
         "US Public Flagships":          "US Public Flagships",
-        "Liberal Arts & Regional Gems": "Liberal Arts & Gems",
-        "US Private Research & STEM":   "US Private STEM",
+        "Liberal Arts & Independent":   "Liberal Arts & Independent",
+        "US Private Research & STEM":   "US Private Research & STEM",
         "Canadian Universities":        "Canadian Universities",
     }
 
@@ -591,7 +591,7 @@ def render_timeline_metro(pal_meta: dict):
         items.sort(key=lambda v: (v["year"], v["shortName"]))
 
         # Left Transit Rail card
-        rx, ry, rw, rh = 32.0, cy - 27.0, 218.0, 54.0
+        rx, ry, rw, rh = 26.0, cy - 27.0, 226.0, 54.0
         parts.append(
             f'  <rect x="{rx:.1f}" y="{ry:.1f}" width="{rw:.1f}" height="{rh:.1f}" rx="8" '
             f'fill="{g_tint}" stroke="{g_col}" stroke-opacity="0.40" stroke-width="1.2"/>'
@@ -600,11 +600,11 @@ def render_timeline_metro(pal_meta: dict):
             f'  <rect x="{rx + 1:.1f}" y="{ry + 6:.1f}" width="4.5" height="{rh - 12:.1f}" rx="2.25" fill="{g_col}"/>'
         )
         parts.append(
-            f'  <text x="{rx + 15:.1f}" y="{cy - 4:.1f}" font-family="{FONT_SANS}" font-size="12.6" '
+            f'  <text x="{rx + 14:.1f}" y="{cy - 4:.1f}" font-family="{FONT_SANS}" font-size="11.8" '
             f'font-weight="700" fill="{g_col}">{esc(RAIL_LABELS[grp])}</text>'
         )
         parts.append(
-            f'  <text x="{rx + 15:.1f}" y="{cy + 14:.1f}" font-family="{FONT_MONO}" font-size="10.0" '
+            f'  <text x="{rx + 14:.1f}" y="{cy + 14:.1f}" font-family="{FONT_MONO}" font-size="10.0" '
             f'font-weight="600" fill="#5D6474">{len(items)} campuses · {items[0]["year"]}–{items[-1]["year"]}</text>'
         )
 

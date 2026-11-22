@@ -19,11 +19,11 @@ const PALETTES_DIR = path.join(ROOT, 'palettes');
 const OUT_DIR = path.join(ROOT, 'analysis', 'data');
 
 const GROUP_ORDER = [
-  'Global Classics',
+  'Global Universities',
   'Ivy League',
   'US Public Flagships',
   'US Private Research & STEM',
-  'Liberal Arts & Regional Gems',
+  'Liberal Arts & Independent',
   'Canadian Universities',
 ];
 
