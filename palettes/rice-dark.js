@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Houston, TX",
   year: 1912,
+  brandUrl: "https://brand.rice.edu/colors",
   subtitle: "Midnight Blue #13133E night, Medium Blue #4D9AD4, Warm Yellow & Emerald",
   tokens: {
     mode: 'dark',

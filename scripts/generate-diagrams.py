@@ -2,10 +2,10 @@
 """
 Programmatically renders the Campus Palette README architecture and founding-timeline
 diagrams as 2x Retina Dark and Light PNGs from pure geometric SVG vectors:
-  - assets/diagrams/founding-timeline-dark.png  &  founding-timeline-light.png (1920x1288)
+  - assets/diagrams/founding-timeline-dark.png  &  founding-timeline-light.png (1920x1676)
   - assets/diagrams/build-pipeline-dark.png     &  build-pipeline-light.png    (1920x936)
 
-Loads all 40 universities and exact Light/Dark swatches directly from palettes/*.js.
+Loads all 60 universities and exact Light/Dark swatches directly from palettes/*.js.
 Run with: python3 scripts/generate-diagrams.py
 """
 
@@ -72,13 +72,17 @@ def region_code(city: str, country: str) -> str:
         return "CH"
     if country == "Japan":
         return "JP"
+    if country == "Singapore":
+        return "SG"
+    if country == "Australia":
+        return "AU"
     if "," in city:
         return city.split(",")[-1].strip()
     return country[:3].upper()
 
 
 def load_campus_data():
-    """Load all 40 universities with Light & Dark swatches directly from palettes/*.js."""
+    """Load all 60 universities with Light & Dark swatches directly from palettes/*.js."""
     js = r"""
     const fs = require('fs');
     const path = require('path');
@@ -160,22 +164,22 @@ def get_theme(mode: str) -> dict:
 def build_founding_timeline_svg(mode: str, campuses: list) -> str:
     t = get_theme(mode)
     acc = t["accents"]
-    W, H = 960, 644
+    W, H = 960, 834
 
     # Piecewise chronological ruler:
     #   Medieval classics [1096..1209] mapped to x = [56..136]
     #   Subtle era break // at x = 166
-    #   Modern founding era [1636..1963] mapped linearly to x = [196..906]
+    #   Modern founding era [1583..1974] mapped linearly to x = [198..906]
     rx0, rx1, spine_y = 56.0, 906.0, 108.0
     break_x = 166.0
 
     def year_x(yr: int) -> float:
         if yr <= 1250:
             return 56.0 + (yr - 1096) / (1209 - 1096) * 80.0
-        return 198.0 + (yr - 1636) / (1963 - 1636) * (906.0 - 198.0)
+        return 198.0 + (yr - 1583) / (1974 - 1583) * (906.0 - 198.0)
 
     ruler_parts = []
-    # Broken spine with crisp medieval-to-colonial gap
+    # Broken spine with crisp medieval-to-early-modern gap
     ruler_parts.append(
         f'  <line x1="{rx0:.1f}" y1="{spine_y:.1f}" x2="{break_x - 10:.1f}" y2="{spine_y:.1f}" '
         f'stroke="{t["border"]}" stroke-width="2.5" stroke-linecap="round"/>'
@@ -191,14 +195,14 @@ def build_founding_timeline_svg(mode: str, campuses: list) -> str:
             f'stroke="{t["text_muted"]}" stroke-width="1.5" stroke-linecap="round"/>'
         )
 
-    for yr in (1096, 1209, 1636, 1700, 1750, 1800, 1850, 1900, 1963):
+    for yr in (1096, 1209, 1583, 1650, 1700, 1750, 1800, 1850, 1900, 1974):
         x = year_x(yr)
         ruler_parts.append(
             f'  <line x1="{x:.1f}" y1="{spine_y - 5:.1f}" x2="{x:.1f}" y2="{spine_y + 7:.1f}" '
             f'stroke="{t["border"]}" stroke-width="1.2"/>'
         )
-        lbl_col = acc["sapphire"]["fg"] if yr in (1096, 1963) else t["text_muted"]
-        fw = "700" if yr in (1096, 1963) else "500"
+        lbl_col = acc["sapphire"]["fg"] if yr in (1096, 1974) else t["text_muted"]
+        fw = "700" if yr in (1096, 1974) else "500"
         ruler_parts.append(
             f'  <text x="{x:.1f}" y="{spine_y + 21:.1f}" text-anchor="middle" '
             f'font-family="{FONT_MONO}" font-size="9.3" font-weight="{fw}" fill="{lbl_col}">{yr}</text>'
@@ -219,14 +223,14 @@ def build_founding_timeline_svg(mode: str, campuses: list) -> str:
         )
         lx += 10.0 + tw + 12.0
 
-    # Cluster dots that land within 7.0px horizontally so adjacent years stack cleanly without eclipsing
+    # Cluster dots that land within 6.5px horizontally so adjacent years stack cleanly without eclipsing
     group_accent = {g["key"]: acc[g["accent"]]["fg"] for g in GROUPS}
     sorted_campuses = sorted(campuses, key=lambda x: (x["year"], x["shortName"]))
     clusters = []
     for c in sorted_campuses:
         x = year_x(c["year"])
         col = group_accent[c["group"]]
-        if clusters and abs(x - clusters[-1]["x_anchor"]) < 7.0:
+        if clusters and abs(x - clusters[-1]["x_anchor"]) < 6.5:
             clusters[-1]["cols"].append(col)
             clusters[-1]["xs"].append(x)
         else:
@@ -238,19 +242,22 @@ def build_founding_timeline_svg(mode: str, campuses: list) -> str:
         n = len(cols)
         for idx, col in enumerate(cols):
             if n == 1:
-                cy, r = spine_y, 4.8
+                cy, r = spine_y, 4.6
             elif n == 2:
-                cy = spine_y - 4.9 if idx == 0 else spine_y + 4.9
-                r = 4.0
+                cy = spine_y - 4.7 if idx == 0 else spine_y + 4.7
+                r = 3.9
             elif n == 3:
-                cy = spine_y + (idx - 1.0) * 7.2
-                r = 3.5
+                cy = spine_y + (idx - 1.0) * 6.8
+                r = 3.4
+            elif n == 4:
+                cy = spine_y + (idx - 1.5) * 5.6
+                r = 3.0
             else:
-                cy = spine_y + (idx - (n - 1) / 2.0) * 6.2
-                r = 3.1
+                cy = spine_y + (idx - (n - 1) / 2.0) * 4.9
+                r = 2.6
             ruler_parts.append(
                 f'  <circle cx="{x:.1f}" cy="{cy:.1f}" r="{r:.1f}" fill="{col}" '
-                f'stroke="{t["surface"]}" stroke-width="1.2"/>'
+                f'stroke="{t["surface"]}" stroke-width="1.1"/>'
             )
 
     def render_card_shell(x: float, y: float, w: float, h: float, title: str, span: str, accent_key: str) -> str:
@@ -281,13 +288,13 @@ def build_founding_timeline_svg(mode: str, campuses: list) -> str:
         id_col = c["modes"][mode]["cursor"]
 
         return "\n".join([
-            f'  <text x="{x0 + pad:.1f}" y="{y:.1f}" font-family="{FONT_MONO}" font-size="9.6" font-weight="700" fill="{grp_fg}">{c["year"]}</text>',
-            f'  <text x="{x0 + 44.0:.1f}" y="{y:.1f}" font-family="{FONT_SANS}" font-size="10.4" font-weight="600" fill="{t["text"]}">{esc(c["shortName"])}</text>',
-            f'  <rect x="{pill_x:.1f}" y="{y - 9.4:.1f}" width="{pill_w:.1f}" height="12.6" rx="3.0" fill="{t["pill_bg"]}"/>',
-            f'  <text x="{pill_x + pill_w / 2:.1f}" y="{y - 0.6:.1f}" text-anchor="middle" font-family="{FONT_MONO}" font-size="7.6" font-weight="700" fill="{t["text_muted"]}">{esc(reg)}</text>',
-            f'  <rect x="{sw_x:.1f}" y="{y - 8.0:.1f}" width="{sw_box:.1f}" height="9.2" rx="1.8" fill="{l_bg}" stroke="{t["swatch_stroke"]}" stroke-width="0.7"/>',
-            f'  <rect x="{sw_x + sw_box + sw_gap:.1f}" y="{y - 8.0:.1f}" width="{sw_box:.1f}" height="9.2" rx="1.8" fill="{d_bg}" stroke="{t["swatch_stroke"]}" stroke-width="0.7"/>',
-            f'  <rect x="{sw_x + (sw_box + sw_gap) * 2:.1f}" y="{y - 8.0:.1f}" width="{sw_box:.1f}" height="9.2" rx="1.8" fill="{id_col}" stroke="{t["swatch_stroke"]}" stroke-width="0.7"/>',
+            f'  <text x="{x0 + pad:.1f}" y="{y:.1f}" font-family="{FONT_MONO}" font-size="9.5" font-weight="700" fill="{grp_fg}">{c["year"]}</text>',
+            f'  <text x="{x0 + 44.0:.1f}" y="{y:.1f}" font-family="{FONT_SANS}" font-size="10.2" font-weight="600" fill="{t["text"]}">{esc(c["shortName"])}</text>',
+            f'  <rect x="{pill_x:.1f}" y="{y - 9.2:.1f}" width="{pill_w:.1f}" height="12.4" rx="3.0" fill="{t["pill_bg"]}"/>',
+            f'  <text x="{pill_x + pill_w / 2:.1f}" y="{y - 0.5:.1f}" text-anchor="middle" font-family="{FONT_MONO}" font-size="7.5" font-weight="700" fill="{t["text_muted"]}">{esc(reg)}</text>',
+            f'  <rect x="{sw_x:.1f}" y="{y - 7.8:.1f}" width="{sw_box:.1f}" height="9.0" rx="1.8" fill="{l_bg}" stroke="{t["swatch_stroke"]}" stroke-width="0.7"/>',
+            f'  <rect x="{sw_x + sw_box + sw_gap:.1f}" y="{y - 7.8:.1f}" width="{sw_box:.1f}" height="9.0" rx="1.8" fill="{d_bg}" stroke="{t["swatch_stroke"]}" stroke-width="0.7"/>',
+            f'  <rect x="{sw_x + (sw_box + sw_gap) * 2:.1f}" y="{y - 7.8:.1f}" width="{sw_box:.1f}" height="9.0" rx="1.8" fill="{id_col}" stroke="{t["swatch_stroke"]}" stroke-width="0.7"/>',
         ])
 
     # Organize campuses by group, chronologically
@@ -300,63 +307,56 @@ def build_founding_timeline_svg(mode: str, campuses: list) -> str:
     cards_parts = []
     card_w, card_gap = 296.0, 12.0
 
-    # Row 1: 3 equal cards (8 universities each: Ivy League, Canadian Universities, US Public Flagships)
-    row1_y, row1_h = 152.0, 240.0
+    def render_card_rows(cx: float, cy: float, ch: float, items: list, fg: str):
+        n_items = len(items)
+        interior = ch - 30.0
+        pad_v = 6.0 if n_items >= 12 else 8.0
+        pitch = (interior - 2.0 * pad_v) / n_items
+        start_y = cy + 30.0 + pad_v + pitch * 0.63
+        for j, c in enumerate(items):
+            ry = start_y + j * pitch
+            if j > 0:
+                sep_y = cy + 30.0 + pad_v + j * pitch
+                cards_parts.append(
+                    f'  <line x1="{cx + 10:.1f}" y1="{sep_y:.1f}" x2="{cx + card_w - 10:.1f}" y2="{sep_y:.1f}" '
+                    f'stroke="{t["border_soft"]}" stroke-width="0.8"/>'
+                )
+            cards_parts.append(render_campus_row(cx, card_w, ry, c, fg))
+
+    # Row 1: 3 equal cards (Ivy League 8, Canadian Universities 14, US Public Flagships 12)
+    row1_y, row1_h = 152.0, 366.0
     for i, g in enumerate(GROUPS[:3]):
         cx = 24.0 + i * (card_w + card_gap)
         items = by_group[g["key"]]
         span = f"{items[0]['year']}–{items[-1]['year']}"
         a = acc[g["accent"]]
         cards_parts.append(render_card_shell(cx, row1_y, card_w, row1_h, g["title"], span, g["accent"]))
-        start_y = row1_y + 49.0
-        pitch = 25.5
-        for j, c in enumerate(items):
-            ry = start_y + j * pitch
-            if j > 0:
-                cards_parts.append(
-                    f'  <line x1="{cx + 10:.1f}" y1="{ry - pitch * 0.57:.1f}" x2="{cx + card_w - 10:.1f}" y2="{ry - pitch * 0.57:.1f}" '
-                    f'stroke="{t["border_soft"]}" stroke-width="0.8"/>'
-                )
-            cards_parts.append(render_campus_row(cx, card_w, ry, c, a["fg"]))
+        render_card_rows(cx, row1_y, row1_h, items, a["fg"])
 
-    # Row 2: 3 equal cards (7, 5, 4 universities: Private STEM, Liberal Arts, Global Classics)
-    row2_y, row2_h = 406.0, 218.0
+    # Row 2: 3 equal cards (Private STEM 10, Liberal Arts 6, Global Classics 10)
+    row2_y, row2_h = 532.0, 280.0
     for i, g in enumerate(GROUPS[3:]):
         cx = 24.0 + i * (card_w + card_gap)
         items = by_group[g["key"]]
         span = f"{items[0]['year']}–{items[-1]['year']}"
         a = acc[g["accent"]]
         cards_parts.append(render_card_shell(cx, row2_y, card_w, row2_h, g["title"], span, g["accent"]))
-        n_items = len(items)
-        if n_items == 7:
-            start_y, pitch = row2_y + 49.5, 25.8
-        elif n_items == 5:
-            start_y, pitch = row2_y + 53.0, 35.5
-        else:
-            start_y, pitch = row2_y + 58.0, 44.5
-        for j, c in enumerate(items):
-            ry = start_y + j * pitch
-            if j > 0:
-                cards_parts.append(
-                    f'  <line x1="{cx + 10:.1f}" y1="{ry - pitch * 0.57:.1f}" x2="{cx + card_w - 10:.1f}" y2="{ry - pitch * 0.57:.1f}" '
-                    f'stroke="{t["border_soft"]}" stroke-width="0.8"/>'
-                )
-            cards_parts.append(render_campus_row(cx, card_w, ry, c, a["fg"]))
+        render_card_rows(cx, row2_y, row2_h, items, a["fg"])
 
     a_sap = acc["sapphire"]
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">
   <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="12" fill="{t["bg"]}" stroke="{t["border"]}" stroke-width="1"/>
 
   <!-- Header -->
-  <text x="24" y="34" font-family="{FONT_SANS}" font-size="16.2" font-weight="700" fill="{t["text"]}">Campus Palette — 40 Universities by Founding Year (1096–1963)</text>
-  <text x="24" y="53" font-family="{FONT_SANS}" font-size="11.2" fill="{t["text_sub"]}">80 Light &amp; Dark OKLCH themes across six collegiate groupings (930 years)  ·  swatches: Light bg · Dark bg · accent</text>
+  <text x="24" y="34" font-family="{FONT_SANS}" font-size="16.2" font-weight="700" fill="{t["text"]}">Campus Palette — 60 Universities by Founding Year (1096–1974)</text>
+  <text x="24" y="53" font-family="{FONT_SANS}" font-size="11.2" fill="{t["text_sub"]}">120 Light &amp; Dark OKLCH themes across six collegiate groupings (878-year span)  ·  swatches: Light bg · Dark bg · accent</text>
 
-  <rect x="752" y="18" width="184" height="24" rx="12" fill="{a_sap["bg"]}" stroke="{a_sap["bd"]}" stroke-width="1"/>
-  <text x="844" y="33.5" text-anchor="middle" font-family="{FONT_MONO}" font-size="9.8" font-weight="700" letter-spacing="0.4" fill="{a_sap["fg"]}">40 CAMPUSES · 80 THEMES</text>
+  <rect x="742" y="18" width="194" height="24" rx="12" fill="{a_sap["bg"]}" stroke="{a_sap["bd"]}" stroke-width="1"/>
+  <text x="839" y="33.5" text-anchor="middle" font-family="{FONT_MONO}" font-size="9.8" font-weight="700" letter-spacing="0.4" fill="{a_sap["fg"]}">60 CAMPUSES · 120 THEMES</text>
 
   <!-- Piecewise Chronological Ruler -->
   <rect x="24" y="66" width="912" height="74" rx="8" fill="{t["surface"]}" stroke="{t["border"]}" stroke-width="1.2"/>
-  <text x="38" y="87.2" font-family="{FONT_MONO}" font-size="9.0" font-weight="700" letter-spacing="0.5" fill="{t["text_muted"]}">FOUNDING CADENCE (1096 // 1636 → 1963)</text>
+  <text x="38" y="87.2" font-family="{FONT_MONO}" font-size="9.0" font-weight="700" letter-spacing="0.5" fill="{t["text_muted"]}">FOUNDING CADENCE (1096 // 1583 → 1974)</text>
 {chr(10).join(ruler_parts)}
 
   <!-- Six Collegiate Grouping Cards (3 x 2 Grid) -->
@@ -441,10 +441,10 @@ def build_pipeline_svg(mode: str) -> str:
   <text x="{val_x + val_w - 42:.1f}" y="{val_y + 17.5:.1f}" text-anchor="middle" font-family="{FONT_MONO}" font-size="7.8" font-weight="700" letter-spacing="0.5" fill="{a_val["fg"]}">AUDIT GATE</text>
   <text x="{val_x + 13:.1f}" y="{val_y + 33:.1f}" font-family="{FONT_MONO}" font-size="11.2" font-weight="700" fill="{t["text"]}">scripts/validate.js</text>
   <line x1="{val_x + 13:.1f}" y1="{val_y + 42:.1f}" x2="{val_x + val_w - 12:.1f}" y2="{val_y + 42:.1f}" stroke="{t["border_soft"]}" stroke-width="1"/>
-  <text x="{val_x + 13:.1f}" y="{val_y + 58:.1f}" font-family="{FONT_SANS}" font-size="9.8" fill="{t["text_sub"]}"><tspan fill="{green_c}" font-weight="700">✓</tspan> 1,600/1,600 WCAG AA + APCA</text>
+  <text x="{val_x + 13:.1f}" y="{val_y + 58:.1f}" font-family="{FONT_SANS}" font-size="9.8" fill="{t["text_sub"]}"><tspan fill="{green_c}" font-weight="700">✓</tspan> 2,400/2,400 WCAG AA + APCA</text>
   <text x="{val_x + 13:.1f}" y="{val_y + 74:.1f}" font-family="{FONT_SANS}" font-size="9.8" fill="{t["text_sub"]}"><tspan fill="{green_c}" font-weight="700">✓</tspan> CIEDE2000 · 0 CVD warnings</text>
   <text x="{val_x + 13:.1f}" y="{val_y + 90:.1f}" font-family="{FONT_SANS}" font-size="9.8" fill="{t["text_sub"]}"><tspan fill="{green_c}" font-weight="700">✓</tspan> Zero-CDN Static Explorer CSP</text>
-  <text x="{val_x + 13:.1f}" y="{val_y + 106:.1f}" font-family="{FONT_SANS}" font-size="9.8" fill="{t["text_sub"]}"><tspan fill="{green_c}" font-weight="700">✓</tspan> 12,160 Positron keys (152×80)</text>
+  <text x="{val_x + 13:.1f}" y="{val_y + 106:.1f}" font-family="{FONT_SANS}" font-size="9.8" fill="{t["text_sub"]}"><tspan fill="{green_c}" font-weight="700">✓</tspan> 18,240 Positron keys (152×120)</text>
   <text x="{val_x + 13:.1f}" y="{val_y + 122:.1f}" font-family="{FONT_SANS}" font-size="9.8" fill="{t["text_sub"]}"><tspan fill="{green_c}" font-weight="700">✓</tspan> Slim VSIX &amp; schema integrity</text>'''
 
     a_ok = acc["emerald"]
@@ -510,7 +510,7 @@ def build_pipeline_svg(mode: str) -> str:
   <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="12" fill="{t["bg"]}" stroke="{t["border"]}" stroke-width="1"/>
 
   <text x="24" y="34" font-family="{FONT_SANS}" font-size="16.5" font-weight="700" fill="{t["text"]}">Campus Palette — Build, Colorimetry &amp; Multi-Gate Validation Pipeline</text>
-  <text x="24" y="52" font-family="{FONT_SANS}" font-size="11.2" fill="{t["text_sub"]}">Deterministic OKLCH expansion from 80 collegiate palettes to VS Code / Positron themes, offline Explorers &amp; automated CI gates</text>
+  <text x="24" y="52" font-family="{FONT_SANS}" font-size="11.2" fill="{t["text_sub"]}">Deterministic OKLCH expansion from 120 collegiate palettes to VS Code / Positron themes, offline Explorers &amp; automated CI gates</text>
 
 {stage_header(c1_x, c1_w, "1 · SOURCE PALETTES")}
 {stage_header(c2_x, c2_w, "2 · OKLCH ENGINE")}
@@ -519,16 +519,16 @@ def build_pipeline_svg(mode: str) -> str:
 
 {connectors}
 
-{box_card(c1_x, 152, c1_w, 102, "palettes/*.js", ["80 collegiate palettes", "~45 brand tokens each"], "gold", tag="INPUT")}
+{box_card(c1_x, 152, c1_w, 102, "palettes/*.js", ["120 collegiate palettes", "~45 brand tokens each"], "gold", tag="INPUT")}
 {mini_sw}
 
 {box_card(c2_x, 96, c2_w, 76, "generate-themes.js", ["OKLCH perceptual mixing", "& 152 Positron keys/theme"], "sapphire", tag="SCRIPTS")}
 {box_card(c2_x, 202, c2_w, 76, "color-science.js", ["OKLCH · WCAG · APCA", "CIEDE2000 · Machado CVD"], "violet", tag="SHARED")}
 {box_card(c2_x, 304, c2_w, 76, "generate-explorer.js", ["Zero-CDN self-contained", "static HTML explorers"], "teal", tag="SCRIPTS")}
 
-{artifact_card(c3_x, 92,  c3_w, 44, "theme-metadata.json", "university · group · city · year", "gold")}
-{artifact_card(c3_x, 144, c3_w, 44, "package.json", "contributes.themes (80 entries)", "sapphire")}
-{artifact_card(c3_x, 196, c3_w, 44, "themes/*.json", "80 themes · 152 Positron keys", "sapphire")}
+{artifact_card(c3_x, 92,  c3_w, 44, "theme-metadata.json", "university · group · brandUrl", "gold")}
+{artifact_card(c3_x, 144, c3_w, 44, "package.json", "contributes.themes (120 entries)", "sapphire")}
+{artifact_card(c3_x, 196, c3_w, 44, "themes/*.json", "120 themes · 152 Positron keys", "sapphire")}
 {artifact_card(c3_x, 272, c3_w, 44, "site/index.html", "Static GitHub Pages Explorer", "teal")}
 {artifact_card(c3_x, 326, c3_w, 44, "assets/explorer/explorer.html", "VS Code Webview Explorer", "teal")}
 
@@ -567,7 +567,7 @@ def render_png(svg_text: str, out_path: str, width: int, height: int):
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     campuses = load_campus_data()
-    assert len(campuses) == 40, f"Expected 40 universities from palettes/*.js, found {len(campuses)}"
+    assert len(campuses) == 60, f"Expected 60 universities from palettes/*.js, found {len(campuses)}"
     for c in campuses:
         assert "light" in c["modes"] and "dark" in c["modes"], f"Missing Light/Dark modes for {c['base']}"
 
@@ -576,7 +576,7 @@ def main():
             build_founding_timeline_svg(mode, campuses),
             os.path.join(OUT_DIR, f"founding-timeline-{mode}.png"),
             1920,
-            1288,
+            1668,
         )
         render_png(
             build_pipeline_svg(mode),

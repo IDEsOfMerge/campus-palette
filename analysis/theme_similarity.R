@@ -1,5 +1,5 @@
-# Campus Palette -- Per-Mode CIEDE2000 Classical MDS, 40x40 Split-Triangle
-# Distance Heatmap, and 80-Leaf Ward.D2 Chromatic Dendrogram
+# Campus Palette -- Per-Mode CIEDE2000 Classical MDS, 60x60 Split-Triangle
+# Distance Heatmap, and 120-Leaf Ward.D2 Chromatic Dendrogram
 #
 # Run from the repo root with: Rscript --vanilla analysis/theme_similarity.R
 # (2x-supersampled production PNGs are rendered by scripts/generate-color-science-assets.py)
@@ -69,7 +69,8 @@ build_dist_matrix <- function(mode_name, slugs) {
   D
 }
 
-# --- 1. Per-Mode CIEDE2000 Classical MDS (40 Light + 40 Dark, zero outliers) ---
+# --- 1. Per-Mode CIEDE2000 Classical MDS (60 Light + 60 Dark, zero outliers) ---
+n_univ <- length(unique(meta$university))
 mds_results <- list()
 for (mode_name in c("light", "dark")) {
   mode_meta <- meta %>% filter(mode == mode_name)
@@ -83,15 +84,15 @@ for (mode_name in c("light", "dark")) {
   if (pts[paste0("oxford-", mode_name), 1] < 0) pts[, 1] <- -pts[, 1]
   if (pts[paste0("northwestern-", mode_name), 2] < 0) pts[, 2] <- -pts[, 2]
 
-  cat(sprintf("%s MDS (40 universities): Dim 1 = %.1f%%, Dim 2 = %.1f%% (sum = %.1f%%)\n",
-              tools::toTitleCase(mode_name), v1, v2, v1 + v2))
+  cat(sprintf("%s MDS (%d universities): Dim 1 = %.1f%%, Dim 2 = %.1f%% (sum = %.1f%%)\n",
+              tools::toTitleCase(mode_name), n_univ, v1, v2, v1 + v2))
 
   mds_df <- mode_meta %>%
     mutate(
       mds1 = pts[match(theme_slug, rownames(pts)), 1],
       mds2 = pts[match(theme_slug, rownames(pts)), 2],
-      panel_label = sprintf("%s Themes (40 Universities · %.1f%% + %.1f%% = %.1f%%)",
-                            tools::toTitleCase(mode_name), v1, v2, v1 + v2)
+      panel_label = sprintf("%s Themes (%d Universities · %.1f%% + %.1f%% = %.1f%%)",
+                            tools::toTitleCase(mode_name), n_univ, v1, v2, v1 + v2)
     )
   mds_results[[mode_name]] <- list(df = mds_df, D = D_mat, v1 = v1, v2 = v2)
 }
@@ -102,13 +103,13 @@ mds_all_df <- bind_rows(mds_results$light$df, mds_results$dark$df) %>%
 p_mds <- ggplot(mds_all_df, aes(mds1, mds2, label = short_name)) +
   geom_hline(yintercept = 0, color = "grey85", linetype = "dashed") +
   geom_vline(xintercept = 0, color = "grey85", linetype = "dashed") +
-  geom_point(aes(color = kw_hex), size = 3.4) +
+  geom_point(aes(color = kw_hex), size = 3.2) +
   scale_color_identity() +
-  ggrepel::geom_text_repel(size = 2.7, max.overlaps = 50, seed = 1, segment.color = "grey75") +
+  ggrepel::geom_text_repel(size = 2.4, max.overlaps = 80, seed = 1, segment.color = "grey75") +
   facet_wrap(~panel_label, scales = "free") +
   labs(
     title = "Perceptual Similarity Landscape — Classical MDS on CIEDE2000 (dE00)",
-    subtitle = "Pairwise mean dE00 across 13 syntax roles across all 40 Light and 40 Dark collegiate themes.",
+    subtitle = sprintf("Pairwise mean dE00 across 13 syntax roles across all %d Light and %d Dark collegiate themes.", n_univ, n_univ),
     x = "MDS Dim 1",
     y = "MDS Dim 2"
   ) +
@@ -117,7 +118,7 @@ p_mds <- ggplot(mds_all_df, aes(mds1, mds2, label = short_name)) +
 
 ggsave("assets/color-science/theme-mds.png", p_mds, width = 16, height = 8.5, dpi = 150)
 
-# --- 2. Ward-Ordered 40x40 Split-Triangle Distance Heatmap ---
+# --- 2. Ward-Ordered 60x60 Split-Triangle Distance Heatmap ---
 univs <- unique(meta$university)
 short_map <- setNames(meta$short_name[meta$mode == "light"], meta$university[meta$mode == "light"])
 l_map <- setNames(meta$theme_slug[meta$mode == "light"], meta$university[meta$mode == "light"])
@@ -151,16 +152,16 @@ p_hm <- ggplot(hm_df, aes(col_u, row_u, fill = pmin(de, 20))) +
   ) +
   coord_equal() +
   labs(
-    title = "Pairwise Perceptual Distance Matrix — All 40 Universities (CIEDE2000)",
-    subtitle = "Ward-ordered 40x40 split-triangle matrix: upper-right = Light mode, lower-left = Dark mode.",
+    title = sprintf("Pairwise Perceptual Distance Matrix — All %d Universities (CIEDE2000)", nu),
+    subtitle = sprintf("Ward-ordered %dx%d split-triangle matrix: upper-right = Light mode, lower-left = Dark mode.", nu, nu),
     x = NULL,
     y = NULL
   ) +
-  theme_minimal(base_size = 10) +
+  theme_minimal(base_size = 9) +
   theme(axis.text.x = element_text(angle = 55, hjust = 1, vjust = 1), panel.grid = element_blank())
 
-ggsave("assets/color-science/theme-distance-heatmap.png", p_hm, width = 13.5, height = 13, dpi = 150)
+ggsave("assets/color-science/theme-distance-heatmap.png", p_hm, width = 14.5, height = 14, dpi = 150)
 
-# --- 3. 80-Leaf Ward.D2 Hierarchical Dendrogram ---
+# --- 3. 120-Leaf Ward.D2 Hierarchical Dendrogram ---
 hc_all <- hclust(dist(scale(feature_matrix)), method = "ward.D2")
-cat(sprintf("Ward.D2 80-theme clustering complete (max merge height = %.2f).\n", max(hc_all$height)))
+cat(sprintf("Ward.D2 %d-theme clustering complete (max merge height = %.2f).\n", nrow(feature_matrix), max(hc_all$height)))

@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Seattle, WA",
   year: 1861,
+  brandUrl: "https://www.washington.edu/brand/brand-elements/colors/",
   subtitle: "Husky Purple #32006E night, Lavender #C5B4E3, Gold #FFC700 & Teal",
   tokens: {
     mode: 'dark',

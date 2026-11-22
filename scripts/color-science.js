@@ -371,7 +371,7 @@ const DISTINCT_ROLE_PAIRS = [
   ['accentStorage', 'accentFunction'],
 ];
 
-// All 80 Campus Palette themes are fully polychromatic — zero exemptions.
+// All 120 Campus Palette themes are fully polychromatic — zero exemptions.
 const MONOCHROME_EXEMPT_SLUGS = new Set();
 
 function auditPalette(palette) {

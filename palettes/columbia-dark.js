@@ -16,6 +16,7 @@ module.exports = {
   country: "USA",
   city: "New York, NY",
   year: 1754,
+  brandUrl: "https://visualidentity.columbia.edu/content/color",
   subtitle: "Morningside navy, Columbia Blue #B9D9EB, #6CACE4 & Accent #C75000",
   tokens: {
     mode: 'dark',

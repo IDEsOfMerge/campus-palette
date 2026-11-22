@@ -15,6 +15,7 @@ module.exports = {
   country: "Canada",
   city: "Edmonton, AB",
   year: 1908,
+  brandUrl: "https://www.ualberta.ca/en/toolkit/digital-and-creative/email-best-practices/design-templating/templates.html",
   subtitle: "Pembina Hall linen, U of A Green #275D38, Prairie Gold & River Blue",
   tokens: {
     mode: 'light',

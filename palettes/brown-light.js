@@ -16,6 +16,7 @@ module.exports = {
   country: "USA",
   city: "Providence, RI",
   year: 1764,
+  brandUrl: "https://communications.sph.brown.edu/resources/identity",
   subtitle: "College Hill linen, Brown #4E3629, Red #C00404, Gold #FFC72C & Gray",
   tokens: {
     mode: 'light',

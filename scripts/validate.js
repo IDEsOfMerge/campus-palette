@@ -4,9 +4,9 @@
 // Validates every palette, generated theme JSON, metadata file, package.json
 // manifest, and asset reference before packaging or CI passes:
 //   1. Strict JSON parsing of package.json, theme-metadata.json, and themes/*.json
-//   2. Exact 80-theme count across palettes/, themes/, package.json, and theme-metadata.json
+//   2. Exact 120-theme count across palettes/, themes/, package.json, and theme-metadata.json
 //   3. Schema validation of contributes.commands, contributes.configuration,
-//      keywords <= 30, zero runtime dependencies, theme-metadata.json, and palettes/*.js
+//      keywords <= 30, zero runtime dependencies, theme-metadata.json (incl. brandUrl), and palettes/*.js
 //   4. Valid #RRGGBB / #RRGGBBAA hex syntax on every theme color key
 //   5. Every `positron*` color key drawn strictly from Positron's 152 confirmed keys
 //      (src/vs/workbench/common/theme.ts on posit-dev/positron)
@@ -25,9 +25,10 @@ const THEMES_DIR = path.join(ROOT_DIR, 'themes');
 const PACKAGE_JSON = path.join(ROOT_DIR, 'package.json');
 const META_JSON = path.join(ROOT_DIR, 'theme-metadata.json');
 
-const EXPECTED_THEME_COUNT = 80;
+const EXPECTED_THEME_COUNT = 120;
 const EXPECTED_NEIGHBOR_COUNT = 6;
 const MAX_KEYWORDS = 30;
+const HTTPS_URL_RE = /^https:\/\/[^\s]+$/;
 
 const VALID_GROUPS = new Set([
   'Ivy League',
@@ -38,7 +39,9 @@ const VALID_GROUPS = new Set([
   'Global Classics',
 ]);
 
-const VALID_COUNTRIES = new Set(['USA', 'Canada', 'UK', 'Switzerland', 'Japan']);
+const VALID_COUNTRIES = new Set([
+  'USA', 'Canada', 'UK', 'Switzerland', 'Japan', 'Singapore', 'Australia',
+]);
 
 const CONFIRMED_POSITRON_KEYS = new Set([
   'positronError.foreground', 'positronScrollBar.border',
@@ -210,6 +213,9 @@ function main() {
           fail(`theme-metadata.json[${idx}] ("${entry.slug || ''}") missing non-empty string "${field}"`);
         }
       }
+      if (typeof entry.brandUrl !== 'string' || !HTTPS_URL_RE.test(entry.brandUrl)) {
+        fail(`theme-metadata.json[${idx}] ("${entry.slug || ''}") missing valid https:// "brandUrl": ${entry.brandUrl}`);
+      }
       if (!Number.isInteger(entry.year)) {
         fail(`theme-metadata.json[${idx}] ("${entry.slug || ''}") has invalid integer "year": ${entry.year}`);
       }
@@ -344,7 +350,7 @@ function main() {
     }
   }
 
-  // Run multi-gate colorimetric audit across all 80 palette modules (0 errors AND 0 warnings)
+  // Run multi-gate colorimetric audit across all 120 palette modules (0 errors AND 0 warnings)
   const paletteSlugs = new Set();
   for (const pf of paletteFiles) {
     const p = require(path.join(PALETTES_DIR, pf));
@@ -362,6 +368,9 @@ function main() {
       if (!p[field] || typeof p[field] !== 'string' || !p[field].trim()) {
         fail(`${pf}: missing required string property "${field}"`);
       }
+    }
+    if (typeof p.brandUrl !== 'string' || !HTTPS_URL_RE.test(p.brandUrl)) {
+      fail(`${pf}: missing valid https:// property "brandUrl"`);
     }
     if (!VALID_GROUPS.has(p.group)) {
       fail(`${pf}: invalid collegiate group "${p.group}"`);

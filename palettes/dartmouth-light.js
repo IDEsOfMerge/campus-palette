@@ -16,6 +16,7 @@ module.exports = {
   country: "USA",
   city: "Hanover, NH",
   year: 1769,
+  brandUrl: "https://communications.dartmouth.edu/guides-and-tools/design-guidelines/dartmouth-colors",
   subtitle: "Hanover snow-birch, Dartmouth Green #00693E, River Blue & Tuck Orange",
   tokens: {
     mode: 'light',

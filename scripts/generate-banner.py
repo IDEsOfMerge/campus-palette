@@ -38,7 +38,7 @@ BLOCK_FONT = {
 
 
 def load_spectral_ribbons():
-    """Load all 40 university signature accents sorted by OKLCH hue for Light & Dark."""
+    """Load all 60 university signature accents sorted by OKLCH hue for Light & Dark."""
     js = r"""
     const fs = require('fs');
     const path = require('path');
@@ -220,8 +220,8 @@ def build_banner_svg(mode: str, ribbons: dict) -> str:
         y0=221.0,
         total_w=(R - D) - (DIV_X + 20) - 16,
         h=7.5,
-        gap=1.8,
-        radius=1.5,
+        gap=1.2,
+        radius=1.2,
     )
 
     grid_svg = build_architectural_grid(960, 308, 32, grid_c, 0.22 if is_dark else 0.16)
@@ -251,7 +251,7 @@ def build_banner_svg(mode: str, ribbons: dict) -> str:
   </g>
   <text x="{cx}" y="229" text-anchor="middle" font-family="{FONT_MONO}" font-size="11.5" font-weight="700" letter-spacing="1.6" fill="{bot_accent}">── OKLCH ──</text>
 
-  <text x="{right_cx}" y="35" text-anchor="middle" font-family="{FONT_MONO}" font-size="12.2" font-weight="700" letter-spacing="1.8" fill="{top_accent}">──── COLLEGIATE COLORIMETRY · 1096–1963 ────</text>
+  <text x="{right_cx}" y="35" text-anchor="middle" font-family="{FONT_MONO}" font-size="12.2" font-weight="700" letter-spacing="1.8" fill="{top_accent}">──── COLLEGIATE COLORIMETRY · 1096–1974 ────</text>
   <g>
 {word_campus}
   </g>
@@ -262,7 +262,7 @@ def build_banner_svg(mode: str, ribbons: dict) -> str:
 {ribbon_svg}
   </g>
 
-  <text x="480" y="262" text-anchor="middle" font-family="{FONT_MONO}" font-size="12.5" font-weight="700" letter-spacing="1.2" fill="{text_c}">40 UNIVERSITIES  ·  80 LIGHT &amp; DARK THEMES  ·  VS CODE / POSITRON</text>
+  <text x="480" y="262" text-anchor="middle" font-family="{FONT_MONO}" font-size="12.5" font-weight="700" letter-spacing="1.2" fill="{text_c}">60 UNIVERSITIES  ·  120 LIGHT &amp; DARK THEMES  ·  VS CODE / POSITRON</text>
   <text x="480" y="280" text-anchor="middle" font-family="{FONT_MONO}" font-size="11.8" font-weight="500" letter-spacing="1.15" fill="{muted_c}">OKLCH COLORIMETRY  ·  100% WCAG AA  ·  APCA-W3  ·  CIEDE2000  ·  CVD SAFE</text>
 </svg>
 '''
@@ -339,13 +339,13 @@ def build_og_preview_svg(ribbons: dict) -> str:
     word_campus = render_ansi_word("CAMPUS", rx, 146, 16.4, 14.0, text_hi, "#5AA9E6", gap=1.5)
     word_palette = render_ansi_word("PALETTE", rx, 256, 15.2, 13.6, "#F2E2BC", "#C99A2E", gap=1.5)
 
-    # Full-width 40-university OKLCH spectral ribbon across lower band
-    ribbon_full = render_ribbon_strip(ribbons["dark"], x0=64, y0=506, total_w=1072, h=28, gap=3.0, radius=3.0)
+    # Full-width 60-university OKLCH spectral ribbon across lower band
+    ribbon_full = render_ribbon_strip(ribbons["dark"], x0=64, y0=506, total_w=1072, h=28, gap=2.2, radius=2.5)
 
     pills = [
-        ("1,600/1,600 WCAG AA", "#56D39A", "#102821", "#246B4F"),
+        ("2,400/2,400 WCAG AA", "#56D39A", "#102821", "#246B4F"),
         ("0 CVD WARNINGS",      "#7EC6EA", "#102133", "#2A5E8C"),
-        ("12,160 POSITRON KEYS","#DFBA68", "#261E11", "#785D22"),
+        ("18,240 POSITRON KEYS","#DFBA68", "#261E11", "#785D22"),
     ]
     pill_widths = [len(txt) * 8.4 + 28.0 for txt, _, _, _ in pills]
     total_pills_w = sum(pill_widths) + 16.0 * (len(pills) - 1)
@@ -370,20 +370,20 @@ def build_og_preview_svg(ribbons: dict) -> str:
 
 {emblem_svg}
 
-  <text x="{rx:.0f}" y="108" text-anchor="middle" font-family="{FONT_MONO}" font-size="16" font-weight="700" letter-spacing="2.6" fill="{sky}">──── COLLEGIATE COLORIMETRY · 1096–1963 ────</text>
+  <text x="{rx:.0f}" y="108" text-anchor="middle" font-family="{FONT_MONO}" font-size="16" font-weight="700" letter-spacing="2.6" fill="{sky}">──── COLLEGIATE COLORIMETRY · 1096–1974 ────</text>
   <g>
 {word_campus}
   </g>
   <g>
 {word_palette}
   </g>
-  <text x="{rx:.0f}" y="382" text-anchor="middle" font-family="{FONT_MONO}" font-size="16.2" font-weight="700" letter-spacing="1.4" fill="{text_mid}">40 UNIVERSITIES · 80 LIGHT &amp; DARK THEMES · VS CODE / POSITRON</text>
+  <text x="{rx:.0f}" y="382" text-anchor="middle" font-family="{FONT_MONO}" font-size="16.2" font-weight="700" letter-spacing="1.4" fill="{text_mid}">60 UNIVERSITIES · 120 LIGHT &amp; DARK THEMES · VS CODE / POSITRON</text>
 {chr(10).join(pill_parts)}
 
   <g>
 {ribbon_full}
   </g>
-  <text x="600" y="564" text-anchor="middle" font-family="{FONT_MONO}" font-size="13.5" font-weight="600" letter-spacing="1.4" fill="{text_mut}">OKLCH SPECTRAL RIBBON · 40 UNIVERSITIES ACROSS 6 COLLEGIATE GROUPINGS · APCA-W3 · CIEDE2000</text>
+  <text x="600" y="564" text-anchor="middle" font-family="{FONT_MONO}" font-size="13.5" font-weight="600" letter-spacing="1.4" fill="{text_mut}">OKLCH SPECTRAL RIBBON · 60 UNIVERSITIES ACROSS 6 COLLEGIATE GROUPINGS · APCA-W3 · CIEDE2000</text>
 </svg>
 '''
 

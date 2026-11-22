@@ -16,6 +16,7 @@ module.exports = {
   country: "USA",
   city: "Williamstown, MA",
   year: 1793,
+  brandUrl: "https://identity.williams.edu/",
   subtitle: "Greylock alabaster, Purple #500082, Magenta #B1008E, Ocher & Gold",
   tokens: {
     mode: 'light',

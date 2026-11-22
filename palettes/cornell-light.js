@@ -16,6 +16,7 @@ module.exports = {
   country: "USA",
   city: "Ithaca, NY",
   year: 1865,
+  brandUrl: "https://brand.cornell.edu/design-center/colors/",
   subtitle: "Finger Lakes shale, Carnelian #B31B1B, Link Blue #006699 & Green #4B7B2B",
   tokens: {
     mode: 'light',

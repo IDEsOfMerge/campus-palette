@@ -17,6 +17,7 @@ module.exports = {
   country: "USA",
   city: "Durham, NC",
   year: 1838,
+  brandUrl: "https://brand.duke.edu/colors/",
   subtitle: "Duke Chapel stone, Duke Navy #012169, Royal #00539B, Copper & Magnolia",
   tokens: {
     mode: 'light',

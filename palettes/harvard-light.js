@@ -17,6 +17,7 @@ module.exports = {
   country: "USA",
   city: "Cambridge, MA",
   year: 1636,
+  brandUrl: "https://seas.harvard.edu/office-communications/brand-style-guide/color-palette",
   subtitle: "Harvard Yard parchment, Crimson #A51C30, Harvard Blue #4E88C7 & green",
   tokens: {
     mode: 'light',

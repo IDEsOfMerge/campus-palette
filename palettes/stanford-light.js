@@ -17,6 +17,7 @@ module.exports = {
   country: "USA",
   city: "Stanford, CA",
   year: 1885,
+  brandUrl: "https://identity.stanford.edu/design-elements/color/",
   subtitle: "Fog sandstone, Cardinal #8C1515, Palo Alto #175E54, Sky & Plum #620059",
   tokens: {
     mode: 'light',

@@ -18,6 +18,7 @@ module.exports = {
   country: "Canada",
   city: "Waterloo, ON",
   year: 1957,
+  brandUrl: "https://uwaterloo.ca/brand/how-express-our-brand/colour",
   subtitle: "Drafting white, Waterloo Gold #EAAB00 & all 6 exact faculty hexes",
   tokens: {
     mode: 'light',

@@ -4,6 +4,26 @@ All notable changes to **Campus Palette** are documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] — 2026-11-22
+
+### Added
+- **20 New Iconic Universities (+40 Light & Dark OKLCH Themes → 60 Universities · 120 Themes · 7 Countries · 1096–1974)**, each synthesized directly from published official institutional brand guidelines with **0 WCAG errors** and **0 CVD warnings**:
+  - **Canadian Universities (+6 → 14):** Dalhousie University (1818), University of Ottawa (1848), McMaster University (1887), Simon Fraser University (1965), University of Calgary (1966), Concordia University (1974).
+  - **US Public Flagships (+4 → 12):** University of Georgia (1785), University of Wisconsin–Madison (1848), University of Florida (1853), Texas A&M University (1876).
+  - **US Private Research & STEM (+3 → 10):** Johns Hopkins University (1876), University of Southern California (1880), Carnegie Mellon University (1900).
+  - **Liberal Arts & Regional Gems (+1 → 6):** Amherst College (1821).
+  - **Global Classics (+6 → 10):** University of Edinburgh (1583, UK), University of Melbourne (1853, Australia), EPFL (1853, Switzerland), Kyoto University (1897, Japan — verified `#00205B` *Nōsei* PMS 281C), National University of Singapore (1905, Singapore), Imperial College London (1907, UK).
+- **Verified Official Brand Guidelines Links (`brandUrl`) Across All 60 Universities**:
+  - Added verified `https://` `brandUrl` references to all 120 `palettes/*.js` modules, propagated into `theme-metadata.json`, `analysis/data/themes_summary.csv`, the `README.md` catalog table, and strictly audited by `scripts/validate.js` and `test/{color-science,explorer}.test.js`.
+  - Added clickable **Official Brand Guidelines ↗** links in the Interactive Explorer (`site/index.html` and `assets/explorer/explorer.html`) — both in the always-visible active theme Story Bar and inside the Interactive CIEDE2000 MDS Similarity Map Inspector Panel — while preserving strict zero-CDN `default-src 'none'` CSP compliance.
+- **Expanded Country Filtering & MDS Map Coloring**: Added Singapore and Australia to the Explorer's `COUNTRY_COLORS_MAP`, search aliases, validator country registry, and founding-timeline regional pills (`SG`, `AU`).
+
+### Changed
+- **Scaled Build, Validation & Visualization Suite for 60 Universities / 120 Themes**:
+  - Verified **`2,400 / 2,400`** foreground & syntax tokens passing WCAG 2.1 AA (`4.76:1`–`16.15:1`; primary body text `13.77:1`–`16.15:1` AAA / APCA `|Lc| = 89.0`–`98.1`), **`1,920 / 1,920`** ANSI terminal tokens, **`18,240`** Positron workbench keys (`152 × 120`), and **0 CVD warnings** across all `7,560` dichromacy pair checks (`≥ 10.70 ΔE*ab`).
+  - Regenerated all banners (`assets/banner/banner-{dark,light}.png`, `site/og-preview.png`), founding-timeline & build-pipeline diagrams (`1096–1974`), 60-station Collegiate Heritage Metro Map (`overlaps=0`), `10×12` OKLab chromaticity grid, 6-grouping fingerprint, 1,560-token Global PCA (`89.9%` variance), 60-campus per-mode Classical MDS with deterministic zero-overlap multi-ring label placement, `60×60` split-triangle ΔE₀₀ heatmap, 120-leaf Ward.D2 dendrogram, 120 local PNG swatches, showcase GIF metrics, and pure-R companion scripts (`analysis/*.R`).
+  - Dynamic QuickPick title in `extension.js` (`Campus Palette — 60 Iconic Universities · 120 Themes`) computed directly from `theme-metadata.json`.
+
 ## [1.0.1] — 2026-11-22
 
 ### Changed

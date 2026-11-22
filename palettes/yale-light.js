@@ -16,6 +16,7 @@ module.exports = {
   country: "USA",
   city: "New Haven, CT",
   year: 1701,
+  brandUrl: "https://yaleidentity.yale.edu/core-identity-elements/yale-colors",
   subtitle: "Sterling limestone, Yale Blue #00356B, Green #5F712D & Autumn #BD5319",
   tokens: {
     mode: 'light',

@@ -18,6 +18,7 @@ module.exports = {
   country: "UK",
   city: "Oxford, UK",
   year: 1096,
+  brandUrl: "https://www.ox.ac.uk/about/the-university/brand/guidelines",
   subtitle: "Shell Grey #F1EEE9, Oxford Blue #002147, Oxford Red #AA1A2D & Viridian",
   tokens: {
     mode: 'light',

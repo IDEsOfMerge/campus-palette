@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Chapel Hill, NC",
   year: 1789,
+  brandUrl: "https://www.kenan-flagler.unc.edu/branding-guide/color/",
   subtitle: "Chapel Hill Navy #13294B night, Carolina Blue #4B9CD3 & Fordham Fountain",
   tokens: {
     mode: 'dark',

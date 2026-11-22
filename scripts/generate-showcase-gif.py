@@ -304,8 +304,8 @@ def build_frame_svg(pal: dict, idx: int, total: int, toggle_target: str = "") ->
             )
 
     vars_rows = [
-        ("themes",    "int[80]",       num),
-        ("wcag_aa",   "1600 / 1600",   a_green),
+        ("themes",    "int[120]",      num),
+        ("wcag_aa",   "2400 / 2400",   a_green),
         ("editor_cr", f"{r_fg:.2f}:1", a_cyan),
         ("cvd_warns", "0",             a_green),
         ("cursor",    cursor_c,        cursor_c),
@@ -321,10 +321,10 @@ def build_frame_svg(pal: dict, idx: int, total: int, toggle_target: str = "") ->
     console_lines = [
         [("$ ", a_cyan, "bold"), ("node scripts/validate.js", ed_fg, "")],
         [],
-        [("✓ ", a_green, "bold"), ("80 themes ", ed_fg, "bold"), ("(40 campuses)", sec, "")],
-        [("✓ ", a_green, "bold"), ("WCAG AA   ", a_cyan, "bold"), ("1,600 / 1,600", ed_fg, "")],
-        [("✓ ", a_green, "bold"), ("ANSI      ", a_blue, "bold"), ("1,280 / 1,280", ed_fg, "")],
-        [("✓ ", a_green, "bold"), ("Positron  ", a_magenta, "bold"), ("12,160 keys OK", ed_fg, "")],
+        [("✓ ", a_green, "bold"), ("120 themes ", ed_fg, "bold"), ("(60 campuses)", sec, "")],
+        [("✓ ", a_green, "bold"), ("WCAG AA   ", a_cyan, "bold"), ("2,400 / 2,400", ed_fg, "")],
+        [("✓ ", a_green, "bold"), ("ANSI      ", a_blue, "bold"), ("1,920 / 1,920", ed_fg, "")],
+        [("✓ ", a_green, "bold"), ("Positron  ", a_magenta, "bold"), ("18,240 keys OK", ed_fg, "")],
         [("✓ ", a_green, "bold"), ("CVD safe  ", a_yellow, "bold"), ("0 warnings", ed_fg, "")],
         [],
         [("● ", cursor_c, "bold"), ("Identity: ", sec, ""), (cursor_c, cursor_c, "bold")],
@@ -383,7 +383,7 @@ def build_frame_svg(pal: dict, idx: int, total: int, toggle_target: str = "") ->
   <circle cx="38" cy="19" r="5.5" fill="#FFBD2E"/>
   <circle cx="56" cy="19" r="5.5" fill="#27C93F"/>
   <text x="82" y="23" font-family="{FONT_SANS}" font-size="12.2" font-weight="700" fill="{title_fg}">Campus Palette</text>
-  <text x="196" y="23" font-family="{FONT_MONO}" font-size="10.8" fill="{sec}">—  VS Code / Positron  ·  80 OKLCH Themes</text>
+  <text x="196" y="23" font-family="{FONT_MONO}" font-size="10.8" fill="{sec}">—  VS Code / Positron  ·  120 OKLCH Themes</text>
 {chr(10).join(dots)}
 
   <rect x="0" y="38" width="{W}" height="48" fill="{sb_bg}"/>

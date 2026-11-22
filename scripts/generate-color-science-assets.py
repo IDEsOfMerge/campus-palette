@@ -327,26 +327,27 @@ def load_all_data():
     return summaries, tokens, pairs, pal_meta, slug_order
 
 
-# ---------- 1. Collegiate Heritage Metro Map (6 Grouping Tracks, 1096–1963) ----------
+# ---------- 1. Collegiate Heritage Metro Map (6 Grouping Tracks, 1096–1974) ----------
 
 def year_to_metro_x(yr: int) -> float:
     """
-    Piecewise monotonic chronological mapping [1096..1963] -> [1.8..29.6]:
-      - Compresses the medieval gap (1209 -> 1636) behind a crisp // era break
-      - Expands 1740–1915 slightly where North American founding density peaks
+    Piecewise monotonic chronological mapping [1096..1974] -> [1.8..29.6]:
+      - Compresses the medieval gap (1209 -> 1583) behind a crisp // era break
+      - Expands 1785–1915 slightly where North American & global founding density peaks
     """
     anchors = [
         (1096,  1.8),
-        (1209,  4.0),
-        (1636,  6.8),
-        (1701,  9.2),
+        (1209,  3.8),
+        (1583,  6.2),
+        (1636,  7.7),
+        (1701,  9.4),
         (1740, 10.9),
-        (1775, 14.9),
-        (1800, 16.4),
-        (1845, 20.1),
-        (1895, 24.9),
-        (1920, 27.1),
-        (1963, 29.5),
+        (1775, 13.7),
+        (1800, 15.1),
+        (1845, 18.8),
+        (1895, 23.8),
+        (1920, 26.2),
+        (1974, 29.5),
     ]
     if yr <= anchors[0][0]:
         return anchors[0][1]
@@ -360,21 +361,22 @@ def year_to_metro_x(yr: int) -> float:
 
 
 def render_timeline_metro(pal_meta: dict):
-    W, H = 2560, 1460
+    W, H = 2640, 1520
     img = make_canvas(W, H, "#FAF9F5")
     draw = ImageDraw.Draw(img)
 
     f_title = load_font(54, "bold")
     f_sub = load_font(25, "regular")
-    f_main = load_font(22, "bold")
-    f_yr = load_font(18, "regular")
+    f_main = load_font(20, "bold")
+    f_yr = load_font(17, "regular")
     f_tag = load_font(19, "bold")
     f_leg = load_font(23, "medium")
 
-    draw.text((120, 56), "Campus Palette — Collegiate Heritage Metro Map (1096–1963)", font=f_title, fill="#181A20")
+    n_univ = len(pal_meta)
+    draw.text((120, 56), "Campus Palette — Collegiate Heritage Metro Map (1096–1974)", font=f_title, fill="#181A20")
     draw.text(
         (120, 124),
-        "40 universities arranged along six collegiate grouping lines — piecewise chronological spacing preserves medieval classics alongside modern North American campuses.",
+        f"{n_univ} universities arranged along six collegiate grouping lines — piecewise chronological spacing preserves medieval classics alongside modern campuses.",
         font=f_sub,
         fill="#525866",
     )
@@ -390,21 +392,21 @@ def render_timeline_metro(pal_meta: dict):
 
     def to_px(x, y):
         px = 590.0 + (x - 1.8) / (29.5 - 1.8) * (W * 2 - 740.0)
-        py = 1480.0 - y * 395.0
+        py = 1540.0 - y * 412.0
         return px, py
 
     # Subtle vertical chronological milestone guides + medieval era break
     milestones = [
-        ("1096", 1096), ("1209", 1209), ("1636", 1636), ("1700", 1700),
-        ("1750", 1750), ("1800", 1800), ("1850", 1850), ("1900", 1900), ("1963", 1963),
+        ("1096", 1096), ("1209", 1209), ("1583", 1583), ("1650", 1650), ("1700", 1700),
+        ("1750", 1750), ("1800", 1800), ("1850", 1850), ("1900", 1900), ("1974", 1974),
     ]
     for yr_lbl, yr_val in milestones:
         gx, _ = to_px(year_to_metro_x(yr_val), 0)
         draw.line([(gx, 230), (gx, H * 2 - 235)], fill="#EAE7DF", width=2)
         draw_text_centered(draw, gx, H * 2 - 205, yr_lbl, f_yr, fill="#7E8492")
 
-    # Crisp medieval era break band between 1209 and 1636
-    bx_mid, _ = to_px(5.35, 0)
+    # Crisp medieval era break band between 1209 and 1583
+    bx_mid, _ = to_px(5.0, 0)
     draw.rectangle((bx_mid - 26, 230, bx_mid + 26, H * 2 - 235), fill="#FAF9F5")
     for yy in range(250, H * 2 - 250, 42):
         draw.line([(bx_mid - 6, yy), (bx_mid - 6, yy + 20)], fill="#D4D0C5", width=2)
@@ -417,33 +419,34 @@ def render_timeline_metro(pal_meta: dict):
         items = [v for v in pal_meta.values() if v["group"] == grp]
         items.sort(key=lambda v: (v["year"], v["shortName"]))
         xs = [year_to_metro_x(v["year"]) for v in items]
-        # Iterative minimum-distance relaxation along x so stations never collide
-        min_gap = 1.28
-        for _ in range(40):
+        # Iterative minimum-distance relaxation along x so dense tracks (e.g. 14 Canadian stations) never collide
+        min_gap = 1.04 if len(items) >= 12 else 1.24
+        left_bound = 1.8 if grp == "Global Classics" else 5.8
+        for _ in range(80):
             for i in range(len(xs) - 1):
                 gap = xs[i + 1] - xs[i]
                 if gap < min_gap:
                     delta = (min_gap - gap) * 0.52
-                    xs[i] = max(1.8, xs[i] - delta)
-                    xs[i + 1] = min(29.8, xs[i + 1] + delta)
-        # Keep strictly within bounds
+                    xs[i] = max(left_bound, xs[i] - delta)
+                    xs[i + 1] = min(29.7, xs[i + 1] + delta)
+        # Keep strictly within bounds while preserving minimum spacing
         if xs and xs[-1] > 29.7:
             shift = xs[-1] - 29.7
             xs = [x - shift for x in xs]
-        if xs and xs[0] < 1.8:
-            shift = 1.8 - xs[0]
+        if xs and xs[0] < left_bound:
+            shift = left_bound - xs[0]
             xs = [x + shift for x in xs]
 
-        # Alternate above (+0.34) / below (-0.34) whenever adjacent stations are within 2.9 units
+        # Alternate above / below whenever adjacent stations are within 3.6 units
         dys = []
         for i in range(len(items)):
             if i == 0:
-                dys.append(0.36 if track_y[grp] >= 0 else -0.36)
+                dys.append(0.35 if track_y[grp] >= 0 else -0.35)
             else:
-                if xs[i] - xs[i - 1] < 3.4:
+                if xs[i] - xs[i - 1] < 3.6:
                     dys.append(-dys[-1])
                 else:
-                    dys.append(0.36 if track_y[grp] >= 0 else -0.36)
+                    dys.append(0.35 if track_y[grp] >= 0 else -0.35)
         stations_by_group[grp] = list(zip(items, xs, dys))
 
     # Draw solid grouping lines (NO cross-grouping dashed edges!)
@@ -461,7 +464,7 @@ def render_timeline_metro(pal_meta: dict):
         txt = GROUP_SHORT[grp]
         bb = draw.textbbox((0, 0), txt, font=f_tag)
         tw, th = bb[2] - bb[0], bb[3] - bb[1]
-        bx1 = sx - 46
+        bx1 = sx - 44
         bx0 = bx1 - tw - 30
         by0 = sy - th / 2 - 11
         by1 = sy + th / 2 + 11
@@ -469,7 +472,7 @@ def render_timeline_metro(pal_meta: dict):
         draw.rounded_rectangle((bx0, by0, bx1, by1), radius=10, fill=tint, outline=col_rgb, width=2)
         draw_text_centered(draw, (bx0 + bx1) / 2, sy, txt, f_tag, fill=col_rgb)
 
-    # Draw crisp // break mark specifically where Global Classics crosses 1209 -> 1855
+    # Draw crisp // break mark specifically where Global Classics crosses 1209 -> 1583
     _, gc_y = to_px(0, track_y["Global Classics"])
     draw.rectangle((bx_mid - 16, gc_y - 18, bx_mid + 16, gc_y + 18), fill="#FAF9F5")
     for dx in (-7, 7):
@@ -479,27 +482,35 @@ def render_timeline_metro(pal_meta: dict):
     placed_boxes = []
     for grp in GROUP_ORDER:
         y_val = track_y[grp]
+        # Track same-side label right edges so any wide label gets gently nudged rather than overlapping
+        last_right = {True: -1e9, False: -1e9}
         for it, x_val, dy in stations_by_group[grp]:
             cx, cy = to_px(x_val, y_val)
             st_col = hex_to_rgb_tuple(it["stationColor"])
-            draw_circle(draw, cx, cy, 24, fill="#FAF9F5")
-            draw_circle(draw, cx, cy, 19, fill=st_col, outline="#FFFFFF", width=3)
+            draw_circle(draw, cx, cy, 22, fill="#FAF9F5")
+            draw_circle(draw, cx, cy, 17, fill=st_col, outline="#FFFFFF", width=3)
 
             lx, ly = to_px(x_val, y_val + dy)
             name = it["shortName"]
             yr_s = str(it["year"])
 
-            # Check horizontal bounding box against prior labels on same side
             bb_n = draw.textbbox((0, 0), name, font=f_main)
             bw = (bb_n[2] - bb_n[0]) + 10
-            bh = (bb_n[3] - bb_n[1]) + 34
-            # Slight nudge if tight near canvas right edge
-            lx = min(W * 2 - 80 - bw / 2, max(80 + bw / 2, lx))
-            y_yr = ly + (29 if dy < 0 else -28)
+            # Prevent same-side label collision by nudging right if needed
+            is_above = dy > 0
+            if lx - bw / 2 < last_right[is_above] + 8:
+                lx = last_right[is_above] + 8 + bw / 2
+            # Clamp cleanly within canvas margins
+            lx = min(W * 2 - 70 - bw / 2, max(70 + bw / 2, lx))
+            last_right[is_above] = lx + bw / 2
 
-            # White halo behind text if crossing any vertical milestone guide
-            y_top_box = min(ly, y_yr) - 14
-            y_bot_box = max(ly, y_yr) + 14
+            y_yr = ly + (27 if dy < 0 else -26)
+            y_top_box = min(ly, y_yr) - 13
+            y_bot_box = max(ly, y_yr) + 13
+            # Subtle leader tick if nudged horizontally off station center
+            if abs(lx - cx) > 16:
+                edge_y = y_bot_box if dy > 0 else y_top_box
+                draw.line([(cx, cy + (-22 if dy > 0 else 22)), (lx, edge_y)], fill="#C8CCD6", width=2)
             draw.rounded_rectangle((lx - bw / 2, y_top_box, lx + bw / 2, y_bot_box), radius=6, fill="#FAF9F5")
             draw_text_centered(draw, lx, ly, name, f_main, fill="#181A20")
             draw_text_centered(draw, lx, y_yr, yr_s, f_yr, fill="#636978")
@@ -530,22 +541,24 @@ def render_timeline_metro(pal_meta: dict):
     print(f"Saved assets/timeline/timeline-metro.png (overlaps={overlaps})")
 
 
-# ---------- 2. Render 80-Theme OKLCH (a, b) Hue-Chroma Grid (8 x 10) ----------
+# ---------- 2. Render 120-Theme OKLCH (a, b) Hue-Chroma Grid (10 x 12) ----------
 
 def render_colorspace_grid(tokens: list, slug_order: list):
-    W, H = 2800, 3960
+    W, H = 3100, 4050
     img = make_canvas(W, H, "#FAF9F6")
     draw = ImageDraw.Draw(img)
 
     f_title = load_font(56, "bold")
     f_sub = load_font(27, "regular")
-    f_panel = load_font(23, "bold")
+    f_panel = load_font(21, "bold")
     f_axis = load_font(23, "regular")
 
-    draw.text((100, 56), "All 80 Themes in OKLCH Hue–Chroma Space (40 Universities, Light & Dark)", font=f_title, fill="#181A20")
+    n_themes = len(slug_order)
+    n_univ = n_themes // 2
+    draw.text((100, 56), f"All {n_themes} Themes in OKLCH Hue–Chroma Space ({n_univ} Universities, Light & Dark)", font=f_title, fill="#181A20")
     draw.text(
         (100, 128),
-        "8 × 10 matrix (4 Light/Dark university pairs per row, ordered by collegiate grouping & founding year). Connected: 10 syntax roles. Rings: OKLCH C = 0.06, 0.12, 0.18.",
+        "10 × 12 matrix (5 Light/Dark university pairs per row, ordered by collegiate grouping & founding year). Connected: 10 syntax roles. Rings: OKLCH C = 0.06, 0.12, 0.18.",
         font=f_sub,
         fill="#525866",
     )
@@ -557,9 +570,9 @@ def render_colorspace_grid(tokens: list, slug_order: list):
         if r["role"] in POLYGON_ROLES:
             poly_by_slug.setdefault(r["theme_slug"], {})[r["role"]] = r
 
-    cols, nrows = 8, 10
+    cols, nrows = 10, 12
     pad_l, pad_r, pad_t, pad_b = 90, 90, 215, 105
-    gap_x, gap_y = 32, 36
+    gap_x, gap_y = 28, 32
     cell_w = (W * 2 - pad_l - pad_r - gap_x * (cols - 1)) / cols
     cell_h = (H * 2 - pad_t - pad_b - gap_y * (nrows - 1)) / nrows
 
@@ -573,8 +586,8 @@ def render_colorspace_grid(tokens: list, slug_order: list):
 
         meta = meta_by_slug[slug]
         grp_col = hex_to_rgb_tuple(GROUP_COLORS[meta["group"]])
-        header_h = 54
-        plot_size = min(cell_w - 22, cell_h - header_h - 14)
+        header_h = 52
+        plot_size = min(cell_w - 20, cell_h - header_h - 14)
         px0 = x0 + (cell_w - plot_size) / 2
         py0 = y0 + header_h
 
@@ -586,15 +599,15 @@ def render_colorspace_grid(tokens: list, slug_order: list):
             width=2,
         )
         # Subtle grouping-colored top bar
-        draw.rounded_rectangle((x0 + 18, y0 + 2, x0 + cell_w - 18, y0 + 9), radius=3, fill=grp_col)
+        draw.rounded_rectangle((x0 + 16, y0 + 2, x0 + cell_w - 16, y0 + 9), radius=3, fill=grp_col)
 
         mode_cap = "Light" if meta["mode"] == "light" else "Dark"
         title_str = f"{meta['short_name']} ({mode_cap})"
-        draw_text_centered(draw, x0 + cell_w / 2, y0 + 31, title_str, f_panel, fill="#1E222B")
+        draw_text_centered(draw, x0 + cell_w / 2, y0 + 30, title_str, f_panel, fill="#1E222B")
 
         cx = px0 + plot_size / 2
         cy = py0 + plot_size / 2
-        scale = (plot_size / 2 - 18) / LIM
+        scale = (plot_size / 2 - 16) / LIM
 
         for chroma_r in (0.06, 0.12, 0.18):
             rr = chroma_r * scale
@@ -613,7 +626,7 @@ def render_colorspace_grid(tokens: list, slug_order: list):
         poly_xy = [(p[0], p[1]) for p in pts] + [(pts[0][0], pts[0][1])]
         draw.line(poly_xy, fill="#707786", width=4)
         for px, py, hx in pts:
-            draw_circle(draw, px, py, 11, fill=hex_to_rgb_tuple(hx), outline="#181A20", width=3)
+            draw_circle(draw, px, py, 10, fill=hex_to_rgb_tuple(hx), outline="#181A20", width=3)
 
     draw_text_centered(
         draw,
@@ -883,7 +896,7 @@ def render_mds_and_heatmap(summaries: list, tokens: list, pairs: list, slug_orde
         print(f"  {mode_name} farthest: {all_p[-1][1]} <-> {all_p[-1][2]} ({all_p[-1][0]:.2f} dE00), 2nd: {all_p[-2][1]} <-> {all_p[-2][2]} ({all_p[-2][0]:.2f} dE00)")
 
     # ---------- Render Side-by-Side Perceptual MDS (theme-mds.png) ----------
-    W, H = 2440, 1320
+    W, H = 2520, 1360
     img = make_canvas(W, H, "#FAF9F6")
     draw = ImageDraw.Draw(img)
 
@@ -891,44 +904,45 @@ def render_mds_and_heatmap(summaries: list, tokens: list, pairs: list, slug_orde
     f_sub = load_font(25, "regular")
     f_phead = load_font(31, "bold")
     f_psub = load_font(22, "regular")
-    f_lbl = load_font(19, "bold")
+    f_lbl = load_font(17, "bold")
     f_pole = load_font(19, "bold")
     f_ax = load_font(23, "medium")
     f_tick = load_font(19, "regular")
     f_foot = load_font(22, "regular")
 
+    n_u_mds = len(light_slugs)
     draw.text((125, 50), "Perceptual Similarity Landscape — Classical MDS on CIEDE2000 (ΔE₀₀)", font=f_title, fill="#181A20")
     draw.text(
         (125, 114),
-        "Pairwise mean ΔE₀₀ across all 13 syntax roles, split by polarity so all 40 universities separate purely by chromatic identity. Inner fill = editor bg · outer ring = keyword accent.",
+        f"Pairwise mean ΔE₀₀ across all 13 syntax roles, split by polarity so all {n_u_mds} universities separate purely by chromatic identity. Inner fill = editor bg · outer ring = keyword accent.",
         font=f_sub,
         fill="#525866",
     )
 
     panels = [
         {
-            "title": "Light Themes (40 Universities)",
+            "title": f"Light Themes ({n_u_mds} Universities)",
             "subtitle": f"Dim 1 ({var_l[0]:.1f}%) + Dim 2 ({var_l[1]:.1f}%) = {var_l[0] + var_l[1]:.1f}% of perceptual distance variance",
             "slugs": light_slugs,
             "coords": coords_l,
             "D": D_light,
             "px0": 135,
             "py0": 265,
-            "pw": 2200,
-            "ph": 2050,
+            "pw": 2280,
+            "ph": 2120,
             "var": var_l,
             "sib_thresh": 3.25,
         },
         {
-            "title": "Dark Themes (40 Universities)",
+            "title": f"Dark Themes ({n_u_mds} Universities)",
             "subtitle": f"Dim 1 ({var_d[0]:.1f}%) + Dim 2 ({var_d[1]:.1f}%) = {var_d[0] + var_d[1]:.1f}% of perceptual distance variance",
             "slugs": dark_slugs,
             "coords": coords_d,
             "D": D_dark,
-            "px0": 2545,
+            "px0": 2625,
             "py0": 265,
-            "pw": 2200,
-            "ph": 2050,
+            "pw": 2280,
+            "ph": 2120,
             "var": var_d,
             "sib_thresh": 3.55,
         },
@@ -995,102 +1009,129 @@ def render_mds_and_heatmap(summaries: list, tokens: list, pairs: list, slug_orde
                     yb = y1 + (y2 - y1) * (min(k + 1, steps) / steps)
                     draw.line([(xa, ya), (xb, yb)], fill="#B8BECD", width=3)
 
-        # Force-directed + strict collision-free label placement
-        cx_all = sum(pt[0] for pt in pts_px) / len(pts_px)
-        cy_all = sum(pt[1] for pt in pts_px) / len(pts_px)
+        # Deterministic multi-ring collision-free label placement (0 label-label & 0 label-marker overlaps)
         labels = []
+        min_x = px0 + 20.0
+        max_x = px0 + pw - 20.0
+        min_y = py0 + 52.0
+        max_y = py0 + ph - 52.0
+        dot_clear = 22.0
+        pad_x, pad_y = 8.0, 6.0
+
+        ranked = []
         for i, s in enumerate(p["slugs"]):
             lbl = meta_by_slug[s]["short_name"]
             bb = draw.textbbox((0, 0), lbl, font=f_lbl)
-            lw, lh = (bb[2] - bb[0]) + 18, (bb[3] - bb[1]) + 11
-            ang = math.atan2(pts_px[i][1] - cy_all, pts_px[i][0] - cx_all)
-            labels.append({
+            lw = (bb[2] - bb[0]) + 18.0
+            lh = max(30.0, (bb[3] - bb[1]) + 14.0)
+            ax, ay = pts_px[i]
+            crowding = 0.0
+            for j, (bx, by) in enumerate(pts_px):
+                if i == j:
+                    continue
+                d = math.hypot(bx - ax, by - ay)
+                if d < 180.0:
+                    crowding += 1.0 / (d + 12.0)
+            ranked.append({
                 "idx": i,
                 "slug": s,
                 "text": lbl,
-                "ax": pts_px[i][0],
-                "ay": pts_px[i][1],
-                "x": pts_px[i][0] + math.cos(ang) * 58,
-                "y": pts_px[i][1] + math.sin(ang) * 48,
+                "ax": ax,
+                "ay": ay,
                 "w": lw,
                 "h": lh,
+                "priority": crowding,
             })
+        ranked.sort(key=lambda r: (-r["priority"], r["slug"]))
 
-        for _ in range(1400):
-            for i, li in enumerate(labels):
-                fx, fy = 0.0, 0.0
-                dx_a = li["x"] - li["ax"]
-                dy_a = li["y"] - li["ay"]
-                dist_a = math.hypot(dx_a, dy_a) + 1e-4
-                if dist_a > 230:
-                    fx -= (dx_a / dist_a) * (dist_a - 230) * 0.075
-                    fy -= (dy_a / dist_a) * (dist_a - 230) * 0.075
-                elif dist_a < 50:
-                    fx += (dx_a / dist_a) * (50 - dist_a) * 0.50
-                    fy += (dy_a / dist_a) * (50 - dist_a) * 0.50
+        def rect_hits_dot(cx, cy, w, h, dx, dy, clr):
+            nx = max(cx - w / 2.0, min(dx, cx + w / 2.0))
+            ny = max(cy - h / 2.0, min(dy, cy + h / 2.0))
+            return math.hypot(dx - nx, dy - ny) < clr
 
-                for ax, ay in pts_px:
-                    ox = abs(li["x"] - ax) - (li["w"] / 2 + 28)
-                    oy = abs(li["y"] - ay) - (li["h"] / 2 + 28)
-                    if ox < 0 and oy < 0:
-                        sx = 1.0 if li["x"] >= ax else -1.0
-                        sy = 1.0 if li["y"] >= ay else -1.0
-                        if abs(ox) < abs(oy):
-                            fx += sx * (-ox) * 0.60
-                        else:
-                            fy += sy * (-oy) * 0.62
+        def segs_cross(ax, ay, bx, by, cx, cy, dx, dy):
+            def ccw(p1x, p1y, p2x, p2y, p3x, p3y):
+                return (p3y - p1y) * (p2x - p1x) > (p2y - p1y) * (p3x - p1x)
+            return (
+                ccw(ax, ay, cx, cy, dx, dy) != ccw(bx, by, cx, cy, dx, dy)
+                and ccw(ax, ay, bx, by, cx, cy) != ccw(ax, ay, bx, by, dx, dy)
+            )
 
-                for j, lj in enumerate(labels):
-                    if i == j:
+        def is_clear(cx, cy, w, h):
+            if cx - w / 2.0 < min_x or cx + w / 2.0 > max_x or cy - h / 2.0 < min_y or cy + h / 2.0 > max_y:
+                return False
+            for dx, dy in pts_px:
+                if rect_hits_dot(cx, cy, w, h, dx, dy, dot_clear):
+                    return False
+            for pl in labels:
+                if (
+                    abs(cx - pl["x"]) < (w + pl["w"]) / 2.0 + pad_x
+                    and abs(cy - pl["y"]) < (h + pl["h"]) / 2.0 + pad_y
+                ):
+                    return False
+            return True
+
+        angles = [
+            math.radians(deg) for deg in (
+                -90, 90, 0, 180, -45, -135, 45, 135,
+                -22.5, -67.5, -112.5, -157.5, 22.5, 67.5, 112.5, 157.5,
+                -11.25, -33.75, -56.25, -78.75, -101.25, -123.75, -146.25, -168.75,
+                11.25, 33.75, 56.25, 78.75, 101.25, 123.75, 146.25, 168.75,
+            )
+        ]
+        rings = [36, 46, 58, 72, 88, 108, 130, 156, 186, 220, 260, 310]
+
+        for node in ranked:
+            best = None
+            best_score = float("inf")
+            for r in rings:
+                if best is not None and r - 10.0 > best_score:
+                    break
+                for ang in angles:
+                    rx = r + abs(math.cos(ang)) * node["w"] * 0.36
+                    ry = r + abs(math.sin(ang)) * node["h"] * 0.28
+                    cx = node["ax"] + math.cos(ang) * rx
+                    cy = node["ay"] + math.sin(ang) * ry
+                    if not is_clear(cx, cy, node["w"], node["h"]):
                         continue
-                    ox = abs(li["x"] - lj["x"]) - (li["w"] + lj["w"]) / 2 - 16
-                    oy = abs(li["y"] - lj["y"]) - (li["h"] + lj["h"]) / 2 - 14
-                    if ox < 0 and oy < 0:
-                        sx = 1.0 if (li["x"] > lj["x"] or (li["x"] == lj["x"] and i > j)) else -1.0
-                        sy = 1.0 if (li["y"] > lj["y"] or (li["y"] == lj["y"] and i > j)) else -1.0
-                        if abs(ox) < abs(oy):
-                            fx += sx * (-ox) * 0.58
-                        else:
-                            fy += sy * (-oy) * 0.58
+                    dist = math.hypot(cx - node["ax"], cy - node["ay"])
+                    crossings = sum(
+                        1 for pl in labels
+                        if segs_cross(node["ax"], node["ay"], cx, cy, pl["ax"], pl["ay"], pl["x"], pl["y"])
+                    )
+                    cardinal = -6.0 if (abs(cx - node["ax"]) < 14.0 and cy < node["ay"]) else (-3.0 if abs(cx - node["ax"]) < 14.0 else 0.0)
+                    sc = dist + crossings * 48.0 + cardinal
+                    if sc < best_score:
+                        best_score = sc
+                        best = (cx, cy)
+            if best is None:
+                # Fine fallback scan guarantees a clean slot anywhere on the panel
+                y_cur = min_y + node["h"] / 2.0
+                while y_cur <= max_y - node["h"] / 2.0:
+                    x_cur = min_x + node["w"] / 2.0
+                    while x_cur <= max_x - node["w"] / 2.0:
+                        if is_clear(x_cur, y_cur, node["w"], node["h"]):
+                            sc = math.hypot(x_cur - node["ax"], y_cur - node["ay"])
+                            if sc < best_score:
+                                best_score = sc
+                                best = (x_cur, y_cur)
+                        x_cur += 28.0
+                    y_cur += 22.0
+            fx, fy = best if best is not None else (node["ax"], node["ay"] - 42.0)
+            labels.append({**node, "x": fx, "y": fy})
 
-                li["x"] = min(px0 + pw - li["w"] / 2 - 24, max(px0 + li["w"] / 2 + 24, li["x"] + fx))
-                li["y"] = min(py0 + ph - li["h"] / 2 - 56, max(py0 + li["h"] / 2 + 56, li["y"] + fy))
-
-        # Strict non-overlap final sweep (label-vs-label AND label-vs-marker)
-        for _ in range(240):
-            moved = False
-            for i in range(len(labels)):
-                li = labels[i]
-                for ax, ay in pts_px:
-                    ox = (li["w"] / 2 + 26) - abs(li["x"] - ax)
-                    oy = (li["h"] / 2 + 26) - abs(li["y"] - ay)
-                    if ox > 0 and oy > 0:
-                        moved = True
-                        if ox < oy:
-                            shift = (ox + 2.0) * (1.0 if li["x"] >= ax else -1.0)
-                            li["x"] = min(px0 + pw - li["w"] / 2 - 20, max(px0 + li["w"] / 2 + 20, li["x"] + shift))
-                        else:
-                            shift = (oy + 2.0) * (1.0 if li["y"] >= ay else -1.0)
-                            li["y"] = min(py0 + ph - li["h"] / 2 - 52, max(py0 + li["h"] / 2 + 52, li["y"] + shift))
-                for j in range(i + 1, len(labels)):
-                    lj = labels[j]
-                    ox = (li["w"] + lj["w"]) / 2 + 10 - abs(li["x"] - lj["x"])
-                    oy = (li["h"] + lj["h"]) / 2 + 8 - abs(li["y"] - lj["y"])
-                    if ox > 0 and oy > 0:
-                        moved = True
-                        if ox < oy:
-                            shift = (ox / 2 + 1.2) * (1.0 if li["x"] >= lj["x"] else -1.0)
-                            li["x"] = min(px0 + pw - li["w"] / 2 - 20, max(px0 + li["w"] / 2 + 20, li["x"] + shift))
-                            lj["x"] = min(px0 + pw - lj["w"] / 2 - 20, max(px0 + lj["w"] / 2 + 20, lj["x"] - shift))
-                        else:
-                            shift = (oy / 2 + 1.2) * (1.0 if li["y"] >= lj["y"] else -1.0)
-                            li["y"] = min(py0 + ph - li["h"] / 2 - 52, max(py0 + li["h"] / 2 + 52, li["y"] + shift))
-                            lj["y"] = min(py0 + ph - lj["h"] / 2 - 52, max(py0 + lj["h"] / 2 + 52, lj["y"] - shift))
-            if not moved:
-                break
+        mds_overlaps = 0
+        for i in range(len(labels)):
+            li = labels[i]
+            for j in range(i + 1, len(labels)):
+                lj = labels[j]
+                if abs(li["x"] - lj["x"]) < (li["w"] + lj["w"]) / 2.0 and abs(li["y"] - lj["y"]) < (li["h"] + lj["h"]) / 2.0:
+                    mds_overlaps += 1
+        if mds_overlaps:
+            print(f"  [WARN mds label overlaps in {p['title']}] {mds_overlaps}")
 
         for li in labels:
-            if math.hypot(li["x"] - li["ax"], li["y"] - li["ay"]) > 28:
+            if math.hypot(li["x"] - li["ax"], li["y"] - li["ay"]) > 26:
                 draw.line([(li["ax"], li["ay"]), (li["x"], li["y"])], fill="#BCC2D0", width=2)
 
         for li in labels:
@@ -1098,9 +1139,9 @@ def render_mds_and_heatmap(summaries: list, tokens: list, pairs: list, slug_orde
             bg_hex = hex_by_slug[s]["bg"]
             kw_hex = hex_by_slug[s]["accentKeyword"]
             cx, cy = li["ax"], li["ay"]
-            draw_circle(draw, cx, cy, 20, fill="#FFFFFF")
-            draw_circle(draw, cx, cy, 17, fill=hex_to_rgb_tuple(kw_hex), outline="#222630", width=2)
-            draw_circle(draw, cx, cy, 8.5, fill=hex_to_rgb_tuple(bg_hex), outline="#FFFFFF" if meta_by_slug[s]["mode"] == "dark" else "#484F5E", width=1)
+            draw_circle(draw, cx, cy, 17, fill="#FFFFFF")
+            draw_circle(draw, cx, cy, 14.5, fill=hex_to_rgb_tuple(kw_hex), outline="#222630", width=2)
+            draw_circle(draw, cx, cy, 7.0, fill=hex_to_rgb_tuple(bg_hex), outline="#FFFFFF" if meta_by_slug[s]["mode"] == "dark" else "#484F5E", width=1)
 
         for li in labels:
             draw.rounded_rectangle(
@@ -1132,7 +1173,7 @@ def render_mds_and_heatmap(summaries: list, tokens: list, pairs: list, slug_orde
         f"Dark Dim1={var_d[0]:.2f}% Dim2={var_d[1]:.2f}% Sum={var_d[0]+var_d[1]:.2f}%)"
     )
 
-    # ---------- Render Ward-Ordered 40x40 Split-Triangle ΔE₀₀ Heatmap ----------
+    # ---------- Render Ward-Ordered 60x60 Split-Triangle ΔE₀₀ Heatmap ----------
     l_by_univ = {meta_by_slug[s]["university"]: s for s in light_slugs}
     d_by_univ = {meta_by_slug[s]["university"]: s for s in dark_slugs}
     univs = list(l_by_univ.keys())
@@ -1188,32 +1229,32 @@ def render_mds_and_heatmap(summaries: list, tokens: list, pairs: list, slug_orde
                 return tuple(int(round(c0[i] + (c1[i] - c0[i]) * t)) for i in range(3))
         return stops[-1][1]
 
-    HW, HH = 2120, 2240
+    HW, HH = 2200, 2320
     himg = make_canvas(HW, HH, "#FAF9F6")
     hdraw = ImageDraw.Draw(himg)
 
     hf_title = load_font(48, "bold")
     hf_sub = load_font(24, "regular")
-    hf_lbl = load_font(20, "bold")
+    hf_lbl = load_font(17, "bold")
     hf_tag = load_font(21, "bold")
     hf_cb = load_font(21, "medium")
     hf_leg = load_font(20, "medium")
 
-    hdraw.text((110, 50), "Pairwise Perceptual Distance Matrix — All 40 Universities (CIEDE2000 ΔE₀₀)", font=hf_title, fill="#181A20")
+    hdraw.text((110, 50), f"Pairwise Perceptual Distance Matrix — All {nu} Universities (CIEDE2000 ΔE₀₀)", font=hf_title, fill="#181A20")
     hdraw.text(
         (110, 112),
-        "Ward-ordered 40×40 split-triangle matrix: upper-right = Light mode, lower-left = Dark mode (mean ΔE₀₀ across 13 syntax roles). Diagonal = Light / Dark keyword swatches.",
+        f"Ward-ordered {nu}×{nu} split-triangle matrix: upper-right = Light mode, lower-left = Dark mode (mean ΔE₀₀ across 13 syntax roles). Diagonal = Light / Dark keyword swatches.",
         font=hf_sub,
         fill="#525866",
     )
 
-    cell = 78
-    grid_w = nu * cell  # 3120
-    gx0 = 620
-    gy0 = 685
+    cell = 56
+    grid_w = nu * cell  # 3360 for nu=60
+    gx0 = 600
+    gy0 = 680
 
     # Grouping color bar strips flush outside the matrix border
-    bar_t = 18
+    bar_t = 16
     for idx_u in range(nu):
         grp_rgb = hex_to_rgb_tuple(GROUP_COLORS[meta_by_slug[ord_l_slugs[idx_u]]["group"]])
         y0 = gy0 + idx_u * cell
@@ -1232,7 +1273,7 @@ def render_mds_and_heatmap(summaries: list, tokens: list, pairs: list, slug_orde
                 d_col = hex_to_rgb_tuple(hex_by_slug[ord_d_slugs[r_i]]["accentKeyword"])
                 hdraw.polygon([(x0, y0), (x0 + cell, y0), (x0 + cell, y0 + cell)], fill=l_col)
                 hdraw.polygon([(x0, y0), (x0, y0 + cell), (x0 + cell, y0 + cell)], fill=d_col)
-                hdraw.line([(x0, y0), (x0 + cell, y0 + cell)], fill="#FAF9F6", width=3)
+                hdraw.line([(x0, y0), (x0 + cell, y0 + cell)], fill="#FAF9F6", width=2)
                 hdraw.rectangle((x0, y0, x0 + cell, y0 + cell), outline="#FAF9F6", width=1)
             elif r_i < c_i:
                 col = interp_palette(DL_ord[r_i, c_i])
@@ -1247,15 +1288,15 @@ def render_mds_and_heatmap(summaries: list, tokens: list, pairs: list, slug_orde
         yc = gy0 + idx_u * cell + cell / 2
         bb = hdraw.textbbox((0, 0), short_name, font=hf_lbl)
         tw = bb[2] - bb[0]
-        hdraw.text((gx0 - bar_t - 24 - tw, yc - 12), short_name, font=hf_lbl, fill="#1E222B")
+        hdraw.text((gx0 - bar_t - 22 - tw, yc - 10), short_name, font=hf_lbl, fill="#1E222B")
 
         xc = gx0 + idx_u * cell + cell / 2
-        tmp = Image.new("RGBA", (360, 52), (0, 0, 0, 0))
+        tmp = Image.new("RGBA", (360, 46), (0, 0, 0, 0))
         td = ImageDraw.Draw(tmp)
-        td.text((4, 12), short_name, font=hf_lbl, fill="#1E222B")
+        td.text((4, 10), short_name, font=hf_lbl, fill="#1E222B")
         rot = tmp.rotate(50, expand=True, resample=Image.BICUBIC)
-        px_paste = int(xc - 24)
-        py_paste = int(gy0 - bar_t - 20 - rot.height)
+        px_paste = int(xc - 20)
+        py_paste = int(gy0 - bar_t - 18 - rot.height)
         himg.paste(rot, (px_paste, py_paste), rot)
 
     # Triangle callout badges
@@ -1268,7 +1309,7 @@ def render_mds_and_heatmap(summaries: list, tokens: list, pairs: list, slug_orde
     draw_text_centered(hdraw, lx0 + 230, ly0 + 31, "LOWER TRIANGLE  ·  DARK MODE", hf_tag, fill="#ECEFF6")
 
     # Colorbar at bottom
-    cb_x0, cb_y0, cb_w, cb_h = gx0 + 180, gy0 + grid_w + 175, 2100, 44
+    cb_x0, cb_y0, cb_w, cb_h = gx0 + 240, gy0 + grid_w + 175, 2240, 44
     for px in range(cb_w):
         val = (px / max(1, cb_w - 1)) * 20.0
         hdraw.line([(cb_x0 + px, cb_y0), (cb_x0 + px, cb_y0 + cb_h)], fill=interp_palette(val))
@@ -1304,7 +1345,7 @@ def render_mds_and_heatmap(summaries: list, tokens: list, pairs: list, slug_orde
     return var_l, var_d
 
 
-# ---------- 7. Render 80-Leaf Ward Hierarchical Chromatic Dendrogram ----------
+# ---------- 7. Render 120-Leaf Ward Hierarchical Chromatic Dendrogram ----------
 
 def render_dendrogram(summaries: list, tokens: list, slug_order: list):
     meta_by_slug = {s["theme_slug"]: s for s in summaries}
@@ -1324,6 +1365,7 @@ def render_dendrogram(summaries: list, tokens: list, slug_order: list):
 
     merges = ward_d2_clustering(Z)
     n = len(slug_order)
+    n_u = n // 2
     children = {m[3]: (m[0], m[1], m[2]) for m in merges}
     root_id = merges[-1][3]
 
@@ -1344,7 +1386,7 @@ def render_dendrogram(summaries: list, tokens: list, slug_order: list):
 
     analyze_node(root_id)
 
-    DW, DH = 2040, 2380
+    DW, DH = 2080, 2940
     dimg = make_canvas(DW, DH, "#FAF9F6")
     ddraw = ImageDraw.Draw(dimg)
 
@@ -1352,7 +1394,7 @@ def render_dendrogram(summaries: list, tokens: list, slug_order: list):
     f_sub = load_font(24, "regular")
     f_ax = load_font(25, "medium")
     f_tick = load_font(21, "regular")
-    f_leaf = load_font(21, "bold")
+    f_leaf = load_font(18, "bold")
     f_leg_h = load_font(24, "bold")
     f_leg = load_font(21, "regular")
 
@@ -1364,7 +1406,7 @@ def render_dendrogram(summaries: list, tokens: list, slug_order: list):
     )
     ddraw.text(
         (95, 114),
-        "80 leaves clustered across all 13 syntax roles — branches & text colored by Light / Dark polarity; square pips denote collegiate grouping.",
+        f"{n} leaves clustered across all 13 syntax roles — branches & text colored by Light / Dark polarity; square pips denote collegiate grouping.",
         font=f_sub,
         fill="#525866",
     )
@@ -1373,7 +1415,7 @@ def render_dendrogram(summaries: list, tokens: list, slug_order: list):
     DARK_BRANCH = "#B44524"
     MIXED_BRANCH = "#555C6E"
 
-    tx0, ty0, tw, th = 140, 210, 2720, 4300
+    tx0, ty0, tw, th = 140, 210, 2800, 5400
     max_h = merges[-1][2] * 1.04
 
     leaf_y = {leaf_idx: ty0 + (rank + 0.5) / n * th for rank, leaf_idx in enumerate(leaf_order)}
@@ -1422,21 +1464,21 @@ def render_dendrogram(summaries: list, tokens: list, slug_order: list):
         mode_col = LIGHT_BRANCH if m["mode"] == "light" else DARK_BRANCH
         mode_word = "Light" if m["mode"] == "light" else "Dark"
         # Grouping color marker square + mode dot + crisp label
-        draw_square(ddraw, tx0 + tw + 20, yp, 8.5, fill=grp_col, outline="#FFFFFF", width=1)
+        draw_square(ddraw, tx0 + tw + 18, yp, 7.5, fill=grp_col, outline="#FFFFFF", width=1)
         if m["mode"] == "light":
-            draw_circle(ddraw, tx0 + tw + 44, yp, 6.5, fill="#FFFFFF", outline=mode_col, width=3)
+            draw_circle(ddraw, tx0 + tw + 40, yp, 5.8, fill="#FFFFFF", outline=mode_col, width=3)
         else:
-            draw_circle(ddraw, tx0 + tw + 44, yp, 6.5, fill=mode_col)
-        ddraw.text((tx0 + tw + 64, yp - 13), f"{m['short_name']} {mode_word}", font=f_leaf, fill=mode_col)
+            draw_circle(ddraw, tx0 + tw + 40, yp, 5.8, fill=mode_col)
+        ddraw.text((tx0 + tw + 58, yp - 11), f"{m['short_name']} {mode_word}", font=f_leaf, fill=mode_col)
 
     # Clean boxed legend in top-left open space
     leg_x, leg_y = 155, 240
     ddraw.rounded_rectangle((leg_x, leg_y, leg_x + 590, leg_y + 520), radius=14, fill="#FFFFFF", outline="#DEDCD4", width=2)
     ddraw.text((leg_x + 26, leg_y + 20), "Polarity (Branches & Labels)", font=f_leg_h, fill="#181A20")
     draw_circle(ddraw, leg_x + 38, leg_y + 72, 8.5, fill="#FFFFFF", outline=LIGHT_BRANCH, width=3)
-    ddraw.text((leg_x + 62, leg_y + 58), "Light Themes (40)", font=f_leg, fill=LIGHT_BRANCH)
+    ddraw.text((leg_x + 62, leg_y + 58), f"Light Themes ({n_u})", font=f_leg, fill=LIGHT_BRANCH)
     draw_circle(ddraw, leg_x + 38, leg_y + 114, 8.5, fill=DARK_BRANCH)
-    ddraw.text((leg_x + 62, leg_y + 100), "Dark Themes (40)", font=f_leg, fill=DARK_BRANCH)
+    ddraw.text((leg_x + 62, leg_y + 100), f"Dark Themes ({n_u})", font=f_leg, fill=DARK_BRANCH)
 
     ddraw.line([(leg_x + 24, leg_y + 150), (leg_x + 566, leg_y + 150)], fill="#E6E4DC", width=2)
     ddraw.text((leg_x + 26, leg_y + 168), "Collegiate Grouping (Square Pip)", font=f_leg_h, fill="#181A20")
@@ -1532,7 +1574,7 @@ def render_cvd_swatch_grid(summaries: list, tokens: list):
         draw,
         W,
         H * 2 - 48,
-        "Swatches left → right: keyword · storage · string · regex · function · type · interface · number · decorator · namespace   |   0 CVD warnings across all 80 themes",
+        f"Swatches left → right: keyword · storage · string · regex · function · type · interface · number · decorator · namespace   |   0 CVD warnings across all {len(summaries)} themes",
         f_foot,
         fill="#5E6472",
     )

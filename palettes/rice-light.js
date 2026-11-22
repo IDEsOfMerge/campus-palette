@@ -17,6 +17,7 @@ module.exports = {
   country: "USA",
   city: "Houston, TX",
   year: 1912,
+  brandUrl: "https://brand.rice.edu/colors",
   subtitle: "Lovett stone, Rice Blue #00205B, Rich Blue #0A509E, Leaf Emerald & Brick",
   tokens: {
     mode: 'light',

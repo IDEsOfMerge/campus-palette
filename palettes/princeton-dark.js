@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Princeton, NJ",
   year: 1746,
+  brandUrl: "https://communications.princeton.edu/guides-tools/logo-graphic-identity",
   subtitle: "FitzRandolph Gate obsidian, official Princeton Orange #F58025 (on dark)",
   tokens: {
     mode: 'dark',

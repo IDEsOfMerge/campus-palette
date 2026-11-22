@@ -16,6 +16,7 @@ module.exports = {
   country: "USA",
   city: "Cambridge, MA",
   year: 1636,
+  brandUrl: "https://seas.harvard.edu/office-communications/brand-style-guide/color-palette",
   subtitle: "Crimson-lit Cambridge night, Harvard Blue #4E88C7, turquoise & warm yellow",
   tokens: {
     mode: 'dark',

@@ -18,6 +18,7 @@ module.exports = {
   country: "USA",
   city: "Austin, TX",
   year: 1885,
+  brandUrl: "https://www.stedwards.edu/faculty-staff/brand/visual-identity/color",
   subtitle: "Hilltop Limestone #F7F3ED, Sorin #192E56, Red Doors #EA4433 & Gold Medallion",
   tokens: {
     mode: 'light',

@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Ann Arbor, MI",
   year: 1817,
+  brandUrl: "https://brand.umich.edu/design-resources/colors/",
   subtitle: "Michigan Blue #00274C night, Maize #FFCB05, Taubman Teal & A2 Amethyst",
   tokens: {
     mode: 'dark',

@@ -17,6 +17,7 @@ module.exports = {
   country: "USA",
   city: "Evanston, IL",
   year: 1851,
+  brandUrl: "https://www.northwestern.edu/brand/visual-identity/color-palettes/",
   subtitle: "Evanston pearl, Northwestern Purple #4E2A84, #007FA4, #008656 & #D85820",
   tokens: {
     mode: 'light',

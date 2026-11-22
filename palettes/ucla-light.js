@@ -16,6 +16,7 @@ module.exports = {
   country: "USA",
   city: "Los Angeles, CA",
   year: 1919,
+  brandUrl: "https://designsystem.brand.ucla.edu/build/v2.7.0/docs/style-guide/colors.html",
   subtitle: "Royce Hall sun, UCLA Blue #2774AE, Darker Blue #005587 & Gold #FFD100",
   tokens: {
     mode: 'light',

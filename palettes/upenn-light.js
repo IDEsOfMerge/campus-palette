@@ -16,6 +16,7 @@ module.exports = {
   country: "USA",
   city: "Philadelphia, PA",
   year: 1740,
+  brandUrl: "https://branding.web-resources.upenn.edu/web-identity",
   subtitle: "Locust Walk sandstone, Penn Red #990000, Penn Blue #011F5B & Heritage Gold",
   tokens: {
     mode: 'light',

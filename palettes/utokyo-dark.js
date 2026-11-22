@@ -16,6 +16,7 @@ module.exports = {
   country: "Japan",
   city: "Tokyo, Japan",
   year: 1877,
+  brandUrl: "https://www.u-tokyo.ac.jp/content/400236233.pdf",
   subtitle: "Hongo Blue #032A47 night, Light Blue #5BDEFF, Yellow #FFCD00 & Red",
   tokens: {
     mode: 'dark',

@@ -16,6 +16,7 @@ module.exports = {
   country: "Canada",
   city: "Waterloo, ON",
   year: 1957,
+  brandUrl: "https://uwaterloo.ca/brand/how-express-our-brand/colour",
   subtitle: "Black & Gold #FED34C technical graphite with Math #DF1AA0 & Science blue",
   tokens: {
     mode: 'dark',

@@ -15,6 +15,7 @@ module.exports = {
   country: "Canada",
   city: "Kingston, ON",
   year: 1841,
+  brandUrl: "https://www.queensu.ca/brand-central/visual-identity/colours",
   subtitle: "Lake Ontario Tricolour Navy, Queen's Red #B90E31 & Gold #FABD0F",
   tokens: {
     mode: 'dark',

@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Chicago, IL",
   year: 1890,
+  brandUrl: "https://creative.uchicago.edu/color-system/",
   subtitle: "Hyde Park obsidian, Maroon #800000, Lake #3EB1C8, Forest & #EAAA00",
   tokens: {
     mode: 'dark',

@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Washington, DC",
   year: 1789,
+  brandUrl: "https://www.georgetown.edu/visual-identity/",
   subtitle: "Hilltop #041E42 night, Cyan #00B5E2, Red #862633, Green & #F8E08E",
   tokens: {
     mode: 'dark',

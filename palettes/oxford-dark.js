@@ -16,6 +16,7 @@ module.exports = {
   country: "UK",
   city: "Oxford, UK",
   year: 1096,
+  brandUrl: "https://www.ox.ac.uk/about/the-university/brand/guidelines",
   subtitle: "Oxford Blue #002147 night, Cerulean #49B6FF, Oxford Red & Yellow Ochre",
   tokens: {
     mode: 'dark',

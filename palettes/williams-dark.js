@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Williamstown, MA",
   year: 1793,
+  brandUrl: "https://identity.williams.edu/",
   subtitle: "Official Dark Purple #280050 night, Williams Gold #FFBE0A & Orange #FF7800",
   tokens: {
     mode: 'dark',

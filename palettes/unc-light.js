@@ -16,6 +16,7 @@ module.exports = {
   country: "USA",
   city: "Chapel Hill, NC",
   year: 1789,
+  brandUrl: "https://www.kenan-flagler.unc.edu/branding-guide/color/",
   subtitle: "Cloud #EDF5FB paper, Navy #13294B, Bolin Creek #2C5080 & Carolina Blue",
   tokens: {
     mode: 'light',

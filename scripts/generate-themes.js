@@ -27,7 +27,7 @@ const GROUP_ORDER = [
   'Global Classics',
 ];
 
-// Explicit canonical order of all 40 universities (grouped by collegiate
+// Explicit canonical order of all 60 universities (grouped by collegiate
 // grouping, chronological by founding year within each group).
 const UNIVERSITY_ORDER = [
   // Ivy League (8)
@@ -39,43 +39,63 @@ const UNIVERSITY_ORDER = [
   'Brown University',
   'Dartmouth College',
   'Cornell University',
-  // Canadian Universities (8)
+  // Canadian Universities (14)
+  'Dalhousie University',
   'McGill University',
   'University of Toronto',
   "Queen's University",
+  'University of Ottawa',
   'Western University',
+  'McMaster University',
   'University of Alberta',
   'University of British Columbia',
   'University of Waterloo',
   'University of Victoria',
-  // US Public Flagships (8)
+  'Simon Fraser University',
+  'University of Calgary',
+  'Concordia University',
+  // US Public Flagships (12)
+  'University of Georgia',
   'University of North Carolina',
   'University of Michigan',
   'University of Virginia',
+  'University of Wisconsin–Madison',
+  'University of Florida',
   'University of Washington',
   'UC Berkeley',
+  'Texas A&M University',
   'University of Texas at Austin',
   'Georgia Tech',
   'UCLA',
-  // US Private Research & STEM (7)
+  // US Private Research & STEM (10)
   'New York University',
   'Duke University',
   'Northwestern University',
   'MIT',
+  'Johns Hopkins University',
+  'University of Southern California',
   'Stanford University',
   'University of Chicago',
   'Caltech',
-  // Liberal Arts & Regional Gems (5)
+  'Carnegie Mellon University',
+  // Liberal Arts & Regional Gems (6)
   'Georgetown University',
   'Williams College',
+  'Amherst College',
   'University of Notre Dame',
   "St. Edward's University",
   'Rice University',
-  // Global Classics (4)
+  // Global Classics (10)
   'University of Oxford',
   'University of Cambridge',
+  'University of Edinburgh',
+  'University of Melbourne',
+  'EPFL',
   'ETH Zurich',
   'University of Tokyo',
+  'Kyoto University',
+  'National University of Singapore',
+  'Imperial College London',
 ];
 
 // 13 syntax roles used for per-mode CIEDE2000 theme similarity (identical across JS/Python/R)
@@ -864,6 +884,7 @@ function main() {
       country: p.country,
       city: p.city,
       year: p.year,
+      brandUrl: p.brandUrl || '',
       subtitle: p.subtitle || '',
       mode: t.mode,
       pairSlug,
@@ -914,6 +935,7 @@ function main() {
       country: e.country,
       city: e.city,
       year: e.year,
+      brandUrl: e.brandUrl,
       subtitle: e.subtitle,
       mode: e.mode,
       pairSlug: e.pairSlug,

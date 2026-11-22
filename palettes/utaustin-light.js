@@ -17,6 +17,7 @@ module.exports = {
   country: "USA",
   city: "Austin, TX",
   year: 1883,
+  brandUrl: "https://umac.utexas.edu/brand-center/colors/",
   subtitle: "Limestone #D6D2C4, Burnt Orange #BF5700, Charcoal #333F48 & Teal #005F86",
   tokens: {
     mode: 'light',

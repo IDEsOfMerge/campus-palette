@@ -16,6 +16,7 @@ module.exports = {
   country: "USA",
   city: "Seattle, WA",
   year: 1861,
+  brandUrl: "https://www.washington.edu/brand/brand-elements/colors/",
   subtitle: "Suzzallo mist, Husky Purple #32006E, Spirit #4B2E83, Gold & Accent Teal",
   tokens: {
     mode: 'light',

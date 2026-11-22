@@ -16,6 +16,7 @@ module.exports = {
   country: "Canada",
   city: "Victoria, BC",
   year: 1963,
+  brandUrl: "https://www.uvic.ca/brand/brand-guidelines/colours-fonts/index.php",
   subtitle: "Deep Ocean #002754 night, Sky #57B7E7, rainforest green & #F5AA1C sun",
   tokens: {
     mode: 'dark',

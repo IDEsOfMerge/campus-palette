@@ -110,7 +110,7 @@ function main() {
     labBySlug.set(p.slug, roleLabs);
 
     summaryRows.push([
-      p.slug, p.university, p.shortName, p.group, p.country, p.city, p.year, t.mode,
+      p.slug, p.university, p.shortName, p.group, p.country, p.city, p.year, p.brandUrl || '', t.mode,
       t.bg.toUpperCase(), t.fg.toUpperCase(),
       t.accentKeyword.toUpperCase(), t.accentCursor.toUpperCase(), t.accentStatusBar.toUpperCase(),
       m.fgBg.toFixed(2), m.fgLc.toFixed(1), m.commentBg.toFixed(2),
@@ -208,7 +208,7 @@ function main() {
   }
 
   const r1 = writeCsv('themes_summary.csv', [
-    'theme_slug', 'university', 'short_name', 'group', 'country', 'city', 'year', 'mode',
+    'theme_slug', 'university', 'short_name', 'group', 'country', 'city', 'year', 'brand_url', 'mode',
     'bg', 'fg', 'accent_keyword', 'accent_cursor', 'accent_status_bar',
     'fg_bg_wcag', 'fg_bg_apca_lc', 'comment_bg_wcag', 'min_syntax_wcag', 'min_syntax_role',
     'mean_syntax_oklch_L', 'mean_syntax_oklch_C', 'cvd_severe_count', 'cvd_warning_count',

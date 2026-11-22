@@ -17,6 +17,7 @@ module.exports = {
   country: "USA",
   city: "Washington, DC",
   year: 1789,
+  brandUrl: "https://www.georgetown.edu/visual-identity/",
   subtitle: "Healy granite, Georgetown Blue #041E42, #003DA5, #862633 & #5FA343",
   tokens: {
     mode: 'light',

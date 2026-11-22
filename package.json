@@ -1,8 +1,8 @@
 {
   "name": "campus-palette",
   "displayName": "Campus Palette",
-  "description": "80 university-inspired Light & Dark color themes for VS Code & Positron across 40 iconic US, Canadian & global campuses, engineered in OKLCH with verified WCAG 2.1 AA, APCA, CIEDE2000 & colorblind safety.",
-  "version": "1.0.1",
+  "description": "120 university-inspired Light & Dark color themes for VS Code & Positron across 60 iconic US, Canadian & global campuses, engineered in OKLCH with verified WCAG 2.1 AA, APCA, CIEDE2000 & colorblind safety.",
+  "version": "1.1.0",
   "publisher": "idesofmerge",
   "license": "MIT",
   "icon": "icon.png",
@@ -74,6 +74,16 @@
   "contributes": {
     "themes": [
       {
+        "label": "Amherst Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/amherst-dark.json"
+      },
+      {
+        "label": "Amherst Light",
+        "uiTheme": "vs",
+        "path": "./themes/amherst-light.json"
+      },
+      {
         "label": "Brown Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/brown-dark.json"
@@ -104,6 +114,16 @@
         "path": "./themes/cambridge-light.json"
       },
       {
+        "label": "CMU Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cmu-dark.json"
+      },
+      {
+        "label": "CMU Light",
+        "uiTheme": "vs",
+        "path": "./themes/cmu-light.json"
+      },
+      {
         "label": "Columbia Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/columbia-dark.json"
@@ -114,6 +134,16 @@
         "path": "./themes/columbia-light.json"
       },
       {
+        "label": "Concordia Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/concordia-dark.json"
+      },
+      {
+        "label": "Concordia Light",
+        "uiTheme": "vs",
+        "path": "./themes/concordia-light.json"
+      },
+      {
         "label": "Cornell Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/cornell-dark.json"
@@ -122,6 +152,16 @@
         "label": "Cornell Light",
         "uiTheme": "vs",
         "path": "./themes/cornell-light.json"
+      },
+      {
+        "label": "Dalhousie Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dalhousie-dark.json"
+      },
+      {
+        "label": "Dalhousie Light",
+        "uiTheme": "vs",
+        "path": "./themes/dalhousie-light.json"
       },
       {
         "label": "Dartmouth Dark",
@@ -142,6 +182,26 @@
         "label": "Duke Light",
         "uiTheme": "vs",
         "path": "./themes/duke-light.json"
+      },
+      {
+        "label": "Edinburgh Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/edinburgh-dark.json"
+      },
+      {
+        "label": "Edinburgh Light",
+        "uiTheme": "vs",
+        "path": "./themes/edinburgh-light.json"
+      },
+      {
+        "label": "EPFL Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/epfl-dark.json"
+      },
+      {
+        "label": "EPFL Light",
+        "uiTheme": "vs",
+        "path": "./themes/epfl-light.json"
       },
       {
         "label": "ETH Zurich Dark",
@@ -184,6 +244,36 @@
         "path": "./themes/harvard-light.json"
       },
       {
+        "label": "Imperial Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/imperial-dark.json"
+      },
+      {
+        "label": "Imperial Light",
+        "uiTheme": "vs",
+        "path": "./themes/imperial-light.json"
+      },
+      {
+        "label": "Johns Hopkins Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/jhu-dark.json"
+      },
+      {
+        "label": "Johns Hopkins Light",
+        "uiTheme": "vs",
+        "path": "./themes/jhu-light.json"
+      },
+      {
+        "label": "KyotoU Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/kyoto-dark.json"
+      },
+      {
+        "label": "KyotoU Light",
+        "uiTheme": "vs",
+        "path": "./themes/kyoto-light.json"
+      },
+      {
         "label": "McGill Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/mcgill-dark.json"
@@ -192,6 +282,26 @@
         "label": "McGill Light",
         "uiTheme": "vs",
         "path": "./themes/mcgill-light.json"
+      },
+      {
+        "label": "McMaster Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/mcmaster-dark.json"
+      },
+      {
+        "label": "McMaster Light",
+        "uiTheme": "vs",
+        "path": "./themes/mcmaster-light.json"
+      },
+      {
+        "label": "Melbourne Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/melbourne-dark.json"
+      },
+      {
+        "label": "Melbourne Light",
+        "uiTheme": "vs",
+        "path": "./themes/melbourne-light.json"
       },
       {
         "label": "MIT Dark",
@@ -222,6 +332,16 @@
         "label": "Notre Dame Light",
         "uiTheme": "vs",
         "path": "./themes/notredame-light.json"
+      },
+      {
+        "label": "NUS Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/nus-dark.json"
+      },
+      {
+        "label": "NUS Light",
+        "uiTheme": "vs",
+        "path": "./themes/nus-light.json"
       },
       {
         "label": "NYU Dark",
@@ -274,6 +394,16 @@
         "path": "./themes/rice-light.json"
       },
       {
+        "label": "SFU Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sfu-dark.json"
+      },
+      {
+        "label": "SFU Light",
+        "uiTheme": "vs",
+        "path": "./themes/sfu-light.json"
+      },
+      {
         "label": "St. Edward's Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/stedwards-dark.json"
@@ -292,6 +422,16 @@
         "label": "Stanford Light",
         "uiTheme": "vs",
         "path": "./themes/stanford-light.json"
+      },
+      {
+        "label": "Texas A&M Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tamu-dark.json"
+      },
+      {
+        "label": "Texas A&M Light",
+        "uiTheme": "vs",
+        "path": "./themes/tamu-light.json"
       },
       {
         "label": "U of T Dark",
@@ -334,6 +474,16 @@
         "path": "./themes/berkeley-light.json"
       },
       {
+        "label": "UCalgary Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ucalgary-dark.json"
+      },
+      {
+        "label": "UCalgary Light",
+        "uiTheme": "vs",
+        "path": "./themes/ucalgary-light.json"
+      },
+      {
         "label": "UChicago Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/uchicago-dark.json"
@@ -352,6 +502,26 @@
         "label": "UCLA Light",
         "uiTheme": "vs",
         "path": "./themes/ucla-light.json"
+      },
+      {
+        "label": "UF Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ufl-dark.json"
+      },
+      {
+        "label": "UF Light",
+        "uiTheme": "vs",
+        "path": "./themes/ufl-light.json"
+      },
+      {
+        "label": "UGA Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/uga-dark.json"
+      },
+      {
+        "label": "UGA Light",
+        "uiTheme": "vs",
+        "path": "./themes/uga-light.json"
       },
       {
         "label": "UMich Dark",
@@ -374,6 +544,16 @@
         "path": "./themes/unc-light.json"
       },
       {
+        "label": "uOttawa Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/uottawa-dark.json"
+      },
+      {
+        "label": "uOttawa Light",
+        "uiTheme": "vs",
+        "path": "./themes/uottawa-light.json"
+      },
+      {
         "label": "UPenn Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/upenn-dark.json"
@@ -382,6 +562,16 @@
         "label": "UPenn Light",
         "uiTheme": "vs",
         "path": "./themes/upenn-light.json"
+      },
+      {
+        "label": "USC Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/usc-dark.json"
+      },
+      {
+        "label": "USC Light",
+        "uiTheme": "vs",
+        "path": "./themes/usc-light.json"
       },
       {
         "label": "UT Austin Dark",
@@ -432,6 +622,16 @@
         "label": "UW Light",
         "uiTheme": "vs",
         "path": "./themes/uw-light.json"
+      },
+      {
+        "label": "UW–Madison Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/wisconsin-dark.json"
+      },
+      {
+        "label": "UW–Madison Light",
+        "uiTheme": "vs",
+        "path": "./themes/wisconsin-light.json"
       },
       {
         "label": "Waterloo Dark",
@@ -525,12 +725,12 @@
       {
         "id": "campusPalette.gettingStarted",
         "title": "Welcome to Campus Palette",
-        "description": "40 iconic universities across 6 collegiate groupings · 80 scientifically tuned Light & Dark themes — a quick tour.",
+        "description": "60 iconic universities across 6 collegiate groupings · 120 scientifically tuned Light & Dark themes — a quick tour.",
         "steps": [
           {
             "id": "pickTheme",
             "title": "Choose your campus theme (with live preview)",
-            "description": "Every one of the 40 universities across the Ivy League, Canadian Universities, US Public Flagships, US Private Research & STEM, Liberal Arts & Regional Gems, and Global Classics gets a matched Light and Dark pair crafted in OKLCH from official campus color palettes. Arrow through the list to preview live before committing.\n[Choose a University Theme](command:campusPalette.pickTheme)",
+            "description": "Every one of the 60 universities across the Ivy League, Canadian Universities, US Public Flagships, US Private Research & STEM, Liberal Arts & Regional Gems, and Global Classics gets a matched Light and Dark pair crafted in OKLCH from official campus color palettes. Arrow through the list to preview live before committing.\n[Choose a University Theme](command:campusPalette.pickTheme)",
             "media": {
               "image": "icon.png",
               "altText": "Campus Palette emblem"
@@ -562,7 +762,7 @@
           {
             "id": "colorScience",
             "title": "Launch the Interactive Theme & Colorimetry Explorer",
-            "description": "Inspect OKLCH coordinates, WCAG 2.1 + APCA contrast, perceptual CIEDE2000 similarity maps, and real-time protanopia/deuteranopia/tritanopia simulations across all 80 themes — and apply any campus straight into your editor.\n[Open Interactive Theme Explorer](command:campusPalette.openExplorer)",
+            "description": "Inspect OKLCH coordinates, WCAG 2.1 + APCA contrast, perceptual CIEDE2000 similarity maps, official institutional brand-guideline links, and real-time protanopia/deuteranopia/tritanopia simulations across all 120 themes — and apply any campus straight into your editor.\n[Open Interactive Theme Explorer](command:campusPalette.openExplorer)",
             "media": {
               "markdown": "assets/walkthrough/color-science.md"
             },

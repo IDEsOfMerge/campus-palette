@@ -17,6 +17,7 @@ module.exports = {
   country: "Canada",
   city: "Toronto, ON",
   year: 1827,
+  brandUrl: "https://adcomms.utoronto.ca/images/brand/assets/DefyGravity_BrandGuidelines-1.0.pdf",
   subtitle: "Hart House stone, U of T Blue #1E3765, #007FA3, #00A189 & #DC4633",
   tokens: {
     mode: 'light',

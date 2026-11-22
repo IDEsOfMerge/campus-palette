@@ -572,7 +572,7 @@ describe('extension: toggleTheme', () => {
 });
 
 describe('extension: pickTheme', () => {
-  it('builds 86 items (6 collegiate grouping separators + 80 Light-before-Dark themes) with university, city & year metadata', async () => {
+  it('builds 126 items (6 collegiate grouping separators + 120 Light-before-Dark themes) with university, city & year metadata', async () => {
     const { mock, invokeCommand } = setupExtension({ 'workbench.colorTheme': 'Oxford Dark' });
 
     await invokeCommand('campusPalette.pickTheme');
@@ -580,7 +580,7 @@ describe('extension: pickTheme', () => {
 
     const qp = mock.quickPicks[0];
     assert.equal(qp.shown, true);
-    assert.equal(qp.title, 'Campus Palette — 40 Iconic Universities · 80 Themes');
+    assert.equal(qp.title, 'Campus Palette — 60 Iconic Universities · 120 Themes');
     assert.equal(qp.matchOnDescription, true);
     assert.equal(qp.matchOnDetail, true);
 
@@ -588,8 +588,8 @@ describe('extension: pickTheme', () => {
     const themeItems = qp.items.filter((i) => i.kind !== mock.vscode.QuickPickItemKind.Separator);
 
     assert.equal(separators.length, 6);
-    assert.equal(themeItems.length, 80);
-    assert.equal(qp.items.length, 86);
+    assert.equal(themeItems.length, 120);
+    assert.equal(qp.items.length, 126);
 
     const expectedGroups = [
       'Ivy League',
@@ -736,7 +736,7 @@ describe('extension: pickSimilarTheme', () => {
     await invokeCommand('campusPalette.pickSimilarTheme');
     assert.ok(mock.infoMessages.some((m) => String(m.msg).includes('activate any Campus Palette theme')));
     assert.equal(mock.quickPicks.length, 2);
-    assert.equal(mock.quickPicks[1].title, 'Campus Palette — 40 Iconic Universities · 80 Themes');
+    assert.equal(mock.quickPicks[1].title, 'Campus Palette — 60 Iconic Universities · 120 Themes');
 
     // Async apply error contained cleanly
     mock.setSetting('workbench.colorTheme', 'Stanford Light');
@@ -852,7 +852,7 @@ describe('extension: syncOsThemePair', () => {
     );
   });
 
-  it('prompts via 40-university QuickPick on external theme and exits silently on cancel', async () => {
+  it('prompts via 60-university QuickPick on external theme and exits silently on cancel', async () => {
     const { mock, invokeCommand } = setupExtension({ 'workbench.colorTheme': 'Default Dark+' });
 
     mock.setNextQuickPickResult((items) => items.find((i) => i.label === 'ETH Zurich'));
@@ -860,9 +860,9 @@ describe('extension: syncOsThemePair', () => {
 
     assert.equal(mock.showQuickPickCalls.length, 1);
     const items = mock.showQuickPickCalls[0].items;
-    assert.equal(items.length, 40);
+    assert.equal(items.length, 60);
     assert.equal(items[0].label, 'Harvard University');
-    assert.equal(items[items.length - 1].label, 'University of Tokyo');
+    assert.equal(items[items.length - 1].label, 'Imperial College London');
 
     assert.equal(mock.settings.get('workbench.preferredLightColorTheme'), 'ETH Zurich Light');
     assert.equal(mock.settings.get('workbench.preferredDarkColorTheme'), 'ETH Zurich Dark');

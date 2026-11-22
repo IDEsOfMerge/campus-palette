@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "New Haven, CT",
   year: 1701,
+  brandUrl: "https://yaleidentity.yale.edu/core-identity-elements/yale-colors",
   subtitle: "Collegiate Gothic Yale Blue #00356B, Light Blue #63AAFF & Autumn copper",
   tokens: {
     mode: 'dark',

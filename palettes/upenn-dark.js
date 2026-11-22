@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Philadelphia, PA",
   year: 1740,
+  brandUrl: "https://branding.web-resources.upenn.edu/web-identity",
   subtitle: "Deep Penn Blue #011F5B night, Penn Red, Light Blue #82AFD3 & Heritage Gold",
   tokens: {
     mode: 'dark',

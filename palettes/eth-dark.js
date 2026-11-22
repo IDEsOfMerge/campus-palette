@@ -16,6 +16,7 @@ module.exports = {
   country: "Switzerland",
   city: "Zurich, Switzerland",
   year: 1855,
+  brandUrl: "https://ethz.ch/staffnet/en/service/communication/corporate-design/colours.html",
   subtitle: "Zurich precision carbon, ETH Blue, Petrol #007894, Bronze & Purple",
   tokens: {
     mode: 'dark',

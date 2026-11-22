@@ -17,6 +17,7 @@ module.exports = {
   country: "Canada",
   city: "Montreal, QC",
   year: 1821,
+  brandUrl: "https://www.mcgill.ca/visual-identity/visual-identity-guide",
   subtitle: "Montreal greystone, McGill Red #ED1B2F, Dark Teal #0A6266 & Cool Grey",
   tokens: {
     mode: 'light',

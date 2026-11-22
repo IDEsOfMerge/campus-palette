@@ -17,6 +17,7 @@ module.exports = {
   country: "USA",
   city: "New York, NY",
   year: 1831,
+  brandUrl: "https://www.nyu.edu/employees/resources-and-services/media-and-communications/nyu-brand-guidelines/designing-in-our-style/nyu-colors.html",
   subtitle: "Washington Square marble, NYU Violet #57068C, Magenta #FB0F78 & Teal",
   tokens: {
     mode: 'light',

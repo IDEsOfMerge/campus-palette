@@ -17,6 +17,7 @@ module.exports = {
   country: "USA",
   city: "Berkeley, CA",
   year: 1868,
+  brandUrl: "https://brand.berkeley.edu/visual-identity/colors/",
   subtitle: "Campanile stone, Berkeley Blue #002676, California Gold & Bay green",
   tokens: {
     mode: 'light',

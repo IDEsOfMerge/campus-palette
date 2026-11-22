@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Providence, RI",
   year: 1764,
+  brandUrl: "https://communications.sph.brown.edu/resources/identity",
   subtitle: "Walnut-espresso #4E3629 dark, Red #C00404, Gold #FFC72C & Sky",
   tokens: {
     mode: 'dark',

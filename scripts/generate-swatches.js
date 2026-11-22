@@ -2,7 +2,7 @@
 'use strict';
 
 // Dev-only tool: renders compact 7-chip multi-color PNG palette strips (zero
-// dependencies, pure Node + zlib) for all 80 Campus Palette themes into
+// dependencies, pure Node + zlib) for all 120 Campus Palette themes into
 // assets/swatches/<slug>.png for use in README.md catalog tables (VS Code
 // Marketplace / vsce restricts local SVGs in README.md, so PNG strips ensure
 // crisp rendering across GitHub, VS Code Marketplace, and Open VSX).

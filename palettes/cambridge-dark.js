@@ -16,6 +16,7 @@ module.exports = {
   country: "UK",
   city: "Cambridge, UK",
   year: 1209,
+  brandUrl: "https://www.cam.ac.uk/brand-resources/guidelines/colour",
   subtitle: "Official Dark Blue #133844, Cambridge Blue #8EE8D8, Warm Cherry & Green",
   tokens: {
     mode: 'dark',

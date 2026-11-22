@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Atlanta, GA",
   year: 1885,
+  brandUrl: "https://brand.gatech.edu/our-look/colors",
   subtitle: "Core Navy #051E39 night, Buzz #EAAA00, Campanile #048A81 & Burdell",
   tokens: {
     mode: 'dark',

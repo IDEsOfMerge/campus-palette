@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Stanford, CA",
   year: 1885,
+  brandUrl: "https://identity.stanford.edu/design-elements/color/",
   subtitle: "Process Black #2E2D29, Cardinal, Palo Verde #279989 & Illuminating",
   tokens: {
     mode: 'dark',

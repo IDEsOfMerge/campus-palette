@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Los Angeles, CA",
   year: 1919,
+  brandUrl: "https://designsystem.brand.ucla.edu/build/v2.7.0/docs/style-guide/colors.html",
   subtitle: "Darkest Blue #003B5C night, UCLA Gold #FFD100 & Lighter Blue #8BB8E8",
   tokens: {
     mode: 'dark',

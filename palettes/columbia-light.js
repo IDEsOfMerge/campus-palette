@@ -17,6 +17,7 @@ module.exports = {
   country: "USA",
   city: "New York, NY",
   year: 1754,
+  brandUrl: "https://visualidentity.columbia.edu/content/color",
   subtitle: "Butler marble, Primary Blue #1D4F91, Web Blue #0077C8 & Accent #C75000",
   tokens: {
     mode: 'light',

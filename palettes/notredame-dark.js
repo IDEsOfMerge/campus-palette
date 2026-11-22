@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Notre Dame, IN",
   year: 1842,
+  brandUrl: "https://onmessage.nd.edu/university-branding/colors/",
   subtitle: "ND Blue #0C2340 night, Bright Gold #D39F10, Green #0A843D & #1C4F8F",
   tokens: {
     mode: 'dark',

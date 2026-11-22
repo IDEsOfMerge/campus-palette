@@ -59,6 +59,96 @@ cambridge-dark,University of Cambridge,Cambridge,Global Classics,UK,"Cambridge, 
 cambridge-dark,University of Cambridge,Cambridge,Global Classics,UK,"Cambridge, UK",1209,dark,accentNamespace,syntax,#A2AFC3,0.75034,0.03230,258.94,-0.00619,-0.03170,71.064,-0.337,-11.706,7.82,-56.9
 cambridge-dark,University of Cambridge,Cambridge,Global Classics,UK,"Cambridge, UK",1209,dark,colorError,syntax,#F55D4C,0.67429,0.18974,29.33,0.16543,0.09294,59.679,57.274,40.433,5.42,-41.9
 cambridge-dark,University of Cambridge,Cambridge,Global Classics,UK,"Cambridge, UK",1209,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.05,-64.5
+edinburgh-light,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,light,bg,context,#F6F1EC,0.96063,0.00858,67.72,0.00325,0.00794,95.396,0.808,3.001,1.00,0.0
+edinburgh-light,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,light,fg,context,#1C1813,0.21192,0.01144,73.30,0.00329,0.01096,8.543,0.886,4.000,15.73,96.6
+edinburgh-light,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,light,accentKeyword,syntax,#6F0F28,0.35477,0.12822,13.00,0.12494,0.02884,23.255,41.473,11.756,10.54,87.8
+edinburgh-light,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,light,accentStorage,syntax,#680050,0.34801,0.15030,341.33,0.14239,-0.04811,22.027,47.229,-17.820,10.98,88.2
+edinburgh-light,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,light,accentString,syntax,#A44A34,0.52057,0.12455,34.95,0.10208,0.07136,42.824,35.588,30.782,5.19,70.7
+edinburgh-light,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,light,accentRegex,syntax,#9D2039,0.45980,0.15953,15.60,0.15365,0.04289,35.001,51.335,17.714,6.93,77.7
+edinburgh-light,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,light,accentFunction,syntax,#004969,0.38339,0.08251,236.02,-0.04612,-0.06842,28.862,-6.884,-24.120,8.67,84.1
+edinburgh-light,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,light,accentFunctionDim,syntax,#2C5172,0.42288,0.06981,247.19,-0.02706,-0.06435,33.210,-2.356,-22.892,7.40,80.6
+edinburgh-light,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,light,accentType,syntax,#24674E,0.46384,0.07935,165.13,-0.07669,0.02037,38.941,-27.711,7.959,5.99,75.0
+edinburgh-light,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,light,accentInterface,syntax,#196466,0.46047,0.07004,197.66,-0.06674,-0.02124,38.339,-21.151,-7.650,6.12,75.5
+edinburgh-light,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,light,accentNumber,syntax,#815C06,0.50078,0.10142,80.60,0.01656,0.10006,41.745,8.148,47.930,5.40,72.1
+edinburgh-light,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,light,accentDecorator,syntax,#921950,0.44064,0.16013,359.40,0.16012,-0.00166,32.673,52.048,-0.865,7.55,79.8
+edinburgh-light,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,light,accentNamespace,syntax,#41525F,0.42931,0.03032,241.34,-0.01454,-0.02661,33.950,-3.135,-9.722,7.21,80.1
+edinburgh-light,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,light,colorError,syntax,#90001F,0.41290,0.16610,21.16,0.15490,0.05997,29.489,53.010,27.093,8.48,81.7
+edinburgh-light,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,5.97,74.8
+edinburgh-dark,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,dark,bg,context,#0A1623,0.19628,0.03157,251.51,-0.01001,-0.02994,6.862,-0.273,-10.558,1.00,0.0
+edinburgh-dark,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,dark,fg,context,#DCE6F1,0.92063,0.01844,250.60,-0.00613,-0.01739,90.853,-1.248,-6.483,14.44,-90.0
+edinburgh-dark,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,dark,accentKeyword,syntax,#F36792,0.69829,0.17590,3.61,0.17555,0.01108,62.369,57.602,4.022,6.22,-45.9
+edinburgh-dark,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,dark,accentStorage,syntax,#E975C2,0.71939,0.16835,341.79,0.15992,-0.05261,64.919,54.041,-19.730,6.76,-49.1
+edinburgh-dark,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,dark,accentString,syntax,#E09986,0.74815,0.09027,35.62,0.07338,0.05258,69.721,24.314,20.774,7.87,-55.7
+edinburgh-dark,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,dark,accentRegex,syntax,#FF8893,0.76052,0.14432,15.27,0.13922,0.03802,70.162,46.059,14.764,7.98,-56.6
+edinburgh-dark,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,dark,accentFunction,syntax,#57D0EA,0.79940,0.11263,214.34,-0.09299,-0.06354,77.919,-26.015,-22.868,10.08,-68.4
+edinburgh-dark,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,dark,accentFunctionDim,syntax,#84D8F7,0.83984,0.09235,223.71,-0.06675,-0.06382,82.233,-17.505,-23.089,11.41,-75.3
+edinburgh-dark,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,dark,accentType,syntax,#8DD9B7,0.82616,0.08996,164.44,-0.08666,0.02413,81.129,-30.872,9.364,11.06,-73.4
+edinburgh-dark,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,dark,accentInterface,syntax,#7CCED0,0.79993,0.08029,197.68,-0.07649,-0.02438,77.862,-24.455,-8.860,10.07,-68.1
+edinburgh-dark,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,dark,accentNumber,syntax,#FBCF84,0.87654,0.10553,80.05,0.01824,0.10394,85.405,6.262,42.940,12.47,-80.5
+edinburgh-dark,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,dark,accentDecorator,syntax,#FD7EAB,0.74989,0.16083,359.29,0.16081,-0.00199,68.570,52.944,-1.023,7.59,-54.3
+edinburgh-dark,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,dark,accentNamespace,syntax,#9EB1BF,0.75026,0.02923,239.80,-0.01470,-0.02527,71.197,-3.591,-9.339,8.24,-57.7
+edinburgh-dark,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,dark,colorError,syntax,#F55A61,0.67410,0.18988,21.21,0.17702,0.06870,59.520,59.726,28.442,5.66,-42.3
+edinburgh-dark,University of Edinburgh,Edinburgh,Global Classics,UK,"Edinburgh, UK",1583,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.50,-65.1
+epfl-light,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,light,bg,context,#F5F2F1,0.96318,0.00350,39.48,0.00270,0.00222,95.692,0.824,0.834,1.00,0.0
+epfl-light,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,light,fg,context,#1C1716,0.21022,0.00830,31.17,0.00710,0.00430,8.285,2.268,1.598,15.93,97.1
+epfl-light,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,light,accentKeyword,syntax,#710D1E,0.35535,0.13139,19.35,0.12397,0.04354,23.316,41.989,18.789,10.60,88.1
+epfl-light,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,light,accentStorage,syntax,#56156C,0.34916,0.14612,315.75,0.10467,-0.10196,22.294,42.631,-36.155,10.96,89.5
+epfl-light,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,light,accentString,syntax,#7D4528,0.45225,0.08782,46.93,0.05997,0.06415,35.539,21.287,27.644,6.85,78.8
+epfl-light,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,light,accentRegex,syntax,#962A46,0.45953,0.14372,9.54,0.14173,0.02382,35.171,46.677,9.322,6.94,78.4
+epfl-light,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,light,accentFunction,syntax,#004C58,0.38254,0.06684,212.66,-0.05627,-0.03607,29.089,-15.569,-12.900,8.67,84.5
+epfl-light,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,light,accentFunctionDim,syntax,#155669,0.42264,0.06965,222.05,-0.05172,-0.04665,33.635,-12.824,-16.668,7.34,80.6
+epfl-light,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,light,accentType,syntax,#046862,0.46656,0.08016,187.83,-0.07941,-0.01092,39.254,-26.565,-3.867,5.96,74.9
+epfl-light,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,light,accentInterface,syntax,#105C93,0.46088,0.11270,246.69,-0.04460,-0.10350,37.608,-0.624,-36.271,6.34,76.6
+epfl-light,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,light,accentNumber,syntax,#745536,0.47470,0.06121,65.44,0.02544,0.05567,38.685,8.813,23.020,6.09,75.9
+epfl-light,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,light,accentDecorator,syntax,#8B1F62,0.43977,0.15721,347.59,0.15354,-0.03379,32.596,50.395,-12.816,7.63,80.7
+epfl-light,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,light,accentNamespace,syntax,#5D4C3F,0.43014,0.03095,59.23,0.01583,0.02659,33.680,4.950,10.417,7.33,80.8
+epfl-light,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,light,colorError,syntax,#910009,0.41287,0.16851,27.51,0.14945,0.07784,29.517,52.729,39.348,8.54,82.1
+epfl-light,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,6.02,75.3
+epfl-dark,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,dark,bg,context,#191514,0.20013,0.00681,34.31,0.00562,0.00384,7.168,1.684,1.303,1.00,0.0
+epfl-dark,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,dark,fg,context,#EBE2DF,0.91905,0.01067,39.44,0.00824,0.00678,90.498,2.533,2.550,14.22,-89.3
+epfl-dark,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,dark,accentKeyword,syntax,#FB928B,0.76918,0.12792,24.52,0.11638,0.05308,71.512,38.758,20.992,8.27,-58.5
+epfl-dark,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,dark,accentStorage,syntax,#C786E2,0.71910,0.14595,315.50,0.10410,-0.10229,65.502,40.701,-37.060,6.85,-49.7
+epfl-dark,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,dark,accentString,syntax,#AA7D79,0.63295,0.05674,24.55,0.05161,0.02358,56.679,16.879,9.041,5.11,-37.8
+epfl-dark,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,dark,accentRegex,syntax,#FD889C,0.76020,0.14272,10.20,0.14047,0.02527,70.103,46.317,9.613,7.92,-56.5
+epfl-dark,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,dark,accentFunction,syntax,#73CEDF,0.80104,0.09015,211.02,-0.07725,-0.04646,77.941,-22.707,-16.843,10.03,-68.3
+epfl-dark,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,dark,accentFunctionDim,syntax,#8ED8EF,0.84176,0.08002,219.50,-0.06174,-0.05090,82.428,-17.200,-18.503,11.41,-75.5
+epfl-dark,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,dark,accentType,syntax,#93CCB9,0.80049,0.06488,171.94,-0.06424,0.00909,77.810,-22.370,3.563,9.99,-68.0
+epfl-dark,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,dark,accentInterface,syntax,#84C4FF,0.79967,0.10676,247.32,-0.04116,-0.09851,77.042,-4.819,-35.312,9.77,-66.8
+epfl-dark,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,dark,accentNumber,syntax,#FCCE85,0.87574,0.10469,78.29,0.02125,0.10251,85.269,7.270,42.286,12.35,-80.3
+epfl-dark,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,dark,accentDecorator,syntax,#F481C0,0.74946,0.15729,347.53,0.15358,-0.03397,68.565,51.327,-12.954,7.55,-54.2
+epfl-dark,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,dark,accentNamespace,syntax,#BDAA9C,0.75044,0.02964,58.68,0.01540,0.02532,70.850,4.545,9.715,8.11,-57.2
+epfl-dark,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,dark,colorError,syntax,#F55C51,0.67380,0.18983,27.42,0.16851,0.08742,59.587,57.952,37.569,5.64,-42.4
+epfl-dark,EPFL,EPFL,Global Classics,Switzerland,"Lausanne, Switzerland",1853,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.45,-65.1
+melbourne-light,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,light,bg,context,#F0F4F8,0.96526,0.00686,247.90,-0.00258,-0.00635,95.998,-0.602,-2.383,1.00,0.0
+melbourne-light,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,light,fg,context,#15191D,0.21100,0.01001,248.30,-0.00370,-0.00930,8.511,-0.714,-3.428,15.98,97.6
+melbourne-light,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,light,accentKeyword,syntax,#183384,0.35648,0.14002,265.51,-0.01096,-0.13959,24.409,21.810,-48.290,10.30,88.8
+melbourne-light,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,light,accentStorage,syntax,#66153F,0.34976,0.12056,353.70,0.11984,-0.01322,22.726,39.059,-5.183,10.89,89.6
+melbourne-light,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,light,accentString,syntax,#953F08,0.47619,0.12981,45.86,0.09040,0.09315,37.778,33.617,45.818,6.35,76.7
+melbourne-light,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,light,accentRegex,syntax,#9A2635,0.45872,0.15108,18.64,0.14315,0.04829,35.034,48.192,20.205,7.03,78.9
+melbourne-light,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,light,accentFunction,syntax,#00526D,0.41008,0.08073,228.90,-0.05308,-0.06083,32.119,-10.827,-21.551,7.83,82.3
+melbourne-light,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,light,accentFunctionDim,syntax,#2C5B78,0.45133,0.06996,238.11,-0.03696,-0.05940,36.693,-6.471,-21.195,6.61,78.3
+melbourne-light,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,light,accentType,syntax,#335020,0.39593,0.08166,134.56,-0.05730,0.05818,30.748,-20.693,24.581,8.23,83.9
+melbourne-light,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,light,accentInterface,syntax,#2C644E,0.45857,0.06997,165.25,-0.06766,0.01782,38.198,-24.324,6.948,6.25,76.8
+melbourne-light,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,light,accentNumber,syntax,#7E6642,0.52502,0.05991,77.00,0.01348,0.05837,44.706,4.512,23.923,4.91,70.2
+melbourne-light,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,light,accentDecorator,syntax,#8B1F61,0.43933,0.15664,348.14,0.15330,-0.03219,32.554,50.268,-12.234,7.70,81.2
+melbourne-light,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,light,accentNamespace,syntax,#495443,0.43090,0.03069,134.54,-0.02153,0.02188,34.319,-7.999,8.513,7.22,80.8
+melbourne-light,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,light,colorError,syntax,#480E23,0.27428,0.08877,3.24,0.08863,0.00502,14.477,28.954,1.836,13.94,94.8
+melbourne-light,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,6.07,75.8
+melbourne-dark,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,dark,bg,context,#0B1527,0.19683,0.03939,261.43,-0.00587,-0.03895,6.810,2.282,-13.652,1.00,0.0
+melbourne-dark,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,dark,fg,context,#DEE5F1,0.92012,0.01797,261.34,-0.00271,-0.01777,90.743,-0.086,-6.629,14.41,-89.8
+melbourne-dark,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,dark,accentKeyword,syntax,#86B6FB,0.76934,0.11208,257.43,-0.02439,-0.10940,73.211,2.161,-39.099,8.77,-60.9
+melbourne-dark,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,dark,accentStorage,syntax,#E778BB,0.71844,0.15716,344.66,0.15155,-0.04158,64.973,50.917,-15.721,6.78,-49.2
+melbourne-dark,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,dark,accentString,syntax,#F88D59,0.74868,0.14626,45.64,0.10226,0.10458,69.279,36.163,44.939,7.77,-55.3
+melbourne-dark,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,dark,accentRegex,syntax,#FF898D,0.76063,0.14313,18.90,0.13542,0.04636,70.232,44.959,18.206,8.01,-56.7
+melbourne-dark,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,dark,accentFunction,syntax,#48B9CC,0.72938,0.10383,210.58,-0.08939,-0.05281,69.776,-25.862,-19.022,7.90,-55.9
+melbourne-dark,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,dark,accentFunctionDim,syntax,#73C1DA,0.76973,0.08474,220.61,-0.06432,-0.05516,74.090,-17.439,-19.969,9.01,-62.2
+melbourne-dark,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,dark,accentType,syntax,#B3B932,0.75726,0.15114,112.07,-0.05678,0.14007,72.570,-18.282,63.428,8.60,-59.9
+melbourne-dark,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,dark,accentInterface,syntax,#8CCFB1,0.80116,0.08052,164.74,-0.07768,0.02119,78.095,-27.603,8.216,10.15,-68.5
+melbourne-dark,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,dark,accentNumber,syntax,#F9D342,0.87532,0.15962,93.72,-0.01034,0.15928,85.567,-1.038,72.346,12.53,-80.9
+melbourne-dark,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,dark,accentDecorator,syntax,#F581BE,0.75002,0.15706,348.76,0.15405,-0.03061,68.632,51.365,-11.721,7.62,-54.4
+melbourne-dark,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,dark,accentNamespace,syntax,#A7B29F,0.74950,0.02937,131.89,-0.01961,0.02186,71.255,-7.389,8.402,8.27,-57.8
+melbourne-dark,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,dark,colorError,syntax,#F55B57,0.67355,0.18992,25.10,0.17199,0.08055,59.515,58.702,34.125,5.66,-42.3
+melbourne-dark,University of Melbourne,Melbourne,Global Classics,Australia,"Melbourne, Australia",1853,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.51,-65.1
 eth-light,ETH Zurich,ETH Zurich,Global Classics,Switzerland,"Zurich, Switzerland",1855,light,bg,context,#F0F1F2,0.95767,0.00172,247.84,-0.00065,-0.00159,95.096,-0.155,-0.598,1.00,0.0
 eth-light,ETH Zurich,ETH Zurich,Global Classics,Switzerland,"Zurich, Switzerland",1855,light,fg,context,#16191B,0.21107,0.00607,236.86,-0.00332,-0.00509,8.524,-0.865,-1.888,15.62,96.1
 eth-light,ETH Zurich,ETH Zurich,Global Classics,Switzerland,"Zurich, Switzerland",1855,light,accentKeyword,syntax,#882E67,0.45212,0.13851,345.10,0.13385,-0.03561,34.332,44.436,-13.418,7.05,78.5
@@ -119,6 +209,96 @@ utokyo-dark,University of Tokyo,UTokyo,Global Classics,Japan,"Tokyo, Japan",1877
 utokyo-dark,University of Tokyo,UTokyo,Global Classics,Japan,"Tokyo, Japan",1877,dark,accentNamespace,syntax,#BFA6AD,0.74901,0.03062,359.07,0.03062,-0.00050,70.432,10.283,-0.245,7.97,-56.4
 utokyo-dark,University of Tokyo,UTokyo,Global Classics,Japan,"Tokyo, Japan",1877,dark,colorError,syntax,#F55A5E,0.67356,0.19014,22.32,0.17590,0.07220,59.470,59.536,30.094,5.59,-42.1
 utokyo-dark,University of Tokyo,UTokyo,Global Classics,Japan,"Tokyo, Japan",1877,dark,colorWarning,syntax,#DABA63,0.79898,0.11273,89.55,0.00089,0.11273,76.634,0.884,47.825,9.61,-66.0
+kyoto-light,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,light,bg,context,#F6F3EC,0.96454,0.00983,87.47,0.00043,0.00982,95.893,-0.208,3.722,1.00,0.0
+kyoto-light,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,light,fg,context,#1B1812,0.21037,0.01230,84.53,0.00117,0.01225,8.394,0.154,4.390,15.98,97.4
+kyoto-light,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,light,accentKeyword,syntax,#284D8B,0.42672,0.11146,260.10,-0.01916,-0.10980,33.183,8.825,-38.418,7.51,81.4
+kyoto-light,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,light,accentStorage,syntax,#38154E,0.28062,0.10265,309.52,0.06532,-0.07918,15.100,28.631,-28.018,13.68,94.6
+kyoto-light,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,light,accentString,syntax,#A7222B,0.47743,0.16816,23.33,0.15442,0.06658,36.998,52.979,29.441,6.52,76.5
+kyoto-light,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,light,accentRegex,syntax,#8B3F00,0.45982,0.12104,50.30,0.07731,0.09313,36.072,29.320,46.654,6.75,78.3
+kyoto-light,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,light,accentFunction,syntax,#04247E,0.31447,0.15495,263.76,-0.01685,-0.15403,19.196,28.440,-53.081,12.16,92.0
+kyoto-light,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,light,accentFunctionDim,syntax,#2A317C,0.35497,0.12589,274.02,0.00883,-0.12558,24.141,22.577,-43.651,10.36,89.0
+kyoto-light,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,light,accentType,syntax,#116A47,0.46565,0.09794,160.79,-0.09249,0.03223,39.380,-34.009,12.717,5.97,75.2
+kyoto-light,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,light,accentInterface,syntax,#006569,0.46044,0.07828,199.55,-0.07376,-0.02620,38.422,-22.994,-9.407,6.18,76.1
+kyoto-light,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,light,accentNumber,syntax,#825B07,0.49995,0.10144,78.79,0.01972,0.09950,41.602,9.240,47.617,5.49,73.1
+kyoto-light,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,light,accentDecorator,syntax,#8B1F62,0.43977,0.15721,347.59,0.15354,-0.03379,32.596,50.395,-12.816,7.67,81.0
+kyoto-light,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,light,accentNamespace,syntax,#474F63,0.42848,0.03483,267.86,-0.00130,-0.03481,33.631,1.916,-12.686,7.38,81.2
+kyoto-light,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,light,colorError,syntax,#6A0C2C,0.34378,0.12640,8.15,0.12512,0.01792,21.980,41.082,7.046,11.14,89.6
+kyoto-light,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,6.05,75.6
+kyoto-dark,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,dark,bg,context,#0A1527,0.19613,0.03992,259.81,-0.00706,-0.03929,6.750,2.014,-13.750,1.00,0.0
+kyoto-dark,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,dark,fg,context,#DEE5F1,0.92012,0.01797,261.34,-0.00271,-0.01777,90.743,-0.086,-6.629,14.43,-89.8
+kyoto-dark,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,dark,accentKeyword,syntax,#47B5FF,0.74246,0.14564,242.16,-0.06802,-0.12878,70.596,-7.635,-45.529,8.11,-57.2
+kyoto-dark,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,dark,accentStorage,syntax,#9881C4,0.65010,0.10073,299.38,0.04941,-0.08778,58.378,22.689,-31.698,5.46,-40.0
+kyoto-dark,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,dark,accentString,syntax,#FB8682,0.74852,0.14313,23.12,0.13164,0.05619,68.879,43.975,22.390,7.69,-54.7
+kyoto-dark,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,dark,accentRegex,syntax,#F6955B,0.75966,0.13816,50.33,0.08819,0.10635,70.766,31.366,45.606,8.15,-57.4
+kyoto-dark,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,dark,accentFunction,syntax,#A8C0E2,0.80120,0.05507,257.08,-0.01231,-0.05368,76.989,-0.657,-19.627,9.83,-66.6
+kyoto-dark,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,dark,accentFunctionDim,syntax,#B4CAFF,0.84090,0.07834,267.15,-0.00390,-0.07824,81.381,4.324,-28.403,11.16,-73.7
+kyoto-dark,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,dark,accentType,syntax,#8BDAB1,0.82590,0.09769,160.61,-0.09215,0.03243,81.183,-33.128,12.605,11.10,-73.5
+kyoto-dark,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,dark,accentInterface,syntax,#79CED2,0.79920,0.08275,199.54,-0.07799,-0.02767,77.791,-24.692,-10.056,10.07,-68.0
+kyoto-dark,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,dark,accentNumber,syntax,#FDD156,0.87677,0.14640,89.14,0.00219,0.14638,85.584,2.633,64.688,12.55,-80.9
+kyoto-dark,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,dark,accentDecorator,syntax,#F481C0,0.74946,0.15729,347.53,0.15358,-0.03397,68.565,51.327,-12.954,7.61,-54.3
+kyoto-dark,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,dark,accentNamespace,syntax,#A4AEC5,0.75045,0.03495,266.84,-0.00192,-0.03490,71.005,1.293,-12.879,8.21,-57.4
+kyoto-dark,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,dark,colorError,syntax,#D35C6C,0.62777,0.15048,14.26,0.14584,0.03706,54.647,48.323,14.565,4.80,-35.8
+kyoto-dark,Kyoto University,KyotoU,Global Classics,Japan,"Kyoto, Japan",1897,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.53,-65.1
+nus-light,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,light,bg,context,#F7F3EE,0.96585,0.00793,73.74,0.00222,0.00761,96.017,0.470,2.877,1.00,0.0
+nus-light,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,light,fg,context,#1C1713,0.20914,0.01113,60.81,0.00543,0.00972,8.189,1.629,3.485,16.09,97.7
+nus-light,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,light,accentKeyword,syntax,#7D3802,0.42603,0.11155,49.87,0.07191,0.08529,32.245,27.173,42.356,7.80,82.1
+nus-light,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,light,accentStorage,syntax,#57156B,0.34993,0.14555,316.85,0.10619,-0.09954,22.389,42.628,-35.345,11.02,89.9
+nus-light,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,light,accentString,syntax,#0B6879,0.47695,0.08128,214.64,-0.06688,-0.04620,40.166,-18.165,-16.522,5.81,74.6
+nus-light,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,light,accentRegex,syntax,#992E07,0.46022,0.14884,37.08,0.11875,0.08973,35.486,43.099,44.972,6.92,78.6
+nus-light,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,light,accentFunction,syntax,#002281,0.31314,0.16206,263.25,-0.01905,-0.16093,18.922,30.799,-55.440,12.30,92.2
+nus-light,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,light,accentFunctionDim,syntax,#27307F,0.35363,0.13244,272.67,0.00617,-0.13229,23.924,23.887,-45.905,10.47,89.3
+nus-light,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,light,accentType,syntax,#304F31,0.39436,0.06199,145.01,-0.05079,0.03555,30.501,-18.633,14.203,8.31,84.2
+nus-light,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,light,accentInterface,syntax,#006662,0.46045,0.07949,190.07,-0.07827,-0.01390,38.522,-25.878,-4.957,6.18,76.2
+nus-light,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,light,accentNumber,syntax,#6B643F,0.50021,0.05462,98.81,-0.00837,0.05398,42.153,-3.232,21.991,5.40,73.0
+nus-light,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,light,accentDecorator,syntax,#8C1D63,0.44032,0.16063,347.25,0.15667,-0.03546,32.605,51.419,-13.428,7.69,81.1
+nus-light,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,light,accentNamespace,syntax,#465061,0.42917,0.03106,261.02,-0.00485,-0.03068,33.778,0.387,-11.208,7.37,81.3
+nus-light,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,light,colorError,syntax,#6B0D19,0.34220,0.12567,21.39,0.11702,0.04584,21.890,39.924,20.137,11.20,89.8
+nus-light,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,light,colorWarning,syntax,#8B4B00,0.48046,0.11330,59.44,0.05760,0.09757,38.765,22.645,48.271,6.12,76.0
+nus-dark,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,dark,bg,context,#091625,0.19695,0.03564,253.05,-0.01039,-0.03409,6.914,0.241,-11.993,1.00,0.0
+nus-dark,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,dark,fg,context,#DCE6F1,0.92063,0.01844,250.60,-0.00613,-0.01739,90.853,-1.248,-6.483,14.42,-90.0
+nus-dark,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,dark,accentKeyword,syntax,#FB993D,0.76946,0.15558,59.68,0.07855,0.13430,71.983,29.757,61.170,8.43,-59.3
+nus-dark,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,dark,accentStorage,syntax,#C886E0,0.71923,0.14420,316.66,0.10488,-0.09896,65.524,40.588,-35.909,6.89,-49.7
+nus-dark,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,dark,accentString,syntax,#64BCD1,0.74829,0.08965,215.21,-0.07324,-0.05169,71.742,-20.696,-18.690,8.37,-58.7
+nus-dark,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,dark,accentRegex,syntax,#FF8D6C,0.76041,0.14608,36.99,0.11668,0.08790,70.454,40.125,36.597,8.05,-57.0
+nus-dark,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,dark,accentFunction,syntax,#A6C8FC,0.82639,0.08226,258.75,-0.01605,-0.08068,79.864,0.768,-29.206,10.66,-71.2
+nus-dark,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,dark,accentFunctionDim,syntax,#C1D2FF,0.86594,0.06536,268.79,-0.00138,-0.06535,84.303,3.806,-23.867,12.08,-78.6
+nus-dark,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,dark,accentType,syntax,#8ADBAF,0.82721,0.10158,159.37,-0.09506,0.03580,81.379,-34.277,13.931,11.13,-73.8
+nus-dark,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,dark,accentInterface,syntax,#7ACFCA,0.79935,0.08317,190.77,-0.08170,-0.01554,77.889,-26.919,-5.604,10.06,-68.2
+nus-dark,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,dark,accentNumber,syntax,#FBD256,0.87681,0.14647,90.61,-0.00156,0.14646,85.644,1.292,64.695,12.54,-81.0
+nus-dark,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,dark,accentDecorator,syntax,#F580C1,0.74963,0.16039,347.19,0.15640,-0.03556,68.537,52.277,-13.542,7.58,-54.2
+nus-dark,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,dark,accentNamespace,syntax,#A3AFC1,0.75040,0.02921,258.37,-0.00589,-0.02861,71.075,-0.447,-10.583,8.20,-57.5
+nus-dark,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,dark,colorError,syntax,#F55A60,0.67391,0.18996,21.58,0.17664,0.06987,59.503,59.662,28.993,5.65,-42.3
+nus-dark,National University of Singapore,NUS,Global Classics,Singapore,Singapore,1905,dark,colorWarning,syntax,#F7AA69,0.79936,0.12196,59.91,0.06114,0.10553,75.791,21.726,44.545,9.46,-64.9
+imperial-light,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,light,bg,context,#EFF4F7,0.96423,0.00669,233.64,-0.00397,-0.00539,95.900,-1.111,-2.018,1.00,0.0
+imperial-light,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,light,fg,context,#14191D,0.21003,0.01099,242.29,-0.00511,-0.00973,8.417,-1.146,-3.577,15.97,97.5
+imperial-light,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,light,accentKeyword,syntax,#185088,0.42600,0.10909,252.08,-0.03357,-0.10379,33.368,3.441,-36.315,7.46,81.1
+imperial-light,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,light,accentStorage,syntax,#4E127C,0.34844,0.16237,304.29,0.09147,-0.13415,21.972,45.867,-47.021,11.14,89.9
+imperial-light,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,light,accentString,syntax,#A02751,0.47726,0.15892,4.83,0.15835,0.01339,36.969,51.785,5.048,6.53,76.8
+imperial-light,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,light,accentRegex,syntax,#9A2D00,0.46056,0.15161,37.75,0.11988,0.09281,35.497,43.756,47.791,6.89,78.3
+imperial-light,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,light,accentFunction,syntax,#00252B,0.24246,0.04203,210.66,-0.03615,-0.02143,12.592,-10.230,-7.672,14.59,95.8
+imperial-light,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,light,accentFunctionDim,syntax,#002F3C,0.28292,0.05230,222.05,-0.03883,-0.03503,17.269,-9.345,-12.462,12.88,93.6
+imperial-light,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,light,accentType,syntax,#036C2D,0.46441,0.12911,149.21,-0.11091,0.06609,39.468,-41.411,27.616,5.95,75.0
+imperial-light,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,light,accentInterface,syntax,#006373,0.45934,0.08063,213.70,-0.06708,-0.04474,38.129,-18.332,-15.990,6.25,76.4
+imperial-light,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,light,accentNumber,syntax,#6D6606,0.50101,0.10403,104.74,-0.02648,0.10060,42.411,-7.436,47.482,5.33,72.4
+imperial-light,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,light,accentDecorator,syntax,#901A56,0.43986,0.16001,355.53,0.15952,-0.01246,32.573,51.845,-4.978,7.68,80.8
+imperial-light,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,light,accentNamespace,syntax,#465061,0.42917,0.03106,261.02,-0.00485,-0.03068,33.778,0.387,-11.208,7.34,81.1
+imperial-light,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,light,colorError,syntax,#691318,0.34273,0.11895,23.49,0.10909,0.04742,22.074,37.424,20.906,11.10,89.7
+imperial-light,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,6.05,75.7
+imperial-dark,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,dark,bg,context,#081625,0.19627,0.03631,251.42,-0.01157,-0.03442,6.856,-0.020,-12.088,1.00,0.0
+imperial-dark,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,dark,fg,context,#DCE6F1,0.92063,0.01844,250.60,-0.00613,-0.01739,90.853,-1.248,-6.483,14.44,-90.0
+imperial-dark,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,dark,accentKeyword,syntax,#6EC0E5,0.76952,0.09603,229.06,-0.06292,-0.07255,73.977,-14.965,-26.120,8.97,-62.1
+imperial-dark,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,dark,accentStorage,syntax,#BB88F6,0.72010,0.16188,304.02,0.09056,-0.13417,65.614,40.577,-48.002,6.92,-49.8
+imperial-dark,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,dark,accentString,syntax,#FB81A1,0.74867,0.15136,4.77,0.15083,0.01259,68.597,49.650,4.615,7.60,-54.3
+imperial-dark,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,dark,accentRegex,syntax,#FF8D6A,0.76009,0.14680,37.84,0.11594,0.09005,70.425,39.980,37.630,8.05,-57.0
+imperial-dark,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,dark,accentFunction,syntax,#59ECF9,0.87011,0.12433,203.47,-0.11405,-0.04951,86.479,-34.869,-17.857,12.84,-82.7
+imperial-dark,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,dark,accentFunctionDim,syntax,#A8EFFF,0.91063,0.07355,213.27,-0.06149,-0.04035,90.448,-18.177,-14.736,14.29,-89.3
+imperial-dark,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,dark,accentType,syntax,#72E295,0.82715,0.15013,151.99,-0.13255,0.07050,81.913,-48.728,28.064,11.31,-74.8
+imperial-dark,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,dark,accentInterface,syntax,#7ECCDD,0.80082,0.08043,213.11,-0.06737,-0.04393,77.780,-19.663,-15.965,10.04,-68.0
+imperial-dark,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,dark,accentNumber,syntax,#D6E157,0.87558,0.15977,113.53,-0.06379,0.14648,86.423,-21.368,64.182,12.82,-82.3
+imperial-dark,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,dark,accentDecorator,syntax,#FA7FB2,0.74956,0.15903,355.45,0.15853,-0.01260,68.549,52.350,-5.038,7.59,-54.3
+imperial-dark,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,dark,accentNamespace,syntax,#A3AFC1,0.75040,0.02921,258.37,-0.00589,-0.02861,71.075,-0.447,-10.583,8.21,-57.5
+imperial-dark,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,dark,colorError,syntax,#F55E45,0.67460,0.19019,31.74,0.16174,0.10005,59.756,56.519,44.291,5.70,-42.6
+imperial-dark,Imperial College London,Imperial,Global Classics,UK,"London, UK",1907,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.51,-65.1
 harvard-light,Harvard University,Harvard,Ivy League,USA,"Cambridge, MA",1636,light,bg,context,#F7F1EE,0.96196,0.00763,48.65,0.00504,0.00573,95.521,1.487,2.156,1.00,0.0
 harvard-light,Harvard University,Harvard,Ivy League,USA,"Cambridge, MA",1636,light,fg,context,#1D1714,0.21078,0.01132,48.16,0.00755,0.00843,8.346,2.359,3.081,15.84,96.8
 harvard-light,Harvard University,Harvard,Ivy League,USA,"Cambridge, MA",1636,light,accentKeyword,syntax,#6F0F2A,0.35527,0.12843,11.62,0.12580,0.02586,23.302,41.614,10.433,10.56,88.0
@@ -359,6 +539,36 @@ cornell-dark,Cornell University,Cornell,Ivy League,USA,"Ithaca, NY",1865,dark,ac
 cornell-dark,Cornell University,Cornell,Ivy League,USA,"Ithaca, NY",1865,dark,accentNamespace,syntax,#B9AC99,0.75019,0.03045,77.47,0.00661,0.02973,70.954,1.479,11.461,8.10,-57.3
 cornell-dark,Cornell University,Cornell,Ivy League,USA,"Ithaca, NY",1865,dark,colorError,syntax,#F55D4B,0.67416,0.18993,29.64,0.16508,0.09393,59.667,57.225,40.963,5.63,-42.4
 cornell-dark,Cornell University,Cornell,Ivy League,USA,"Ithaca, NY",1865,dark,colorWarning,syntax,#F3AD67,0.80011,0.11953,64.66,0.05117,0.10803,76.023,18.374,45.729,9.44,-65.2
+uga-light,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,light,bg,context,#F7F1EB,0.96114,0.01029,67.70,0.00391,0.00952,95.448,0.977,3.603,1.00,0.0
+uga-light,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,light,fg,context,#1C1712,0.20881,0.01247,67.05,0.00486,0.01149,8.159,1.429,4.063,15.87,96.8
+uga-light,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,light,accentKeyword,syntax,#950423,0.42521,0.16856,20.56,0.15782,0.05921,30.878,53.844,26.411,8.08,80.7
+uga-light,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,light,accentStorage,syntax,#3C183D,0.27922,0.07948,326.41,0.06621,-0.04397,15.228,23.977,-15.970,13.48,93.9
+uga-light,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,light,accentString,syntax,#973D09,0.47652,0.13342,44.05,0.09590,0.09276,37.732,35.453,45.629,6.27,75.8
+uga-light,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,light,accentRegex,syntax,#963121,0.46048,0.13853,31.62,0.11796,0.07263,35.582,41.422,32.850,6.79,77.7
+uga-light,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,light,accentFunction,syntax,#004965,0.38104,0.07816,232.44,-0.04764,-0.06196,28.653,-8.551,-21.899,8.75,84.4
+uga-light,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,light,accentFunctionDim,syntax,#285171,0.42039,0.07073,244.21,-0.03077,-0.06368,32.979,-3.579,-22.641,7.48,80.9
+uga-light,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,light,accentType,syntax,#486B41,0.48945,0.07647,140.34,-0.05887,0.04881,41.649,-21.574,19.654,5.42,72.5
+uga-light,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,light,accentInterface,syntax,#00656B,0.46127,0.07848,201.94,-0.07280,-0.02932,38.495,-22.295,-10.524,6.10,75.2
+uga-light,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,light,accentNumber,syntax,#804500,0.45337,0.10653,59.80,0.05359,0.09207,35.688,21.102,45.534,6.77,78.1
+uga-light,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,light,accentDecorator,syntax,#892363,0.44033,0.15168,346.63,0.14757,-0.03506,32.750,48.604,-13.257,7.54,80.2
+uga-light,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,light,accentNamespace,syntax,#5A4E3E,0.43120,0.02985,74.81,0.00782,0.02880,33.921,2.200,11.326,7.22,80.2
+uga-light,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,light,colorError,syntax,#6B0B2B,0.34489,0.12787,9.00,0.12629,0.02001,22.090,41.535,7.934,10.97,88.7
+uga-light,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,5.98,74.9
+uga-dark,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,dark,bg,context,#1A1313,0.19557,0.01159,18.19,0.01101,0.00362,6.616,3.289,1.159,1.00,0.0
+uga-dark,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,dark,fg,context,#EEE1E1,0.92008,0.01424,17.42,0.01358,0.00426,90.535,4.419,1.586,14.39,-89.5
+uga-dark,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,dark,accentKeyword,syntax,#FB9099,0.76924,0.12938,15.19,0.12486,0.03390,71.392,41.249,13.074,8.33,-58.4
+uga-dark,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,dark,accentStorage,syntax,#CB8EB5,0.71865,0.08967,340.93,0.08475,-0.02930,66.044,29.131,-11.066,7.04,-50.4
+uga-dark,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,dark,accentString,syntax,#DF7A00,0.67876,0.16170,58.45,0.08460,0.13780,61.318,33.111,68.256,6.04,-44.4
+uga-dark,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,dark,accentRegex,syntax,#FD8D79,0.76012,0.13966,31.22,0.11944,0.07239,70.398,40.396,29.432,8.08,-57.0
+uga-dark,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,dark,accentFunction,syntax,#52D3DE,0.80045,0.11250,203.11,-0.10347,-0.04416,78.258,-31.738,-15.936,10.23,-69.1
+uga-dark,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,dark,accentFunctionDim,syntax,#7EDBEE,0.84050,0.09234,212.31,-0.07805,-0.04936,82.522,-22.761,-17.898,11.56,-75.8
+uga-dark,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,dark,accentType,syntax,#C4D152,0.82638,0.15048,114.67,-0.06281,0.13675,80.709,-21.211,59.714,10.98,-72.8
+uga-dark,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,dark,accentInterface,syntax,#79CED5,0.80021,0.08307,202.46,-0.07677,-0.03174,77.880,-23.932,-11.536,10.12,-68.3
+uga-dark,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,dark,accentNumber,syntax,#FCCE85,0.87574,0.10469,78.29,0.02125,0.10251,85.269,7.270,42.286,12.48,-80.4
+uga-dark,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,dark,accentDecorator,syntax,#F183C2,0.74935,0.15253,346.00,0.14799,-0.03691,68.630,49.666,-14.015,7.65,-54.4
+uga-dark,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,dark,accentNamespace,syntax,#B9AC99,0.75019,0.03045,77.47,0.00661,0.02973,70.954,1.479,11.461,8.22,-57.4
+uga-dark,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,dark,colorError,syntax,#F55A5D,0.67338,0.19024,22.68,0.17552,0.07336,59.454,59.474,30.644,5.67,-42.3
+uga-dark,University of Georgia,UGA,US Public Flagships,USA,"Athens, GA",1785,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.55,-65.2
 unc-light,University of North Carolina,UNC,US Public Flagships,USA,"Chapel Hill, NC",1789,light,bg,context,#EDF5F9,0.96528,0.01008,228.89,-0.00662,-0.00759,96.058,-1.906,-2.837,1.00,0.0
 unc-light,University of North Carolina,UNC,US Public Flagships,USA,"Chapel Hill, NC",1789,light,fg,context,#121A1D,0.21118,0.01321,222.80,-0.00969,-0.00897,8.620,-2.722,-3.291,15.98,97.7
 unc-light,University of North Carolina,UNC,US Public Flagships,USA,"Chapel Hill, NC",1789,light,accentKeyword,syntax,#334E7A,0.42390,0.08070,259.77,-0.01433,-0.07942,33.043,4.028,-28.113,7.58,81.9
@@ -449,6 +659,66 @@ uva-dark,University of Virginia,UVA,US Public Flagships,USA,"Charlottesville, VA
 uva-dark,University of Virginia,UVA,US Public Flagships,USA,"Charlottesville, VA",1819,dark,accentNamespace,syntax,#A0ADCF,0.74902,0.05122,268.69,-0.00117,-0.05121,70.778,2.827,-18.747,8.15,-57.1
 uva-dark,University of Virginia,UVA,US Public Flagships,USA,"Charlottesville, VA",1819,dark,colorError,syntax,#F55A66,0.67504,0.18958,19.32,0.17891,0.06271,59.608,60.057,25.681,5.68,-42.5
 uva-dark,University of Virginia,UVA,US Public Flagships,USA,"Charlottesville, VA",1819,dark,colorWarning,syntax,#F7AA69,0.79936,0.12196,59.91,0.06114,0.10553,75.791,21.726,44.545,9.49,-65.0
+wisconsin-light,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,light,bg,context,#EFF3F5,0.96169,0.00505,228.82,-0.00333,-0.00380,95.599,-0.965,-1.425,1.00,0.0
+wisconsin-light,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,light,fg,context,#14191B,0.20909,0.00855,223.90,-0.00616,-0.00593,8.334,-1.761,-2.191,15.88,97.0
+wisconsin-light,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,light,accentKeyword,syntax,#970407,0.42664,0.17231,28.39,0.15158,0.08194,31.076,53.681,41.926,8.05,80.7
+wisconsin-light,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,light,accentStorage,syntax,#531A6C,0.34974,0.13900,313.32,0.09537,-0.10112,22.516,39.939,-35.822,10.86,89.3
+wisconsin-light,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,light,accentString,syntax,#096975,0.47761,0.08007,208.86,-0.07013,-0.03865,40.319,-20.273,-13.858,5.72,73.7
+wisconsin-light,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,light,accentRegex,syntax,#8D3D00,0.45984,0.12463,48.31,0.08288,0.09307,35.988,31.227,46.780,6.72,77.8
+wisconsin-light,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,light,accentFunction,syntax,#002337,0.24359,0.05469,238.79,-0.02834,-0.04678,12.466,-3.420,-16.457,14.52,95.3
+wisconsin-light,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,light,accentFunctionDim,syntax,#072B4B,0.28342,0.07092,249.90,-0.02437,-0.06660,16.896,1.153,-23.320,12.92,93.3
+wisconsin-light,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,light,accentType,syntax,#324F2D,0.39476,0.06550,140.82,-0.05078,0.04138,30.543,-18.604,16.732,8.21,83.5
+wisconsin-light,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,light,accentInterface,syntax,#1A6177,0.46016,0.07592,223.24,-0.05531,-0.05201,38.021,-13.462,-18.574,6.23,76.2
+wisconsin-light,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,light,accentNumber,syntax,#8A5E32,0.51963,0.08296,64.17,0.03614,0.07467,43.712,13.184,32.024,5.05,70.4
+wisconsin-light,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,light,accentDecorator,syntax,#8C1D62,0.43988,0.16007,347.79,0.15644,-0.03386,32.563,51.293,-12.848,7.62,80.5
+wisconsin-light,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,light,accentNamespace,syntax,#455160,0.43036,0.02926,254.14,-0.00799,-0.02814,33.971,-0.863,-10.293,7.24,80.4
+wisconsin-light,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,light,colorError,syntax,#910004,0.41258,0.16888,28.46,0.14847,0.08047,29.489,52.654,41.363,8.53,81.9
+wisconsin-light,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,6.01,75.1
+wisconsin-dark,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,dark,bg,context,#191313,0.19422,0.00991,18.04,0.00942,0.00307,6.499,2.765,0.974,1.00,0.0
+wisconsin-dark,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,dark,fg,context,#EDE1E1,0.91927,0.01313,17.40,0.01253,0.00393,90.456,4.077,1.461,14.39,-89.4
+wisconsin-dark,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,dark,accentKeyword,syntax,#FB9190,0.76869,0.12844,21.04,0.11987,0.04612,71.404,39.777,18.082,8.35,-58.5
+wisconsin-dark,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,dark,accentStorage,syntax,#C389E1,0.71946,0.13790,313.50,0.09493,-0.10002,65.695,37.681,-36.238,6.98,-50.0
+wisconsin-dark,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,dark,accentString,syntax,#62BECD,0.75062,0.08999,209.32,-0.07847,-0.04407,72.114,-23.251,-15.953,8.54,-59.4
+wisconsin-dark,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,dark,accentRegex,syntax,#F8945C,0.76058,0.14024,48.82,0.09234,0.10556,70.812,32.741,45.213,8.20,-57.6
+wisconsin-dark,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,dark,accentFunction,syntax,#9ACCFA,0.82661,0.08351,246.75,-0.03297,-0.07673,80.154,-5.077,-27.756,10.83,-71.9
+wisconsin-dark,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,dark,accentFunctionDim,syntax,#B7D6FF,0.86722,0.06615,255.51,-0.01655,-0.06405,84.678,-1.214,-23.357,12.31,-79.4
+wisconsin-dark,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,dark,accentType,syntax,#7D9853,0.64236,0.09984,126.54,-0.05944,0.08021,59.380,-21.463,33.129,5.67,-41.4
+wisconsin-dark,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,dark,accentInterface,syntax,#83CAE4,0.80137,0.07998,223.19,-0.05831,-0.05474,77.677,-15.590,-19.861,10.08,-67.9
+wisconsin-dark,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,dark,accentNumber,syntax,#FFCC85,0.87484,0.10572,74.85,0.02763,0.10204,85.069,9.498,42.094,12.44,-80.1
+wisconsin-dark,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,dark,accentDecorator,syntax,#F680BF,0.75019,0.16014,348.40,0.15687,-0.03219,68.604,52.313,-12.309,7.66,-54.4
+wisconsin-dark,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,dark,accentNamespace,syntax,#A2AFC1,0.74965,0.02976,256.51,-0.00694,-0.02893,71.002,-0.773,-10.699,8.25,-57.5
+wisconsin-dark,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,dark,colorError,syntax,#F55C4F,0.67352,0.19017,28.07,0.16780,0.08949,59.560,57.848,38.644,5.71,-42.5
+wisconsin-dark,University of Wisconsin–Madison,UW–Madison,US Public Flagships,USA,"Madison, WI",1848,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.57,-65.2
+ufl-light,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,light,bg,context,#EFF4F9,0.96480,0.00857,247.91,-0.00322,-0.00795,95.952,-0.747,-2.977,1.00,0.0
+ufl-light,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,light,fg,context,#14191D,0.21003,0.01099,242.29,-0.00511,-0.00973,8.417,-1.146,-3.577,15.99,97.5
+ufl-light,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,light,accentKeyword,syntax,#750800,0.35750,0.14085,30.61,0.12122,0.07172,23.528,43.351,35.233,10.60,88.0
+ufl-light,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,light,accentStorage,syntax,#5C1D53,0.35062,0.11526,333.85,0.10346,-0.05081,22.927,35.778,-18.607,10.81,89.7
+ufl-light,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,light,accentString,syntax,#056971,0.47541,0.07984,204.14,-0.07286,-0.03265,40.125,-21.946,-11.722,5.81,74.5
+ufl-light,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,light,accentRegex,syntax,#8D3D00,0.45984,0.12463,48.31,0.08288,0.09307,35.988,31.227,46.780,6.78,78.4
+ufl-light,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,light,accentFunction,syntax,#0935A1,0.38452,0.17971,263.42,-0.02060,-0.17852,27.232,31.091,-61.545,9.32,86.0
+ufl-light,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,light,accentFunctionDim,syntax,#37429D,0.42487,0.14701,273.21,0.00824,-0.14678,32.128,25.464,-51.042,7.81,82.3
+ufl-light,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,light,accentType,syntax,#315028,0.39595,0.07394,138.92,-0.05573,0.04859,30.744,-20.357,19.972,8.22,83.9
+ufl-light,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,light,accentInterface,syntax,#006083,0.45945,0.09389,232.14,-0.05762,-0.07413,37.848,-10.474,-26.205,6.32,76.7
+ufl-light,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,light,accentNumber,syntax,#7F5D0B,0.50067,0.09919,82.53,0.01290,0.09835,41.792,6.704,46.582,5.46,73.0
+ufl-light,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,light,accentDecorator,syntax,#8B1F62,0.43977,0.15721,347.59,0.15354,-0.03379,32.596,50.395,-12.816,7.68,81.1
+ufl-light,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,light,accentNamespace,syntax,#475061,0.42999,0.03053,263.11,-0.00366,-0.03031,33.857,0.736,-11.081,7.33,81.1
+ufl-light,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,light,colorError,syntax,#91001A,0.41431,0.16725,23.08,0.15386,0.06558,29.654,53.103,30.462,8.55,82.5
+ufl-light,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,light,colorWarning,syntax,#8B4B00,0.48046,0.11330,59.44,0.05760,0.09757,38.765,22.645,48.271,6.11,75.9
+ufl-dark,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,dark,bg,context,#0A1626,0.19833,0.03675,256.04,-0.00886,-0.03567,7.030,0.907,-12.561,1.00,0.0
+ufl-dark,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,dark,fg,context,#DDE5F1,0.91938,0.01846,258.35,-0.00373,-0.01808,90.671,-0.410,-6.744,14.32,-89.6
+ufl-dark,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,dark,accentKeyword,syntax,#FB9575,0.76975,0.13129,38.18,0.10320,0.08116,71.754,35.215,33.317,8.36,-58.8
+ufl-dark,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,dark,accentStorage,syntax,#D088C3,0.71895,0.11637,333.43,0.10408,-0.05206,65.718,36.501,-19.362,6.92,-49.9
+ufl-dark,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,dark,accentString,syntax,#70A4A0,0.68101,0.05546,189.88,-0.05464,-0.00952,63.780,-18.060,-3.437,6.50,-47.1
+ufl-dark,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,dark,accentRegex,syntax,#F8945C,0.76058,0.14024,48.82,0.09234,0.10556,70.812,32.741,45.213,8.12,-57.4
+ufl-dark,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,dark,accentFunction,syntax,#9CBEFF,0.80080,0.09996,262.97,-0.01224,-0.09920,76.747,4.308,-35.664,9.71,-66.3
+ufl-dark,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,dark,accentFunctionDim,syntax,#B9C8FF,0.84037,0.07894,272.74,0.00378,-0.07885,81.204,6.831,-28.644,11.05,-73.4
+ufl-dark,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,dark,accentType,syntax,#6EE298,0.82619,0.14948,153.60,-0.13389,0.06647,81.823,-49.181,26.376,11.24,-74.7
+ufl-dark,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,dark,accentInterface,syntax,#7BC9F1,0.80028,0.09566,232.03,-0.05885,-0.07541,77.479,-13.440,-27.175,9.92,-67.5
+ufl-dark,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,dark,accentNumber,syntax,#FFCD7F,0.87583,0.11145,77.62,0.02389,0.10886,85.230,8.442,45.298,12.37,-80.2
+ufl-dark,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,dark,accentDecorator,syntax,#F481C0,0.74946,0.15729,347.53,0.15358,-0.03397,68.565,51.327,-12.954,7.57,-54.2
+ufl-dark,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,dark,accentNamespace,syntax,#A4AEC2,0.74940,0.03090,264.37,-0.00303,-0.03075,70.912,0.641,-11.369,8.14,-57.2
+ufl-dark,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,dark,colorError,syntax,#D25D75,0.62994,0.14889,9.64,0.14679,0.02492,54.885,48.372,9.567,4.81,-36.0
+ufl-dark,University of Florida,UF,US Public Flagships,USA,"Gainesville, FL",1853,dark,colorWarning,syntax,#F7AA69,0.79936,0.12196,59.91,0.06114,0.10553,75.791,21.726,44.545,9.44,-64.9
 uw-light,University of Washington,UW,US Public Flagships,USA,"Seattle, WA",1861,light,bg,context,#F2F2F8,0.96286,0.00798,286.25,0.00223,-0.00766,95.647,1.072,-2.881,1.00,0.0
 uw-light,University of Washington,UW,US Public Flagships,USA,"Seattle, WA",1861,light,fg,context,#18181D,0.21126,0.00979,285.53,0.00262,-0.00943,8.448,1.374,-3.491,15.86,97.0
 uw-light,University of Washington,UW,US Public Flagships,USA,"Seattle, WA",1861,light,accentKeyword,syntax,#584F98,0.47214,0.11495,286.78,0.03318,-0.11006,37.722,22.615,-38.890,6.31,76.7
@@ -509,6 +779,36 @@ berkeley-dark,UC Berkeley,UC Berkeley,US Public Flagships,USA,"Berkeley, CA",186
 berkeley-dark,UC Berkeley,UC Berkeley,US Public Flagships,USA,"Berkeley, CA",1868,dark,accentNamespace,syntax,#98ADDF,0.74963,0.07618,266.87,-0.00416,-0.07607,70.794,4.316,-27.542,8.18,-57.2
 berkeley-dark,UC Berkeley,UC Berkeley,US Public Flagships,USA,"Berkeley, CA",1868,dark,colorError,syntax,#F55967,0.67409,0.19062,18.67,0.18059,0.06103,59.473,60.537,24.927,5.68,-42.3
 berkeley-dark,UC Berkeley,UC Berkeley,US Public Flagships,USA,"Berkeley, CA",1868,dark,colorWarning,syntax,#F3AD67,0.80011,0.11953,64.66,0.05117,0.10803,76.023,18.374,45.729,9.58,-65.3
+tamu-light,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,light,bg,context,#F6F1EA,0.96009,0.01076,76.60,0.00249,0.01047,95.348,0.469,3.965,1.00,0.0
+tamu-light,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,light,fg,context,#1C1811,0.21129,0.01459,81.54,0.00215,0.01443,8.487,0.496,5.135,15.73,96.5
+tamu-light,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,light,accentKeyword,syntax,#5F282F,0.35638,0.08037,14.21,0.07791,0.01973,24.182,25.796,7.717,10.21,88.0
+tamu-light,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,light,accentStorage,syntax,#4F1F6B,0.34929,0.12964,310.36,0.08396,-0.09878,22.667,36.404,-34.961,10.74,89.0
+tamu-light,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,light,accentString,syntax,#944008,0.47611,0.12794,46.74,0.08769,0.09317,37.810,32.691,45.762,6.24,75.6
+tamu-light,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,light,accentRegex,syntax,#963121,0.46048,0.13853,31.62,0.11796,0.07263,35.582,41.422,32.850,6.78,77.5
+tamu-light,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,light,accentFunction,syntax,#09354A,0.31135,0.05904,234.64,-0.03417,-0.04815,20.434,-5.977,-17.063,11.54,90.9
+tamu-light,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,light,accentFunctionDim,syntax,#163E5D,0.35178,0.07011,245.24,-0.02936,-0.06366,24.970,-2.263,-22.488,9.93,87.6
+tamu-light,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,light,accentType,syntax,#196A41,0.46587,0.10127,156.15,-0.09262,0.04095,39.404,-34.253,16.330,5.88,74.3
+tamu-light,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,light,accentInterface,syntax,#00656B,0.46127,0.07848,201.94,-0.07280,-0.02932,38.495,-22.295,-10.524,6.08,75.1
+tamu-light,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,light,accentNumber,syntax,#8B602F,0.52452,0.08581,67.51,0.03283,0.07929,44.321,12.251,34.371,4.90,69.4
+tamu-light,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,light,accentDecorator,syntax,#8A2262,0.44067,0.15305,347.49,0.14941,-0.03315,32.768,49.105,-12.570,7.52,80.0
+tamu-light,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,light,accentNamespace,syntax,#5E494F,0.42943,0.02990,359.49,0.02990,-0.00027,33.371,9.999,-0.156,7.35,80.5
+tamu-light,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,light,colorError,syntax,#91001B,0.41443,0.16719,22.74,0.15419,0.06463,29.666,53.134,29.859,8.42,81.4
+tamu-light,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,5.97,74.7
+tamu-dark,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,dark,bg,context,#211112,0.20057,0.02697,15.70,0.02596,0.00729,6.937,8.339,2.362,1.00,0.0
+tamu-dark,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,dark,fg,context,#F0E0E0,0.91950,0.01757,17.48,0.01676,0.00528,90.422,5.454,1.966,14.25,-89.2
+tamu-dark,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,dark,accentKeyword,syntax,#CE8794,0.69930,0.08840,7.63,0.08762,0.01174,63.828,28.927,4.354,6.52,-47.3
+tamu-dark,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,dark,accentStorage,syntax,#BF8CDF,0.71960,0.12873,311.62,0.08551,-0.09623,65.874,34.415,-34.883,6.96,-50.1
+tamu-dark,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,dark,accentString,syntax,#F3915F,0.74979,0.13556,46.94,0.09255,0.09905,69.567,32.523,42.027,7.82,-55.6
+tamu-dark,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,dark,accentRegex,syntax,#FD8D79,0.76012,0.13966,31.22,0.11944,0.07239,70.398,40.396,29.432,8.03,-56.9
+tamu-dark,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,dark,accentFunction,syntax,#7FAFCA,0.72959,0.06435,233.45,-0.03832,-0.05170,69.065,-9.167,-18.792,7.70,-54.6
+tamu-dark,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,dark,accentFunctionDim,syntax,#87BBE3,0.77026,0.07934,242.12,-0.03710,-0.07013,73.698,-6.935,-25.359,8.88,-61.6
+tamu-dark,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,dark,accentType,syntax,#8EDAAA,0.82575,0.10171,155.73,-0.09272,0.04181,81.178,-33.611,16.312,11.06,-73.5
+tamu-dark,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,dark,accentInterface,syntax,#79CED5,0.80021,0.08307,202.46,-0.07677,-0.03174,77.880,-23.932,-11.536,10.06,-68.2
+tamu-dark,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,dark,accentNumber,syntax,#FFCF5D,0.87549,0.14085,86.15,0.00946,0.14053,85.342,4.895,61.471,12.43,-80.5
+tamu-dark,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,dark,accentDecorator,syntax,#F283C0,0.74988,0.15222,347.27,0.14848,-0.03355,68.693,49.697,-12.788,7.61,-54.4
+tamu-dark,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,dark,accentNamespace,syntax,#BFA6AD,0.74901,0.03062,359.07,0.03062,-0.00050,70.432,10.283,-0.245,8.04,-56.6
+tamu-dark,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,dark,colorError,syntax,#F55A5E,0.67356,0.19014,22.32,0.17590,0.07220,59.470,59.536,30.094,5.64,-42.3
+tamu-dark,Texas A&M University,Texas A&M,US Public Flagships,USA,"College Station, TX",1876,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.49,-65.1
 utaustin-light,University of Texas at Austin,UT Austin,US Public Flagships,USA,"Austin, TX",1883,light,bg,context,#F8F2EC,0.96414,0.01028,67.70,0.00390,0.00952,95.796,0.976,3.600,1.00,0.0
 utaustin-light,University of Texas at Austin,UT Austin,US Public Flagships,USA,"Austin, TX",1883,light,fg,context,#1D1712,0.21011,0.01359,61.78,0.00642,0.01197,8.286,1.964,4.264,15.97,97.3
 utaustin-light,University of Texas at Austin,UT Austin,US Public Flagships,USA,"Austin, TX",1883,light,accentKeyword,syntax,#87533F,0.49635,0.07642,41.71,0.05705,0.05085,40.731,19.420,20.773,5.66,73.9
@@ -719,6 +1019,66 @@ mit-dark,MIT,MIT,US Private Research & STEM,USA,"Cambridge, MA",1861,dark,accent
 mit-dark,MIT,MIT,US Private Research & STEM,USA,"Cambridge, MA",1861,dark,accentNamespace,syntax,#A0B0C1,0.75027,0.03034,249.85,-0.01045,-0.02849,71.128,-1.966,-10.526,8.28,-57.7
 mit-dark,MIT,MIT,US Private Research & STEM,USA,"Cambridge, MA",1861,dark,colorError,syntax,#F55C54,0.67425,0.18935,26.42,0.16958,0.08424,59.628,58.114,35.948,5.72,-42.6
 mit-dark,MIT,MIT,US Private Research & STEM,USA,"Cambridge, MA",1861,dark,colorWarning,syntax,#F3AD67,0.80011,0.11953,64.66,0.05117,0.10803,76.023,18.374,45.729,9.60,-65.4
+jhu-light,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,light,bg,context,#EFF4F8,0.96451,0.00757,241.66,-0.00360,-0.00667,95.926,-0.929,-2.497,1.00,0.0
+jhu-light,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,light,fg,context,#14191D,0.21003,0.01099,242.29,-0.00511,-0.00973,8.417,-1.146,-3.577,15.98,97.5
+jhu-light,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,light,accentKeyword,syntax,#204C93,0.42686,0.12685,259.64,-0.02282,-0.12478,33.096,11.489,-43.462,7.54,81.4
+jhu-light,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,light,accentStorage,syntax,#52284F,0.34904,0.08447,329.88,0.07307,-0.04238,23.258,25.918,-15.541,10.68,89.8
+jhu-light,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,light,accentString,syntax,#8D2623,0.43202,0.13895,26.52,0.12432,0.06205,32.196,42.970,27.465,7.79,81.5
+jhu-light,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,light,accentRegex,syntax,#874220,0.46073,0.10540,44.94,0.07460,0.07446,36.277,26.897,33.362,6.70,78.3
+jhu-light,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,light,accentFunction,syntax,#001D4D,0.24581,0.09580,259.11,-0.01810,-0.09408,12.053,11.824,-32.506,14.78,95.9
+jhu-light,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,light,accentFunctionDim,syntax,#1B2651,0.28476,0.07968,269.93,-0.00010,-0.07968,16.568,10.848,-27.864,13.15,94.2
+jhu-light,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,light,accentType,syntax,#046A51,0.46661,0.09206,169.16,-0.09042,0.01732,39.457,-32.614,6.787,5.95,75.1
+jhu-light,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,light,accentInterface,syntax,#2E6544,0.45954,0.08002,155.17,-0.07262,0.03361,38.384,-26.611,13.277,6.20,76.5
+jhu-light,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,light,accentNumber,syntax,#7C5E07,0.49910,0.09969,86.17,0.00666,0.09947,41.700,4.571,47.373,5.48,73.1
+jhu-light,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,light,accentDecorator,syntax,#7D2E72,0.44024,0.13839,333.49,0.12384,-0.06176,32.984,42.940,-22.630,7.57,81.2
+jhu-light,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,light,accentNamespace,syntax,#5D4C3F,0.43014,0.03095,59.23,0.01583,0.02659,33.680,4.950,10.417,7.38,81.2
+jhu-light,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,light,colorError,syntax,#690C2E,0.34236,0.12591,6.34,0.12514,0.01391,21.815,40.957,5.380,11.20,89.8
+jhu-light,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,6.06,75.7
+jhu-dark,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,dark,bg,context,#091626,0.19765,0.03736,254.45,-0.01002,-0.03599,6.971,0.645,-12.656,1.00,0.0
+jhu-dark,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,dark,fg,context,#DDE6F1,0.92137,0.01783,253.34,-0.00511,-0.01708,90.924,-0.925,-6.370,14.44,-90.1
+jhu-dark,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,dark,accentKeyword,syntax,#44A7E9,0.69906,0.13314,241.64,-0.06323,-0.11716,65.551,-7.689,-41.471,6.89,-49.9
+jhu-dark,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,dark,accentStorage,syntax,#C490C0,0.71882,0.08990,329.07,0.07711,-0.04621,66.128,27.598,-17.181,7.01,-50.4
+jhu-dark,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,dark,accentString,syntax,#F49400,0.74973,0.16754,65.51,0.06946,0.15247,69.766,28.220,74.946,7.87,-56.1
+jhu-dark,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,dark,accentRegex,syntax,#EA9B79,0.76046,0.10610,44.01,0.07631,0.07372,71.091,25.819,29.904,8.20,-57.7
+jhu-dark,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,dark,accentFunction,syntax,#BFD4FF,0.86856,0.06410,264.59,-0.00605,-0.06381,84.680,2.157,-23.306,12.19,-79.2
+jhu-dark,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,dark,accentFunctionDim,syntax,#D7DFFF,0.90757,0.04463,274.38,0.00341,-0.04450,89.131,3.608,-16.421,13.76,-86.9
+jhu-dark,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,dark,accentType,syntax,#7FDACA,0.82692,0.09082,181.41,-0.09080,-0.00223,81.245,-30.969,-0.646,11.07,-73.6
+jhu-dark,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,dark,accentInterface,syntax,#94CEA7,0.80084,0.08144,154.76,-0.07366,0.03473,78.009,-26.631,13.494,10.09,-68.3
+jhu-dark,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,dark,accentNumber,syntax,#FCD240,0.87608,0.16063,92.10,-0.00589,0.16052,85.586,0.649,73.166,12.50,-80.9
+jhu-dark,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,dark,accentDecorator,syntax,#E28BD3,0.75014,0.13900,333.38,0.12426,-0.06228,68.997,43.500,-23.100,7.68,-54.7
+jhu-dark,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,dark,accentNamespace,syntax,#BDAA9B,0.75018,0.03056,60.62,0.01500,0.02663,70.827,4.388,10.231,8.13,-57.1
+jhu-dark,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,dark,colorError,syntax,#EE6268,0.67456,0.17310,20.44,0.16221,0.06045,59.814,54.446,24.596,5.70,-42.5
+jhu-dark,Johns Hopkins University,Johns Hopkins,US Private Research & STEM,USA,"Baltimore, MD",1876,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.48,-65.1
+usc-light,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,light,bg,context,#F8F2EA,0.96361,0.01244,75.37,0.00314,0.01204,95.748,0.640,4.564,1.00,0.0
+usc-light,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,light,fg,context,#1C1711,0.20849,0.01391,72.02,0.00429,0.01323,8.130,1.237,4.617,16.00,97.3
+usc-light,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,light,accentKeyword,syntax,#540711,0.28818,0.10704,21.47,0.09962,0.03917,15.891,34.015,16.965,13.34,93.2
+usc-light,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,light,accentStorage,syntax,#581766,0.34969,0.13888,319.84,0.10614,-0.08956,22.469,41.028,-31.947,10.92,89.5
+usc-light,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,light,accentString,syntax,#744220,0.43256,0.08404,52.74,0.05088,0.06689,33.381,18.472,29.380,7.43,80.9
+usc-light,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,light,accentRegex,syntax,#9E241B,0.46046,0.15959,29.09,0.13946,0.07758,35.227,48.981,36.330,6.94,78.1
+usc-light,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,light,accentFunction,syntax,#00213F,0.24374,0.06858,249.77,-0.02371,-0.06434,12.263,1.918,-22.433,14.64,95.6
+usc-light,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,light,accentFunctionDim,syntax,#14294C,0.28412,0.06996,260.04,-0.01211,-0.06890,16.778,5.107,-24.159,13.01,93.8
+usc-light,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,light,accentType,syntax,#3E5C42,0.44325,0.05526,147.99,-0.04686,0.02929,36.122,-17.127,11.515,6.71,78.6
+usc-light,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,light,accentInterface,syntax,#006569,0.46044,0.07828,199.55,-0.07376,-0.02620,38.422,-22.994,-9.407,6.16,75.8
+usc-light,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,light,accentNumber,syntax,#542A00,0.33448,0.07993,58.16,0.04217,0.06790,22.093,16.481,31.692,11.05,90.3
+usc-light,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,light,accentDecorator,syntax,#941745,0.43954,0.16023,5.84,0.15940,0.01629,32.569,52.133,6.262,7.65,80.4
+usc-light,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,light,accentNamespace,syntax,#5E494F,0.42943,0.02990,359.49,0.02990,-0.00027,33.371,9.999,-0.156,7.43,81.2
+usc-light,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,light,colorError,syntax,#6B0A28,0.34349,0.12810,10.97,0.12576,0.02437,21.934,41.543,9.823,11.11,89.3
+usc-light,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,6.03,75.4
+usc-dark,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,dark,bg,context,#1E1312,0.20087,0.01850,24.72,0.01681,0.00774,7.095,5.343,2.542,1.00,0.0
+usc-dark,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,dark,fg,context,#F0E0DF,0.91923,0.01765,21.82,0.01638,0.00656,90.398,5.286,2.454,14.20,-89.1
+usc-dark,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,dark,accentKeyword,syntax,#FB9190,0.76869,0.12844,21.04,0.11987,0.04612,71.404,39.777,18.082,8.26,-58.3
+usc-dark,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,dark,accentStorage,syntax,#C987DA,0.71921,0.13642,319.24,0.10333,-0.08907,65.599,39.140,-32.452,6.88,-49.8
+usc-dark,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,dark,accentString,syntax,#DB7B3A,0.67797,0.14253,51.83,0.08809,0.11205,61.251,32.311,50.302,5.97,-44.1
+usc-dark,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,dark,accentRegex,syntax,#FF8B7B,0.75993,0.14350,29.05,0.12544,0.06969,70.288,42.314,28.241,7.98,-56.8
+usc-dark,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,dark,accentFunction,syntax,#96BFFF,0.79917,0.10160,259.11,-0.01919,-0.09977,76.657,2.225,-35.832,9.67,-66.1
+usc-dark,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,dark,accentFunctionDim,syntax,#B5C9FF,0.83957,0.07905,268.85,-0.00159,-0.07903,81.190,5.146,-28.690,11.03,-73.4
+usc-dark,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,dark,accentType,syntax,#BCD180,0.82621,0.10779,120.66,-0.05497,0.09272,80.656,-20.014,37.843,10.86,-72.5
+usc-dark,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,dark,accentInterface,syntax,#79CED2,0.79920,0.08275,199.54,-0.07799,-0.02767,77.791,-24.692,-10.056,10.00,-68.0
+usc-dark,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,dark,accentNumber,syntax,#FED140,0.87605,0.16047,90.76,-0.00214,0.16046,85.527,1.999,73.178,12.45,-80.8
+usc-dark,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,dark,accentDecorator,syntax,#FF7F9F,0.75048,0.15806,5.84,0.15724,0.01608,68.713,51.742,5.978,7.60,-54.5
+usc-dark,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,dark,accentNamespace,syntax,#BFA6AD,0.74901,0.03062,359.07,0.03062,-0.00050,70.432,10.283,-0.245,8.01,-56.6
+usc-dark,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,dark,colorError,syntax,#F55B57,0.67355,0.18992,25.10,0.17199,0.08055,59.515,58.702,34.125,5.63,-42.3
+usc-dark,University of Southern California,USC,US Private Research & STEM,USA,"Los Angeles, CA",1880,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.46,-65.1
 stanford-light,Stanford University,Stanford,US Private Research & STEM,USA,"Stanford, CA",1885,light,bg,context,#F8F1E9,0.96139,0.01305,71.33,0.00418,0.01237,95.476,0.981,4.688,1.00,0.0
 stanford-light,Stanford University,Stanford,US Private Research & STEM,USA,"Stanford, CA",1885,light,fg,context,#1D1710,0.20949,0.01630,71.06,0.00529,0.01542,8.231,1.596,5.348,15.86,96.8
 stanford-light,Stanford University,Stanford,US Private Research & STEM,USA,"Stanford, CA",1885,light,accentKeyword,syntax,#720C17,0.35565,0.13343,23.06,0.12277,0.05226,23.349,42.209,23.542,10.53,87.6
@@ -809,6 +1169,36 @@ caltech-dark,Caltech,Caltech,US Private Research & STEM,USA,"Pasadena, CA",1891,
 caltech-dark,Caltech,Caltech,US Private Research & STEM,USA,"Pasadena, CA",1891,dark,accentNamespace,syntax,#A0B0C1,0.75027,0.03034,249.85,-0.01045,-0.02849,71.128,-1.966,-10.526,8.00,-57.2
 caltech-dark,Caltech,Caltech,US Private Research & STEM,USA,"Pasadena, CA",1891,dark,colorError,syntax,#F55A5F,0.67373,0.19005,21.95,0.17627,0.07104,59.486,59.598,29.544,5.49,-41.9
 caltech-dark,Caltech,Caltech,US Private Research & STEM,USA,"Pasadena, CA",1891,dark,colorWarning,syntax,#F7AA69,0.79936,0.12196,59.91,0.06114,0.10553,75.791,21.726,44.545,9.21,-64.6
+cmu-light,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,light,bg,context,#F6F1EB,0.96036,0.00964,72.66,0.00287,0.00920,95.372,0.639,3.483,1.00,0.0
+cmu-light,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,light,fg,context,#1C1712,0.20881,0.01247,67.05,0.00486,0.01149,8.159,1.429,4.063,15.84,96.6
+cmu-light,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,light,accentKeyword,syntax,#96031F,0.42630,0.17003,22.08,0.15755,0.06393,30.997,54.108,29.130,8.03,80.4
+cmu-light,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,light,accentStorage,syntax,#541A6A,0.34969,0.13734,314.95,0.09703,-0.09719,22.530,39.713,-34.494,10.79,88.9
+cmu-light,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,light,accentString,syntax,#046A6D,0.47637,0.08004,198.27,-0.07601,-0.02509,40.307,-23.917,-9.012,5.69,73.3
+cmu-light,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,light,accentRegex,syntax,#9E212A,0.45974,0.16018,22.88,0.14758,0.06229,35.056,50.517,27.336,6.91,77.6
+cmu-light,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,light,accentFunction,syntax,#002E83,0.33842,0.15012,261.41,-0.02243,-0.14844,22.274,23.271,-51.182,10.88,89.0
+cmu-light,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,light,accentFunctionDim,syntax,#2C3982,0.37772,0.12320,271.62,0.00349,-0.12315,26.941,19.689,-42.876,9.28,85.9
+cmu-light,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,light,accentType,syntax,#305122,0.39715,0.08302,137.23,-0.06094,0.05638,30.946,-22.144,23.660,8.04,82.7
+cmu-light,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,light,accentInterface,syntax,#196464,0.45968,0.07010,194.99,-0.06772,-0.01813,38.270,-21.803,-6.523,6.13,75.6
+cmu-light,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,light,accentNumber,syntax,#815C06,0.50078,0.10142,80.60,0.01656,0.10006,41.745,8.148,47.930,5.39,72.1
+cmu-light,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,light,accentDecorator,syntax,#8B1F62,0.43977,0.15721,347.59,0.15354,-0.03379,32.596,50.395,-12.816,7.57,80.1
+cmu-light,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,light,accentNamespace,syntax,#465061,0.42917,0.03106,261.02,-0.00485,-0.03068,33.778,0.387,-11.208,7.25,80.2
+cmu-light,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,light,colorError,syntax,#690C2D,0.34206,0.12569,7.09,0.12473,0.01551,21.787,40.873,6.042,11.06,88.8
+cmu-light,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,5.97,74.8
+cmu-dark,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,dark,bg,context,#0C1721,0.19944,0.02577,246.90,-0.01011,-0.02370,7.233,-1.172,-8.462,1.00,0.0
+cmu-dark,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,dark,fg,context,#DCE6F0,0.92033,0.01735,248.02,-0.00650,-0.01609,90.825,-1.441,-6.000,14.33,-89.9
+cmu-dark,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,dark,accentKeyword,syntax,#FB9194,0.76961,0.12815,18.68,0.12140,0.04104,71.489,40.197,15.984,8.26,-58.4
+cmu-dark,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,dark,accentStorage,syntax,#C489DE,0.71911,0.13490,315.05,0.09547,-0.09532,65.672,37.354,-34.602,6.88,-49.8
+cmu-dark,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,dark,accentString,syntax,#60BFC3,0.74860,0.08999,199.06,-0.08506,-0.02939,72.018,-26.900,-10.647,8.39,-59.1
+cmu-dark,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,dark,accentRegex,syntax,#FF8A86,0.76061,0.14256,23.03,0.13120,0.05576,70.290,43.791,22.175,7.96,-56.7
+cmu-dark,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,dark,accentFunction,syntax,#8EC6E9,0.80035,0.07640,236.43,-0.04225,-0.06366,77.292,-9.410,-23.081,9.83,-67.1
+cmu-dark,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,dark,accentFunctionDim,syntax,#A0D0FC,0.83932,0.07982,246.57,-0.03174,-0.07324,81.626,-5.112,-26.541,11.14,-74.1
+cmu-dark,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,dark,accentType,syntax,#6F9058,0.61394,0.08855,133.27,-0.06070,0.06447,56.118,-22.188,26.099,5.00,-37.0
+cmu-dark,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,dark,accentInterface,syntax,#7DCECE,0.79975,0.07949,195.68,-0.07653,-0.02148,77.849,-24.698,-7.800,9.99,-68.0
+cmu-dark,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,dark,accentNumber,syntax,#FFCD7A,0.87511,0.11593,79.02,0.02208,0.11381,85.165,8.015,47.689,12.30,-80.1
+cmu-dark,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,dark,accentDecorator,syntax,#F481C0,0.74946,0.15729,347.53,0.15358,-0.03397,68.565,51.327,-12.954,7.54,-54.2
+cmu-dark,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,dark,accentNamespace,syntax,#A3AFC1,0.75040,0.02921,258.37,-0.00589,-0.02861,71.075,-0.447,-10.583,8.15,-57.5
+cmu-dark,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,dark,colorError,syntax,#F55A60,0.67391,0.18996,21.58,0.17664,0.06987,59.503,59.662,28.993,5.61,-42.3
+cmu-dark,Carnegie Mellon University,CMU,US Private Research & STEM,USA,"Pittsburgh, PA",1900,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.44,-65.0
 georgetown-light,Georgetown University,Georgetown,Liberal Arts & Regional Gems,USA,"Washington, DC",1789,light,bg,context,#F0F3F7,0.96301,0.00625,255.48,-0.00157,-0.00605,95.723,-0.275,-2.269,1.00,0.0
 georgetown-light,Georgetown University,Georgetown,Liberal Arts & Regional Gems,USA,"Washington, DC",1789,light,fg,context,#15191D,0.21100,0.01001,248.30,-0.00370,-0.00930,8.511,-0.714,-3.428,15.87,97.1
 georgetown-light,Georgetown University,Georgetown,Liberal Arts & Regional Gems,USA,"Washington, DC",1789,light,accentKeyword,syntax,#284E85,0.42504,0.10156,257.78,-0.02150,-0.09926,33.120,5.852,-34.833,7.49,81.2
@@ -869,6 +1259,36 @@ williams-dark,Williams College,Williams,Liberal Arts & Regional Gems,USA,"Willia
 williams-dark,Williams College,Williams,Liberal Arts & Regional Gems,USA,"Williamstown, MA",1793,dark,accentNamespace,syntax,#B1A8C9,0.74998,0.04781,297.72,0.02224,-0.04232,70.573,9.707,-15.631,8.09,-56.8
 williams-dark,Williams College,Williams,Liberal Arts & Regional Gems,USA,"Williamstown, MA",1793,dark,colorError,syntax,#F55A60,0.67391,0.18996,21.58,0.17664,0.06987,59.503,59.662,28.993,5.66,-42.3
 williams-dark,Williams College,Williams,Liberal Arts & Regional Gems,USA,"Williamstown, MA",1793,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.51,-65.1
+amherst-light,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,light,bg,context,#F5F2ED,0.96208,0.00739,80.72,0.00119,0.00730,95.594,0.133,2.760,1.00,0.0
+amherst-light,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,light,fg,context,#1B1812,0.21037,0.01230,84.53,0.00117,0.01225,8.394,0.154,4.390,15.86,96.9
+amherst-light,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,light,accentKeyword,syntax,#593B87,0.42487,0.12307,299.34,0.06030,-0.10729,31.809,30.408,-37.943,7.84,82.1
+amherst-light,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,light,accentStorage,syntax,#28204D,0.27927,0.07982,288.29,0.02505,-0.07579,15.591,16.970,-26.654,13.39,94.1
+amherst-light,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,light,accentString,syntax,#822414,0.40783,0.13136,32.17,0.11119,0.06995,29.562,39.371,32.767,8.50,83.3
+amherst-light,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,light,accentRegex,syntax,#8B3F00,0.45982,0.12104,50.30,0.07731,0.09313,36.072,29.320,46.654,6.70,77.8
+amherst-light,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,light,accentFunction,syntax,#004A64,0.38321,0.07652,230.18,-0.04900,-0.05877,28.946,-9.587,-20.804,8.69,84.4
+amherst-light,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,light,accentFunctionDim,syntax,#265370,0.42408,0.06915,239.51,-0.03508,-0.05959,33.494,-5.607,-21.220,7.36,80.7
+amherst-light,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,light,accentType,syntax,#485935,0.43962,0.05965,129.16,-0.03767,0.04625,35.556,-13.771,18.736,6.82,78.9
+amherst-light,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,light,accentInterface,syntax,#00646D,0.45937,0.07852,205.57,-0.07084,-0.03389,38.230,-21.057,-12.153,6.18,75.8
+amherst-light,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,light,accentNumber,syntax,#7F5D06,0.50048,0.10079,83.04,0.01221,0.10005,41.775,6.593,47.845,5.42,72.4
+amherst-light,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,light,accentDecorator,syntax,#842374,0.44035,0.15983,335.43,0.14536,-0.06645,32.634,49.752,-24.354,7.60,80.6
+amherst-light,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,light,accentNamespace,syntax,#4E4E60,0.43089,0.02955,285.09,0.00769,-0.02853,33.801,4.255,-10.480,7.28,80.6
+amherst-light,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,light,colorError,syntax,#690C2D,0.34206,0.12569,7.09,0.12473,0.01551,21.787,40.873,6.042,11.12,89.2
+amherst-light,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,6.00,75.1
+amherst-dark,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,dark,bg,context,#181328,0.20456,0.04127,293.36,0.01636,-0.03789,7.345,8.661,-13.485,1.00,0.0
+amherst-dark,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,dark,fg,context,#E5E3F0,0.92119,0.01761,293.12,0.00691,-0.01619,90.728,3.041,-6.069,14.26,-89.7
+amherst-dark,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,dark,accentKeyword,syntax,#CCC0FF,0.83917,0.08789,293.14,0.03454,-0.08082,80.603,16.767,-29.444,10.80,-72.4
+amherst-dark,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,dark,accentStorage,syntax,#B392E2,0.72009,0.11842,302.50,0.06362,-0.09988,66.238,28.150,-36.064,6.99,-50.5
+amherst-dark,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,dark,accentString,syntax,#F09358,0.74852,0.13492,51.73,0.08357,0.10592,69.542,29.826,45.504,7.76,-55.5
+amherst-dark,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,dark,accentRegex,syntax,#F6955B,0.75966,0.13816,50.33,0.08819,0.10635,70.766,31.366,45.606,8.06,-57.3
+amherst-dark,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,dark,accentFunction,syntax,#71B6B3,0.72975,0.07005,192.19,-0.06847,-0.01480,69.625,-22.433,-5.356,7.78,-55.4
+amherst-dark,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,dark,accentFunctionDim,syntax,#73C4CB,0.77115,0.07998,202.79,-0.07373,-0.03099,74.466,-22.942,-11.264,9.02,-62.7
+amherst-dark,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,dark,accentType,syntax,#9AD996,0.82569,0.11226,143.06,-0.08973,0.06746,81.124,-32.900,26.795,10.96,-73.3
+amherst-dark,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,dark,accentInterface,syntax,#78CED8,0.80078,0.08439,205.25,-0.07632,-0.03600,77.928,-23.401,-13.081,9.99,-68.2
+amherst-dark,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,dark,accentNumber,syntax,#F8B03F,0.80696,0.14873,74.34,0.04014,0.14321,76.903,16.560,65.058,9.70,-66.6
+amherst-dark,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,dark,accentDecorator,syntax,#EB84D5,0.75070,0.15942,335.51,0.14508,-0.06608,68.731,50.227,-24.521,7.56,-54.3
+amherst-dark,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,dark,accentNamespace,syntax,#ABACC1,0.75036,0.02997,283.48,0.00699,-0.02914,70.880,3.833,-10.811,8.09,-57.1
+amherst-dark,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,dark,colorError,syntax,#F55A61,0.67410,0.18988,21.21,0.17702,0.06870,59.520,59.726,28.442,5.61,-42.2
+amherst-dark,Amherst College,Amherst,Liberal Arts & Regional Gems,USA,"Amherst, MA",1821,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.42,-65.0
 notredame-light,University of Notre Dame,Notre Dame,Liberal Arts & Regional Gems,USA,"Notre Dame, IN",1842,light,bg,context,#F8F4EC,0.96804,0.01144,84.58,0.00108,0.01139,96.292,-0.039,4.319,1.00,0.0
 notredame-light,University of Notre Dame,Notre Dame,Liberal Arts & Regional Gems,USA,"Notre Dame, IN",1842,light,fg,context,#1B1811,0.21005,0.01399,87.55,0.00060,0.01398,8.366,-0.042,4.944,16.15,98.1
 notredame-light,University of Notre Dame,Notre Dame,Liberal Arts & Regional Gems,USA,"Notre Dame, IN",1842,light,accentKeyword,syntax,#2E4A30,0.37874,0.05540,146.07,-0.04597,0.03092,28.621,-16.850,12.281,8.95,86.3
@@ -959,6 +1379,36 @@ rice-dark,Rice University,Rice,Liberal Arts & Regional Gems,USA,"Houston, TX",19
 rice-dark,Rice University,Rice,Liberal Arts & Regional Gems,USA,"Houston, TX",1912,dark,accentNamespace,syntax,#A6AEC2,0.75093,0.03010,268.28,-0.00090,-0.03008,71.059,1.295,-11.133,8.22,-57.5
 rice-dark,Rice University,Rice,Liberal Arts & Regional Gems,USA,"Houston, TX",1912,dark,colorError,syntax,#D35D6E,0.62962,0.14929,13.56,0.14513,0.03500,54.873,48.034,13.700,4.83,-36.1
 rice-dark,Rice University,Rice,Liberal Arts & Regional Gems,USA,"Houston, TX",1912,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.51,-65.1
+dalhousie-light,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,light,bg,context,#F5F3EE,0.96431,0.00698,88.64,0.00017,0.00698,95.867,-0.203,2.640,1.00,0.0
+dalhousie-light,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,light,fg,context,#1A1813,0.20948,0.01004,88.80,0.00021,0.01004,8.306,-0.167,3.625,15.99,97.4
+dalhousie-light,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,light,accentKeyword,syntax,#124F8D,0.42552,0.11865,253.15,-0.03440,-0.11356,33.227,5.570,-39.610,7.49,81.1
+dalhousie-light,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,light,accentStorage,syntax,#55186B,0.34980,0.14126,315.32,0.10045,-0.09932,22.466,41.014,-35.237,10.95,89.7
+dalhousie-light,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,light,accentString,syntax,#9E330F,0.47533,0.14866,37.05,0.11865,0.08956,37.250,42.893,43.764,6.45,76.7
+dalhousie-light,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,light,accentRegex,syntax,#962A46,0.45953,0.14372,9.54,0.14173,0.02382,35.171,46.677,9.322,6.97,78.7
+dalhousie-light,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,light,accentFunction,syntax,#033844,0.31507,0.05481,217.99,-0.04320,-0.03373,21.074,-11.212,-12.044,11.46,91.3
+dalhousie-light,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,light,accentFunctionDim,syntax,#004258,0.35415,0.06929,228.31,-0.04608,-0.05175,25.565,-9.566,-18.340,9.86,87.7
+dalhousie-light,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,light,accentType,syntax,#126A44,0.46509,0.10056,158.77,-0.09374,0.03642,39.332,-34.597,14.439,5.97,75.2
+dalhousie-light,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,light,accentInterface,syntax,#006569,0.46044,0.07828,199.55,-0.07376,-0.02620,38.422,-22.994,-9.407,6.18,76.0
+dalhousie-light,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,light,accentNumber,syntax,#5A4625,0.40741,0.05560,78.73,0.01087,0.05453,31.086,4.009,22.963,8.10,83.5
+dalhousie-light,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,light,accentDecorator,syntax,#8B1F62,0.43977,0.15721,347.59,0.15354,-0.03379,32.596,50.395,-12.816,7.67,81.0
+dalhousie-light,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,light,accentNamespace,syntax,#445160,0.42957,0.02993,252.18,-0.00916,-0.02850,33.895,-1.209,-10.414,7.31,80.9
+dalhousie-light,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,light,colorError,syntax,#700009,0.34310,0.13954,26.27,0.12513,0.06176,21.820,43.860,29.426,11.19,88.9
+dalhousie-light,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,6.05,75.6
+dalhousie-dark,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,dark,bg,context,#171511,0.19656,0.00841,84.58,0.00079,0.00837,6.856,0.054,2.686,1.00,0.0
+dalhousie-dark,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,dark,fg,context,#E8E4DC,0.91978,0.01158,84.58,0.00109,0.01153,90.693,-0.037,4.375,14.38,-89.7
+dalhousie-dark,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,dark,accentKeyword,syntax,#3BA3FF,0.69932,0.16453,249.29,-0.05819,-0.15390,65.232,1.086,-54.014,6.83,-49.6
+dalhousie-dark,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,dark,accentStorage,syntax,#9980C2,0.64820,0.09989,301.07,0.05155,-0.08556,58.137,23.099,-30.931,5.40,-39.7
+dalhousie-dark,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,dark,accentString,syntax,#FB8969,0.74850,0.14628,36.57,0.11748,0.08715,69.059,40.418,36.339,7.71,-55.0
+dalhousie-dark,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,dark,accentRegex,syntax,#FD889C,0.76020,0.14272,10.20,0.14047,0.02527,70.103,46.317,9.613,7.97,-56.5
+dalhousie-dark,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,dark,accentFunction,syntax,#81B1C0,0.73153,0.05526,219.15,-0.04286,-0.03489,69.409,-12.212,-12.751,7.80,-55.2
+dalhousie-dark,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,dark,accentFunctionDim,syntax,#7EBFDE,0.77218,0.07963,229.63,-0.05158,-0.06067,74.170,-12.675,-21.969,9.02,-62.4
+dalhousie-dark,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,dark,accentType,syntax,#8BDAAF,0.82540,0.09938,159.40,-0.09303,0.03496,81.140,-33.524,13.601,11.07,-73.5
+dalhousie-dark,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,dark,accentInterface,syntax,#79CED2,0.79920,0.08275,199.54,-0.07799,-0.02767,77.791,-24.692,-10.056,10.05,-68.1
+dalhousie-dark,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,dark,accentNumber,syntax,#F9D342,0.87532,0.15962,93.72,-0.01034,0.15928,85.567,-1.038,72.346,12.52,-81.0
+dalhousie-dark,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,dark,accentDecorator,syntax,#F481C0,0.74946,0.15729,347.53,0.15358,-0.03397,68.565,51.327,-12.954,7.60,-54.3
+dalhousie-dark,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,dark,accentNamespace,syntax,#A1B0C1,0.75101,0.02970,251.53,-0.00941,-0.02817,71.199,-1.642,-10.413,8.24,-57.8
+dalhousie-dark,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,dark,colorError,syntax,#D25C77,0.62911,0.15057,8.22,0.14903,0.02153,54.753,49.050,8.200,4.81,-36.0
+dalhousie-dark,Dalhousie University,Dalhousie,Canadian Universities,Canada,"Halifax, NS",1818,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.51,-65.1
 mcgill-light,McGill University,McGill,Canadian Universities,Canada,"Montreal, QC",1821,light,bg,context,#F7F1F0,0.96251,0.00661,28.83,0.00579,0.00319,95.571,1.831,1.193,1.00,0.0
 mcgill-light,McGill University,McGill,Canadian Universities,Canada,"Montreal, QC",1821,light,fg,context,#1D1716,0.21150,0.00990,29.07,0.00866,0.00481,8.411,2.781,1.796,15.84,96.9
 mcgill-light,McGill University,McGill,Canadian Universities,Canada,"Montreal, QC",1821,light,accentKeyword,syntax,#960419,0.42596,0.17006,24.21,0.15511,0.06973,30.981,53.773,32.760,8.07,80.8
@@ -1049,6 +1499,36 @@ queens-dark,Queen's University,Queen's,Canadian Universities,Canada,"Kingston, O
 queens-dark,Queen's University,Queen's,Canadian Universities,Canada,"Kingston, ON",1841,dark,accentNamespace,syntax,#BDAA9C,0.75044,0.02964,58.68,0.01540,0.02532,70.850,4.545,9.715,8.15,-57.2
 queens-dark,Queen's University,Queen's,Canadian Universities,Canada,"Kingston, ON",1841,dark,colorError,syntax,#D15C7A,0.62849,0.15006,6.41,0.14912,0.01676,54.677,49.025,6.298,4.79,-35.8
 queens-dark,Queen's University,Queen's,Canadian Universities,Canada,"Kingston, ON",1841,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.50,-65.1
+uottawa-light,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,light,bg,context,#F4F1EE,0.95962,0.00515,67.76,0.00195,0.00477,95.294,0.478,1.798,1.00,0.0
+uottawa-light,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,light,fg,context,#1B1714,0.20823,0.00866,59.15,0.00444,0.00744,8.096,1.313,2.686,15.83,96.5
+uottawa-light,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,light,accentKeyword,syntax,#940B1F,0.42530,0.16514,22.70,0.15234,0.06374,30.964,52.388,28.965,8.02,80.6
+uottawa-light,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,light,accentStorage,syntax,#581765,0.34898,0.13793,320.37,0.10623,-0.08798,22.399,40.821,-31.404,10.82,88.8
+uottawa-light,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,light,accentString,syntax,#046A6F,0.47719,0.08016,200.58,-0.07504,-0.02818,40.378,-23.232,-10.123,5.66,73.1
+uottawa-light,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,light,accentRegex,syntax,#8D3D00,0.45984,0.12463,48.31,0.08288,0.09307,35.988,31.227,46.780,6.67,77.3
+uottawa-light,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,light,accentFunction,syntax,#002336,0.24290,0.05338,237.42,-0.02874,-0.04498,12.405,-3.892,-15.842,14.43,94.8
+uottawa-light,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,light,accentFunctionDim,syntax,#062B4A,0.28236,0.06982,248.74,-0.02531,-0.06507,16.799,0.566,-22.795,12.85,92.9
+uottawa-light,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,light,accentType,syntax,#2B4313,0.35130,0.07862,131.89,-0.05249,0.05853,25.487,-18.715,25.417,9.75,87.2
+uottawa-light,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,light,accentInterface,syntax,#00646D,0.45937,0.07852,205.57,-0.07084,-0.03389,38.230,-21.057,-12.153,6.13,75.2
+uottawa-light,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,light,accentNumber,syntax,#835B06,0.50116,0.10225,78.20,0.02092,0.10009,41.723,9.698,48.025,5.39,72.0
+uottawa-light,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,light,accentDecorator,syntax,#8B1F62,0.43977,0.15721,347.59,0.15354,-0.03379,32.596,50.395,-12.816,7.56,80.0
+uottawa-light,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,light,accentNamespace,syntax,#5D4C40,0.43040,0.02996,57.03,0.01631,0.02514,33.703,5.105,9.820,7.25,80.1
+uottawa-light,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,light,colorError,syntax,#90001D,0.41263,0.16621,21.92,0.15419,0.06206,29.463,52.940,28.330,8.47,81.5
+uottawa-light,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,5.96,74.6
+uottawa-dark,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,dark,bg,context,#1C1414,0.20137,0.01319,18.31,0.01252,0.00414,7.206,3.975,1.402,1.00,0.0
+uottawa-dark,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,dark,fg,context,#EFE1E0,0.92062,0.01542,22.41,0.01426,0.00588,90.590,4.593,2.199,14.24,-89.5
+uottawa-dark,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,dark,accentKeyword,syntax,#FB909A,0.76948,0.12941,14.59,0.12523,0.03260,71.415,41.359,12.550,8.24,-58.3
+uottawa-dark,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,dark,accentStorage,syntax,#CA87D8,0.71940,0.13482,320.51,0.10405,-0.08573,65.627,39.050,-31.289,6.87,-49.8
+uottawa-dark,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,dark,accentString,syntax,#5DC0C2,0.74946,0.09270,197.13,-0.08859,-0.02731,72.174,-28.293,-9.879,8.44,-59.4
+uottawa-dark,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,dark,accentRegex,syntax,#F8945C,0.76058,0.14024,48.82,0.09234,0.10556,70.812,32.741,45.213,8.09,-57.5
+uottawa-dark,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,dark,accentFunction,syntax,#9BD4FA,0.84412,0.07921,238.11,-0.04185,-0.06725,82.354,-9.032,-24.393,11.38,-75.4
+uottawa-dark,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,dark,accentFunctionDim,syntax,#BBDDFF,0.88414,0.05934,248.50,-0.02175,-0.05521,86.749,-3.738,-20.195,12.85,-82.8
+uottawa-dark,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,dark,accentType,syntax,#A7D1BA,0.82415,0.05473,160.97,-0.05174,0.01785,80.382,-18.383,6.886,10.76,-72.1
+uottawa-dark,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,dark,accentInterface,syntax,#78CED8,0.80078,0.08439,205.25,-0.07632,-0.03600,77.928,-23.401,-13.081,10.02,-68.2
+uottawa-dark,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,dark,accentNumber,syntax,#FFCF60,0.87580,0.13856,85.71,0.01037,0.13817,85.370,5.081,60.172,12.37,-80.5
+uottawa-dark,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,dark,accentDecorator,syntax,#F481C0,0.74946,0.15729,347.53,0.15358,-0.03397,68.565,51.327,-12.954,7.54,-54.2
+uottawa-dark,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,dark,accentNamespace,syntax,#BDAA9C,0.75044,0.02964,58.68,0.01540,0.02532,70.850,4.545,9.715,8.10,-57.2
+uottawa-dark,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,dark,colorError,syntax,#F55A5F,0.67373,0.19005,21.95,0.17627,0.07104,59.486,59.598,29.544,5.61,-42.3
+uottawa-dark,University of Ottawa,uOttawa,Canadian Universities,Canada,"Ottawa, ON",1848,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.44,-65.1
 western-light,Western University,Western,Canadian Universities,Canada,"London, ON",1878,light,bg,context,#F3F2F8,0.96362,0.00803,293.91,0.00325,-0.00734,95.721,1.401,-2.764,1.00,0.0
 western-light,Western University,Western,Canadian Universities,Canada,"London, ON",1878,light,fg,context,#18171D,0.20847,0.01184,292.99,0.00462,-0.01090,8.090,2.131,-4.028,16.00,97.2
 western-light,Western University,Western,Canadian Universities,Canada,"London, ON",1878,light,accentKeyword,syntax,#5C3592,0.42631,0.14709,299.39,0.07219,-0.12815,31.571,37.681,-45.084,7.93,82.4
@@ -1079,6 +1559,36 @@ western-dark,Western University,Western,Canadian Universities,Canada,"London, ON
 western-dark,Western University,Western,Canadian Universities,Canada,"London, ON",1878,dark,accentNamespace,syntax,#A5AEC2,0.75016,0.03048,266.30,-0.00197,-0.03042,70.985,0.968,-11.252,8.11,-57.3
 western-dark,Western University,Western,Canadian Universities,Canada,"London, ON",1878,dark,colorError,syntax,#F55A60,0.67391,0.18996,21.58,0.17664,0.06987,59.503,59.662,28.993,5.60,-42.2
 western-dark,Western University,Western,Canadian Universities,Canada,"London, ON",1878,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.42,-65.0
+mcmaster-light,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,light,bg,context,#F7F0F3,0.96141,0.00847,349.24,0.00832,-0.00158,95.399,2.862,-0.612,1.00,0.0
+mcmaster-light,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,light,fg,context,#1D1619,0.21002,0.01256,350.60,0.01239,-0.00205,8.176,4.214,-0.796,15.84,96.7
+mcmaster-light,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,light,accentKeyword,syntax,#671B38,0.35514,0.11091,1.31,0.11088,0.00254,23.518,36.206,0.823,10.45,88.2
+mcmaster-light,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,light,accentStorage,syntax,#4C1E72,0.34945,0.13803,305.32,0.07979,-0.11262,22.584,37.963,-39.639,10.78,89.1
+mcmaster-light,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,light,accentString,syntax,#963E08,0.47631,0.13169,45.02,0.09309,0.09314,37.750,34.532,45.879,6.26,75.7
+mcmaster-light,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,light,accentRegex,syntax,#963121,0.46048,0.13853,31.62,0.11796,0.07263,35.582,41.422,32.850,6.78,77.6
+mcmaster-light,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,light,accentFunction,syntax,#002040,0.24175,0.07145,251.57,-0.02258,-0.06779,11.978,3.173,-23.594,14.61,95.1
+mcmaster-light,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,light,accentFunctionDim,syntax,#15284B,0.28134,0.06928,261.54,-0.01019,-0.06853,16.429,5.627,-24.032,13.02,93.4
+mcmaster-light,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,light,accentType,syntax,#3B653F,0.46499,0.07699,146.40,-0.06413,0.04261,38.891,-23.539,17.042,6.00,75.2
+mcmaster-light,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,light,accentInterface,syntax,#00656B,0.46127,0.07848,201.94,-0.07280,-0.02932,38.495,-22.295,-10.524,6.09,75.2
+mcmaster-light,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,light,accentNumber,syntax,#553515,0.36059,0.06474,63.01,0.02938,0.05769,25.358,10.999,25.448,9.82,87.4
+mcmaster-light,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,light,accentDecorator,syntax,#8E1C5E,0.44092,0.16037,350.62,0.15822,-0.02615,32.681,51.634,-10.050,7.55,80.0
+mcmaster-light,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,light,accentNamespace,syntax,#40535E,0.43064,0.02979,233.76,-0.01761,-0.02403,34.158,-4.370,-8.786,7.15,79.9
+mcmaster-light,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,light,colorError,syntax,#6A0C2C,0.34378,0.12640,8.15,0.12512,0.01792,21.980,41.082,7.046,11.00,88.7
+mcmaster-light,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,5.97,74.8
+mcmaster-dark,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,dark,bg,context,#1F1117,0.19941,0.02563,352.35,0.02540,-0.00341,6.812,8.238,-1.236,1.00,0.0
+mcmaster-dark,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,dark,fg,context,#EFE0E6,0.92037,0.01816,351.18,0.01795,-0.00279,90.494,6.138,-1.084,14.32,-89.4
+mcmaster-dark,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,dark,accentKeyword,syntax,#CE84A6,0.69964,0.10020,350.92,0.09895,-0.01581,63.656,33.179,-6.118,6.50,-47.1
+mcmaster-dark,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,dark,accentStorage,syntax,#B98CE8,0.71795,0.13760,305.73,0.08034,-0.11171,65.668,34.619,-40.225,6.93,-49.9
+mcmaster-dark,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,dark,accentString,syntax,#F68E5E,0.74844,0.14122,44.78,0.10024,0.09948,69.293,35.187,42.307,7.78,-55.3
+mcmaster-dark,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,dark,accentRegex,syntax,#FD8D79,0.76012,0.13966,31.22,0.11944,0.07239,70.398,40.396,29.432,8.05,-56.9
+mcmaster-dark,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,dark,accentFunction,syntax,#6EB2D3,0.73073,0.08392,230.47,-0.05341,-0.06473,69.367,-12.662,-23.359,7.80,-55.2
+mcmaster-dark,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,dark,accentFunctionDim,syntax,#85BCE3,0.77131,0.08020,239.99,-0.04011,-0.06945,73.867,-7.985,-25.110,8.95,-61.9
+mcmaster-dark,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,dark,accentType,syntax,#91BE92,0.75742,0.07849,145.30,-0.06453,0.04468,72.840,-23.603,17.485,8.68,-60.2
+mcmaster-dark,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,dark,accentInterface,syntax,#79CED5,0.80021,0.08307,202.46,-0.07677,-0.03174,77.880,-23.932,-11.536,10.08,-68.2
+mcmaster-dark,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,dark,accentNumber,syntax,#FFCD7F,0.87583,0.11145,77.62,0.02389,0.10886,85.230,8.442,45.298,12.42,-80.3
+mcmaster-dark,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,dark,accentDecorator,syntax,#F880BB,0.75135,0.15982,350.83,0.15778,-0.02547,68.742,52.402,-9.834,7.64,-54.6
+mcmaster-dark,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,dark,accentNamespace,syntax,#9CB2BE,0.75063,0.02987,231.60,-0.01855,-0.02341,71.300,-4.994,-8.650,8.28,-57.9
+mcmaster-dark,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,dark,colorError,syntax,#F55A5F,0.67373,0.19005,21.95,0.17627,0.07104,59.486,59.598,29.544,5.66,-42.3
+mcmaster-dark,McMaster University,McMaster,Canadian Universities,Canada,"Hamilton, ON",1887,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.51,-65.1
 ualberta-light,University of Alberta,UAlberta,Canadian Universities,Canada,"Edmonton, AB",1908,light,bg,context,#F0F4EE,0.96246,0.00899,134.87,-0.00634,0.00637,95.747,-2.385,2.421,1.00,0.0
 ualberta-light,University of Alberta,UAlberta,Canadian Universities,Canada,"Edmonton, AB",1908,light,fg,context,#161A14,0.21128,0.01305,135.15,-0.00925,0.00921,8.652,-3.438,3.426,15.84,97.1
 ualberta-light,University of Alberta,UAlberta,Canadian Universities,Canada,"Edmonton, AB",1908,light,accentKeyword,syntax,#265B36,0.42444,0.08356,151.18,-0.07320,0.04028,34.314,-26.987,16.146,7.17,80.1
@@ -1199,3 +1709,93 @@ uvic-dark,University of Victoria,UVic,Canadian Universities,Canada,"Victoria, BC
 uvic-dark,University of Victoria,UVic,Canadian Universities,Canada,"Victoria, BC",1963,dark,accentNamespace,syntax,#8DB4D0,0.75129,0.05837,239.76,-0.02940,-0.05043,71.458,-6.425,-18.383,8.23,-58.0
 uvic-dark,University of Victoria,UVic,Canadian Universities,Canada,"Victoria, BC",1963,dark,colorError,syntax,#F35F58,0.67544,0.18358,25.91,0.16512,0.08022,59.843,56.391,33.897,5.67,-42.5
 uvic-dark,University of Victoria,UVic,Canadian Universities,Canada,"Victoria, BC",1963,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.42,-65.0
+sfu-light,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,light,bg,context,#EFF3F4,0.96140,0.00448,214.33,-0.00370,-0.00253,95.573,-1.145,-0.945,1.00,0.0
+sfu-light,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,light,fg,context,#14191B,0.20909,0.00855,223.90,-0.00616,-0.00593,8.334,-1.761,-2.191,15.87,96.9
+sfu-light,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,light,accentKeyword,syntax,#950424,0.42536,0.16853,20.16,0.15820,0.05809,30.892,53.884,25.787,8.10,80.9
+sfu-light,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,light,accentStorage,syntax,#531A6C,0.34974,0.13900,313.32,0.09537,-0.10112,22.516,39.939,-35.822,10.85,89.3
+sfu-light,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,light,accentString,syntax,#096975,0.47761,0.08007,208.86,-0.07013,-0.03865,40.319,-20.273,-13.858,5.71,73.7
+sfu-light,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,light,accentRegex,syntax,#8D3D00,0.45984,0.12463,48.31,0.08288,0.09307,35.988,31.227,46.780,6.71,77.8
+sfu-light,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,light,accentFunction,syntax,#02354E,0.31188,0.06657,237.04,-0.03622,-0.05586,20.475,-5.172,-19.696,11.59,91.2
+sfu-light,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,light,accentFunctionDim,syntax,#183E5D,0.35256,0.06918,246.18,-0.02794,-0.06329,25.043,-1.920,-22.368,9.97,87.9
+sfu-light,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,light,accentType,syntax,#32582F,0.42049,0.07896,142.47,-0.06261,0.04810,33.695,-22.965,19.606,7.31,80.5
+sfu-light,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,light,accentInterface,syntax,#116751,0.45981,0.08511,170.42,-0.08392,0.01416,38.574,-30.074,5.553,6.10,75.5
+sfu-light,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,light,accentNumber,syntax,#825B07,0.49995,0.10144,78.79,0.01972,0.09950,41.602,9.240,47.617,5.45,72.6
+sfu-light,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,light,accentDecorator,syntax,#8D1D60,0.44077,0.15968,349.25,0.15688,-0.02978,32.673,51.309,-11.372,7.59,80.3
+sfu-light,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,light,accentNamespace,syntax,#3F535D,0.42950,0.02973,229.92,-0.01915,-0.02275,34.052,-4.984,-8.322,7.21,80.3
+sfu-light,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,light,colorError,syntax,#90001E,0.41277,0.16615,21.55,0.15454,0.06103,29.476,52.975,27.713,8.53,82.0
+sfu-light,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,6.00,75.1
+sfu-dark,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,dark,bg,context,#1A1414,0.19867,0.00985,18.01,0.00936,0.00304,6.959,2.873,1.012,1.00,0.0
+sfu-dark,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,dark,fg,context,#EEE1E2,0.92036,0.01427,12.04,0.01396,0.00298,90.560,4.590,1.098,14.30,-89.5
+sfu-dark,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,dark,accentKeyword,syntax,#FB9098,0.76899,0.12936,15.79,0.12448,0.03519,71.370,41.139,13.597,8.27,-58.3
+sfu-dark,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,dark,accentStorage,syntax,#C389E1,0.71946,0.13790,313.50,0.09493,-0.10002,65.695,37.681,-36.238,6.92,-49.9
+sfu-dark,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,dark,accentString,syntax,#62BECD,0.75062,0.08999,209.32,-0.07847,-0.04407,72.114,-23.251,-15.953,8.46,-59.3
+sfu-dark,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,dark,accentRegex,syntax,#F8945C,0.76058,0.14024,48.82,0.09234,0.10556,70.812,32.741,45.213,8.13,-57.5
+sfu-dark,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,dark,accentFunction,syntax,#A2C8FD,0.82428,0.08547,256.76,-0.01957,-0.08320,79.659,-0.059,-30.076,10.59,-71.0
+sfu-dark,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,dark,accentFunctionDim,syntax,#BFD2FF,0.86454,0.06607,267.05,-0.00340,-0.06598,84.167,3.219,-24.085,12.03,-78.4
+sfu-dark,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,dark,accentType,syntax,#89DAB5,0.82590,0.09590,163.68,-0.09204,0.02696,81.179,-32.890,10.469,11.06,-73.5
+sfu-dark,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,dark,accentInterface,syntax,#83D0B6,0.80008,0.08546,170.64,-0.08432,0.01390,78.059,-29.622,5.429,10.11,-68.4
+sfu-dark,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,dark,accentNumber,syntax,#FCCE85,0.87574,0.10469,78.29,0.02125,0.10251,85.269,7.270,42.286,12.40,-80.3
+sfu-dark,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,dark,accentDecorator,syntax,#F680BE,0.74984,0.15958,348.87,0.15658,-0.03080,68.572,52.174,-11.796,7.58,-54.3
+sfu-dark,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,dark,accentNamespace,syntax,#9BB2BD,0.74958,0.02996,228.21,-0.01996,-0.02234,71.202,-5.534,-8.253,8.23,-57.7
+sfu-dark,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,dark,colorError,syntax,#F55A60,0.67391,0.18996,21.58,0.17664,0.06987,59.503,59.662,28.993,5.64,-42.3
+sfu-dark,Simon Fraser University,SFU,Canadian Universities,Canada,"Burnaby, BC",1965,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.49,-65.1
+ucalgary-light,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,light,bg,context,#F7F2ED,0.96363,0.00857,67.72,0.00325,0.00793,95.745,0.808,2.998,1.00,0.0
+ucalgary-light,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,light,fg,context,#1C1712,0.20881,0.01247,67.05,0.00486,0.01149,8.159,1.429,4.063,15.99,97.3
+ucalgary-light,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,light,accentKeyword,syntax,#800801,0.38058,0.15086,30.11,0.13050,0.07569,26.059,46.570,38.134,9.67,85.6
+ucalgary-light,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,light,accentStorage,syntax,#4C0926,0.27861,0.09969,0.52,0.09969,0.00091,14.802,32.435,0.213,13.74,94.0
+ucalgary-light,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,light,accentString,syntax,#8F5130,0.50092,0.09537,47.59,0.06432,0.07041,41.120,22.819,30.265,5.57,73.3
+ucalgary-light,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,light,accentRegex,syntax,#854500,0.46080,0.11111,57.32,0.06000,0.09352,36.450,23.368,46.388,6.63,77.8
+ucalgary-light,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,light,accentFunction,syntax,#004677,0.38453,0.10292,247.76,-0.03896,-0.09526,28.673,1.059,-33.272,8.81,84.8
+ucalgary-light,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,light,accentFunctionDim,syntax,#2F4F7C,0.42525,0.08434,257.11,-0.01882,-0.08221,33.245,3.193,-29.051,7.46,81.2
+ucalgary-light,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,light,accentType,syntax,#0F6A49,0.46583,0.09659,162.33,-0.09204,0.02932,39.394,-33.746,11.536,5.94,74.9
+ucalgary-light,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,light,accentInterface,syntax,#006569,0.46044,0.07828,199.55,-0.07376,-0.02620,38.422,-22.994,-9.407,6.16,75.8
+ucalgary-light,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,light,accentNumber,syntax,#7F5D06,0.50048,0.10079,83.04,0.01221,0.10005,41.775,6.593,47.845,5.44,72.7
+ucalgary-light,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,light,accentDecorator,syntax,#93184A,0.43984,0.15987,2.93,0.15966,0.00816,32.597,52.029,2.984,7.64,80.4
+ucalgary-light,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,light,accentNamespace,syntax,#4A4F61,0.43013,0.03050,272.89,0.00154,-0.03046,33.796,2.430,-11.150,7.31,80.8
+ucalgary-light,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,light,colorError,syntax,#910013,0.41359,0.16777,25.24,0.15175,0.07155,29.585,52.916,34.508,8.53,82.2
+ucalgary-light,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,6.03,75.4
+ucalgary-dark,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,dark,bg,context,#1E1312,0.20087,0.01850,24.72,0.01681,0.00774,7.095,5.343,2.542,1.00,0.0
+ucalgary-dark,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,dark,fg,context,#F0E0DF,0.91923,0.01765,21.82,0.01638,0.00656,90.398,5.286,2.454,14.20,-89.1
+ucalgary-dark,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,dark,accentKeyword,syntax,#EE7469,0.69936,0.15267,26.94,0.13610,0.06916,63.088,46.064,28.330,6.34,-46.7
+ucalgary-dark,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,dark,accentStorage,syntax,#CD6A8B,0.64801,0.12966,0.17,0.12966,0.00038,57.226,42.730,-0.068,5.21,-38.8
+ucalgary-dark,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,dark,accentString,syntax,#EE9800,0.74935,0.16259,69.74,0.05631,0.15253,69.922,23.606,74.680,7.89,-56.2
+ucalgary-dark,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,dark,accentRegex,syntax,#E99D64,0.75941,0.11672,56.75,0.06399,0.09761,71.120,22.559,41.044,8.19,-57.8
+ucalgary-dark,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,dark,accentFunction,syntax,#85C4FF,0.80019,0.10622,247.69,-0.04032,-0.09827,77.091,-4.590,-35.233,9.80,-66.9
+ucalgary-dark,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,dark,accentFunctionDim,syntax,#AACDFF,0.84040,0.07986,257.28,-0.01758,-0.07791,81.525,-0.073,-28.237,11.14,-74.0
+ucalgary-dark,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,dark,accentType,syntax,#6DE0AB,0.82521,0.13055,161.58,-0.12386,0.04126,81.565,-44.882,16.128,11.15,-74.2
+ucalgary-dark,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,dark,accentInterface,syntax,#79CED2,0.79920,0.08275,199.54,-0.07799,-0.02767,77.791,-24.692,-10.056,10.00,-68.0
+ucalgary-dark,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,dark,accentNumber,syntax,#FED140,0.87605,0.16047,90.76,-0.00214,0.16046,85.527,1.999,73.178,12.45,-80.8
+ucalgary-dark,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,dark,accentDecorator,syntax,#FF7EA4,0.75047,0.16071,3.09,0.16048,0.00866,68.655,52.783,3.078,7.58,-54.5
+ucalgary-dark,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,dark,accentNamespace,syntax,#A7ADC2,0.74962,0.03087,272.97,0.00160,-0.03083,70.869,2.171,-11.410,8.12,-57.2
+ucalgary-dark,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,dark,colorError,syntax,#F55B57,0.67355,0.18992,25.10,0.17199,0.08055,59.515,58.702,34.125,5.63,-42.3
+ucalgary-dark,University of Calgary,UCalgary,Canadian Universities,Canada,"Calgary, AB",1966,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.46,-65.1
+concordia-light,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,light,bg,context,#F6F1F0,0.96173,0.00555,31.05,0.00476,0.00287,95.495,1.495,1.073,1.00,0.0
+concordia-light,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,light,fg,context,#1C1716,0.21022,0.00830,31.17,0.00710,0.00430,8.285,2.268,1.598,15.85,96.8
+concordia-light,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,light,accentKeyword,syntax,#8C1E34,0.42548,0.14446,15.05,0.13950,0.03751,31.239,46.520,15.379,7.98,81.5
+concordia-light,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,light,accentStorage,syntax,#42207C,0.34831,0.14562,294.48,0.06034,-0.13253,22.466,37.618,-46.281,10.85,89.3
+concordia-light,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,light,accentString,syntax,#0B6B66,0.47724,0.07997,189.05,-0.07897,-0.01259,40.483,-26.248,-4.478,5.67,73.4
+concordia-light,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,light,accentRegex,syntax,#9E2609,0.46105,0.16024,33.68,0.13333,0.08887,35.356,47.906,44.642,6.86,77.5
+concordia-light,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,light,accentFunction,syntax,#003455,0.31317,0.07730,244.05,-0.03383,-0.06950,20.485,-1.618,-24.352,11.56,91.0
+concordia-light,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,light,accentFunctionDim,syntax,#203C5F,0.35232,0.07026,254.89,-0.01831,-0.06783,24.842,1.791,-23.960,10.02,88.0
+concordia-light,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,light,accentType,syntax,#3C6703,0.46418,0.12789,132.30,-0.08608,0.09459,39.015,-30.278,43.993,5.99,75.1
+concordia-light,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,light,accentInterface,syntax,#005E8B,0.45884,0.10396,239.34,-0.05300,-0.08943,37.605,-6.057,-31.449,6.31,76.2
+concordia-light,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,light,accentNumber,syntax,#3C2607,0.28954,0.05477,71.30,0.01756,0.05188,17.285,7.091,22.359,12.74,93.1
+concordia-light,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,light,accentDecorator,syntax,#92194E,0.43997,0.15944,0.53,0.15943,0.00147,32.609,51.857,0.351,7.59,80.0
+concordia-light,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,light,accentNamespace,syntax,#5E494F,0.42943,0.02990,359.49,0.02990,-0.00027,33.371,9.999,-0.156,7.38,80.8
+concordia-light,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,light,colorError,syntax,#690C2D,0.34206,0.12569,7.09,0.12473,0.01551,21.787,40.873,6.042,11.09,89.1
+concordia-light,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,light,colorWarning,syntax,#864F00,0.48080,0.10739,65.58,0.04440,0.09778,39.005,18.050,48.061,5.99,75.0
+concordia-dark,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,dark,bg,context,#1E1216,0.19990,0.02116,357.49,0.02114,-0.00093,6.925,6.832,-0.357,1.00,0.0
+concordia-dark,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,dark,fg,context,#EFE0E4,0.91980,0.01720,359.31,0.01720,-0.00021,90.443,5.792,-0.111,14.27,-89.3
+concordia-dark,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,dark,accentKeyword,syntax,#FB8F9E,0.76892,0.13102,11.74,0.12828,0.02665,71.302,42.318,10.165,8.26,-58.2
+concordia-dark,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,dark,accentStorage,syntax,#AB90F5,0.71862,0.14531,294.78,0.06090,-0.13193,65.901,31.542,-47.100,6.97,-50.2
+concordia-dark,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,dark,accentString,syntax,#5A8D8E,0.60794,0.05464,197.39,-0.05214,-0.01633,55.252,-16.720,-5.946,4.89,-36.0
+concordia-dark,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,dark,accentRegex,syntax,#FF8C72,0.75985,0.14499,33.81,0.12047,0.08067,70.341,41.082,33.220,8.02,-56.9
+concordia-dark,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,dark,accentFunction,syntax,#51CDFF,0.79933,0.12907,228.53,-0.08547,-0.09671,77.654,-19.052,-34.518,9.99,-68.0
+concordia-dark,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,dark,accentFunctionDim,syntax,#92D3FF,0.83901,0.09040,238.86,-0.04675,-0.07737,81.793,-9.479,-27.946,11.26,-74.5
+concordia-dark,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,dark,accentType,syntax,#A6D96B,0.82586,0.15016,129.71,-0.09593,0.11552,81.178,-34.462,48.472,11.06,-73.5
+concordia-dark,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,dark,accentInterface,syntax,#7AC7FB,0.79955,0.10639,239.52,-0.05396,-0.09169,77.248,-9.780,-32.890,9.88,-67.2
+concordia-dark,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,dark,accentNumber,syntax,#9D956A,0.66587,0.06022,98.87,-0.00928,0.05950,61.398,-3.902,23.820,6.02,-43.9
+concordia-dark,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,dark,accentDecorator,syntax,#FD7EA9,0.74929,0.16014,0.26,0.16014,0.00074,68.515,52.705,0.023,7.57,-54.3
+concordia-dark,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,dark,accentNamespace,syntax,#BFA6AD,0.74901,0.03062,359.07,0.03062,-0.00050,70.432,10.283,-0.245,8.04,-56.6
+concordia-dark,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,dark,colorError,syntax,#F55A61,0.67410,0.18988,21.21,0.17702,0.06870,59.520,59.726,28.442,5.65,-42.3
+concordia-dark,Concordia University,Concordia,Canadian Universities,Canada,"Montreal, QC",1974,dark,colorWarning,syntax,#F2AD67,0.79901,0.11875,65.09,0.05002,0.10770,75.914,17.967,45.572,9.49,-65.1

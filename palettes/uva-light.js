@@ -17,6 +17,7 @@ module.exports = {
   country: "USA",
   city: "Charlottesville, VA",
   year: 1819,
+  brandUrl: "https://brand.virginia.edu/design-assets/colors",
   subtitle: "Rotunda paper, UVA Blue #232D4B, Orange #E57200, Cyan, Green & Magenta",
   tokens: {
     mode: 'light',

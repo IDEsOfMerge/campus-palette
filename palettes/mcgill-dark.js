@@ -15,6 +15,7 @@ module.exports = {
   country: "Canada",
   city: "Montreal, QC",
   year: 1821,
+  brandUrl: "https://www.mcgill.ca/visual-identity/visual-identity-guide",
   subtitle: "Mount Royal greystone night, McGill Red #ED1B2F, #27BDBE & #FFD400",
   tokens: {
     mode: 'dark',

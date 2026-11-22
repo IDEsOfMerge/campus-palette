@@ -345,20 +345,25 @@ describe('color-science: simulateCvd', () => {
   });
 });
 
-describe('color-science: auditPalette across all 80 shipped palettes', () => {
-  it('has zero monochrome exemptions (all 80 themes are fully polychromatic)', () => {
+describe('color-science: auditPalette across all 120 shipped palettes', () => {
+  it('has zero monochrome exemptions (all 120 themes are fully polychromatic)', () => {
     assert.equal(cs.MONOCHROME_EXEMPT_SLUGS.size, 0);
   });
 
-  it('passes with 0 errors, 0 warnings, and severeCvdCount === 0 across all 80 palettes', () => {
+  it('passes with 0 errors, 0 warnings, valid brandUrl, and severeCvdCount === 0 across all 120 palettes', () => {
     const allPalettes = loadAllPalettes();
-    assert.equal(allPalettes.size, 80);
+    assert.equal(allPalettes.size, 120);
 
     let lightCount = 0;
     let darkCount = 0;
     for (const [slug, palette] of allPalettes.entries()) {
       if (palette.tokens.mode === 'light') lightCount++;
       if (palette.tokens.mode === 'dark') darkCount++;
+
+      assert.ok(
+        typeof palette.brandUrl === 'string' && /^https:\/\/[^\s]+$/i.test(palette.brandUrl),
+        `${slug} missing valid https:// brandUrl: ${palette.brandUrl}`
+      );
 
       const result = cs.auditPalette(palette);
       assert.equal(result.slug, slug);
@@ -371,8 +376,8 @@ describe('color-science: auditPalette across all 80 shipped palettes', () => {
       assert.equal(result.metrics.severeCvdCount, 0, `${slug} severeCvdCount should be 0`);
     }
 
-    assert.equal(lightCount, 40);
-    assert.equal(darkCount, 40);
+    assert.equal(lightCount, 60);
+    assert.equal(darkCount, 60);
   });
 
   it('rejects synthetic palettes violating each WCAG, APCA, ANSI, CIEDE2000 & surface gate', () => {

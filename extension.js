@@ -337,7 +337,8 @@ function activate(context) {
       const activeItem = items.find((item) => item.themeLabel === originalTheme) || null;
 
       const qp = vscode.window.createQuickPick();
-      qp.title = 'Campus Palette — 40 Iconic Universities · 80 Themes';
+      const totalCampuses = new Set(themeMetadata.map((t) => t.university)).size;
+      qp.title = `Campus Palette — ${totalCampuses} Iconic Universities · ${themeMetadata.length} Themes`;
       qp.placeholder = 'Filter by university, grouping, city, or year · Arrow for live preview · Enter to keep · Esc to restore';
       qp.matchOnDescription = true;
       qp.matchOnDetail = true;

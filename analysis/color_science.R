@@ -1,6 +1,6 @@
-# Campus Palette -- color science analysis across 40 universities (80 themes)
+# Campus Palette -- color science analysis across 60 universities (120 themes)
 #
-# Reproduces the global OKLab PCA, 8x10 OKLCH hue-chroma small-multiples grid,
+# Reproduces the global OKLab PCA, 10x12 OKLCH hue-chroma small-multiples grid,
 # 6-grouping chromatic fingerprint, and Machado (2009) CVD audit summary from
 # analysis/data/tokens_long.csv and analysis/data/cvd_pairs.csv.
 #
@@ -44,7 +44,7 @@ tokens <- read.csv("analysis/data/tokens_long.csv", stringsAsFactors = FALSE) %>
 n_themes <- length(unique(tokens$theme_slug))
 cat(sprintf("Loaded %d token rows across %d themes.\n", nrow(tokens), n_themes))
 
-# --- 1. Global OKLab (L, a, b) PCA across all 1,040 syntax tokens ---
+# --- 1. Global OKLab (L, a, b) PCA across all 1,560 syntax tokens ---
 pca_input <- tokens %>% filter(role_kind == "syntax")
 pca <- prcomp(pca_input[, c("oklch_L", "oklab_a", "oklab_b")], center = TRUE, scale. = FALSE)
 pca_df <- bind_cols(pca_input, as.data.frame(pca$x[, 1:2]))

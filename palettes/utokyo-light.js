@@ -18,6 +18,7 @@ module.exports = {
   country: "Japan",
   city: "Tokyo, Japan",
   year: 1877,
+  brandUrl: "https://www.u-tokyo.ac.jp/content/400236233.pdf",
   subtitle: "UTokyo Blue #0B8BEE, Yellow #FFCD00, Red #D71131, Green & Purple (2024 VI)",
   tokens: {
     mode: 'light',

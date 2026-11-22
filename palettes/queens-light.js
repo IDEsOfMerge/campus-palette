@@ -16,6 +16,7 @@ module.exports = {
   country: "Canada",
   city: "Kingston, ON",
   year: 1841,
+  brandUrl: "https://www.queensu.ca/brand-central/visual-identity/colours",
   subtitle: "Kingston Limestone, Queen's Tricolour Blue #002452, Gold & Red",
   tokens: {
     mode: 'light',

@@ -17,6 +17,7 @@ module.exports = {
   country: "USA",
   city: "Pasadena, CA",
   year: 1891,
+  brandUrl: "https://identity.caltech.edu/colors",
   subtitle: "Pasadena white, Caltech Orange #FF6C0C, Deep Teal #003B4C & JPL Red",
   tokens: {
     mode: 'light',

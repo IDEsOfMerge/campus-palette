@@ -42,7 +42,7 @@ function tryLoadExplorerGenerator() {
 }
 
 describe('explorer: built site/index.html & assets/explorer/explorer.html bundles', () => {
-  it('site/index.html embeds all 80 themes, 6 collegiate groupings, zero-CDN CSP, 8 export formats, MDS map, OG metadata, and valid JS', () => {
+  it('site/index.html embeds all 120 themes, brand guidelines links, 6 collegiate groupings, zero-CDN CSP, 8 export formats, MDS map, OG metadata, and valid JS', () => {
     const sitePath = path.join(ROOT_DIR, 'site', 'index.html');
     assert.ok(fs.existsSync(sitePath), 'Expected site/index.html to exist (run node scripts/generate-explorer.js)');
 
@@ -67,19 +67,26 @@ describe('explorer: built site/index.html & assets/explorer/explorer.html bundle
     const ogPath = path.join(ROOT_DIR, 'site', 'og-preview.png');
     assert.ok(fs.existsSync(ogPath) && fs.statSync(ogPath).size > 0, 'Expected non-empty site/og-preview.png');
 
-    // All 80 themes & all 6 collegiate groupings embedded
-    assert.equal(themeMetadata.length, 80);
+    // All 120 themes, brandUrl links & all 6 collegiate groupings embedded
+    assert.equal(themeMetadata.length, 120);
     for (const entry of themeMetadata) {
       assert.ok(html.includes(`"slug":"${entry.slug}"`), `site/index.html missing theme slug "${entry.slug}"`);
+      assert.ok(
+        typeof entry.brandUrl === 'string' && /^https:\/\/[^\s]+$/i.test(entry.brandUrl),
+        `theme-metadata.json missing valid https:// brandUrl for "${entry.slug}"`
+      );
+      assert.ok(html.includes(entry.brandUrl), `site/index.html missing brandUrl for "${entry.slug}"`);
     }
     for (const group of EXPECTED_GROUPS) {
       assert.ok(html.includes(group), `site/index.html missing collegiate grouping "${group}"`);
     }
 
-    // Core Explorer UI hooks (MDS map, neighbor bar, compare strip, search/filter)
-    for (const hook of ['id="map-strip"', 'id="mds-svg"', 'id="neighbor-bar"', 'id="compare-strip"']) {
+    // Core Explorer UI hooks (MDS map, neighbor bar, compare strip, brand guidelines link)
+    for (const hook of ['id="map-strip"', 'id="mds-svg"', 'id="neighbor-bar"', 'id="compare-strip"', 'id="active-theme-brand-link"']) {
       assert.ok(html.includes(hook), `site/index.html missing DOM hook ${hook}`);
     }
+    assert.ok(html.includes('Official Brand Guidelines'));
+    assert.ok(inlineScript.includes('id="mds-brand-link"'));
     assert.ok(html.includes('const MDS_META = '));
 
     // All 8 export formats
@@ -104,7 +111,7 @@ describe('explorer: built site/index.html & assets/explorer/explorer.html bundle
     );
   });
 
-  it('assets/explorer/explorer.html embeds all 80 themes, 6 groupings, CSP3 nonce placeholders, 8 exports, MDS map & webview sync', () => {
+  it('assets/explorer/explorer.html embeds all 120 themes, brand guidelines links, 6 groupings, CSP3 nonce placeholders, 8 exports, MDS map & webview sync', () => {
     const webviewPath = path.join(ROOT_DIR, 'assets', 'explorer', 'explorer.html');
     assert.ok(
       fs.existsSync(webviewPath),
@@ -125,21 +132,24 @@ describe('explorer: built site/index.html & assets/explorer/explorer.html bundle
     assert.equal(html.includes('property="og:'), false);
     assert.equal(html.includes('name="twitter:'), false);
 
-    // All 80 themes & all 6 collegiate groupings embedded
+    // All 120 themes, brandUrl links & all 6 collegiate groupings embedded
     for (const entry of themeMetadata) {
       assert.ok(
         html.includes(`"slug":"${entry.slug}"`),
         `assets/explorer/explorer.html missing theme slug "${entry.slug}"`
       );
+      assert.ok(html.includes(entry.brandUrl), `assets/explorer/explorer.html missing brandUrl for "${entry.slug}"`);
     }
     for (const group of EXPECTED_GROUPS) {
       assert.ok(html.includes(group), `assets/explorer/explorer.html missing collegiate grouping "${group}"`);
     }
 
     // Core UI hooks & all 8 export formats
-    for (const hook of ['id="map-strip"', 'id="mds-svg"', 'id="neighbor-bar"', 'id="compare-strip"']) {
+    for (const hook of ['id="map-strip"', 'id="mds-svg"', 'id="neighbor-bar"', 'id="compare-strip"', 'id="active-theme-brand-link"']) {
       assert.ok(html.includes(hook), `assets/explorer/explorer.html missing DOM hook ${hook}`);
     }
+    assert.ok(html.includes('Official Brand Guidelines'));
+    assert.ok(inlineScript.includes('id="mds-brand-link"'));
     assert.ok(html.includes('const MDS_META = '));
     for (const opt of EXPORT_OPTIONS) {
       assert.ok(html.includes(`value="${opt}"`), `assets/explorer/explorer.html missing export option "${opt}"`);
@@ -153,7 +163,7 @@ describe('explorer: built site/index.html & assets/explorer/explorer.html bundle
   });
 });
 
-describe('explorer: Classical MDS math & 80-theme dataset invariants (generator exports)', () => {
+describe('explorer: Classical MDS math & 120-theme dataset invariants (generator exports)', () => {
   const gen = tryLoadExplorerGenerator();
 
   it('recovers exact eigenvalues, orthonormal eigenvectors, and Euclidean MDS distances when exported', () => {
@@ -201,7 +211,7 @@ describe('explorer: Classical MDS math & 80-theme dataset invariants (generator 
     }
   });
 
-  it('computes valid 40-Light / 40-Dark MDS coordinates and same-mode neighbors with deterministic HTML build parity', () => {
+  it('computes valid 60-Light / 60-Dark MDS coordinates, valid brandUrl, and same-mode neighbors with deterministic HTML build parity', () => {
     if (!gen || typeof gen.loadThemeDataset !== 'function' || typeof gen.enrichDatasetWithSimilarity !== 'function') {
       return;
     }
@@ -211,20 +221,24 @@ describe('explorer: Classical MDS math & 80-theme dataset invariants (generator 
     const campusGroups = Array.isArray(loaded) ? undefined : loaded.campusGroups;
     const mdsMeta = gen.enrichDatasetWithSimilarity(dataset);
 
-    assert.equal(dataset.length, 80);
+    assert.equal(dataset.length, 120);
     if (campusGroups) {
       assert.equal(campusGroups.length, 6);
     }
     const lightThemes = dataset.filter((t) => t.mode === 'light');
     const darkThemes = dataset.filter((t) => t.mode === 'dark');
-    assert.equal(lightThemes.length, 40);
-    assert.equal(darkThemes.length, 40);
+    assert.equal(lightThemes.length, 60);
+    assert.equal(darkThemes.length, 60);
 
     assert.ok(mdsMeta.light.v1 > 10 && mdsMeta.light.v2 > 5 && mdsMeta.light.v1 + mdsMeta.light.v2 <= 100);
     assert.ok(mdsMeta.dark.v1 > 10 && mdsMeta.dark.v2 > 5 && mdsMeta.dark.v1 + mdsMeta.dark.v2 <= 100);
 
     const bySlug = new Map(dataset.map((t) => [t.slug, t]));
     for (const t of dataset) {
+      assert.ok(
+        typeof t.brandUrl === 'string' && /^https:\/\/[^\s]+$/i.test(t.brandUrl),
+        `Missing valid https:// brandUrl on dataset entry ${t.slug}`
+      );
       assert.ok(t.mds, `Missing mds metadata on ${t.slug}`);
       assert.ok(Number.isFinite(t.mds.x) && Number.isFinite(t.mds.y));
       assert.ok(t.mds.nx >= 0 && t.mds.nx <= 1);

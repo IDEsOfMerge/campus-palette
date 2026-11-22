@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Austin, TX",
   year: 1883,
+  brandUrl: "https://umac.utexas.edu/brand-center/colors/",
   subtitle: "UT Charcoal #333F48 night, Burnt Orange #BF5700, Turquoise #00A9B7 & Green",
   tokens: {
     mode: 'dark',

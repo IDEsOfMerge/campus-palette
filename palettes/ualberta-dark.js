@@ -15,6 +15,7 @@ module.exports = {
   country: "Canada",
   city: "Edmonton, AB",
   year: 1908,
+  brandUrl: "https://www.ualberta.ca/en/toolkit/digital-and-creative/email-best-practices/design-templating/templates.html",
   subtitle: "Dark Evergreen #1C4630 canvas, emerald keywords, Gold #FECB00 & sky",
   tokens: {
     mode: 'dark',

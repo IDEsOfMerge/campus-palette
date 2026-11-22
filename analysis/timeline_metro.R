@@ -1,8 +1,8 @@
-# Campus Palette -- Collegiate Heritage Metro Map (40 Universities, 1096-1963)
+# Campus Palette -- Collegiate Heritage Metro Map (60 Universities, 1096-1974)
 #
 # Six clean horizontal collegiate grouping lines with piecewise chronological
 # spacing so medieval European classics (1096, 1209) sit harmoniously alongside
-# North American universities (1636-1963) with zero cross-grouping edges.
+# modern global & North American universities (1583-1974) with zero cross-grouping edges.
 #
 # Run from the repo root with: Rscript --vanilla analysis/timeline_metro.R
 # (2x-supersampled production PNG is rendered by scripts/generate-color-science-assets.py)
@@ -40,8 +40,8 @@ TRACK_Y <- c(
 )
 
 year_to_metro_x <- function(yr) {
-  anchors_y <- c(1096, 1209, 1636, 1701, 1740, 1775, 1800, 1845, 1895, 1920, 1963)
-  anchors_x <- c( 1.8,  4.0,  6.8,  9.2, 10.9, 14.9, 16.4, 20.1, 24.9, 27.1, 29.5)
+  anchors_y <- c(1096, 1209, 1583, 1636, 1701, 1740, 1775, 1800, 1845, 1895, 1920, 1974)
+  anchors_x <- c( 1.8,  3.8,  6.2,  7.7,  9.4, 10.9, 13.7, 15.1, 18.8, 23.8, 26.2, 29.5)
   approx(anchors_y, anchors_x, xout = yr, rule = 2)$y
 }
 
@@ -55,30 +55,31 @@ summary_df <- read.csv("analysis/data/themes_summary.csv", stringsAsFactors = FA
   ) %>%
   arrange(group, year, short_name)
 
-# Relax horizontal crowding within each grouping track (minimum gap = 1.28)
+# Relax horizontal crowding within each grouping track
 nodes <- summary_df %>%
   group_by(group) %>%
   group_modify(function(df, key) {
     xs <- df$x_raw
     n <- length(xs)
+    min_gap <- if (n >= 12) 1.04 else 1.24
     if (n > 1) {
-      for (iter in seq_len(40)) {
+      for (iter in seq_len(80)) {
         for (i in seq_len(n - 1)) {
           gap <- xs[i + 1] - xs[i]
-          if (gap < 1.28) {
-            d <- (1.28 - gap) * 0.52
+          if (gap < min_gap) {
+            d <- (min_gap - gap) * 0.52
             xs[i] <- max(1.8, xs[i] - d)
-            xs[i + 1] <- min(29.8, xs[i + 1] + d)
+            xs[i + 1] <- min(29.7, xs[i + 1] + d)
           }
         }
       }
     }
     dys <- numeric(n)
-    base_dir <- ifelse(df$y[1] >= 0, 0.36, -0.36)
+    base_dir <- ifelse(df$y[1] >= 0, 0.35, -0.35)
     dys[1] <- base_dir
     if (n > 1) {
       for (i in 2:n) {
-        dys[i] <- if (xs[i] - xs[i - 1] < 3.4) -dys[i - 1] else base_dir
+        dys[i] <- if (xs[i] - xs[i - 1] < 3.6) -dys[i - 1] else base_dir
       }
     }
     df$x <- xs
@@ -109,11 +110,11 @@ p <- ggplot() +
   geom_text(
     data = nodes,
     aes(x, y + label_dy, label = paste0(short_name, "\n", year)),
-    size = 2.8, fontface = "bold", lineheight = 0.9, hjust = 0.5
+    size = 2.6, fontface = "bold", lineheight = 0.9, hjust = 0.5
   ) +
   labs(
-    title = "Campus Palette — Collegiate Heritage Metro Map (1096–1963)",
-    subtitle = "40 universities across six collegiate groupings with piecewise chronological spacing."
+    title = "Campus Palette — Collegiate Heritage Metro Map (1096–1974)",
+    subtitle = sprintf("%d universities across six collegiate groupings with piecewise chronological spacing.", nrow(nodes))
   ) +
   theme_void(base_size = 12) +
   theme(

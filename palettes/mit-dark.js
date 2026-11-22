@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Cambridge, MA",
   year: 1861,
+  brandUrl: "https://brand.mit.edu/color",
   subtitle: "Dark Gray #212326 obsidian, Bright Red #FF1423, Blue #1966FF & Yellow",
   tokens: {
     mode: 'dark',

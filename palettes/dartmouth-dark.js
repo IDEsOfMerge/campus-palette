@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Hanover, NH",
   year: 1769,
+  brandUrl: "https://communications.dartmouth.edu/guides-and-tools/design-guidelines/dartmouth-colors",
   subtitle: "Official Rich Forest #0D1E1C, pine emerald, Bonfire #FFA00F & River Blue",
   tokens: {
     mode: 'dark',

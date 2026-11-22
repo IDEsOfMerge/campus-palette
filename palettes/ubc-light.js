@@ -16,6 +16,7 @@ module.exports = {
   country: "Canada",
   city: "Vancouver, BC",
   year: 1908,
+  brandUrl: "https://brand.ubc.ca/guidelines/downloads/ubc-colour-and-fonts/",
   subtitle: "Point Grey mist, UBC Blue #002145, PMS 2935 #0055B7 & Coast cedar",
   tokens: {
     mode: 'light',

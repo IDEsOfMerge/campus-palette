@@ -65,6 +65,26 @@ const SEARCH_ALIASES = {
   notredame: ['nd', 'fighting irish', 'golden dome', 'indiana', 'in'],
   stedwards: ['st edwards', 'seu', 'hilltoppers', 'sorin', 'bluebonnet', 'texas', 'tx', 'austin'],
   rice: ['owls', 'texas', 'tx', 'houston'],
+  dalhousie: ['dal', 'tigers', 'nova scotia', 'ns', 'halifax', 'maritimes'],
+  uottawa: ['ottawa', 'gee-gees', 'garnet', 'ontario', 'on', 'rideau'],
+  mcmaster: ['mac', 'marauders', 'ontario', 'on', 'hamilton'],
+  sfu: ['simon fraser', 'red leafs', 'burnaby', 'british columbia', 'bc'],
+  ucalgary: ['calgary', 'dinos', 'chinook', 'alberta', 'ab'],
+  concordia: ['stingers', 'quebec', 'qc', 'montreal'],
+  uga: ['georgia', 'bulldogs', 'dawgs', 'athens', 'ga'],
+  wisconsin: ['uw-madison', 'badgers', 'madison', 'wi', 'mendota'],
+  ufl: ['uf', 'florida', 'gators', 'gainesville', 'fl'],
+  tamu: ['texas a&m', 'aggies', 'college station', 'tx', 'texas'],
+  jhu: ['johns hopkins', 'hopkins', 'blue jays', 'baltimore', 'maryland', 'md'],
+  usc: ['trojans', 'southern california', 'los angeles', 'california', 'ca'],
+  cmu: ['carnegie mellon', 'tartans', 'pittsburgh', 'pennsylvania', 'pa'],
+  amherst: ['mammoths', 'pioneer valley', 'massachusetts', 'ma'],
+  edinburgh: ['uoe', 'scotland', 'uk', 'united kingdom', 'britain'],
+  melbourne: ['unimelb', 'parkville', 'victoria', 'australia', 'aus'],
+  epfl: ['lausanne', 'swiss', 'switzerland', 'leman'],
+  kyoto: ['kyotou', 'kyodai', 'nousei', 'kusunoki', 'japan'],
+  nus: ['singapore', 'kent ridge', 'sg'],
+  imperial: ['icl', 'imperial college', 'south kensington', 'london', 'uk', 'england', 'britain'],
   oxford: ['ox', 'oxbridge', 'bodleian', 'england', 'britain', 'united kingdom'],
   cambridge: ['cantab', 'oxbridge', 'england', 'britain', 'united kingdom'],
   eth: ['ethz', 'swiss', 'zurich', 'eidgenossische'],
@@ -129,6 +149,7 @@ function loadThemeDataset() {
       country: mod.country,
       city: mod.city,
       year: mod.year,
+      brandUrl: mod.brandUrl || '',
       mode: tk.mode,
       subtitle: mod.subtitle,
       story: extractRationale(full),
@@ -395,16 +416,16 @@ function buildHtml({ dataset, campusGroups, mdsMeta, target }) {
   const scriptOpen = isWeb ? '<script>' : '<script nonce="{{CSP_NONCE}}">';
   const seoTags = isWeb
     ? `
-  <meta name="description" content="Explore 80 university-inspired Light &amp; Dark OKLCH themes across 40 iconic US, Canadian &amp; global campuses with live code preview, CIEDE2000 similarity map, CVD simulation, and 8 terminal/IDE exporters." />
+  <meta name="description" content="Explore ${dataset.length} university-inspired Light &amp; Dark OKLCH themes across ${totalCampuses} iconic US, Canadian &amp; global campuses with live code preview, official brand guideline links, CIEDE2000 similarity map, CVD simulation, and 8 terminal/IDE exporters." />
   <meta property="og:title" content="Campus Palette — Interactive Workbench &amp; Colorimetry Explorer" />
-  <meta property="og:description" content="Explore 80 university-inspired Light &amp; Dark OKLCH themes across 40 iconic US, Canadian &amp; global campuses with live code preview, CIEDE2000 similarity map, CVD simulation, and 8 terminal/IDE exporters." />
+  <meta property="og:description" content="Explore ${dataset.length} university-inspired Light &amp; Dark OKLCH themes across ${totalCampuses} iconic US, Canadian &amp; global campuses with live code preview, official brand guideline links, CIEDE2000 similarity map, CVD simulation, and 8 terminal/IDE exporters." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://idesofmerge.github.io/campus-palette/" />
   <meta property="og:image" content="https://idesofmerge.github.io/campus-palette/og-preview.png" />
-  <meta property="og:image:alt" content="Campus Palette — 40 Iconic Universities · 80 OKLCH Themes for VS Code &amp; Positron" />
+  <meta property="og:image:alt" content="Campus Palette — ${totalCampuses} Iconic Universities · ${dataset.length} OKLCH Themes for VS Code &amp; Positron" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Campus Palette — Interactive Workbench &amp; Colorimetry Explorer" />
-  <meta name="twitter:description" content="Explore 80 university-inspired Light &amp; Dark OKLCH themes across 40 iconic US, Canadian &amp; global campuses with live code preview, CIEDE2000 similarity map, CVD simulation, and 8 terminal/IDE exporters." />
+  <meta name="twitter:description" content="Explore ${dataset.length} university-inspired Light &amp; Dark OKLCH themes across ${totalCampuses} iconic US, Canadian &amp; global campuses with live code preview, official brand guideline links, CIEDE2000 similarity map, CVD simulation, and 8 terminal/IDE exporters." />
   <meta name="twitter:image" content="https://idesofmerge.github.io/campus-palette/og-preview.png" />
   <link rel="icon" type="image/png" href="./icon.png" />`
     : '';
@@ -808,6 +829,38 @@ function buildHtml({ dataset, campusGroups, mdsMeta, target }) {
       background: var(--shell-elevated);
       border: 1px solid var(--shell-border);
       color: var(--shell-muted);
+    }
+
+    .brand-source-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 5px;
+      background: var(--shell-elevated);
+      border: 1px solid var(--shell-border);
+      color: var(--shell-accent);
+      text-decoration: none;
+      transition: border-color 120ms ease, background-color 120ms ease;
+    }
+
+    .brand-source-link:hover {
+      border-color: var(--shell-accent);
+      background: var(--shell-surface);
+      text-decoration: underline;
+    }
+
+    .brand-source-link:focus-visible {
+      outline: 2px solid var(--shell-accent);
+      outline-offset: 2px;
+    }
+
+    .mds-brand-link {
+      align-self: flex-start;
+      margin-top: 4px;
     }
 
     .story-sub {
@@ -1998,6 +2051,7 @@ function buildHtml({ dataset, campusGroups, mdsMeta, target }) {
         <div class="story-head">
           <h2 class="story-title" id="active-theme-heading"></h2>
           <span class="story-badge" id="active-theme-meta"></span>
+          <a class="brand-source-link" id="active-theme-brand-link" target="_blank" rel="noopener noreferrer" hidden>Official Brand Guidelines ↗</a>
         </div>
         <span class="story-sub" id="active-theme-subtitle"></span>
         <p class="story-text" id="active-theme-story"></p>
@@ -2806,7 +2860,7 @@ function buildHtml({ dataset, campusGroups, mdsMeta, target }) {
         };
       }
 
-      // Populate Compare target dropdown with all 80 themes
+      // Populate Compare target dropdown with all themes
       const compareSelect = document.getElementById('compare-select');
       THEMES.forEach((t) => {
         const opt = document.createElement('option');
@@ -3482,6 +3536,8 @@ function buildHtml({ dataset, campusGroups, mdsMeta, target }) {
         'UK': '#7C3AED',
         'Switzerland': '#0D9488',
         'Japan': '#D97706',
+        'Singapore': '#DB2777',
+        'Australia': '#16A34A',
       };
 
       function renderNeighborBar(th) {
@@ -3580,12 +3636,18 @@ function buildHtml({ dataset, campusGroups, mdsMeta, target }) {
             '<div style="color:var(--shell-muted)">' + (inspTheme.mode === activeTheme.mode ? 'Same polarity (13 syntax roles)' : 'Cross-polarity distance') + '</div>';
         }
 
+        const hasBrandUrl = typeof inspTheme.brandUrl === 'string' && /^https:\\/\\//i.test(inspTheme.brandUrl);
+        const brandLinkHtml = hasBrandUrl
+          ? '<a class="brand-source-link mds-brand-link" id="mds-brand-link" href="' + escHtml(inspTheme.brandUrl) + '" target="_blank" rel="noopener noreferrer" title="Open official institutional brand guidelines for ' + escHtml(inspTheme.university) + '">Official Brand Guidelines ↗</a>'
+          : '';
+
         panel.innerHTML =
           '<div class="mds-insp-head">' +
             '<span class="mds-insp-kicker">' + (isSelf ? 'Active Theme' : 'Inspected Campus') + '</span>' +
             '<div class="mds-insp-title">' + escHtml(inspTheme.label) + '</div>' +
             '<div class="mds-insp-meta">' + escHtml(inspTheme.city) + ' · ' + inspTheme.year + ' · ' + escHtml(inspTheme.group) + '</div>' +
             '<p class="mds-insp-sub">' + escHtml(inspTheme.subtitle) + '</p>' +
+            brandLinkHtml +
           '</div>' +
           '<div class="mds-insp-swatches">' +
             sw.map(([lbl, hx]) => '<div class="mds-insp-sw"><span style="background:' + hx + '"></span>' + lbl + '</div>').join('') +
@@ -4022,6 +4084,17 @@ function buildHtml({ dataset, campusGroups, mdsMeta, target }) {
 
         document.getElementById('active-theme-heading').textContent = th.label + ' — ' + th.university;
         document.getElementById('active-theme-meta').textContent = th.city + ' · est. ' + th.year + ' · ' + th.group;
+        const brandLinkEl = document.getElementById('active-theme-brand-link');
+        if (brandLinkEl) {
+          if (typeof th.brandUrl === 'string' && /^https:\\/\\//i.test(th.brandUrl)) {
+            brandLinkEl.href = th.brandUrl;
+            brandLinkEl.title = 'Open official institutional brand guidelines for ' + th.university;
+            brandLinkEl.hidden = false;
+          } else {
+            brandLinkEl.removeAttribute('href');
+            brandLinkEl.hidden = true;
+          }
+        }
         document.getElementById('active-theme-subtitle').textContent = th.subtitle;
         document.getElementById('active-theme-story').innerHTML = escHtml(th.story).replace(/\\x60([^\\x60]+)\\x60/g, '<code>$1</code>');
         renderNeighborBar(th);

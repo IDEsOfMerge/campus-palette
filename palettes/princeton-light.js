@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Princeton, NJ",
   year: 1746,
+  brandUrl: "https://communications.princeton.edu/guides-tools/logo-graphic-identity",
   subtitle: "Nassau Hall sandstone, Princeton Orange #E77500 (on white) & iron ink",
   tokens: {
     mode: 'light',

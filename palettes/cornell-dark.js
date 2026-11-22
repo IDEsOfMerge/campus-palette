@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Ithaca, NY",
   year: 1865,
+  brandUrl: "https://brand.cornell.edu/design-center/colors/",
   subtitle: "Ithaca gorge obsidian, Carnelian #B31B1B, Navy #073949 & Orange #F8981D",
   tokens: {
     mode: 'dark',

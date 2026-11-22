@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Charlottesville, VA",
   year: 1819,
+  brandUrl: "https://brand.virginia.edu/design-assets/colors",
   subtitle: "UVA Blue #232D4B night, Orange #E57200, Cyan #009FDF & Yellow #FDDA24",
   tokens: {
     mode: 'dark',

@@ -31,6 +31,7 @@ function loadPalettesByUniversity() {
         country: p.country,
         city: p.city,
         year: p.year,
+        brandUrl: p.brandUrl,
       };
       byUniversity.set(p.university, bucket);
     }
@@ -54,13 +55,17 @@ function buildCatalogMarkdown() {
       .filter((entry) => entry && entry.group === group);
 
     out += `\n### ${group} (${universities.length} universities · ${universities.length * 2} themes)\n\n`;
-    out += '| University | Location & Founded | Light (bg · kw · str · fn · type · num · bar) | Dark (bg · kw · str · fn · type · num · bar) |\n';
+    out += '| University (Official Brand Guide) | Location & Founded | Light (bg · kw · str · fn · type · num · bar) | Dark (bg · kw · str · fn · type · num · bar) |\n';
     out += '|---|---|---|---|\n';
 
     for (const entry of universities) {
       const safeName = entry.university.replace(/\|/g, '\\|');
+      const nameCell =
+        entry.brandUrl && /^https:\/\//i.test(entry.brandUrl)
+          ? `**[${safeName}](${entry.brandUrl})**`
+          : `**${safeName}**`;
       const location = `${entry.city} · ${entry.year}`;
-      out += `| **${safeName}** | ${location} | ${badge(entry.light)} | ${badge(entry.dark)} |\n`;
+      out += `| ${nameCell} | ${location} | ${badge(entry.light)} | ${badge(entry.dark)} |\n`;
     }
   }
 

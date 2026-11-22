@@ -17,6 +17,7 @@ module.exports = {
   country: "USA",
   city: "Chicago, IL",
   year: 1890,
+  brandUrl: "https://creative.uchicago.edu/color-system/",
   subtitle: "Greystone, Maroon #800000, Lake #007396, Forest #275D38 & Goldenrod",
   tokens: {
     mode: 'light',

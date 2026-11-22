@@ -15,6 +15,7 @@ module.exports = {
   country: "Canada",
   city: "Toronto, ON",
   year: 1827,
+  brandUrl: "https://adcomms.utoronto.ca/images/brand/assets/DefyGravity_BrandGuidelines-1.0.pdf",
   subtitle: "Convocation midnight #1E3765, #6FC7EA, #00A189, #DC4633 & #F1C500",
   tokens: {
     mode: 'dark',

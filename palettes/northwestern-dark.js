@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Evanston, IL",
   year: 1851,
+  brandUrl: "https://www.northwestern.edu/brand/visual-identity/color-palettes/",
   subtitle: "Purple 120 #401F68 Lake night, Bright #5091CD, #58B947 & #FFC520",
   tokens: {
     mode: 'dark',

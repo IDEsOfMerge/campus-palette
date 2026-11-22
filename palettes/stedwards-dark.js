@@ -17,6 +17,7 @@ module.exports = {
   country: "USA",
   city: "Austin, TX",
   year: 1885,
+  brandUrl: "https://www.stedwards.edu/faculty-staff/brand/visual-identity/color",
   subtitle: "Sorin Navy #192E56 night, Bluebonnet #8BCAEF, Red Doors & Gold Medallion",
   tokens: {
     mode: 'dark',

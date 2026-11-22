@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Berkeley, CA",
   year: 1868,
+  brandUrl: "https://brand.berkeley.edu/visual-identity/colors/",
   subtitle: "Berkeley Blue Dark #010133 twilight, California Gold #FDB515 & rose",
   tokens: {
     mode: 'dark',

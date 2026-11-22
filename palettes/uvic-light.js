@@ -17,6 +17,7 @@ module.exports = {
   country: "Canada",
   city: "Victoria, BC",
   year: 1963,
+  brandUrl: "https://www.uvic.ca/brand/brand-guidelines/colours-fonts/index.php",
   subtitle: "Salish Sea blue #005493, Mystic Vale green #008538 & Island sun gold",
   tokens: {
     mode: 'light',

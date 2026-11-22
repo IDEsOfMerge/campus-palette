@@ -17,6 +17,7 @@ module.exports = {
   country: "Canada",
   city: "London, ON",
   year: 1878,
+  brandUrl: "https://brand.westernu.ca/visual-identity/colours.html",
   subtitle: "Western Purple #4F2683, Orchid #8F55E0, Sky, Spring & Tiger accents",
   tokens: {
     mode: 'light',

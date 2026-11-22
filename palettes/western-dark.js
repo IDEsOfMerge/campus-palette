@@ -15,6 +15,7 @@ module.exports = {
   country: "Canada",
   city: "London, ON",
   year: 1878,
+  brandUrl: "https://brand.westernu.ca/visual-identity/colours.html",
   subtitle: "Official Deep Focus #201436, Orchid #8F55E0, Sky #7DEAFB & Spring",
   tokens: {
     mode: 'dark',

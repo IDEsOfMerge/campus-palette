@@ -17,6 +17,7 @@ module.exports = {
   country: "USA",
   city: "Ann Arbor, MI",
   year: 1817,
+  brandUrl: "https://brand.umich.edu/design-resources/colors/",
   subtitle: "Law Quad parchment, Blue #00274C, Maize #FFCB05, Taubman Teal & Ross",
   tokens: {
     mode: 'light',

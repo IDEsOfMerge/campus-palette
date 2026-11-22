@@ -15,6 +15,7 @@ module.exports = {
   country: "USA",
   city: "Durham, NC",
   year: 1838,
+  brandUrl: "https://brand.duke.edu/colors/",
   subtitle: "Gothic Duke Navy #012169 night, Shale Blue, Eno #339898 & Dandelion",
   tokens: {
     mode: 'dark',

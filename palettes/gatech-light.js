@@ -17,6 +17,7 @@ module.exports = {
   country: "USA",
   city: "Atlanta, GA",
   year: 1885,
+  brandUrl: "https://brand.gatech.edu/our-look/colors",
   subtitle: "Diploma #F9F6E5 paper, Navy #051E39, Gold #B39051, Campanile & Azalea",
   tokens: {
     mode: 'light',
