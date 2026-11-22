@@ -2,9 +2,11 @@
 
 // Northwestern University (1851, Evanston, IL) -- Light
 //
-// Lakefill cool Evanston pearl-stone (`bg`) anchored by official Northwestern Purple
-// `#4E2A84` (`accentKeyword`, `accentStatusBar`, `accentCursor`), Lake Michigan teal
-// (`accentFunction`), prairie sage (`accentType`), and warm amber (`accentNumber`).
+// Lakefill cool Evanston pearl-stone (`bg`, echoing Purple 10 `#E4E0EE`) built on
+// Northwestern's official primary & secondary palettes: Northwestern Purple `#4E2A84`
+// (`accentKeyword`, `accentStatusBar`), Secondary Darks `#007FA4` (`accentFunction`),
+// `#008656` (`accentType`), `#D85820` (`accentString`), `#D9C826` (`accentNumber`),
+// and `#0D2D6C` accents.
 
 module.exports = {
   slug: 'northwestern-light',
@@ -15,7 +17,7 @@ module.exports = {
   country: "USA",
   city: "Evanston, IL",
   year: 1851,
-  subtitle: "Evanston pearl-stone, Northwestern Purple #4E2A84 & Lakefill teal",
+  subtitle: "Evanston pearl, Northwestern Purple #4E2A84, #007FA4, #008656 & #D85820",
   tokens: {
     mode: 'light',
     bg: '#F3F3F8',
@@ -33,19 +35,19 @@ module.exports = {
     fgVariable: '#24232B',
     fgPunct: '#4D4C53',
     fgComment: '#5A5A63',
-    fgParameter: '#185344',
-    fgProperty: '#004D4F',
+    fgParameter: '#145348',
+    fgProperty: '#014B56',
     borderSubtle: '#CDCDD3',
     borderStrong: '#99999F',
     accentKeyword: '#593792',
     accentStorage: '#69004F',
-    accentString: '#7C2E00',
-    accentRegex: '#8B3F00',
-    accentFunction: '#001A1E',
-    accentFunctionDim: '#00242D',
-    accentType: '#1C6A40',
-    accentInterface: '#125A97',
-    accentNumber: '#865906',
+    accentString: '#90502A',
+    accentRegex: '#992D1C',
+    accentFunction: '#00242E',
+    accentFunctionDim: '#002E40',
+    accentType: '#046B45',
+    accentInterface: '#2454A4',
+    accentNumber: '#7B5F00',
     accentDecorator: '#732C8C',
     accentNamespace: '#514B67',
     accentCursor: '#4E2A84',
@@ -53,11 +55,11 @@ module.exports = {
     accentBadge: '#4E2A84',
     accentButton: '#4E2A84',
     accentStatusBar: '#4E2A84',
-    colorError: '#6F0016',
+    colorError: '#6B0E21',
     colorWarning: '#864F00',
-    colorInfo: '#005B88',
-    gitAdd: '#186C40',
-    gitDelete: '#6F0016',
+    colorInfo: '#005D82',
+    gitAdd: '#006C45',
+    gitDelete: '#6B0E21',
     ansi: {
       black: '#18181D',
       red: '#A21829',

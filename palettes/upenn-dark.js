@@ -3,7 +3,8 @@
 // University of Pennsylvania (1740, Philadelphia, PA) -- Dark
 //
 // Rich Penn Blue midnight (`bg`, derived from `#011F5B`) contrasting glowing Penn Red
-// keywords, sky-lit Penn Blue functions, Schuylkill teal types, and Liberty gold numbers.
+// keywords, official Penn Light Blue `#82AFD3` functions, Schuylkill teal strings,
+// and exact official Heritage Gold `#F2C100` numbers.
 
 module.exports = {
   slug: 'upenn-dark',
@@ -14,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Philadelphia, PA",
   year: 1740,
-  subtitle: "Deep Penn Blue midnight, Penn Red beacons, Schuylkill teal & gold",
+  subtitle: "Deep Penn Blue #011F5B night, Penn Red, Light Blue #82AFD3 & Heritage Gold",
   tokens: {
     mode: 'dark',
     bg: '#0B1425',
@@ -33,18 +34,18 @@ module.exports = {
     fgPunct: '#A1A8B3',
     fgComment: '#9099A8',
     fgParameter: '#90C9B5',
-    fgProperty: '#A0C0EB',
+    fgProperty: '#95C4E7',
     borderSubtle: '#222E42',
     borderStrong: '#49576F',
     accentKeyword: '#FB9384',
     accentStorage: '#BF8CDF',
     accentString: '#64BCD1',
     accentRegex: '#F7945C',
-    accentFunction: '#ACC5FB',
-    accentFunctionDim: '#C4D0FF',
+    accentFunction: '#BBD8F8',
+    accentFunctionDim: '#D2E3FF',
     accentType: '#93D9A7',
     accentInterface: '#75CDE2',
-    accentNumber: '#FECD80',
+    accentNumber: '#FFD140',
     accentDecorator: '#F382C3',
     accentNamespace: '#96AEDF',
     accentCursor: '#FB9384',

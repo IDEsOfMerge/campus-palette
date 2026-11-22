@@ -732,7 +732,7 @@
         "support.other.namespace.r"
       ],
       "settings": {
-        "foreground": "#BDAA9B"
+        "foreground": "#BDAA9C"
       }
     },
     {
@@ -954,7 +954,7 @@
   ],
   "semanticTokenColors": {
     "namespace": {
-      "foreground": "#BDAA9B"
+      "foreground": "#BDAA9C"
     },
     "class": {
       "foreground": "#7FCF72",

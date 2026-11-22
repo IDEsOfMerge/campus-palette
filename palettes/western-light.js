@@ -3,8 +3,10 @@
 // Western University (1878, London, ON) -- Light
 //
 // University College Gothic silver-ivory (`bg`) showcasing official Western Purple
-// `#4F2683` (PMS 268 C, `accentKeyword`, `accentStatusBar`, `accentCursor`), balanced
-// by Thames River emerald-teal (`accentType`), cobalt functions, and warm rose strings.
+// `#4F2683` (`accentKeyword`, `accentStatusBar`, `accentCursor`) and Orchid `#8F55E0`
+// (`accentBadge`), paired with Western's official accent hues tuned for Light AA:
+// Sky `#7DEAFB` (`accentFunction`), Spring `#B9F876` (`accentType`), Tiger `#F0A757`
+// (`accentString`), and Vivid `#FCF05E` (`accentNumber`).
 
 module.exports = {
   slug: 'western-light',
@@ -15,7 +17,7 @@ module.exports = {
   country: "Canada",
   city: "London, ON",
   year: 1878,
-  subtitle: "University College silver-ivory, Western Purple #4F2683 & Thames teal",
+  subtitle: "Western Purple #4F2683, Orchid #8F55E0, Sky, Spring & Tiger accents",
   tokens: {
     mode: 'light',
     bg: '#F3F2F8',
@@ -33,31 +35,31 @@ module.exports = {
     fgVariable: '#24232B',
     fgPunct: '#4D4C54',
     fgComment: '#5B5963',
-    fgParameter: '#0A5350',
-    fgProperty: '#0D4961',
+    fgParameter: '#23523C',
+    fgProperty: '#004A5C',
     borderSubtle: '#CDCCD3',
     borderStrong: '#9A989F',
     accentKeyword: '#5C3592',
-    accentStorage: '#4C0827',
-    accentString: '#904409',
+    accentStorage: '#6E0038',
+    accentString: '#8C4809',
     accentRegex: '#992D1C',
-    accentFunction: '#003553',
-    accentFunctionDim: '#1D3D5F',
-    accentType: '#036954',
+    accentFunction: '#004A64',
+    accentFunctionDim: '#265370',
+    accentType: '#406E3E',
     accentInterface: '#006377',
-    accentNumber: '#644B29',
+    accentNumber: '#3A421A',
     accentDecorator: '#702E90',
-    accentNamespace: '#504D5F',
+    accentNamespace: '#485061',
     accentCursor: '#4F2683',
     accentFocus: '#4F2683',
-    accentBadge: '#6F3DB0',
+    accentBadge: '#8F55E0',
     accentButton: '#4F2683',
     accentStatusBar: '#4F2683',
-    colorError: '#690C2D',
+    colorError: '#90001F',
     colorWarning: '#864F00',
     colorInfo: '#04569B',
-    gitAdd: '#096B4C',
-    gitDelete: '#690C2D',
+    gitAdd: '#236B34',
+    gitDelete: '#90001F',
     ansi: {
       black: '#18171D',
       red: '#A21829',

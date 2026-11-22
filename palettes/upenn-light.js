@@ -3,8 +3,9 @@
 // University of Pennsylvania (1740, Philadelphia, PA) -- Light
 //
 // College Hall sandstone alabaster (`bg`) anchored by official Penn Red `#990000`
-// (`accentKeyword`, `accentBadge`) and Penn Blue `#011F5B` (`accentFunction`,
-// `accentStatusBar`), balanced by Philadelphia accent teal (`accentType`) and heritage gold.
+// (PMS 201, `accentKeyword`, `accentBadge`) and Penn Blue `#011F5B` (PMS 288,
+// `accentFunction`, `accentStatusBar`), balanced by Light Blue `#82AFD3` accents,
+// Schuylkill teal (`accentString`), and official Heritage Gold `#F2C100` (`accentNumber`).
 
 module.exports = {
   slug: 'upenn-light',
@@ -15,7 +16,7 @@ module.exports = {
   country: "USA",
   city: "Philadelphia, PA",
   year: 1740,
-  subtitle: "Locust Walk sandstone, Penn Red #990000, Penn Blue #011F5B & teal",
+  subtitle: "Locust Walk sandstone, Penn Red #990000, Penn Blue #011F5B & Heritage Gold",
   tokens: {
     mode: 'light',
     bg: '#EFF3F7',

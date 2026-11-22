@@ -3,9 +3,10 @@
 // UC Berkeley (1868, Berkeley, CA) -- Light
 //
 // Sather Tower sunlit Bay stone (`bg`) built directly from UC Berkeley's official
-// two-layer brand palette: Berkeley Blue `#002676` (`accentStatusBar`, `accentFunction`),
-// Purple Dark `#431170` (`accentKeyword`), Rose Dark `#770747` (`accentString`),
-// Green Dark `#00553A` (`accentType`), and California Gold `#FDB515` accents.
+// two-layer brand palette: Berkeley Blue `#002676` (`accentStatusBar`), Blue Medium
+// `#004AAE` (`accentFunction`), Purple Dark `#431170` (`accentKeyword`), Rose Dark
+// `#770747` (`accentStorage`), Rose Medium `#E7115E` (`accentString`), Green Dark `#00553A`
+// (`accentType`), Orange Dark `#FC9313`, and California Gold `#FDB515` accents.
 
 module.exports = {
   slug: 'berkeley-light',
@@ -40,24 +41,24 @@ module.exports = {
     borderStrong: '#959A9F',
     accentKeyword: '#5F3391',
     accentStorage: '#6D0040',
-    accentString: '#B6435D',
+    accentString: '#BA3E5B',
     accentRegex: '#8B3F00',
     accentFunction: '#00325E',
     accentFunctionDim: '#253B63',
     accentType: '#1F684C',
     accentInterface: '#00646D',
     accentNumber: '#865906',
-    accentDecorator: '#8C1D62',
+    accentDecorator: '#663399',
     accentNamespace: '#3C4E79',
     accentCursor: '#002676',
     accentFocus: '#002676',
-    accentBadge: '#D99300',
+    accentBadge: '#C09748',
     accentButton: '#002676',
     accentStatusBar: '#002676',
     colorError: '#900024',
     colorWarning: '#874E00',
     colorInfo: '#0A52A6',
-    gitAdd: '#006C47',
+    gitAdd: '#006E34',
     gitDelete: '#900024',
     ansi: {
       black: '#15191E',

@@ -3,8 +3,8 @@
 // New York University (1831, New York, NY) -- Dark
 //
 // Deep Greenwich Village violet midnight (`bg`, rooted in NYU Deep Violet `#330662`)
-// charged with luminous Ultra Violet keywords, Hudson cyan-teal types, neon rose
-// strings, and crisp amber-gold numbers.
+// charged with luminous Ultra Violet keywords, official NYU Blue `#59B2D1` functions,
+// Teal `#009B8A` types, Magenta `#FB0F78` strings, and Yellow `#F4EC51` numbers.
 
 module.exports = {
   slug: 'nyu-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "New York, NY",
   year: 1831,
-  subtitle: "Deep Violet #330662 Greenwich night, Ultra Violet #8900E1 & cyan",
+  subtitle: "Deep Violet #330662 night, Ultra Violet #8900E1, Teal #009B8A & Blue",
   tokens: {
     mode: 'dark',
     bg: '#1A1126',
@@ -33,19 +33,19 @@ module.exports = {
     fgVariable: '#DAD4E5',
     fgPunct: '#A9A5B1',
     fgComment: '#9B95A5',
-    fgParameter: '#8AC5D6',
-    fgProperty: '#96C4E7',
+    fgParameter: '#88C8CC',
+    fgProperty: '#89C9DB',
     borderSubtle: '#342944',
     borderStrong: '#5D5171',
     accentKeyword: '#CB9AFB',
-    accentStorage: '#C26EA4',
-    accentString: '#FB8398',
+    accentStorage: '#BE66CA',
+    accentString: '#FB81A4',
     accentRegex: '#F7945C',
-    accentFunction: '#8CABCE',
-    accentFunctionDim: '#97B5E8',
-    accentType: '#7AD8DC',
+    accentFunction: '#7ABAD5',
+    accentFunctionDim: '#8AC5E9',
+    accentType: '#4BE1CE',
     accentInterface: '#82D2A8',
-    accentNumber: '#FFCC88',
+    accentNumber: '#E4DC4C',
     accentDecorator: '#D08EF6',
     accentNamespace: '#B2A7CE',
     accentCursor: '#C688FF',
@@ -56,7 +56,7 @@ module.exports = {
     colorError: '#F55A62',
     colorWarning: '#F2AD67',
     colorInfo: '#81BCFF',
-    gitAdd: '#75C59C',
+    gitAdd: '#6AC4B5',
     gitDelete: '#F55A62',
     ansi: {
       black: '#241933',

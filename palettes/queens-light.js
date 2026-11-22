@@ -5,7 +5,7 @@
 // Official Kingston Limestone canvas (`bg`, inspired by Queen's PMS 401 `#B4AEA8`)
 // bringing together the iconic Queen's Tricolour: Queen's Red `#B90E31` (PMS 187,
 // `accentKeyword`), Queen's Blue `#002452` (PMS 295, `accentFunction`, `accentStatusBar`),
-// and Queen's Gold `#FABD0F` (PMS 124, tuned to deep heraldic ochre for Light AA).
+// Queen's Gold `#FABD0F` (PMS 124, deepened for Light AA), and Dark Limestone `#6A625C`.
 
 module.exports = {
   slug: 'queens-light',
@@ -48,7 +48,7 @@ module.exports = {
     accentInterface: '#006377',
     accentNumber: '#845A06',
     accentDecorator: '#8D1D60',
-    accentNamespace: '#5C4C3F',
+    accentNamespace: '#5D4C3F',
     accentCursor: '#002452',
     accentFocus: '#002452',
     accentBadge: '#B90E31',

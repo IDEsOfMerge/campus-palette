@@ -4,8 +4,8 @@
 //
 // Point Grey coastal morning daylight (`bg`, glacier-mist cool white) anchored by
 // official UBC Blue `#002145` (PMS 282, `accentStatusBar`, `accentKeyword`) and
-// UBC Mid Blue `#0055B7` (PMS 2935, `accentFunction`), complemented by Pacific
-// Spirit cedar green (`accentType`), Burrard sunset amber (`accentNumber`), and brick rose.
+// official secondary blues `#0055B7` (PMS 2935, `accentFunction`) and `#0077C8` (PMS 3005),
+// complemented by Pacific Spirit cedar green (`accentType`) and Burrard sunset amber (`accentNumber`).
 
 module.exports = {
   slug: 'ubc-light',
@@ -16,7 +16,7 @@ module.exports = {
   country: "Canada",
   city: "Vancouver, BC",
   year: 1908,
-  subtitle: "Point Grey mist, UBC Blue #002145, UBC Mid Blue #0055B7 & Coast cedar",
+  subtitle: "Point Grey mist, UBC Blue #002145, PMS 2935 #0055B7 & Coast cedar",
   tokens: {
     mode: 'light',
     bg: '#EFF5F8',
@@ -56,7 +56,7 @@ module.exports = {
     accentStatusBar: '#002145',
     colorError: '#900022',
     colorWarning: '#874E00',
-    colorInfo: '#005991',
+    colorInfo: '#005896',
     gitAdd: '#096B4E',
     gitDelete: '#900022',
     ansi: {

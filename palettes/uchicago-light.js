@@ -2,10 +2,11 @@
 
 // University of Chicago (1890, Chicago, IL) -- Light
 //
-// Harper Memorial Library Gothic greystone (`bg`) led by official Phoenix Maroon
-// `#800000` (PMS 202, `accentKeyword`, `accentStatusBar`) and UChicago Greystone
-// `#767676`, balanced with official secondary Lakefront blue (`accentFunction`),
-// forest green (`accentType`), and Midway goldenrod (`accentNumber`).
+// Harper Memorial Library Gothic greystone (`bg`, echoing Light Greystone `#D6D6CE`)
+// paired with UChicago's full official palette: Maroon `#800000` (PMS 202, `accentKeyword`,
+// `accentStatusBar`), Lake `#007396` (`accentFunction`), Forest `#275D38` (`accentType`),
+// Violet `#59315F` (`accentStorage`), Terracotta Dark `#A9431E` (`accentString`), Brick
+// `#A4343A`, Dark Greystone `#737373`, and Goldenrod `#CC8A00` / `#EAAA00` (`accentNumber`).
 
 module.exports = {
   slug: 'uchicago-light',
@@ -16,7 +17,7 @@ module.exports = {
   country: "USA",
   city: "Chicago, IL",
   year: 1890,
-  subtitle: "Harper Gothic greystone, Phoenix Maroon #800000 & Lakefront blue",
+  subtitle: "Greystone, Maroon #800000, Lake #007396, Forest #275D38 & Goldenrod",
   tokens: {
     mode: 'light',
     bg: '#F5F1EE',
@@ -35,19 +36,19 @@ module.exports = {
     fgPunct: '#524B48',
     fgComment: '#625954',
     fgParameter: '#1B5342',
-    fgProperty: '#004B57',
+    fgProperty: '#004C53',
     borderSubtle: '#D0CBC8',
     borderStrong: '#9C9794',
     accentKeyword: '#730B12',
-    accentStorage: '#561B65',
-    accentString: '#8F5000',
-    accentRegex: '#8D3649',
-    accentFunction: '#063745',
-    accentFunctionDim: '#044159',
-    accentType: '#2A683F',
-    accentInterface: '#006569',
-    accentNumber: '#825B07',
-    accentDecorator: '#892363',
+    accentStorage: '#502856',
+    accentString: '#914F00',
+    accentRegex: '#992931',
+    accentFunction: '#00242C',
+    accentFunctionDim: '#002E3E',
+    accentType: '#326742',
+    accentInterface: '#466221',
+    accentNumber: '#845A06',
+    accentDecorator: '#7A375F',
     accentNamespace: '#5E494F',
     accentCursor: '#800000',
     accentFocus: '#800000',
@@ -56,8 +57,8 @@ module.exports = {
     accentStatusBar: '#800000',
     colorError: '#910017',
     colorWarning: '#874E00',
-    colorInfo: '#005C87',
-    gitAdd: '#226B3D',
+    colorInfo: '#005E7D',
+    gitAdd: '#326842',
     gitDelete: '#910017',
     ansi: {
       black: '#1C1714',

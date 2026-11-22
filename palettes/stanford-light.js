@@ -2,10 +2,11 @@
 
 // Stanford University (1885, Stanford, CA) -- Light
 //
-// Main Quad warm California sandstone (`bg`) uniting Stanford's iconic two-color
-// official pairing: Cardinal Red `#8C1515` (PMS 201 C, `accentKeyword`, `accentStatusBar`)
-// and El Palo Alto redwood green `#175E54` (`accentType`, `accentString`), accented by
-// Bay Sky blue (`accentFunction`) and California Poppy gold (`accentNumber`).
+// Main Quad warm California sandstone (`bg`, echoing Fog `#DAD7CB`) built straight from
+// Stanford's official Identity Guide: Cardinal `#8C1515` (PMS 201 C, `accentKeyword`,
+// `accentStatusBar`), Palo Alto `#175E54` (`accentType`), Sky Dark `#016895` (`accentFunction`),
+// Lagunita Dark `#006B81` (`accentInterface`), Plum `#620059` (`accentStorage`), Poppy Dark
+// `#D1660F` (`accentString`), Cool Grey `#53565A`, and Illuminating `#FEDD5C` (`accentNumber`).
 
 module.exports = {
   slug: 'stanford-light',
@@ -16,7 +17,7 @@ module.exports = {
   country: "USA",
   city: "Stanford, CA",
   year: 1885,
-  subtitle: "Main Quad California sandstone, Cardinal #8C1515 & Palo Alto #175E54",
+  subtitle: "Fog sandstone, Cardinal #8C1515, Palo Alto #175E54, Sky & Plum #620059",
   tokens: {
     mode: 'light',
     bg: '#F8F1E9',
@@ -35,20 +36,20 @@ module.exports = {
     fgPunct: '#534C42',
     fgComment: '#62594E',
     fgParameter: '#095255',
-    fgProperty: '#244466',
+    fgProperty: '#004A5C',
     borderSubtle: '#D3CCC3',
     borderStrong: '#9F988F',
-    accentKeyword: '#901A19',
-    accentStorage: '#581962',
-    accentString: '#905212',
+    accentKeyword: '#720C17',
+    accentStorage: '#65035B',
+    accentString: '#914309',
     accentRegex: '#992D1C',
-    accentFunction: '#002F81',
-    accentFunctionDim: '#2B3A80',
+    accentFunction: '#002433',
+    accentFunctionDim: '#002D47',
     accentType: '#0F685C',
-    accentInterface: '#14693D',
-    accentNumber: '#7F5D06',
-    accentDecorator: '#8B1F62',
-    accentNamespace: '#584E3D',
+    accentInterface: '#006377',
+    accentNumber: '#6F4F39',
+    accentDecorator: '#84324C',
+    accentNamespace: '#455160',
     accentCursor: '#8C1515',
     accentFocus: '#8C1515',
     accentBadge: '#8C1515',
@@ -56,8 +57,8 @@ module.exports = {
     accentStatusBar: '#8C1515',
     colorError: '#91001B',
     colorWarning: '#874E00',
-    colorInfo: '#005895',
-    gitAdd: '#126B4A',
+    colorInfo: '#005C85',
+    gitAdd: '#23685D',
     gitDelete: '#91001B',
     ansi: {
       black: '#1D1710',

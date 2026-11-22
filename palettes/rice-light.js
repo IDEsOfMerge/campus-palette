@@ -2,10 +2,11 @@
 
 // Rice University (1912, Houston, TX) -- Light
 //
-// Lovett Hall warm Byzantine-arch rose-limestone (`bg`) anchored by official Rice Blue
-// `#00205B` (PMS 280, `accentKeyword`, `accentStatusBar`) and Rice Gray `#7C7E7F`
-// (PMS 425), complemented by Bayou azure (`accentFunction`), Houston live-oak green
-// (`accentType`), and warm terracotta rust (`accentString`).
+// Lovett Hall Byzantine rose-limestone (`bg`) built from Rice's complete official Campus
+// Color Palette: Rice Blue `#00205B` (`accentStatusBar`, `accentFunction`), Rich Blue `#0A509E`
+// (`accentKeyword`), Burgundy `#68132E` (`accentStorage`), Brick Red `#C04829` (`accentString`),
+// Leaf Emerald `#005B50` (`accentType`), Grass Green `#359245` (`accentInterface`),
+// Warm Yellow `#E9A139` (`accentNumber`), and Dark Gray `#44474F`.
 
 module.exports = {
   slug: 'rice-light',
@@ -16,7 +17,7 @@ module.exports = {
   country: "USA",
   city: "Houston, TX",
   year: 1912,
-  subtitle: "Lovett Hall rose-stone, Rice Blue #00205B, Gray #7C7E7F & Bayou azure",
+  subtitle: "Lovett stone, Rice Blue #00205B, Rich Blue #0A509E, Leaf Emerald & Brick",
   tokens: {
     mode: 'light',
     bg: '#F7F1EE',
@@ -34,31 +35,31 @@ module.exports = {
     fgVariable: '#2B221E',
     fgPunct: '#544B48',
     fgComment: '#635854',
-    fgParameter: '#185345',
-    fgProperty: '#004B5B',
+    fgParameter: '#095255',
+    fgProperty: '#244466',
     borderSubtle: '#D2CBC8',
     borderStrong: '#9E9794',
-    accentKeyword: '#1B4B98',
-    accentStorage: '#561967',
-    accentString: '#9E3312',
+    accentKeyword: '#0853C3',
+    accentStorage: '#69142F',
+    accentString: '#790004',
     accentRegex: '#884200',
-    accentFunction: '#093647',
-    accentFunctionDim: '#0D405B',
-    accentType: '#1C6A41',
-    accentInterface: '#00646D',
-    accentNumber: '#483213',
-    accentDecorator: '#8B1F62',
-    accentNamespace: '#485061',
+    accentFunction: '#1D407E',
+    accentFunctionDim: '#3B4980',
+    accentType: '#0F685C',
+    accentInterface: '#1C692B',
+    accentNumber: '#875807',
+    accentDecorator: '#863046',
+    accentNamespace: '#494F61',
     accentCursor: '#00205B',
     accentFocus: '#00205B',
-    accentBadge: '#00205B',
+    accentBadge: '#0A509E',
     accentButton: '#00205B',
     accentStatusBar: '#00205B',
-    colorError: '#4A0822',
+    colorError: '#690C2D',
     colorWarning: '#864F00',
-    colorInfo: '#005991',
-    gitAdd: '#176B44',
-    gitDelete: '#4A0822',
+    colorInfo: '#0F53A2',
+    gitAdd: '#1F6C2E',
+    gitDelete: '#690C2D',
     ansi: {
       black: '#1D1714',
       red: '#A21829',

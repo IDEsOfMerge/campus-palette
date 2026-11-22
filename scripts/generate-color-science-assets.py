@@ -971,22 +971,29 @@ def render_mds_and_heatmap(summaries: list, tokens: list, pairs: list, slug_orde
 
         pts_px = [map_pt(xs[i], ys[i]) for i in range(len(p["slugs"]))]
 
-        # Subtle dashed links between closest chromatic siblings
+        # Subtle dashed links connecting the 3 closest chromatic sibling pairs per mode
         D_here = p["D"]
+        pairs_here = []
         for i in range(len(p["slugs"])):
             for j in range(i + 1, len(p["slugs"])):
-                if D_here[i, j] <= p["sib_thresh"]:
-                    x1, y1 = pts_px[i]
-                    x2, y2 = pts_px[j]
-                    seg_len = math.hypot(x2 - x1, y2 - y1)
-                    if seg_len > 10:
-                        steps = max(6, int(seg_len / 14))
-                        for k in range(0, steps, 2):
-                            xa = x1 + (x2 - x1) * (k / steps)
-                            ya = y1 + (y2 - y1) * (k / steps)
-                            xb = x1 + (x2 - x1) * (min(k + 1, steps) / steps)
-                            yb = y1 + (y2 - y1) * (min(k + 1, steps) / steps)
-                            draw.line([(xa, ya), (xb, yb)], fill="#C2C7D4", width=3)
+                pairs_here.append((float(D_here[i, j]), i, j))
+        pairs_here.sort(key=lambda t: t[0])
+        p["top_pairs"] = [
+            (meta_by_slug[p["slugs"][i]]["short_name"], meta_by_slug[p["slugs"][j]]["short_name"], d)
+            for d, i, j in pairs_here[:2]
+        ]
+        for d, i, j in pairs_here[:3]:
+            x1, y1 = pts_px[i]
+            x2, y2 = pts_px[j]
+            seg_len = math.hypot(x2 - x1, y2 - y1)
+            if seg_len > 10:
+                steps = max(6, int(seg_len / 14))
+                for k in range(0, steps, 2):
+                    xa = x1 + (x2 - x1) * (k / steps)
+                    ya = y1 + (y2 - y1) * (k / steps)
+                    xb = x1 + (x2 - x1) * (min(k + 1, steps) / steps)
+                    yb = y1 + (y2 - y1) * (min(k + 1, steps) / steps)
+                    draw.line([(xa, ya), (xb, yb)], fill="#B8BECD", width=3)
 
         # Force-directed + strict collision-free label placement
         cx_all = sum(pt[0] for pt in pts_px) / len(pts_px)
@@ -1018,20 +1025,20 @@ def render_mds_and_heatmap(summaries: list, tokens: list, pairs: list, slug_orde
                 if dist_a > 230:
                     fx -= (dx_a / dist_a) * (dist_a - 230) * 0.075
                     fy -= (dy_a / dist_a) * (dist_a - 230) * 0.075
-                elif dist_a < 48:
-                    fx += (dx_a / dist_a) * (48 - dist_a) * 0.48
-                    fy += (dy_a / dist_a) * (48 - dist_a) * 0.48
+                elif dist_a < 50:
+                    fx += (dx_a / dist_a) * (50 - dist_a) * 0.50
+                    fy += (dy_a / dist_a) * (50 - dist_a) * 0.50
 
                 for ax, ay in pts_px:
-                    ox = abs(li["x"] - ax) - (li["w"] / 2 + 26)
-                    oy = abs(li["y"] - ay) - (li["h"] / 2 + 26)
+                    ox = abs(li["x"] - ax) - (li["w"] / 2 + 28)
+                    oy = abs(li["y"] - ay) - (li["h"] / 2 + 28)
                     if ox < 0 and oy < 0:
                         sx = 1.0 if li["x"] >= ax else -1.0
                         sy = 1.0 if li["y"] >= ay else -1.0
                         if abs(ox) < abs(oy):
-                            fx += sx * (-ox) * 0.56
+                            fx += sx * (-ox) * 0.60
                         else:
-                            fy += sy * (-oy) * 0.58
+                            fy += sy * (-oy) * 0.62
 
                 for j, lj in enumerate(labels):
                     if i == j:
@@ -1049,12 +1056,24 @@ def render_mds_and_heatmap(summaries: list, tokens: list, pairs: list, slug_orde
                 li["x"] = min(px0 + pw - li["w"] / 2 - 24, max(px0 + li["w"] / 2 + 24, li["x"] + fx))
                 li["y"] = min(py0 + ph - li["h"] / 2 - 56, max(py0 + li["h"] / 2 + 56, li["y"] + fy))
 
-        # Strict non-overlap final sweep
-        for _ in range(180):
+        # Strict non-overlap final sweep (label-vs-label AND label-vs-marker)
+        for _ in range(240):
             moved = False
             for i in range(len(labels)):
+                li = labels[i]
+                for ax, ay in pts_px:
+                    ox = (li["w"] / 2 + 26) - abs(li["x"] - ax)
+                    oy = (li["h"] / 2 + 26) - abs(li["y"] - ay)
+                    if ox > 0 and oy > 0:
+                        moved = True
+                        if ox < oy:
+                            shift = (ox + 2.0) * (1.0 if li["x"] >= ax else -1.0)
+                            li["x"] = min(px0 + pw - li["w"] / 2 - 20, max(px0 + li["w"] / 2 + 20, li["x"] + shift))
+                        else:
+                            shift = (oy + 2.0) * (1.0 if li["y"] >= ay else -1.0)
+                            li["y"] = min(py0 + ph - li["h"] / 2 - 52, max(py0 + li["h"] / 2 + 52, li["y"] + shift))
                 for j in range(i + 1, len(labels)):
-                    li, lj = labels[i], labels[j]
+                    lj = labels[j]
                     ox = (li["w"] + lj["w"]) / 2 + 10 - abs(li["x"] - lj["x"])
                     oy = (li["h"] + lj["h"]) / 2 + 8 - abs(li["y"] - lj["y"])
                     if ox > 0 and oy > 0:
@@ -1095,11 +1114,13 @@ def render_mds_and_heatmap(summaries: list, tokens: list, pairs: list, slug_orde
 
         draw_text_centered(draw, px0 + pw / 2, py0 + ph + 62, f"MDS Dim 1 ({p['var'][0]:.1f}% variance)", f_ax, fill="#222630")
 
+    lt0 = panels[0]["top_pairs"][0]
+    dk0 = panels[1]["top_pairs"][0]
     draw_text_centered(
         draw,
         W,
         H * 2 - 48,
-        "Inner dot = editor background  ·  Outer ring = signature keyword accent  ·  Dashed links connect closest chromatic siblings (MIT ↔ McGill, UNC ↔ UCLA, UW ↔ NYU)",
+        f"Inner dot = editor background  ·  Outer ring = signature keyword accent  ·  Dashed links connect top 3 closest siblings per mode (Light: {lt0[0]} ↔ {lt0[1]} {lt0[2]:.2f} ΔE₀₀; Dark: {dk0[0]} ↔ {dk0[1]} {dk0[2]:.2f} ΔE₀₀)",
         f_foot,
         fill="#565E6E",
     )

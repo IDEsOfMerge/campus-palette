@@ -3,9 +3,10 @@
 // Columbia University (1754, New York, NY) -- Light
 //
 // Sunlit Butler Library and Low Memorial marble (`bg`, cool luminous limestone)
-// paired with official Columbia Primary Blue `#1D4F91` (PMS 7686 C) and Web Blue
-// `#0077C8` (`accentKeyword`, `accentFunction`), verdigris Low Dome teal (`accentType`),
-// and Alma Mater bronze-amber (`accentNumber`, `accentString`).
+// paired with official Columbia Primary Blue `#1D4F91` (PMS 7686 C) and Secondary Blue
+// `#0077C8` (`accentKeyword`, `accentFunction`), official Accent Color 1 `#C75000`
+// (PMS 718 C, `accentString`), Transactional Green `#228848` (`accentType`), and
+// Transactional Red `#DC2A2A` (`colorError`).
 
 module.exports = {
   slug: 'columbia-light',
@@ -16,7 +17,7 @@ module.exports = {
   country: "USA",
   city: "New York, NY",
   year: 1754,
-  subtitle: "Butler Library limestone, Columbia Primary Blue #1D4F91 & copper dome",
+  subtitle: "Butler marble, Primary Blue #1D4F91, Web Blue #0077C8 & Accent #C75000",
   tokens: {
     mode: 'light',
     bg: '#EEF5F9',
@@ -34,31 +35,31 @@ module.exports = {
     fgVariable: '#1C262B',
     fgPunct: '#464F53',
     fgComment: '#515D63',
-    fgParameter: '#0D534E',
-    fgProperty: '#08495F',
+    fgParameter: '#23523C',
+    fgProperty: '#234466',
     borderSubtle: '#C8CFD3',
     borderStrong: '#949BA0',
-    accentKeyword: '#3C5682',
+    accentKeyword: '#2F5980',
     accentStorage: '#4F1A73',
-    accentString: '#7E2A00',
-    accentRegex: '#8B3F00',
-    accentFunction: '#02354E',
-    accentFunctionDim: '#183E5D',
-    accentType: '#006A52',
-    accentInterface: '#0C6941',
-    accentNumber: '#865906',
+    accentString: '#973D08',
+    accentRegex: '#96311D',
+    accentFunction: '#1D3153',
+    accentFunctionDim: '#2E3960',
+    accentType: '#4A6B48',
+    accentInterface: '#03665D',
+    accentNumber: '#664A29',
     accentDecorator: '#8A2163',
-    accentNamespace: '#335177',
+    accentNamespace: '#455160',
     accentCursor: '#1D4F91',
     accentFocus: '#1D4F91',
     accentBadge: '#0077C8',
     accentButton: '#1D4F91',
     accentStatusBar: '#1D4F91',
-    colorError: '#7B001A',
+    colorError: '#910016',
     colorWarning: '#874E00',
     colorInfo: '#005895',
-    gitAdd: '#166B44',
-    gitDelete: '#7B001A',
+    gitAdd: '#0F6D34',
+    gitDelete: '#910016',
     ansi: {
       black: '#13191D',
       red: '#A21829',

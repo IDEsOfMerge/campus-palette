@@ -3,8 +3,8 @@
 // Brown University (1764, Providence, RI) -- Dark
 //
 // Unmistakable warm walnut-espresso dark canvas (`bg`, derived from official Brown
-// `#4E3629`) glowing with Heraldic Red keywords, official Sky Blue `#59CBE8` functions,
-// Emerald `#00B398` types, and Heraldic Gold `#FFC72C` numbers.
+// `#4E3629`) glowing with Brown Red (`#C00404`) keywords, Sky Blue functions,
+// emerald types, and exact official Brown Gold `#FFC72C` numbers.
 
 module.exports = {
   slug: 'brown-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Providence, RI",
   year: 1764,
-  subtitle: "Rich walnut-espresso #4E3629 dark, heraldic crimson, gold & sky",
+  subtitle: "Walnut-espresso #4E3629 dark, Red #C00404, Gold #FFC72C & Sky",
   tokens: {
     mode: 'dark',
     bg: '#22130D',
@@ -47,7 +47,7 @@ module.exports = {
     accentInterface: '#86D2A0',
     accentNumber: '#FFCF5A',
     accentDecorator: '#F682B8',
-    accentNamespace: '#BFA89F',
+    accentNamespace: '#9FB0C0',
     accentCursor: '#FB918F',
     accentFocus: '#FB918F',
     accentBadge: '#C00404',

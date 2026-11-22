@@ -2,9 +2,9 @@
 
 // Western University (1878, London, ON) -- Dark
 //
-// Rich purple-velvet dark canvas (`bg`, inspired by Western deep plum `#201436`)
-// lit by luminous Western Lavender `#B688FF` keywords, azure functions, Thames mint
-// types, and warm amber-gold numbers.
+// Rich purple-velvet dark canvas rooted directly in Western's official Deep Focus
+// `#201436` (`bg`), lit by luminous Orchid `#8F55E0` keywords, Sky `#7DEAFB` functions,
+// Spring `#B9F876` types, Tiger `#F0A757` strings, and Vivid `#FCF05E` numbers.
 
 module.exports = {
   slug: 'western-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "Canada",
   city: "London, ON",
   year: 1878,
-  subtitle: "Deep Western Haiti violet #201436, lilac keywords & emerald types",
+  subtitle: "Official Deep Focus #201436, Orchid #8F55E0, Sky #7DEAFB & Spring",
   tokens: {
     mode: 'dark',
     bg: '#181328',
@@ -33,30 +33,30 @@ module.exports = {
     fgVariable: '#D8D5E6',
     fgPunct: '#A8A6B2',
     fgComment: '#9996A6',
-    fgParameter: '#89C8C4',
-    fgProperty: '#90C6E3',
+    fgParameter: '#9EC7A4',
+    fgProperty: '#86CCCF',
     borderSubtle: '#312B45',
     borderStrong: '#5A5473',
     accentKeyword: '#C39FFB',
     accentStorage: '#F175A1',
-    accentString: '#ED9560',
+    accentString: '#E49C4B',
     accentRegex: '#FF8C76',
-    accentFunction: '#85ADCC',
-    accentFunctionDim: '#8FB8E6',
-    accentType: '#84DAC0',
+    accentFunction: '#62D0E1',
+    accentFunctionDim: '#89D8EF',
+    accentType: '#A4D96D',
     accentInterface: '#7ACCE3',
-    accentNumber: '#F2D387',
+    accentNumber: '#E7DB4A',
     accentDecorator: '#D08DF6',
-    accentNamespace: '#AEABC0',
+    accentNamespace: '#A5AEC2',
     accentCursor: '#C39FFB',
     accentFocus: '#C39FFB',
-    accentBadge: '#6F3DB0',
+    accentBadge: '#8F55E0',
     accentButton: '#6C41A8',
     accentStatusBar: '#49237A',
     colorError: '#F55A60',
     colorWarning: '#F2AD67',
     colorInfo: '#7FBCFF',
-    gitAdd: '#72C5A0',
+    gitAdd: '#7DC588',
     gitDelete: '#F55A60',
     ansi: {
       black: '#211B34',

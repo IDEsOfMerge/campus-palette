@@ -2,9 +2,11 @@
 
 // University of Virginia (1819, Charlottesville, VA) -- Light
 //
-// Academical Village sunlit warm paper (`bg`) uniting official Jefferson Blue `#232D4B`
-// (`accentStatusBar`, `accentFunction`), Rotunda Orange `#E57200` (locked orange hue
-// for `accentKeyword` and `accentCursor`), Lawn green (`accentType`), and brick red.
+// Academical Village sunlit warm paper (`bg`, echoing Light Gray `#F1F1EF`) uniting
+// official UVA Blue `#232D4B` (`accentStatusBar`) and UVA Orange `#E57200` (locked hue
+// for `accentKeyword` and `accentCursor`) with UVA's full official secondary palette:
+// Link Blue `#495E9D` (`accentFunction`), Green `#62BB46` (`accentType`), Teal `#25CAD3`
+// (`accentInterface`), Magenta `#EF3F6B` (`accentString`), Yellow `#FDDA24`, and Emergency `#DF1E43`.
 
 module.exports = {
   slug: 'uva-light',
@@ -15,7 +17,7 @@ module.exports = {
   country: "USA",
   city: "Charlottesville, VA",
   year: 1819,
-  subtitle: "Rotunda warm paper, Jefferson Blue #232D4B, Rotunda Orange & Lawn green",
+  subtitle: "Rotunda paper, UVA Blue #232D4B, Orange #E57200, Cyan, Green & Magenta",
   tokens: {
     mode: 'light',
     bg: '#F8F1ED',
@@ -33,19 +35,19 @@ module.exports = {
     fgVariable: '#2B221D',
     fgPunct: '#544B46',
     fgComment: '#635852',
-    fgParameter: '#175345',
-    fgProperty: '#1A4764',
+    fgParameter: '#1E5340',
+    fgProperty: '#274467',
     borderSubtle: '#D3CBC7',
     borderStrong: '#9F9793',
     accentKeyword: '#803502',
     accentStorage: '#561868',
-    accentString: '#A3263A',
+    accentString: '#AA1340',
     accentRegex: '#913800',
-    accentFunction: '#092139',
-    accentFunctionDim: '#15284C',
-    accentType: '#186A41',
-    accentInterface: '#006375',
-    accentNumber: '#89631C',
+    accentFunction: '#06247D',
+    accentFunctionDim: '#2A317C',
+    accentType: '#25422A',
+    accentInterface: '#00646D',
+    accentNumber: '#6C5B23',
     accentDecorator: '#8B1F62',
     accentNamespace: '#444F6C',
     accentCursor: '#E57200',
@@ -53,11 +55,11 @@ module.exports = {
     accentBadge: '#E57200',
     accentButton: '#232D4B',
     accentStatusBar: '#232D4B',
-    colorError: '#6B0F08',
+    colorError: '#6C0F0E',
     colorWarning: '#8B4B00',
-    colorInfo: '#005A8E',
-    gitAdd: '#186C40',
-    gitDelete: '#6B0F08',
+    colorInfo: '#005B88',
+    gitAdd: '#246C1C',
+    gitDelete: '#6C0F0E',
     ansi: {
       black: '#1D1713',
       red: '#A21829',

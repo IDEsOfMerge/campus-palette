@@ -3,8 +3,8 @@
 // University of Chicago (1890, Chicago, IL) -- Dark
 //
 // Deep Hyde Park obsidian with subtle maroon warmth (`bg`), pairing glowing Phoenix
-// Maroon keywords, Lakefront cyan-blue functions, forest emerald types, and warm
-// Midway goldenrod numbers.
+// Maroon keywords, official Lake Light `#3EB1C8` functions, Forest / Ivy emerald types,
+// Terracotta `#ECA154` strings, and exact official Goldenrod `#EAAA00` numbers.
 
 module.exports = {
   slug: 'uchicago-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Chicago, IL",
   year: 1890,
-  subtitle: "Hyde Park obsidian-maroon, Phoenix crimson, goldenrod & lake azure",
+  subtitle: "Hyde Park obsidian, Maroon #800000, Lake #3EB1C8, Forest & #EAAA00",
   tokens: {
     mode: 'dark',
     bg: '#1D1312',
@@ -33,31 +33,31 @@ module.exports = {
     fgVariable: '#E7D2D1',
     fgPunct: '#B3A3A3',
     fgComment: '#A79392',
-    fgParameter: '#90C9B4',
-    fgProperty: '#88CAD9',
+    fgParameter: '#91C9B4',
+    fgProperty: '#89CADB',
     borderSubtle: '#382B2A',
     borderStrong: '#635353',
     accentKeyword: '#FB9384',
-    accentStorage: '#C888D9',
-    accentString: '#C67232',
-    accentRegex: '#F290A0',
-    accentFunction: '#82B0C1',
-    accentFunctionDim: '#7FBEDF',
-    accentType: '#98D8A9',
-    accentInterface: '#7BCED2',
-    accentNumber: '#FCCE85',
-    accentDecorator: '#F183C2',
+    accentStorage: '#C091C6',
+    accentString: '#DE7943',
+    accentRegex: '#FF8988',
+    accentFunction: '#1EC0F2',
+    accentFunctionDim: '#6CC7FC',
+    accentType: '#9AD7A9',
+    accentInterface: '#A9CB87',
+    accentNumber: '#FFCE73',
+    accentDecorator: '#DE92BD',
     accentNamespace: '#BFA6AD',
     accentCursor: '#FB9384',
     accentFocus: '#FB9384',
     accentBadge: '#800000',
     accentButton: '#A42A1F',
     accentStatusBar: '#760A05',
-    colorError: '#F45D5B',
+    colorError: '#D95571',
     colorWarning: '#F4AC68',
-    colorInfo: '#77C1F1',
-    gitAdd: '#7DC491',
-    gitDelete: '#F45D5B',
+    colorInfo: '#72C3E9',
+    gitAdd: '#89C197',
+    gitDelete: '#D95571',
     ansi: {
       black: '#271B1B',
       red: '#F76562',

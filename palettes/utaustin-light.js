@@ -2,10 +2,11 @@
 
 // University of Texas at Austin (1883, Austin, TX) -- Light
 //
-// South Mall sunlit Texas limestone (`bg`) anchored by unmistakable UT Burnt Orange
-// `#BF5700` (PMS 159, locked hue for `accentKeyword`, `accentStatusBar`, `accentCursor`)
-// and Charcoal `#333F48` (PMS 432), paired with Barton Springs turquoise (`accentFunction`)
-// and Hill Country sage (`accentType`).
+// South Mall sunlit Texas limestone (`bg`, honoring PMS 7527 `#D6D2C4`) built strictly from
+// UT Austin's official palette — avoiding red and purple outside error diagnostics per UT
+// brand policy: Burnt Orange `#BF5700` (PMS 159, `accentKeyword`, `accentStatusBar`, `accentCursor`),
+// Charcoal `#333F48` (PMS 432, `accentStorage`), Dark Teal `#005F86` (`accentFunction`),
+// Turquoise `#00A9B7` (`accentString`), Forest Green `#579D42` (`accentType`), and Yellow `#FFD600`.
 
 module.exports = {
   slug: 'utaustin-light',
@@ -16,7 +17,7 @@ module.exports = {
   country: "USA",
   city: "Austin, TX",
   year: 1883,
-  subtitle: "UT Tower limestone, Burnt Orange #BF5700, Charcoal #333F48 & turquoise",
+  subtitle: "Limestone #D6D2C4, Burnt Orange #BF5700, Charcoal #333F48 & Teal #005F86",
   tokens: {
     mode: 'light',
     bg: '#F8F2EC',
@@ -34,31 +35,31 @@ module.exports = {
     fgVariable: '#2A221A',
     fgPunct: '#534B44',
     fgComment: '#625950',
-    fgParameter: '#1C5341',
-    fgProperty: '#014C50',
+    fgParameter: '#2A5236',
+    fgProperty: '#054A5F',
     borderSubtle: '#D3CCC5',
     borderStrong: '#9F9891',
-    accentKeyword: '#7E3702',
-    accentStorage: '#571A64',
-    accentString: '#6C3645',
-    accentRegex: '#903A00',
-    accentFunction: '#00252B',
-    accentFunctionDim: '#002F3C',
-    accentType: '#236A39',
-    accentInterface: '#095C93',
-    accentNumber: '#7D692C',
-    accentDecorator: '#8B1F62',
-    accentNamespace: '#42525F',
+    accentKeyword: '#87533F',
+    accentStorage: '#002757',
+    accentString: '#076973',
+    accentRegex: '#834600',
+    accentFunction: '#004969',
+    accentFunctionDim: '#2C5172',
+    accentType: '#345022',
+    accentInterface: '#466311',
+    accentNumber: '#70641F',
+    accentDecorator: '#7C4100',
+    accentNamespace: '#41525F',
     accentCursor: '#BF5700',
     accentFocus: '#BF5700',
     accentBadge: '#BF5700',
     accentButton: '#A64B00',
     accentStatusBar: '#BF5700',
-    colorError: '#6B0E11',
+    colorError: '#6A0C2C',
     colorWarning: '#8B4B00',
-    colorInfo: '#005F76',
-    gitAdd: '#1C6C3A',
-    gitDelete: '#6B0E11',
+    colorInfo: '#005C83',
+    gitAdd: '#356A21',
+    gitDelete: '#6A0C2C',
     ansi: {
       black: '#1D1712',
       red: '#A21829',

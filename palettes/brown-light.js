@@ -3,8 +3,9 @@
 // Brown University (1764, Providence, RI) -- Light
 //
 // College Hill warm taupe-linen (`bg`) grounded in official Brown `#4E3629`
-// (PMS 4975 C) chrome and dark ink, paired with official Heraldic Red `#ED1C24`
-// (`accentKeyword`), Emerald (`accentType`), Sky Blue (`accentFunction`), and Gold.
+// (PMS 4975 C) chrome and dark ink, paired with official digital Brown Red `#C00404`
+// (`accentKeyword`, `accentBadge`), Gold `#FFC72C` (`accentNumber` AA-tuned),
+// Gray `#98A4AE` neutrals, emerald types, and sky-navy functions.
 
 module.exports = {
   slug: 'brown-light',
@@ -15,7 +16,7 @@ module.exports = {
   country: "USA",
   city: "Providence, RI",
   year: 1764,
-  subtitle: "College Hill warm taupe-cream, Brown #4E3629, heraldic red & emerald",
+  subtitle: "College Hill linen, Brown #4E3629, Red #C00404, Gold #FFC72C & Gray",
   tokens: {
     mode: 'light',
     bg: '#F8EFE9',
@@ -37,7 +38,7 @@ module.exports = {
     fgProperty: '#004A5C',
     borderSubtle: '#D3C9C2',
     borderStrong: '#9F968E',
-    accentKeyword: '#960417',
+    accentKeyword: '#970403',
     accentStorage: '#551E61',
     accentString: '#643F34',
     accentRegex: '#8D3D00',
@@ -45,19 +46,19 @@ module.exports = {
     accentFunctionDim: '#002D47',
     accentType: '#046957',
     accentInterface: '#17683D',
-    accentNumber: '#855907',
+    accentNumber: '#69472A',
     accentDecorator: '#8C205B',
-    accentNamespace: '#5E4B42',
+    accentNamespace: '#425260',
     accentCursor: '#C00404',
     accentFocus: '#C00404',
     accentBadge: '#C00404',
     accentButton: '#4E3629',
     accentStatusBar: '#4E3629',
-    colorError: '#910017',
+    colorError: '#7B0407',
     colorWarning: '#864F00',
     colorInfo: '#005A8E',
     gitAdd: '#166B44',
-    gitDelete: '#910017',
+    gitDelete: '#7B0407',
     ansi: {
       black: '#1E1711',
       red: '#A21829',

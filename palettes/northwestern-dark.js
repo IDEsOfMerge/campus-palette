@@ -2,9 +2,9 @@
 
 // Northwestern University (1851, Evanston, IL) -- Dark
 //
-// Deep Rich Purple obsidian (`bg`, inspired by official `#401F68`) glowing with Bright
-// Northwestern Purple keywords, Lakefill cyan-teal functions, prairie emerald types,
-// and warm golden amber numbers.
+// Deep Purple 120 obsidian (`bg`, rooted in official `#401F68` / `#1D0235`) glowing with
+// luminous Purple keywords and Northwestern's official Secondary Brights: `#5091CD`
+// functions, `#58B947` types, `#7FCECD` interfaces, `#EF553F` errors, and `#FFC520` numbers.
 
 module.exports = {
   slug: 'northwestern-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Evanston, IL",
   year: 1851,
-  subtitle: "Rich Purple #401F68 Lake Michigan night, bright lavender & warm amber",
+  subtitle: "Purple 120 #401F68 Lake night, Bright #5091CD, #58B947 & #FFC520",
   tokens: {
     mode: 'dark',
     bg: '#161325',
@@ -33,19 +33,19 @@ module.exports = {
     fgVariable: '#D7D5E7',
     fgPunct: '#A7A6B2',
     fgComment: '#9896A7',
-    fgParameter: '#8FC9B7',
-    fgProperty: '#87CBD6',
+    fgParameter: '#97C8AC',
+    fgProperty: '#94C5E6',
     borderSubtle: '#2F2B43',
     borderStrong: '#57546F',
     accentKeyword: '#C0A1FB',
     accentStorage: '#E37BBF',
-    accentString: '#FB8877',
-    accentRegex: '#F6955B',
-    accentFunction: '#76CCE5',
-    accentFunctionDim: '#92D5F4',
-    accentType: '#90DAAA',
-    accentInterface: '#88C3FF',
-    accentNumber: '#FFCC88',
+    accentString: '#F98C62',
+    accentRegex: '#FF8C76',
+    accentFunction: '#95BADF',
+    accentFunctionDim: '#A4C4F7',
+    accentType: '#8DDE80',
+    accentInterface: '#98BFFF',
+    accentNumber: '#FFCF5C',
     accentDecorator: '#D58CF2',
     accentNamespace: '#AFA9C9',
     accentCursor: '#C0A1FB',
@@ -53,11 +53,11 @@ module.exports = {
     accentBadge: '#4E2A84',
     accentButton: '#6B43AB',
     accentStatusBar: '#48247B',
-    colorError: '#D35D6F',
+    colorError: '#D25F6A',
     colorWarning: '#F2AD67',
-    colorInfo: '#73C1F6',
-    gitAdd: '#78C594',
-    gitDelete: '#D35D6F',
+    colorInfo: '#72C2EF',
+    gitAdd: '#6FC699',
+    gitDelete: '#D25F6A',
     ansi: {
       black: '#1F1C31',
       red: '#F76562',

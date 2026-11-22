@@ -3,8 +3,8 @@
 // Georgetown University (1789, Washington, DC) -- Dark
 //
 // Deep Potomac twilight anchored in official Georgetown Blue `#041E42` (`bg`) with
-// silver-granite chrome, crisp sky-blue keywords, Potomac cyan-teal types, and warm
-// Healy Hall gold numbers.
+// official Tertiary Cyan `#00B5E2` functions, bright blue keywords, Tertiary Green
+// `#5FA343` types, and Tertiary Yellow `#F8E08E` numbers.
 
 module.exports = {
   slug: 'georgetown-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Washington, DC",
   year: 1789,
-  subtitle: "Hilltop Georgetown Blue #041E42 night, slate silver, brick & Potomac cyan",
+  subtitle: "Hilltop #041E42 night, Cyan #00B5E2, Red #862633, Green & #F8E08E",
   tokens: {
     mode: 'dark',
     bg: '#0B1622',
@@ -33,31 +33,31 @@ module.exports = {
     fgVariable: '#CCD9E7',
     fgPunct: '#9FA9B3',
     fgComment: '#8E9AA7',
-    fgParameter: '#8BC5D7',
-    fgProperty: '#91C6E4',
+    fgParameter: '#99C8AA',
+    fgProperty: '#8BC9DE',
     borderSubtle: '#22303E',
     borderStrong: '#49596A',
     accentKeyword: '#81A2C2',
     accentStorage: '#C08BDD',
-    accentString: '#FB8492',
+    accentString: '#F48A90',
     accentRegex: '#F6955B',
-    accentFunction: '#96CCF9',
-    accentFunctionDim: '#B4D5FF',
-    accentType: '#7AD8DF',
-    accentInterface: '#84D1A6',
-    accentNumber: '#FFCC88',
+    accentFunction: '#22BEFA',
+    accentFunctionDim: '#73C5FF',
+    accentType: '#9FD98D',
+    accentInterface: '#77CAEF',
+    accentNumber: '#CFA05A',
     accentDecorator: '#F481C0',
-    accentNamespace: '#A4AEC2',
+    accentNamespace: '#A2AFC1',
     accentCursor: '#81A2C2',
     accentFocus: '#81A2C2',
-    accentBadge: '#041E42',
+    accentBadge: '#003DA5',
     accentButton: '#1E4274',
     accentStatusBar: '#062145',
-    colorError: '#F55A61',
+    colorError: '#D15C79',
     colorWarning: '#F2AD67',
-    colorInfo: '#7BBDFF',
-    gitAdd: '#76C598',
-    gitDelete: '#F55A61',
+    colorInfo: '#6DC1F9',
+    gitAdd: '#8AC378',
+    gitDelete: '#D15C79',
     ansi: {
       black: '#12202D',
       red: '#F76562',

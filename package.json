@@ -2,7 +2,7 @@
   "name": "campus-palette",
   "displayName": "Campus Palette",
   "description": "80 university-inspired Light & Dark color themes for VS Code & Positron across 40 iconic US, Canadian & global campuses, engineered in OKLCH with verified WCAG 2.1 AA, APCA, CIEDE2000 & colorblind safety.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "idesofmerge",
   "license": "MIT",
   "icon": "icon.png",

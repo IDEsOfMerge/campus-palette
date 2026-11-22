@@ -3,7 +3,8 @@
 // Cornell University (1865, Ithaca, NY) -- Dark
 //
 // Deep Cascadilla Gorge shale charcoal (`bg`) warmed by luminous Cornell Carnelian
-// keywords, Cayuga Lake azure functions, sage emerald types, and autumn harvest gold.
+// keywords, Link Blue `#006699` functions, Cornell Green `#6EB43F` types, and
+// exact official Cornell Orange `#F8981D` numbers.
 
 module.exports = {
   slug: 'cornell-dark',
@@ -14,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Ithaca, NY",
   year: 1865,
-  subtitle: "Ithaca gorge obsidian, glowing Carnelian #B31B1B, lake blue & autumn gold",
+  subtitle: "Ithaca gorge obsidian, Carnelian #B31B1B, Navy #073949 & Orange #F8981D",
   tokens: {
     mode: 'dark',
     bg: '#1E1412',
@@ -32,31 +33,31 @@ module.exports = {
     fgVariable: '#E7D2CF',
     fgPunct: '#B3A4A1',
     fgComment: '#A79390',
-    fgParameter: '#93C8B0',
+    fgParameter: '#9BC7A7',
     fgProperty: '#8FC7E3',
     borderSubtle: '#392C2A',
     borderStrong: '#645452',
-    accentKeyword: '#CF8788',
+    accentKeyword: '#FB9287',
     accentStorage: '#CC86D4',
-    accentString: '#F1925D',
+    accentString: '#CB8829',
     accentRegex: '#F88C9C',
-    accentFunction: '#7BC7FD',
+    accentFunction: '#77C7FF',
     accentFunctionDim: '#A3CFFF',
-    accentType: '#99D9A0',
-    accentInterface: '#7BCED1',
-    accentNumber: '#FBCF84',
+    accentType: '#9ADC75',
+    accentInterface: '#84C9E5',
+    accentNumber: '#EEB451',
     accentDecorator: '#F282C5',
-    accentNamespace: '#A8ADC1',
-    accentCursor: '#CF8788',
-    accentFocus: '#CF8788',
+    accentNamespace: '#B9AC99',
+    accentCursor: '#FB9287',
+    accentFocus: '#FB9287',
     accentBadge: '#B31B1B',
     accentButton: '#BA3F37',
     accentStatusBar: '#76090B',
-    colorError: '#D45E59',
+    colorError: '#F55D4B',
     colorWarning: '#F3AD67',
     colorInfo: '#70C1F9',
-    gitAdd: '#7DC58A',
-    gitDelete: '#D45E59',
+    gitAdd: '#92C176',
+    gitDelete: '#F55D4B',
     ansi: {
       black: '#281C1B',
       red: '#F76562',

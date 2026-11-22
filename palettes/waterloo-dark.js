@@ -4,7 +4,8 @@
 //
 // High-contrast technical carbon-graphite (`bg`, Waterloo Black) lit by exact official
 // Waterloo Gold `#FED34C` (`accentNumber`, `accentCursor`, `accentFocus`), Math magenta
-// keywords, Science azure functions, Health cyan-teal types, and Arts amber-coral strings.
+// keywords (`#DF1AA0`), Science azure functions (`#0072DA`), Health teal types (`#009CAB`),
+// and Arts orange strings (`#ED8C00`).
 
 module.exports = {
   slug: 'waterloo-dark',
@@ -15,7 +16,7 @@ module.exports = {
   country: "Canada",
   city: "Waterloo, ON",
   year: 1957,
-  subtitle: "Black & Gold #FED34C technical graphite with Math pink & Science blue",
+  subtitle: "Black & Gold #FED34C technical graphite with Math #DF1AA0 & Science blue",
   tokens: {
     mode: 'dark',
     bg: '#161511',
@@ -33,31 +34,31 @@ module.exports = {
     fgVariable: '#DBD7CD',
     fgPunct: '#AAA79F',
     fgComment: '#9C988E',
-    fgParameter: '#8BC5D7',
-    fgProperty: '#96C4E7',
+    fgParameter: '#8FC3DC',
+    fgProperty: '#9DC1EA',
     borderSubtle: '#2F2D29',
     borderStrong: '#585651',
-    accentKeyword: '#FB88C0',
-    accentStorage: '#BD85F8',
-    accentString: '#FB8A64',
+    accentKeyword: '#FB87C5',
+    accentStorage: '#BC85F9',
+    accentString: '#FB8968',
     accentRegex: '#FF8892',
-    accentFunction: '#8CC2FF',
-    accentFunctionDim: '#AFCBFF',
-    accentType: '#62C1C8',
-    accentInterface: '#96D273',
+    accentFunction: '#9ABEFF',
+    accentFunctionDim: '#B8C8FF',
+    accentType: '#7BD6E8',
+    accentInterface: '#B6C873',
     accentNumber: '#FCD14A',
     accentDecorator: '#D48CF2',
     accentNamespace: '#A7ADC2',
     accentCursor: '#FED34C',
     accentFocus: '#FED34C',
-    accentBadge: '#D99B00',
+    accentBadge: '#EAAB00',
     accentButton: '#414052',
     accentStatusBar: '#212125',
-    colorError: '#D25C77',
+    colorError: '#F55A65',
     colorWarning: '#F2AD67',
-    colorInfo: '#7DBCFF',
+    colorInfo: '#82BBFF',
     gitAdd: '#7AC688',
-    gitDelete: '#D25C77',
+    gitDelete: '#F55A65',
     ansi: {
       black: '#1F1E1A',
       red: '#F76562',

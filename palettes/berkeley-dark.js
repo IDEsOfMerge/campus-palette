@@ -3,8 +3,8 @@
 // UC Berkeley (1868, Berkeley, CA) -- Dark
 //
 // Deep Bay twilight inspired by official Berkeley Blue Dark `#010133` (`bg`) with
-// luminous exact California Gold `#FDB515` numbers & cursor, Bay Blue Medium functions,
-// Golden Gate rose strings, and crisp eucalyptus green types.
+// luminous exact California Gold `#FDB515` numbers & cursor, Blue Light `#9FD1FF` functions,
+// Rose Light `#FFCFE5` / `#E7115E` strings, and Green Light `#B3E59A` types.
 
 module.exports = {
   slug: 'berkeley-dark',
@@ -46,17 +46,17 @@ module.exports = {
     accentType: '#8DD9B6',
     accentInterface: '#78CED8',
     accentNumber: '#FFCD7A',
-    accentDecorator: '#F680BF',
+    accentDecorator: '#C393FF',
     accentNamespace: '#98ADDF',
     accentCursor: '#FDB515',
     accentFocus: '#C49EFB',
-    accentBadge: '#D99300',
+    accentBadge: '#C09748',
     accentButton: '#12419F',
     accentStatusBar: '#012775',
     colorError: '#F55967',
     colorWarning: '#F3AD67',
     colorInfo: '#88BAFF',
-    gitAdd: '#6FC69B',
+    gitAdd: '#6CC986',
     gitDelete: '#F55967',
     ansi: {
       black: '#141D34',

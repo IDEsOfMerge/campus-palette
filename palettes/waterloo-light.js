@@ -3,9 +3,11 @@
 // University of Waterloo (1957, Waterloo, ON) -- Light
 //
 // Architectural drafting white (`bg`) paired with official Waterloo Black & Gold
-// (`#FED34C` PMS 122 C / `#EBAB00` PMS 124) plus accents drawn straight from Waterloo's
-// official six-faculty system: Math Pink (`accentKeyword`), Science Blue (`accentFunction`),
-// Health Teal (`accentType`), and Arts Orange (`accentString`).
+// (`#FED34C` L3 / `#EAAB00` L4) plus syntax accents locked straight to Waterloo's
+// official six-faculty Level 4 digital hexes: Math Pink `#A2006E` (`accentKeyword`),
+// Engineering Purple `#5D0096` (`accentStorage`), Science Blue `#003599` (`accentFunction`),
+// Health Teal `#115E6B` (`accentType`), Environment `#607000` (`accentInterface`),
+// Arts Orange `#D93F00` (`accentString`), and Schools Red `#BB0F33` (`colorError`).
 
 module.exports = {
   slug: 'waterloo-light',
@@ -16,7 +18,7 @@ module.exports = {
   country: "Canada",
   city: "Waterloo, ON",
   year: 1957,
-  subtitle: "Studio concrete white, Waterloo Gold #FED34C & the 6 faculty colours",
+  subtitle: "Drafting white, Waterloo Gold #EAAB00 & all 6 exact faculty hexes",
   tokens: {
     mode: 'light',
     bg: '#F5F3EF',
@@ -34,31 +36,31 @@ module.exports = {
     fgVariable: '#27241C',
     fgPunct: '#4F4D46',
     fgComment: '#5E5B52',
-    fgParameter: '#214D66',
-    fgProperty: '#164763',
+    fgParameter: '#224C67',
+    fgProperty: '#244466',
     borderSubtle: '#CFCDC9',
     borderStrong: '#9B9995',
-    accentKeyword: '#8D045C',
+    accentKeyword: '#8C045F',
     accentStorage: '#510283',
-    accentString: '#964B32',
+    accentString: '#A03209',
     accentRegex: '#9A273B',
-    accentFunction: '#325A7E',
-    accentFunctionDim: '#486389',
-    accentType: '#015D71',
-    accentInterface: '#346700',
-    accentNumber: '#7F5D06',
+    accentFunction: '#0A40A4',
+    accentFunctionDim: '#3B4BA1',
+    accentType: '#126479',
+    accentInterface: '#526000',
+    accentNumber: '#7A5D3C',
     accentDecorator: '#732D8D',
     accentNamespace: '#4A4F61',
     accentCursor: '#C28A00',
     accentFocus: '#C28A00',
-    accentBadge: '#D99B00',
+    accentBadge: '#EAAB00',
     accentButton: '#26262B',
     accentStatusBar: '#1E1E22',
-    colorError: '#6B0B2B',
+    colorError: '#690C2F',
     colorWarning: '#864F00',
-    colorInfo: '#00579A',
+    colorInfo: '#0055A0',
     gitAdd: '#1D6C34',
-    gitDelete: '#6B0B2B',
+    gitDelete: '#690C2F',
     ansi: {
       black: '#1A1813',
       red: '#A21829',

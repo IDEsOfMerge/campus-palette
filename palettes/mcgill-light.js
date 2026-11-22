@@ -2,9 +2,11 @@
 
 // McGill University (1821, Montreal, QC) -- Light
 //
-// Montreal limestone greystone (`bg`) punctuated by official McGill Red (PMS 185,
-// `#ED1B2F`, tuned to `#B51226` for AA text and exact `#ED1B2F` on badges), paired
-// with St. Lawrence teal (`accentFunction`), Mount Royal spruce (`accentType`), and Martlet gold.
+// Montreal limestone greystone (`bg`, echoing pale gray `#F4F4F4`) punctuated by official
+// McGill Red `#ED1B2F` (PMS 185, AA-tuned for text & exact `#ED1B2F` on badges), paired
+// with McGill's published secondary spectrum: Dark Teal `#0A6266` (`accentString`),
+// Dark Blue `#024F6D` (`accentFunction`), Dark Green `#305534` (`accentType`),
+// Dark Purple `#673567` (`accentStorage`), Cool Grey `#5D6770`, and Dark Yellow `#B28C35`.
 
 module.exports = {
   slug: 'mcgill-light',
@@ -15,7 +17,7 @@ module.exports = {
   country: "Canada",
   city: "Montreal, QC",
   year: 1821,
-  subtitle: "Montreal greystone, McGill Red #ED1B2F, St. Lawrence teal & spruce",
+  subtitle: "Montreal greystone, McGill Red #ED1B2F, Dark Teal #0A6266 & Cool Grey",
   tokens: {
     mode: 'light',
     bg: '#F7F1F0',
@@ -33,21 +35,21 @@ module.exports = {
     fgVariable: '#2A2220',
     fgPunct: '#534B4A',
     fgComment: '#625856',
-    fgParameter: '#1A5343',
-    fgProperty: '#264467',
+    fgParameter: '#2C5235',
+    fgProperty: '#0D4961',
     borderSubtle: '#D1CBCB',
     borderStrong: '#9E9897',
     accentKeyword: '#960419',
-    accentStorage: '#581765',
-    accentString: '#0B687B',
-    accentRegex: '#8D3D00',
-    accentFunction: '#03247D',
-    accentFunctionDim: '#29317B',
-    accentType: '#2E4F38',
-    accentInterface: '#0A646E',
-    accentNumber: '#875806',
-    accentDecorator: '#8D1C5F',
-    accentNamespace: '#4A4F61',
+    accentStorage: '#331F3E',
+    accentString: '#046A6E',
+    accentRegex: '#93361B',
+    accentFunction: '#194E70',
+    accentFunctionDim: '#36567A',
+    accentType: '#36501F',
+    accentInterface: '#00646F',
+    accentNumber: '#7C5E07',
+    accentDecorator: '#7A395A',
+    accentNamespace: '#425260',
     accentCursor: '#D9162B',
     accentFocus: '#D9162B',
     accentBadge: '#ED1B2F',
@@ -55,8 +57,8 @@ module.exports = {
     accentStatusBar: '#C81428',
     colorError: '#910016',
     colorWarning: '#874E00',
-    colorInfo: '#005B8A',
-    gitAdd: '#056C45',
+    colorInfo: '#005D80',
+    gitAdd: '#3F6643',
     gitDelete: '#910016',
     ansi: {
       black: '#1D1716',

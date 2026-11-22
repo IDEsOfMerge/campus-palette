@@ -4,7 +4,7 @@
 //
 // Pembina Hall sunlit prairie linen (`bg`) grounded in official University of Alberta
 // Green `#275D38` (PMS 356 C, `accentKeyword`, `accentStatusBar`), official U of A Gold
-// `#FECB00` (tuned to harvest ochre for Light AA), North Saskatchewan blue, and prairie rust.
+// `#FECB00` (PMS 7405 C, tuned to harvest ochre for Light AA), North Saskatchewan blue, and prairie rust.
 
 module.exports = {
   slug: 'ualberta-light',

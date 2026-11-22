@@ -2,9 +2,9 @@
 
 // University of Virginia (1819, Charlottesville, VA) -- Dark
 //
-// Deep Jefferson Blue midnight (`bg`, derived from `#232D4B`) contrasting radiant
-// Rotunda Orange `#FF8533` keywords and cursor, Blue Ridge cyan-blue functions,
-// Lawn emerald types, and warm Academical brick strings.
+// Deep UVA Blue midnight (`bg`, derived from `#232D4B`) contrasting radiant UVA Orange
+// `#E57200` keywords and cursor, official Cyan `#009FDF` functions, Green `#62BB46`
+// types, Magenta `#EF3F6B` strings, and exact official Yellow `#FDDA24` numbers.
 
 module.exports = {
   slug: 'uva-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Charlottesville, VA",
   year: 1819,
-  subtitle: "Jefferson Blue #232D4B night, Rotunda Orange #E57200 & Blue Ridge cyan",
+  subtitle: "UVA Blue #232D4B night, Orange #E57200, Cyan #009FDF & Yellow #FDDA24",
   tokens: {
     mode: 'dark',
     bg: '#0D1524',
@@ -33,19 +33,19 @@ module.exports = {
     fgVariable: '#CFD8E8',
     fgPunct: '#A1A8B3',
     fgComment: '#9099A8',
-    fgParameter: '#8FC9B7',
-    fgProperty: '#A7BEEC',
+    fgParameter: '#97C8AC',
+    fgProperty: '#87CBD7',
     borderSubtle: '#252F41',
     borderStrong: '#4C586E',
     accentKeyword: '#FB975A',
     accentStorage: '#C887DD',
-    accentString: '#CD7C91',
+    accentString: '#CD7B98',
     accentRegex: '#FB9161',
-    accentFunction: '#B2BCE5',
-    accentFunctionDim: '#C4C5FE',
-    accentType: '#8DDAAA',
-    accentInterface: '#77CCE2',
-    accentNumber: '#EDD58B',
+    accentFunction: '#78DCFB',
+    accentFunctionDim: '#A9E3FF',
+    accentType: '#93DC89',
+    accentInterface: '#78CED8',
+    accentNumber: '#F4D544',
     accentDecorator: '#F481C0',
     accentNamespace: '#A0ADCF',
     accentCursor: '#FF8633',
@@ -53,11 +53,11 @@ module.exports = {
     accentBadge: '#E57200',
     accentButton: '#384672',
     accentStatusBar: '#232D4B',
-    colorError: '#F55A5F',
+    colorError: '#F55A66',
     colorWarning: '#F7AA69',
-    colorInfo: '#74BFFB',
-    gitAdd: '#78C594',
-    gitDelete: '#F55A5F',
+    colorInfo: '#6DC1F9',
+    gitAdd: '#7EC675',
+    gitDelete: '#F55A66',
     ansi: {
       black: '#151F30',
       red: '#F76562',

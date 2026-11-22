@@ -3,8 +3,8 @@
 // University of North Carolina (1789, Chapel Hill, NC) -- Dark
 //
 // Deep Chapel Hill Navy midnight (`bg`, rooted in `#13294B`) showcasing luminous official
-// Carolina Blue `#4B9CD3` / `#7CC3F0` across keywords, cursor, and functions, paired
-// with Piedmont pine emerald and warm copper strings.
+// Carolina Blue `#4B9CD3` and Fordham Fountain `#B7D7ED` across keywords, cursor, and
+// functions, paired with Piedmont pine emerald and warm copper strings.
 
 module.exports = {
   slug: 'unc-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Chapel Hill, NC",
   year: 1789,
-  subtitle: "Chapel Hill Navy #13294B midnight, glowing Carolina Blue #4B9CD3 & pine",
+  subtitle: "Chapel Hill Navy #13294B night, Carolina Blue #4B9CD3 & Fordham Fountain",
   tokens: {
     mode: 'dark',
     bg: '#091724',
@@ -34,20 +34,20 @@ module.exports = {
     fgPunct: '#9FA9B3',
     fgComment: '#8D9AA7',
     fgParameter: '#8CC9BD',
-    fgProperty: '#9AC2E9',
+    fgProperty: '#9FC1EB',
     borderSubtle: '#203141',
     borderStrong: '#475A6D',
     accentKeyword: '#6CA7C3',
     accentStorage: '#BE8AE5',
     accentString: '#FB896C',
     accentRegex: '#F2985E',
-    accentFunction: '#A3C0EA',
-    accentFunctionDim: '#B5CAFF',
+    accentFunction: '#A7BEEC',
+    accentFunctionDim: '#B9C8FF',
     accentType: '#8BDAB5',
     accentInterface: '#78CED8',
     accentNumber: '#FFCC88',
     accentDecorator: '#F382C2',
-    accentNamespace: '#95B1D2',
+    accentNamespace: '#9FB0C0',
     accentCursor: '#4B9CD3',
     accentFocus: '#4B9CD3',
     accentBadge: '#4B9CD3',

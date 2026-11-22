@@ -2,7 +2,7 @@
 
 // Princeton University (1746, Princeton, NJ) -- Dark
 //
-// FitzRandolph Gate wrought-iron obsidian (`bg`) lit by unmistakable Princeton Orange
+// FitzRandolph Gate wrought-iron obsidian (`bg`) lit by official Princeton Orange on dark
 // `#F58025` (`accentKeyword`, `accentCursor`, `accentFocus`), azure functions, rose-crimson
 // strings, and crisp botanical emerald types.
 
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Princeton, NJ",
   year: 1746,
-  subtitle: "FitzRandolph Gate obsidian, glowing Princeton Orange & cobalt",
+  subtitle: "FitzRandolph Gate obsidian, official Princeton Orange #F58025 (on dark)",
   tokens: {
     mode: 'dark',
     bg: '#1A1411',
@@ -37,7 +37,7 @@ module.exports = {
     fgProperty: '#90C6E4',
     borderSubtle: '#342D28',
     borderStrong: '#5E5550',
-    accentKeyword: '#FB9850',
+    accentKeyword: '#FB9755',
     accentStorage: '#CA87D8',
     accentString: '#CD7C91',
     accentRegex: '#FB9162',
@@ -48,8 +48,8 @@ module.exports = {
     accentNumber: '#EED48C',
     accentDecorator: '#F083C8',
     accentNamespace: '#9DAECF',
-    accentCursor: '#FB9850',
-    accentFocus: '#FB9850',
+    accentCursor: '#F58025',
+    accentFocus: '#F58025',
     accentBadge: '#E77500',
     accentButton: '#B65400',
     accentStatusBar: '#602D00',

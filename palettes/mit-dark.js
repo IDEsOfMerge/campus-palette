@@ -2,9 +2,9 @@
 
 // MIT (1861, Cambridge, MA) -- Dark
 //
-// Precision carbon-steel obsidian (`bg`) contrasting official MIT Red chrome with
-// luminous Bright Red `#FF5260` (from official `#FF1423`) keywords, telemetry cyan-blue
-// functions, oscilloscope emerald types, and brushed Silver Gray `#8B959E` comments.
+// Precision carbon-steel obsidian (`bg`, rooted in official Dark Gray 2 `#212326`)
+// contrasting official MIT Red chrome with luminous Bright Red `#FF1423`-rooted keywords,
+// Expanded Blue functions, Green types, Light Blue `#99EBFF` cyan strings, and Yellow `#FFEB00` numbers.
 
 module.exports = {
   slug: 'mit-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Cambridge, MA",
   year: 1861,
-  subtitle: "Stata Center carbon obsidian, Bright MIT Red #FF1423 & silver telemetry",
+  subtitle: "Dark Gray #212326 obsidian, Bright Red #FF1423, Blue #1966FF & Yellow",
   tokens: {
     mode: 'dark',
     bg: '#111518',
@@ -33,31 +33,31 @@ module.exports = {
     fgVariable: '#CDDAE1',
     fgPunct: '#9FA9AF',
     fgComment: '#8F9AA2',
-    fgParameter: '#8DC9BA',
-    fgProperty: '#8EC7E2',
+    fgParameter: '#9CC7A6',
+    fgProperty: '#9EC1EA',
     borderSubtle: '#292E32',
     borderStrong: '#51575C',
     accentKeyword: '#FB9192',
-    accentStorage: '#C589DC',
-    accentString: '#6FA2A9',
+    accentStorage: '#B88AF4',
+    accentString: '#56BDD9',
     accentRegex: '#F8945C',
-    accentFunction: '#5EC0FF',
-    accentFunctionDim: '#91C8FF',
-    accentType: '#8ADBAF',
+    accentFunction: '#9CBEFF',
+    accentFunctionDim: '#B9C8FF',
+    accentType: '#97D26D',
     accentInterface: '#79CED2',
-    accentNumber: '#FFCC88',
-    accentDecorator: '#F780BD',
-    accentNamespace: '#A1B0C1',
+    accentNumber: '#EDD946',
+    accentDecorator: '#ED83D2',
+    accentNamespace: '#A0B0C1',
     accentCursor: '#FB9192',
     accentFocus: '#FB9192',
     accentBadge: '#FF1423',
     accentButton: '#9C1F29',
     accentStatusBar: '#740415',
-    colorError: '#F55B59',
+    colorError: '#F55C54',
     colorWarning: '#F3AD67',
-    colorInfo: '#7ABDFF',
-    gitAdd: '#75C598',
-    gitDelete: '#F55B59',
+    colorInfo: '#8FB8FF',
+    gitAdd: '#70C97C',
+    gitDelete: '#F55C54',
     ansi: {
       black: '#191F22',
       red: '#F76562',

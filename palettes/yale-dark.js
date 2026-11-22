@@ -3,8 +3,8 @@
 // Yale University (1701, New Haven, CT) -- Dark
 //
 // Deep Collegiate Gothic Yale Blue midnight (`bg`, rooted in `#00356B`) illuminated by
-// official Yale Light Blue `#63AAFF` functions, bright sky keywords, warm autumn
-// copper strings, and Harkness foliage green types.
+// exact official Yale Light Blue `#63AAFF` functions, bright sky keywords, warm Yale
+// Autumn `#BD5319` copper strings, Yale Green `#5F712D` foliage types, and Marigold `#F9C73F`.
 
 module.exports = {
   slug: 'yale-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "New Haven, CT",
   year: 1701,
-  subtitle: "Collegiate Gothic Yale Blue midnight, New Haven sky azure & copper",
+  subtitle: "Collegiate Gothic Yale Blue #00356B, Light Blue #63AAFF & Autumn copper",
   tokens: {
     mode: 'dark',
     bg: '#0B1724',
@@ -33,31 +33,31 @@ module.exports = {
     fgVariable: '#CCD9E7',
     fgPunct: '#A0A9B3',
     fgComment: '#8E9AA7',
-    fgParameter: '#97C8AC',
-    fgProperty: '#91C6E4',
+    fgParameter: '#A4C59E',
+    fgProperty: '#90C6E3',
     borderSubtle: '#223041',
     borderStrong: '#495A6D',
     accentKeyword: '#879FC8',
-    accentStorage: '#B78FE4',
+    accentStorage: '#9C7BD0',
     accentString: '#FB8B58',
     accentRegex: '#FF8795',
-    accentFunction: '#8FCDFF',
-    accentFunctionDim: '#B4D6FF',
-    accentType: '#A0D798',
-    accentInterface: '#7BCDD6',
-    accentNumber: '#FFCC84',
+    accentFunction: '#53B9FF',
+    accentFunctionDim: '#89C1FF',
+    accentType: '#BBD08E',
+    accentInterface: '#75C9F6',
+    accentNumber: '#FFCF54',
     accentDecorator: '#DA8FD9',
-    accentNamespace: '#95B0D6',
+    accentNamespace: '#BFA6AD',
     accentCursor: '#879FC8',
     accentFocus: '#879FC8',
     accentBadge: '#286DC0',
     accentButton: '#115094',
     accentStatusBar: '#00356B',
-    colorError: '#F35C64',
+    colorError: '#D35E6B',
     colorWarning: '#F2AD68',
     colorInfo: '#85BAFF',
-    gitAdd: '#80C586',
-    gitDelete: '#F35C64',
+    gitAdd: '#8CC284',
+    gitDelete: '#D35E6B',
     ansi: {
       black: '#122030',
       red: '#F76562',

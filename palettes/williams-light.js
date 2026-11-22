@@ -2,10 +2,10 @@
 
 // Williams College (1793, Williamstown, MA) -- Light
 //
-// Mount Greylock crisp alabaster (`bg`) featuring unmistakable official Williams Purple
-// `#500082` (PMS 2597 C, `accentKeyword`, `accentStatusBar`, `accentCursor`), Berkshire
-// pine green (`accentType`), Taconic slate blue (`accentFunction`), autumn maple crimson,
-// and Williams Gold (`accentNumber`).
+// Mount Greylock crisp alabaster (`bg`) anchored by Williams College's official core &
+// extended palette: Purple `#500082` (PMS 2597 C, `accentKeyword`, `accentStatusBar`),
+// Magenta `#B1008E` (`accentStorage`), Ocher `#C86914` (`accentString`), Williams Gold
+// `#FFBE0A` (`accentNumber` AA-tuned), Berkshire pine green (`accentType`), and slate blue.
 
 module.exports = {
   slug: 'williams-light',
@@ -16,7 +16,7 @@ module.exports = {
   country: "USA",
   city: "Williamstown, MA",
   year: 1793,
-  subtitle: "Mount Greylock alabaster, Williams Purple #500082, Gold & Berkshire pine",
+  subtitle: "Greylock alabaster, Purple #500082, Magenta #B1008E, Ocher & Gold",
   tokens: {
     mode: 'light',
     bg: '#F4F2F8',
@@ -39,26 +39,26 @@ module.exports = {
     borderSubtle: '#CECDD3',
     borderStrong: '#9A999F',
     accentKeyword: '#66259C',
-    accentStorage: '#6A004C',
-    accentString: '#A62331',
-    accentRegex: '#8B3F00',
+    accentStorage: '#680052',
+    accentString: '#8D4709',
+    accentRegex: '#992D1C',
     accentFunction: '#00447E',
     accentFunctionDim: '#304D81',
     accentType: '#136B3E',
     accentInterface: '#00656B',
-    accentNumber: '#825B07',
+    accentNumber: '#7A4B00',
     accentDecorator: '#6F2F91',
     accentNamespace: '#524A67',
     accentCursor: '#500082',
     accentFocus: '#500082',
     accentBadge: '#D99E00',
-    accentButton: '#500082',
+    accentButton: '#280050',
     accentStatusBar: '#500082',
-    colorError: '#691600',
+    colorError: '#90001F',
     colorWarning: '#864F00',
     colorInfo: '#00579A',
     gitAdd: '#146C40',
-    gitDelete: '#691600',
+    gitDelete: '#90001F',
     ansi: {
       black: '#19171D',
       red: '#A21829',

@@ -3,8 +3,9 @@
 // University of Oxford (1096, Oxford, UK) -- Dark
 //
 // Dreaming Spires midnight steeped in official Oxford Blue `#002147` (`bg`), glowing
-// with Bodleian rose-burgundy keywords, Thames azure functions, Radcliffe sea-teal
-// types, and Ashmolean honey-gold numbers.
+// with Oxford Red `#AA1A2D` keywords, official Oxford Cerulean `#49B6FF` functions,
+// Oxford Aqua `#00AAB4` / Viridian strings, Oxford Green `#426A5A` types, and exact
+// Oxford Yellow Ochre `#E2C044` numbers.
 
 module.exports = {
   slug: 'oxford-dark',
@@ -15,7 +16,7 @@ module.exports = {
   country: "UK",
   city: "Oxford, UK",
   year: 1096,
-  subtitle: "Dreaming Spires Oxford Blue #002147, Bodleian rose, Radcliffe teal & gold",
+  subtitle: "Oxford Blue #002147 night, Cerulean #49B6FF, Oxford Red & Yellow Ochre",
   tokens: {
     mode: 'dark',
     bg: '#081624',
@@ -33,31 +34,31 @@ module.exports = {
     fgVariable: '#CCD9E7',
     fgPunct: '#9FA9B3',
     fgComment: '#8D9AA7',
-    fgParameter: '#8EC9B8',
-    fgProperty: '#9CC2EA',
+    fgParameter: '#8BC9BF',
+    fgProperty: '#90C6E4',
     borderSubtle: '#1E3041',
     borderStrong: '#455A6E',
-    accentKeyword: '#CE8795',
-    accentStorage: '#C28BDB',
-    accentString: '#63C0B8',
-    accentRegex: '#F6955B',
-    accentFunction: '#AFC7EF',
-    accentFunctionDim: '#C2D1FF',
-    accentType: '#93D9AF',
-    accentInterface: '#7AC7FE',
-    accentNumber: '#FFCC88',
-    accentDecorator: '#F481C2',
-    accentNamespace: '#B7AD99',
-    accentCursor: '#CE8795',
-    accentFocus: '#CE8795',
-    accentBadge: '#872434',
+    accentKeyword: '#FB9190',
+    accentStorage: '#D3638F',
+    accentString: '#4DA6BB',
+    accentRegex: '#F19582',
+    accentFunction: '#7AC6FF',
+    accentFunctionDim: '#A4CEFF',
+    accentType: '#8CD9B8',
+    accentInterface: '#79CED5',
+    accentNumber: '#F6D45A',
+    accentDecorator: '#F281C8',
+    accentNamespace: '#B0B09A',
+    accentCursor: '#FB9190',
+    accentFocus: '#FB9190',
+    accentBadge: '#AA1A2D',
     accentButton: '#154376',
     accentStatusBar: '#002147',
-    colorError: '#F55B61',
+    colorError: '#F55A5E',
     colorWarning: '#F2AD67',
-    colorInfo: '#77BEFD',
-    gitAdd: '#79C498',
-    gitDelete: '#F55B61',
+    colorInfo: '#94B6FF',
+    gitAdd: '#7FC2A5',
+    gitDelete: '#F55A5E',
     ansi: {
       black: '#0F2030',
       red: '#F76562',

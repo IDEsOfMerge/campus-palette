@@ -2,10 +2,10 @@
 
 // University of North Carolina (1789, Chapel Hill, NC) -- Light
 //
-// Old Well sunlit cloud-blue paper (`bg`) balancing official Chapel Hill Navy `#13294B`
-// (`accentKeyword`, `accentStatusBar`) with iconic Carolina Blue `#4B9CD3` accents
-// (`accentBadge`, `accentFocus`, AA-tuned azure functions), Piedmont pine (`accentType`),
-// and brick walkway copper (`accentString`).
+// Old Well sunlit Cloud `#EDF5FB` paper (`bg`) balancing official Chapel Hill Navy `#13294B`
+// (PMS 2767 C, `accentKeyword`, `accentStatusBar`), official Bolin Creek `#2C5080` (`accentFunction`),
+// iconic Carolina Blue `#4B9CD3` (PMS 542 C, `accentBadge`, `accentFocus`), Old Well Basin
+// `#5B6670` (`accentNamespace`), Piedmont pine (`accentType`), and brick copper (`accentString`).
 
 module.exports = {
   slug: 'unc-light',
@@ -16,7 +16,7 @@ module.exports = {
   country: "USA",
   city: "Chapel Hill, NC",
   year: 1789,
-  subtitle: "Old Well cloud-paper, Chapel Hill Navy #13294B & Carolina Blue #4B9CD3",
+  subtitle: "Cloud #EDF5FB paper, Navy #13294B, Bolin Creek #2C5080 & Carolina Blue",
   tokens: {
     mode: 'light',
     bg: '#EDF5F9',
@@ -35,22 +35,22 @@ module.exports = {
     fgPunct: '#454F53',
     fgComment: '#515D63',
     fgParameter: '#12534A',
-    fgProperty: '#044A5E',
+    fgProperty: '#2B4367',
     borderSubtle: '#C7D0D4',
     borderStrong: '#939CA0',
     accentKeyword: '#334E7A',
     accentStorage: '#501B6F',
     accentString: '#9F3314',
     accentRegex: '#894100',
-    accentFunction: '#09354A',
-    accentFunctionDim: '#163E5D',
+    accentFunction: '#252F4D',
+    accentFunctionDim: '#33365F',
     accentType: '#116A4A',
     accentInterface: '#00646D',
     accentNumber: '#6A472A',
     accentDecorator: '#8A2063',
-    accentNamespace: '#39526F',
-    accentCursor: '#1E6CA8',
-    accentFocus: '#1E6CA8',
+    accentNamespace: '#425260',
+    accentCursor: '#2C5080',
+    accentFocus: '#2C5080',
     accentBadge: '#4B9CD3',
     accentButton: '#13294B',
     accentStatusBar: '#13294B',

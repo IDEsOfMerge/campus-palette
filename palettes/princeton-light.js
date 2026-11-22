@@ -2,8 +2,8 @@
 
 // Princeton University (1746, Princeton, NJ) -- Light
 //
-// Nassau Hall warm Gothic sandstone (`bg`) with official Princeton Orange (PMS 158,
-// `#F58025` / `#E77500`) locked into status chrome, cursor, and high-contrast keywords,
+// Nassau Hall warm Gothic sandstone (`bg`) with official Princeton Orange on white
+// `#E77500` (PMS 158, locked hue across status chrome, cursor, and AA-tuned keywords),
 // framed by Nassau iron-ink text, indigo functions, and Carnegie Lake green types.
 
 module.exports = {
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Princeton, NJ",
   year: 1746,
-  subtitle: "Nassau Hall Gothic sandstone, Princeton Orange #F58025 & iron ink",
+  subtitle: "Nassau Hall sandstone, Princeton Orange #E77500 (on white) & iron ink",
   tokens: {
     mode: 'light',
     bg: '#F8F2EB',

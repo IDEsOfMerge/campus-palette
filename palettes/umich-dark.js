@@ -3,8 +3,8 @@
 // University of Michigan (1817, Ann Arbor, MI) -- Dark
 //
 // Deep Michigan Blue midnight (`bg`, rooted in `#00274C`) lit by exact official Maize
-// `#FFCB05` (`accentNumber`, `accentCursor`, `accentFocus`), Arboretum sky blue
-// functions, Matthaei lavender keywords, and Wave Field emerald types.
+// `#FFCB05` (`accentNumber`, `accentCursor`, `accentFocus`), Arboretum Blue functions,
+// Matthaei Violet keywords, Taubman Teal `#00B2A9` types, and Ross Orange strings.
 
 module.exports = {
   slug: 'umich-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Ann Arbor, MI",
   year: 1817,
-  subtitle: "Big House Michigan Blue #00274C night, glowing Maize #FFCB05 & azure",
+  subtitle: "Michigan Blue #00274C night, Maize #FFCB05, Taubman Teal & A2 Amethyst",
   tokens: {
     mode: 'dark',
     bg: '#071724',
@@ -33,21 +33,21 @@ module.exports = {
     fgVariable: '#CBD9E7',
     fgPunct: '#9FA9B2',
     fgComment: '#8D9AA7',
-    fgParameter: '#8FC9B7',
-    fgProperty: '#8FC7E3',
+    fgParameter: '#88C7D0',
+    fgProperty: '#98C3E8',
     borderSubtle: '#1E3041',
     borderStrong: '#445A6D',
-    accentKeyword: '#AEA8FB',
-    accentStorage: '#E47CB8',
-    accentString: '#F68E5E',
+    accentKeyword: '#949BC6',
+    accentStorage: '#A475D4',
+    accentString: '#F68E5D',
     accentRegex: '#FD8D79',
-    accentFunction: '#7DB7E0',
-    accentFunctionDim: '#95C1EE',
-    accentType: '#8DDAAA',
-    accentInterface: '#78CED8',
+    accentFunction: '#91C1FF',
+    accentFunctionDim: '#B3CAFF',
+    accentType: '#4EDFD7',
+    accentInterface: '#A9CA92',
     accentNumber: '#FFD041',
-    accentDecorator: '#F581BE',
-    accentNamespace: '#94B0D4',
+    accentDecorator: '#FC7EAC',
+    accentNamespace: '#BDAA9C',
     accentCursor: '#FFCB05',
     accentFocus: '#FFCB05',
     accentBadge: '#D4A000',
@@ -55,7 +55,7 @@ module.exports = {
     accentStatusBar: '#00274C',
     colorError: '#F55A5F',
     colorWarning: '#F2AD67',
-    colorInfo: '#7FBCFF',
+    colorInfo: '#85BBFF',
     gitAdd: '#78C594',
     gitDelete: '#F55A5F',
     ansi: {

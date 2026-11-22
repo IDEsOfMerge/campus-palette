@@ -4,7 +4,7 @@
 //
 // Anchored directly in Dartmouth's official digital Rich Forest Green `#0D1E1C`
 // (`bg`) and Forest Green `#12312B` chrome, featuring pine-needle emerald keywords,
-// River Blue functions, Bonfire Orange `#FFA00F` numbers, and Bonfire coral strings.
+// River Blue functions, exact Bonfire Orange `#FFA00F` strings, and Summer Yellow `#F5DC69` numbers.
 
 module.exports = {
   slug: 'dartmouth-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Hanover, NH",
   year: 1769,
-  subtitle: "Official Rich Forest #0D1E1C, pine emerald, Bonfire amber & River Blue",
+  subtitle: "Official Rich Forest #0D1E1C, pine emerald, Bonfire #FFA00F & River Blue",
   tokens: {
     mode: 'dark',
     bg: '#091D17',
@@ -47,17 +47,17 @@ module.exports = {
     accentInterface: '#91D18E',
     accentNumber: '#EFD663',
     accentDecorator: '#F183C2',
-    accentNamespace: '#93B7AD',
+    accentNamespace: '#C0A7A7',
     accentCursor: '#74C997',
     accentFocus: '#74C997',
     accentBadge: '#00693E',
     accentButton: '#0F8A54',
     accentStatusBar: '#004A2A',
-    colorError: '#F55A60',
+    colorError: '#EB646C',
     colorWarning: '#F3AD67',
     colorInfo: '#79BEFE',
     gitAdd: '#6FC795',
-    gitDelete: '#F55A60',
+    gitDelete: '#EB646C',
     ansi: {
       black: '#102720',
       red: '#F76562',

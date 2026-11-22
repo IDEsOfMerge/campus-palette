@@ -3,8 +3,9 @@
 // Caltech (1891, Pasadena, CA) -- Dark
 //
 // JPL Deep Space telemetry teal-slate (`bg`, anchored in official Deep Color `#003B4C`)
-// lit by exact Caltech Orange `#FF7A24` keywords & cursor, Bright Sky `#32C0F5` functions,
-// Bright Mint `#3CD1BE` types, and official JPL Red `#FF4D60` diagnostics.
+// lit by exact Caltech Orange `#FF7D24` keywords & cursor, Bright Sky `#00A1DF` functions,
+// Bright Mint `#1E988A` types, Bright Pink `#F54D80` strings, Bright Yellow `#F9BE00`
+// numbers, and official JPL Red `#E41937` diagnostics.
 
 module.exports = {
   slug: 'caltech-dark',
@@ -15,7 +16,7 @@ module.exports = {
   country: "USA",
   city: "Pasadena, CA",
   year: 1891,
-  subtitle: "JPL Deep Space Teal #003B4C, Caltech Orange #FF6C0C & Bright Sky",
+  subtitle: "JPL Deep Teal #003B4C, Caltech Orange #FF6C0C, #00A1DF & #F54D80",
   tokens: {
     mode: 'dark',
     bg: '#031B23',
@@ -33,20 +34,20 @@ module.exports = {
     fgVariable: '#C7DBE3',
     fgPunct: '#9CAAB0',
     fgComment: '#899CA3',
-    fgParameter: '#8AC6D4',
+    fgParameter: '#88C7D0',
     fgProperty: '#8BC8DE',
     borderSubtle: '#19363F',
     borderStrong: '#40606B',
     accentKeyword: '#FB975E',
     accentStorage: '#B595CF',
-    accentString: '#C97D9A',
+    accentString: '#FE6C99',
     accentRegex: '#FA9261',
     accentFunction: '#61CBFF',
     accentFunctionDim: '#97D2FF',
-    accentType: '#94C9C9',
-    accentInterface: '#84D2A4',
-    accentNumber: '#EED58A',
-    accentDecorator: '#EF82CC',
+    accentType: '#87BBB7',
+    accentInterface: '#96D17E',
+    accentNumber: '#FFCF5E',
+    accentDecorator: '#E7929F',
     accentNamespace: '#A0B0C1',
     accentCursor: '#FF6C0C',
     accentFocus: '#FF6C0C',

@@ -17,7 +17,7 @@
 ![heritage](https://img.shields.io/badge/collegiate_heritage-1096%E2%80%931963-1D4F91?style=flat-square)
 [![explorer](https://img.shields.io/badge/live_explorer-interactive_workbench-005493?style=flat-square)](https://idesofmerge.github.io/campus-palette/)
 [![build](https://github.com/IDEsOfMerge/campus-palette/actions/workflows/build.yml/badge.svg)](https://github.com/IDEsOfMerge/campus-palette/actions/workflows/build.yml)
-![version](https://img.shields.io/badge/version-1.0.0-192E56?style=flat-square)
+![version](https://img.shields.io/badge/version-1.0.1-192E56?style=flat-square)
 ![themes](https://img.shields.io/badge/themes-80-4F2683?style=flat-square)
 ![universities](https://img.shields.io/badge/universities-40-00693E?style=flat-square)
 ![contrast](https://img.shields.io/badge/WCAG_AA-100%25_(1600%2F1600)-2A5F25?style=flat-square)
@@ -29,19 +29,19 @@
 
 <br>
 
-<img src="assets/showcase/campus-palette-demo.gif" alt="Animated preview of Campus Palette themes running in a VS Code and Positron IDE workbench — cycling across Columbia University, University of British Columbia, University of Victoria, St. Edward's University, Harvard University, MIT, and University of Oxford in Light and Dark modes with live WCAG contrast readouts and the Ctrl+K Ctrl+U per-campus toggle" width="900">
+<img src="assets/showcase/campus-palette-demo.gif" alt="Animated preview of Campus Palette themes running in a VS Code and Positron IDE workbench — cycling across Columbia University, Harvard University, MIT, University of Oxford, University of British Columbia, University of Victoria, and St. Edward's University in Light and Dark modes with live WCAG contrast readouts and the Ctrl+K Ctrl+U per-campus toggle" width="900">
 
 </div>
 
 ---
 
-Every Light/Dark pair in **Campus Palette** is individually synthesized from its university's published institutional brand color guidelines and campus architectural atmosphere — never a generic syntax template reskinned onto a new background:
+Every Light/Dark pair in **Campus Palette** is individually synthesized from its university's published institutional brand guidelines (primary, secondary, accent, and neutral hex specifications) and campus architectural atmosphere — never a generic syntax template reskinned onto a new background:
 
-- **Columbia University** pairs sunlit Butler Library limestone (`#EEF5F9`) and official Primary Blue (`#1D4F91`) with Morningside Heights dusk slate (`#091822`) lit by iconic Philolexian Society Columbia Blue (`#B9D9EB`), copper-dome verdigris, and Alma Mater bronze.
-- **University of British Columbia** anchors Point Grey morning mist and Pacific twilight directly in official UBC Blue (`#002145`), UBC Mid Blue (`#0055B7`), and Pacific Sky (`#40B4E5`), balanced with Coast Mountain cedar emerald and Burrard sunset amber.
-- **University of Victoria** translates its coastal brand philosophy — *"blue ocean, green trees and yellow sun"* — into Salish Sea blue (`#005493`), Mystic Vale evergreen, and Vancouver Island sun gold (`#F5AA1C`), with restrained Crest Red strictly for diagnostics.
+- **Columbia University** pairs sunlit Butler Library limestone (`#EEF5F9`), official Primary Blue (`#1D4F91`), and Accent Color 1 (`#C75000`) with Morningside Heights dusk slate (`#091822`) lit by iconic Philolexian Society Columbia Blue (`#B9D9EB`), Secondary Blue (`#6CACE4`), and Transactional Green (`#228848`).
+- **University of British Columbia** anchors Point Grey morning mist and Pacific twilight directly in official UBC Blue (`#002145`) and its published secondary blue scale (`#0055B7`, `#0077C8`, `#40B4E5`, `#6EC4E8`), balanced with Coast Mountain cedar emerald and Burrard sunset amber.
+- **University of Victoria** translates its coastal brand philosophy — *"blue ocean, green trees and yellow sun"* — into Salish Sea blue (`#005493`), Mystic Vale evergreen (`#008538` / `#26A739`), and Vancouver Island sun gold (`#F5AA1C` / `#FDB813`), with restrained Crest Red strictly for diagnostics.
 - **St. Edward's University** draws straight from Austin's Hilltop visual identity: official Limestone (`#F7F3ED`), Sorin Navy (`#192E56`), Main Building Red Doors (`#EA4433`), Bluebonnet sky (`#8BCAEF`), and Gold Medallion (`#EDB920`).
-- **Harvard, Princeton, Dartmouth, MIT, Stanford, Caltech, Waterloo, Oxford, Cambridge, ETH Zurich, and UTokyo** bring 36 additional campuses across six collegiate groupings — from Dartmouth's official Rich Forest Green and Waterloo's Black & Gold + six-faculty accent spectrum to Cambridge's airy `#8EE8D8` river-mist palette and ETH Zurich's seven-color Swiss Corporate Design grid.
+- **Harvard, Princeton, Dartmouth, MIT, Stanford, UT Austin, Georgia Tech, Caltech, Waterloo, Oxford, Cambridge, ETH Zurich, and UTokyo** bring 36 additional campuses across six collegiate groupings — from Dartmouth's official Rich Forest Green and Waterloo's six-faculty Level-4 spectrum to Georgia Tech's Core Navy & Diploma parchment, Cambridge's 24-colour palette, ETH Zurich's seven-color Swiss Corporate Design grid, and UTokyo's 2024 Visual Identity tonal ramps.
 
 Every palette is engineered and verified in **OKLCH** perceptual color space against **WCAG 2.1**, **APCA-W3**, **CIEDE2000** (`ΔE₀₀`), and **Machado et al. (2009)** physiological dichromacy simulation. Design inspiration comes strictly from **published brand color palettes and campus material atmosphere** — no university logos, crests, seals, mascots, wordmarks, or copyrighted graphics appear anywhere in this repository.
 
@@ -74,11 +74,11 @@ Four examples of how a Light/Dark pair maps official institutional brand color t
 | Role | Light | Dark |
 |---|---|---|
 | Background | `#EEF5F9` sunlit Butler Library & Low marble | `#091822` Morningside Heights cobalt-slate night |
-| Keywords | `#3C5682` Columbia Primary Blue (`#1D4F91`-anchored) | `#7BA5BA` luminous Columbia slate-azure |
-| Strings | `#7E2A00` Broadway terracotta brick | `#FB8970` warm Morningside sunset coral |
-| Functions | `#02354E` deep Hudson ink-blue | `#BDD5FF` crisp Philolexian sky azure |
-| Types | `#006A52` Low Library copper dome verdigris | `#7FD9CB` sunlit copper-patina seafoam |
-| Numbers | `#865906` Alma Mater bronze gold | `#FFCC88` gilded Alma Mater amber |
+| Keywords | `#2F5980` Columbia Primary Blue (`#1D4F91`-anchored) | `#7BA5BA` luminous Columbia slate-azure |
+| Strings | `#973D08` official Accent Color 1 (`#C75000` AA-tuned) | `#F1934A` luminous Accent Color 1 bronze-orange |
+| Functions | `#1D3153` deep Hudson ink-blue (`#0077C8` / `#003087`) | `#BBD6FF` crisp Secondary Blue (`#6CACE4` glow) |
+| Types | `#4A6B48` Transactional Green (`#228848` AA-tuned) | `#8ADBAB` sunlit Transactional Green emerald |
+| Numbers | `#664A29` Alma Mater bronze gold | `#F7D086` gilded Alma Mater amber |
 | **Identity chrome** | `#1D4F91` **Columbia Primary Blue (PMS 7686 C)** | `#B9D9EB` **Columbia Blue (PMS 290 C) cursor** |
 
 ### University of British Columbia (1908 · Vancouver, BC) — Point Grey mist, UBC Blue & Pacific Sky
@@ -88,12 +88,12 @@ Four examples of how a Light/Dark pair maps official institutional brand color t
 | Role | Light | Dark |
 |---|---|---|
 | Background | `#EFF5F8` Point Grey coastal morning mist | `#071725` deep Pacific twilight navy |
-| Keywords | `#114C98` UBC Mid Blue (`#0055B7` AA-tuned) | `#68A9C0` coastal sky slate-blue |
+| Keywords | `#114C98` UBC Secondary Blue (`#0055B7` AA-tuned) | `#6AC0E4` official PMS 297 Sky (`#6EC4E8` hue) |
 | Strings | `#993A08` Pacific red-cedar copper | `#EE9557` Wreck Beach sunset apricot |
-| Functions | `#0B2295` deep Point Grey cobalt | `#AED0F3` glacier-sky azure (`#BEE6F4` hue) |
+| Functions | `#0B2295` deep Point Grey cobalt | `#81A5F8` luminous UBC azure |
 | Types | `#046A4F` Pacific Spirit cedar green | `#87DAB9` Coast Mountain evergreen mint |
 | Numbers | `#8C6032` driftwood & Burrard amber | `#F2D387` coastal golden hour |
-| **Identity chrome** | `#002145` **UBC Blue (PMS 282) status bar** | `#40B4E5` **UBC Pacific Sky cursor & focus** |
+| **Identity chrome** | `#002145` **UBC Blue (PMS 282) status bar** | `#40B4E5` **UBC Secondary Blue (PMS 298) cursor** |
 
 ### University of Victoria (1963 · Victoria, BC) — Salish Sea blue, Mystic Vale green & Island sun
 
@@ -218,13 +218,13 @@ positron --install-extension idesofmerge.campus-palette
 
 ## Packaging & installing locally
 
-Download `campus-palette-1.0.0.vsix` from the [GitHub Releases](https://github.com/IDEsOfMerge/campus-palette/releases) page, or build it locally from this repository root:
+Download `campus-palette-1.0.1.vsix` from the [GitHub Releases](https://github.com/IDEsOfMerge/campus-palette/releases) page, or build it locally from this repository root:
 
 ```sh
 npm run package
-code --install-extension campus-palette-1.0.0.vsix
+code --install-extension campus-palette-1.0.1.vsix
 # or in Positron:
-positron --install-extension campus-palette-1.0.0.vsix
+positron --install-extension campus-palette-1.0.1.vsix
 ```
 
 Or launch an Extension Development Host without packaging:
@@ -275,25 +275,25 @@ python3 scripts/generate-showcase-gif.py # regenerate animated VS Code / Positro
 
 Every single theme must clear strict automated perceptual gates before `generate-themes.js` or `validate.js` will succeed:
 
-- **100% WCAG 2.1 AA compliance (`1,600 / 1,600` foreground & syntax tokens)**: all 20 foreground/syntax tokens in all 80 themes clear **≥ 4.5:1** on `editor.background` (measured range across the catalog: **`4.75:1` to `16.12:1`**) and **≥ 3.8:1** on `editor.lineHighlightBackground`.
-- **APCA-W3 spatial contrast & WCAG AAA body text**: primary body text (`fg` on `bg`) achieves **`13.77:1` to `16.12:1` WCAG AAA** (**`|Lc| = 89.0` to `97.9`** APCA-W3) across all 80 themes, avoiding OLED halation in Dark mode while keeping Light limestone and paper surfaces calm and glare-free.
+- **100% WCAG 2.1 AA compliance (`1,600 / 1,600` foreground & syntax tokens)**: all 20 foreground/syntax tokens in all 80 themes clear **≥ 4.5:1** on `editor.background` (measured range across the catalog: **`4.76:1` to `16.15:1`**) and **≥ 3.8:1** on `editor.lineHighlightBackground`.
+- **APCA-W3 spatial contrast & WCAG AAA body text**: primary body text (`fg` on `bg`) achieves **`13.77:1` to `16.15:1` WCAG AAA** (**`|Lc| = 89.0` to `98.1`** APCA-W3) across all 80 themes, avoiding OLED halation in Dark mode while keeping Light limestone and paper surfaces calm and glare-free.
 - **Figure–ground hierarchy**: comments (`fgComment`) sit in a tightly controlled **`6.00:1` to `6.40:1`** perceptual band across all 80 themes — effortlessly readable while staying subordinate to active code.
 - **1,280 / 1,280 ANSI terminal tokens verified**: all 16 ANSI colors in every integrated terminal / Positron console clear contrast gates while preserving canonical terminal hue bands.
 
 | Representative Theme | Editor `fg` / `bg` (WCAG) | Editor `fg` / `bg` (`|Lc|` APCA) | Comment / `bg` | Tightest syntax role / `bg` |
 |---|---|---|---|---|
 | **UBC Light** | `16.11:1` | `97.9` | `6.20:1` | `4.98:1` |
-| **Columbia Light** | `16.10:1` | `97.9` | `6.16:1` | `5.53:1` |
+| **Columbia Light** | `16.10:1` | `97.9` | `6.16:1` | `5.47:1` |
 | **UVic Light** | `15.98:1` | `97.6` | `6.11:1` | `5.20:1` |
 | **St. Edward's Light** | `15.87:1` | `97.1` | `6.11:1` | `5.77:1` |
-| **Harvard Light** | `15.84:1` | `96.8` | `6.15:1` | `4.87:1` |
+| **Harvard Light** | `15.84:1` | `96.8` | `6.15:1` | `6.02:1` |
 | **ETH Zurich Light** | `15.62:1` | `96.1` | `6.00:1` | `5.37:1` |
-| **UBC Dark** | `14.35:1` | `89.9` | `6.31:1` | `5.63:1` |
+| **UBC Dark** | `14.35:1` | `89.9` | `6.31:1` | `5.41:1` |
 | **UVic Dark** | `14.33:1` | `90.0` | `6.31:1` | `5.67:1` |
-| **Columbia Dark** | `14.23:1` | `89.7` | `6.25:1` | `4.75:1` |
+| **Columbia Dark** | `14.23:1` | `89.7` | `6.25:1` | `5.60:1` |
 | **St. Edward's Dark** | `14.19:1` | `89.5` | `6.25:1` | `4.77:1` |
-| **Dartmouth Dark** | `13.93:1` | `89.9` | `6.12:1` | `5.43:1` |
-| **Cambridge Dark** | `13.77:1` | `89.5` | `6.10:1` | `4.85:1` |
+| **Dartmouth Dark** | `13.93:1` | `89.9` | `6.12:1` | `5.48:1` |
+| **Cambridge Dark** | `13.77:1` | `89.5` | `6.10:1` | `4.93:1` |
 
 ## Color science
 
@@ -307,11 +307,11 @@ Plotting every theme's core syntax roles in the OKLab chromaticity plane and gro
 
 <img src="assets/color-science/pca-global.png" alt="Global PCA of all 1,040 syntax tokens across 80 Campus Palette themes in OKLab space, colored by semantic role" width="750">
 
-A global PCA across all **1,040 syntax tokens** in OKLab `(L, a, b)` space (`PC1 = 73.9%` perceptual lightness polarity, `PC2 = 16.0%` warm crimson/amber vs. cool teal/cobalt chroma — explaining **89.9%** of total perceptual variance in 2D) confirms clean Light/Dark separation alongside structured semantic role neighborhoods while honoring institutional keywords across crimson, cobalt, forest green, royal purple, and burnt orange.
+A global PCA across all **1,040 syntax tokens** in OKLab `(L, a, b)` space (`PC1 = 73.3%` perceptual lightness polarity, `PC2 = 16.0%` warm crimson/amber vs. cool teal/cobalt chroma — explaining **89.3%** of total perceptual variance in 2D) confirms clean Light/Dark separation alongside structured semantic role neighborhoods while honoring institutional keywords across crimson, cobalt, forest green, royal purple, and burnt orange.
 
 ### Which campus themes look like each other
 
-Measuring mean **CIEDE2000 (`ΔE₀₀`)** distance across all 13 syntax roles between every pair of universities — factored by Light and Dark polarity so luminance never masks chromatic identity — maps all 40 campuses into a 2D **Classical MDS perceptual landscape** (`39.5%` of Light distance variance, `40.1%` of Dark distance variance), a **Ward-ordered 40×40 split-triangle distance matrix**, and a full **80-leaf Ward.D2 hierarchical dendrogram**:
+Measuring mean **CIEDE2000 (`ΔE₀₀`)** distance across all 13 syntax roles between every pair of universities — factored by Light and Dark polarity so luminance never masks chromatic identity — maps all 40 campuses into a 2D **Classical MDS perceptual landscape** (`38.8%` of Light distance variance, `40.5%` of Dark distance variance), a **Ward-ordered 40×40 split-triangle distance matrix**, and a full **80-leaf Ward.D2 hierarchical dendrogram**:
 
 <img src="assets/color-science/theme-mds.png" alt="Side-by-side Classical MDS perceptual similarity landscape on pairwise mean CIEDE2000 distances across all 40 Light themes and all 40 Dark themes, drawn with each campus's real editor background and signature keyword accent" width="900">
 
@@ -321,9 +321,9 @@ Measuring mean **CIEDE2000 (`ΔE₀₀`)** distance across all 13 syntax roles b
 
 Three empirical patterns emerge directly from the colorimetry without any manual grouping:
 
-1. **Cross-border institutional color kin emerge automatically**: **MIT ↔ McGill** (`1.89` Light / `2.90` Dark `ΔE₀₀` — cool architectural stone/steel paired with bold red), **UNC ↔ UCLA** (`1.92` Light / `3.12` Dark `ΔE₀₀` — sunlit Carolina/California sky-blue campuses), and **UW ↔ NYU** (`2.86` Light / `3.44` Dark `ΔE₀₀` — rich purple + crisp coastal/urban teal) pair as the tightest chromatic siblings in *both* Light and Dark modes.
-2. **Maximally distinct chromatic opposites span the full perceptual gamut**: in Light mode, **St. Edward's** (warm Texas Limestone + Red Doors vermilion + Sorin Navy) sits farthest from **Waterloo** (crisp studio white + Math magenta + six-faculty accents) at **`19.43 ΔE₀₀`**; in Dark mode, **Dartmouth** (deep Rich Forest Green `#0D1E1C`) sits farthest from **Northwestern** (deep Rich Purple obsidian) at **`18.90 ΔE₀₀`**.
-3. **Neutral-axis structural pairing in Ward clustering**: across all 80 leaves in 39-D standardized OKLab space (max linkage height `47.99`), Light and Dark modes form two clean hemispheres while **Waterloo Light** and **Waterloo Dark** sit side by side because their neutral-graphite architectural canvas preserves their shared six-faculty chromatic signature across polarity.
+1. **Shared institutional traditions form natural chromatic neighborhoods without collapsing**: drawing every secondary and accent token directly from each university's published brand guidelines keeps every single pair cleanly distinct (`≥ 4.08 ΔE₀₀` across all 1,560 same-mode pairs). The closest chromatic siblings reflect genuine visual kinship: **Columbia ↔ UNC** (`5.12 ΔE₀₀` Light — sky-blue & navy campuses), **UPenn ↔ MIT** (`5.28 ΔE₀₀` Light — crimson & architectural stone), **Princeton ↔ UVA** (`4.08 ΔE₀₀` Dark — locked burnt/tiger orange), and **UPenn ↔ St. Edward's** (`4.70 ΔE₀₀` Dark — deep navy with vermilion/red accents).
+2. **Maximally distinct chromatic opposites span the full perceptual gamut**: **UT Austin** (Burnt Orange `#BF5700`, Charcoal `#333F48`, Dark Teal `#005F86`, Turquoise `#00A9B7`, and Forest Green `#579D42` — respecting UT's official brand guideline against pairing red or purple with Burnt Orange) sits farthest from **Northwestern** (Northwestern Purple `#4E2A84` / `#401F68`) in *both* Light (**`21.73 ΔE₀₀`**) and Dark (**`24.14 ΔE₀₀`**) modes.
+3. **Brand-policy structural pairing in Ward clustering**: across all 80 leaves in 39-D standardized OKLab space (max linkage height `48.34`), Light and Dark modes separate into two clean hemispheres while **UT Austin Light** and **UT Austin Dark** pair directly at the polarity boundary — uniquely united by UT Austin's official orange + teal + green (non-purple) palette across both polarities.
 
 ### Color-vision-deficiency (CVD) resilience via OKLCH lightness staggering
 
@@ -334,7 +334,7 @@ Categorical syntax palettes that rely purely on hue collapse under protanopia or
 Across all **80 themes** (**`6,240`** audited role pairs and **`1,680`** critical adjacent syntax pairs × 3 dichromacy axes = **`5,040`** CVD checks):
 
 - **0 severe collisions** (`< 5 ΔE*ab`) and **0 moderate collisions** (`< 10 ΔE*ab`) across all 80 themes under simulated protanopia, deuteranopia, and tritanopia.
-- Every critical adjacent syntax pair across the entire 80-theme catalog maintains **`≥ 11.21 ΔE*ab`** under all three dichromacy models.
+- Every normally-distinct critical adjacent syntax pair (`≥ 15 ΔE*ab` in normal vision) across the entire 80-theme catalog maintains **`≥ 10.70 ΔE*ab`** under all three dichromacy models.
 
 ```sh
 node scripts/export-color-data.js                  # export CSV datasets (themes, tokens, pairwise ΔE₀₀, CVD) to analysis/data/

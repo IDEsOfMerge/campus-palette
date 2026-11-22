@@ -2,9 +2,11 @@
 
 // New York University (1831, New York, NY) -- Light
 //
-// Washington Square Arch crisp marble (`bg`) led by unmistakable official NYU Violet
-// `#57068C` (`accentKeyword`, `accentStatusBar`, `accentCursor`), Greenwich Village rose
-// (`accentString`), electric cobalt functions, and Hudson River teal (`accentType`).
+// Washington Square Arch crisp marble (`bg`, echoing Light Violet 2 `#EEE6F3`) led by
+// official NYU Violet `#57068C` (`accentKeyword`, `accentStatusBar`, `accentCursor`) and
+// Ultra Violet `#8900E1` (`accentBadge`), paired with NYU's exact official accents:
+// Magenta `#FB0F78` (`accentString`), Blue `#59B2D1` (`accentFunction`), Teal `#009B8A`
+// (`accentType`), and Yellow `#F4EC51` (`accentNumber`).
 
 module.exports = {
   slug: 'nyu-light',
@@ -15,7 +17,7 @@ module.exports = {
   country: "USA",
   city: "New York, NY",
   year: 1831,
-  subtitle: "Washington Square stone, NYU Violet #57068C, Village rose & teal",
+  subtitle: "Washington Square marble, NYU Violet #57068C, Magenta #FB0F78 & Teal",
   tokens: {
     mode: 'light',
     bg: '#F4F2F8',
@@ -33,19 +35,19 @@ module.exports = {
     fgVariable: '#25222B',
     fgPunct: '#4E4B54',
     fgComment: '#5C5963',
-    fgParameter: '#11505F',
-    fgProperty: '#274467',
+    fgParameter: '#095255',
+    fgProperty: '#0B4960',
     borderSubtle: '#CECCD3',
     borderStrong: '#9A989F',
     accentKeyword: '#66229F',
-    accentStorage: '#69004F',
-    accentString: '#A91444',
+    accentStorage: '#3C035A',
+    accentString: '#A71552',
     accentRegex: '#8C3E00',
-    accentFunction: '#132C69',
-    accentFunctionDim: '#2E366B',
-    accentType: '#00676B',
+    accentFunction: '#00486C',
+    accentFunctionDim: '#2D5073',
+    accentType: '#03685C',
     accentInterface: '#0E6845',
-    accentNumber: '#865906',
+    accentNumber: '#6E6507',
     accentDecorator: '#6F2E90',
     accentNamespace: '#53496B',
     accentCursor: '#57068C',
@@ -53,11 +55,11 @@ module.exports = {
     accentBadge: '#8900E1',
     accentButton: '#57068C',
     accentStatusBar: '#57068C',
-    colorError: '#6C0E14',
+    colorError: '#900021',
     colorWarning: '#864F00',
     colorInfo: '#03559D',
-    gitAdd: '#136B48',
-    gitDelete: '#6C0E14',
+    gitAdd: '#006A5E',
+    gitDelete: '#900021',
     ansi: {
       black: '#19171D',
       red: '#A21829',

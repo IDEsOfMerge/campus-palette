@@ -3,8 +3,8 @@
 // University of British Columbia (1908, Vancouver, BC) -- Dark
 //
 // Deep Pacific twilight anchored in official UBC Blue `#002145` (`bg`) with luminous
-// official UBC Sky Blue `#40B4E5` / `#BEE6F4` (PMS 2975) across keywords, functions,
-// and cursor, balanced by Coast Mountain cedar emerald and Wreck Beach sunset amber.
+// official UBC Secondary Blues `#40B4E5` (PMS 298), `#6EC4E8` (PMS 297), and `#97D4E9`
+// (PMS 2975) across keywords, functions, and cursor, balanced by Coast cedar emerald and sunset amber.
 
 module.exports = {
   slug: 'ubc-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "Canada",
   city: "Vancouver, BC",
   year: 1908,
-  subtitle: "Pacific midnight UBC Blue #002145, Sky #40B4E5, Coast cedar & amber",
+  subtitle: "Pacific midnight UBC Blue #002145, PMS 298 #40B4E5, cedar & amber",
   tokens: {
     mode: 'dark',
     bg: '#071725',
@@ -34,15 +34,15 @@ module.exports = {
     fgPunct: '#9FA9B3',
     fgComment: '#8D9AA7',
     fgParameter: '#8AC9C0',
-    fgProperty: '#94C5E6',
+    fgProperty: '#A0C0EB',
     borderSubtle: '#1D3042',
     borderStrong: '#445A6F',
-    accentKeyword: '#68A9C0',
-    accentStorage: '#C18AE2',
+    accentKeyword: '#6AC0E4',
+    accentStorage: '#9682C2',
     accentString: '#EE9557',
     accentRegex: '#FF84A6',
-    accentFunction: '#AED0F3',
-    accentFunctionDim: '#C3DBFF',
+    accentFunction: '#81A5F8',
+    accentFunctionDim: '#A1AFF7',
     accentType: '#87DAB9',
     accentInterface: '#78CED9',
     accentNumber: '#F2D387',
@@ -55,7 +55,7 @@ module.exports = {
     accentStatusBar: '#002145',
     colorError: '#F55A63',
     colorWarning: '#F3AD67',
-    colorInfo: '#74BFFF',
+    colorInfo: '#79BDFF',
     gitAdd: '#72C5A2',
     gitDelete: '#F55A63',
     ansi: {

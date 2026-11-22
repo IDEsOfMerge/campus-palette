@@ -2,9 +2,9 @@
 
 // University of Notre Dame (1842, Notre Dame, IN) -- Dark
 //
-// Deep Notre Dame Blue midnight (`bg`, anchored in `#0C2340`) shining with glowing
-// Golden Dome gold (`#E6B632`) numbers and cursor, official Irish Green emerald types
-// and keywords, lake sky functions, and warm brick strings.
+// Deep Notre Dame Blue midnight (`bg`, anchored in `#0C2340`) shining with official
+// Bright Gold `#D39F10` (lifted for Dark AA) numbers & cursor, official Green `#0A843D`
+// luminous emerald keywords, Bright Blue `#1C4F8F` functions, and warm brick strings.
 
 module.exports = {
   slug: 'notredame-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Notre Dame, IN",
   year: 1842,
-  subtitle: "South Bend midnight #0C2340, Dome Gold #C99700 & Irish Green #00843D",
+  subtitle: "ND Blue #0C2340 night, Bright Gold #D39F10, Green #0A843D & #1C4F8F",
   tokens: {
     mode: 'dark',
     bg: '#091723',
@@ -34,29 +34,29 @@ module.exports = {
     fgPunct: '#9FA9B3',
     fgComment: '#8D9AA7',
     fgParameter: '#8AC5D6',
-    fgProperty: '#90C6E3',
+    fgProperty: '#91C6E4',
     borderSubtle: '#203040',
     borderStrong: '#475A6C',
     accentKeyword: '#53B573',
     accentStorage: '#C489DF',
     accentString: '#DD8A9B',
     accentRegex: '#F6955B',
-    accentFunction: '#85ADCC',
-    accentFunctionDim: '#8FB8E6',
+    accentFunction: '#87ADCC',
+    accentFunctionDim: '#90B8E7',
     accentType: '#7AD8DC',
-    accentInterface: '#84D1A6',
-    accentNumber: '#FDD151',
+    accentInterface: '#98C1F7',
+    accentNumber: '#FFCF54',
     accentDecorator: '#F481C2',
     accentNamespace: '#9BB0CB',
-    accentCursor: '#E8BC38',
+    accentCursor: '#E8B830',
     accentFocus: '#53B573',
-    accentBadge: '#C99700',
+    accentBadge: '#D39F10',
     accentButton: '#22436D',
     accentStatusBar: '#0C2340',
     colorError: '#F55A61',
     colorWarning: '#F2AD67',
-    colorInfo: '#7BBDFF',
-    gitAdd: '#6DC888',
+    colorInfo: '#87BAFF',
+    gitAdd: '#6FC886',
     gitDelete: '#F55A61',
     ansi: {
       black: '#10202F',

@@ -2,9 +2,10 @@
 
 // UCLA (1919, Los Angeles, CA) -- Light
 //
-// Royce Hall sunlit Westwood alabaster (`bg`) featuring official UCLA Blue `#2774AE`
-// (`accentStatusBar`, `accentKeyword`, `accentFunction`), UCLA Gold `#FFD100` accents,
-// Royce Hall brick terracotta (`accentString`), and Westwood palm green (`accentType`).
+// Royce Hall sunlit Westwood alabaster (`bg`) built on UCLA's official design-system
+// palette: UCLA Blue `#2774AE` (`accentStatusBar`, `accentKeyword`), Darker Blue `#005587`
+// (`accentFunction`), Purple `#5223B0` (`accentStorage`), Success Green `#007339` (`accentType`),
+// UCLA Gold `#FFD100` / `#FFB81C` (`accentNumber`, `accentBadge`), and Error `#D60000`.
 
 module.exports = {
   slug: 'ucla-light',
@@ -15,7 +16,7 @@ module.exports = {
   country: "USA",
   city: "Los Angeles, CA",
   year: 1919,
-  subtitle: "Royce Hall California sun, UCLA Blue #2774AE, Gold & terracotta",
+  subtitle: "Royce Hall sun, UCLA Blue #2774AE, Darker Blue #005587 & Gold #FFD100",
   tokens: {
     mode: 'light',
     bg: '#EEF5F8',
@@ -33,19 +34,19 @@ module.exports = {
     fgVariable: '#1C262A',
     fgPunct: '#464F53',
     fgComment: '#525D62',
-    fgParameter: '#20533E',
+    fgParameter: '#1B5342',
     fgProperty: '#004A5C',
     borderSubtle: '#C8CFD3',
     borderStrong: '#949B9F',
-    accentKeyword: '#37587C',
-    accentStorage: '#55186B',
-    accentString: '#9F3314',
+    accentKeyword: '#035288',
+    accentStorage: '#3F128E',
+    accentString: '#8F3323',
     accentRegex: '#8B3F00',
     accentFunction: '#0C3648',
     accentFunctionDim: '#11405C',
-    accentType: '#4B6A4D',
+    accentType: '#046C36',
     accentInterface: '#00646D',
-    accentNumber: '#67492A',
+    accentNumber: '#815C06',
     accentDecorator: '#8B1F62',
     accentNamespace: '#34536E',
     accentCursor: '#2774AE',
@@ -53,11 +54,11 @@ module.exports = {
     accentBadge: '#FFB81C',
     accentButton: '#2774AE',
     accentStatusBar: '#2774AE',
-    colorError: '#6A0C2C',
+    colorError: '#6D0822',
     colorWarning: '#864F00',
     colorInfo: '#005894',
-    gitAdd: '#156B46',
-    gitDelete: '#6A0C2C',
+    gitAdd: '#006E36',
+    gitDelete: '#6D0822',
     ansi: {
       black: '#13191C',
       red: '#A21829',

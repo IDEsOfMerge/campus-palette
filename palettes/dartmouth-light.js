@@ -4,7 +4,8 @@
 //
 // Hanover crisp winter-birch canvas (`bg`) anchored by official Dartmouth Green
 // `#00693E` (PMS 349, `accentKeyword`, `accentStatusBar`), official River Blue `#267ABA`
-// (`accentFunction`), Bonfire Red `#9D162E` (`accentString`), and Winter Violet (`accentStorage`).
+// (`accentFunction`), Tuck Orange `#D94415` (`accentString`), Bonfire Red `#9D162E`
+// (`colorError`), Summer Yellow `#F5DC69` (`accentNumber`), and Violet `#8A6996`.
 
 module.exports = {
   slug: 'dartmouth-light',
@@ -15,7 +16,7 @@ module.exports = {
   country: "USA",
   city: "Hanover, NH",
   year: 1769,
-  subtitle: "Hanover snow-birch, Dartmouth Green #00693E, River Blue & Bonfire",
+  subtitle: "Hanover snow-birch, Dartmouth Green #00693E, River Blue & Tuck Orange",
   tokens: {
     mode: 'light',
     bg: '#EFF5F1',
@@ -33,31 +34,31 @@ module.exports = {
     fgVariable: '#1E2621',
     fgPunct: '#474F4A',
     fgComment: '#545E57',
-    fgParameter: '#194E63',
+    fgParameter: '#174F62',
     fgProperty: '#234466',
     borderSubtle: '#C9CFCB',
     borderStrong: '#959B97',
-    accentKeyword: '#405E45',
+    accentKeyword: '#20452C',
     accentStorage: '#4D2661',
-    accentString: '#8F4509',
+    accentString: '#9F3208',
     accentRegex: '#9E2032',
     accentFunction: '#002A71',
     accentFunctionDim: '#263472',
-    accentType: '#076673',
+    accentType: '#006E7A',
     accentInterface: '#2A672B',
-    accentNumber: '#5D4422',
+    accentNumber: '#825A2E',
     accentDecorator: '#892363',
-    accentNamespace: '#37574F',
+    accentNamespace: '#5F494A',
     accentCursor: '#00693E',
     accentFocus: '#00693E',
     accentBadge: '#00693E',
     accentButton: '#00693E',
     accentStatusBar: '#00693E',
-    colorError: '#690C2D',
+    colorError: '#6B0D1D',
     colorWarning: '#874E00',
     colorInfo: '#0A5891',
     gitAdd: '#006D41',
-    gitDelete: '#690C2D',
+    gitDelete: '#6B0D1D',
     ansi: {
       black: '#141A16',
       red: '#A21829',

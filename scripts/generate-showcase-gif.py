@@ -6,12 +6,12 @@ palettes (`palettes/*.js`).
 
 Showcases 14 themes (7 Light <-> Dark collegiate pairs):
   1. Columbia University (Dark -> Light)            [1754 · New York, NY]
-  2. University of British Columbia (Dark -> Light) [1908 · Vancouver, BC]
-  3. University of Victoria (Light -> Dark)         [1963 · Victoria, BC]
-  4. St. Edward's University (Dark -> Light)        [1885 · Austin, TX]
-  5. Harvard University (Light -> Dark)             [1636 · Cambridge, MA]
-  6. MIT (Dark -> Light)                            [1861 · Cambridge, MA]
-  7. University of Oxford (Light -> Dark)           [1096 · Oxford, UK]
+  2. Harvard University (Light -> Dark)             [1636 · Cambridge, MA]
+  3. MIT (Dark -> Light)                            [1861 · Cambridge, MA]
+  4. University of Oxford (Light -> Dark)           [1096 · Oxford, UK]
+  5. University of British Columbia (Dark -> Light) [1908 · Vancouver, BC]
+  6. University of Victoria (Light -> Dark)         [1963 · Victoria, BC]
+  7. St. Edward's University (Dark -> Light)        [1885 · Austin, TX]
 
 Run with: python3 scripts/generate-showcase-gif.py
 """
@@ -35,18 +35,18 @@ W, H = 960, 588
 SHOWCASE = [
     ("columbia-dark",   0, True),
     ("columbia-light",  0, False),
-    ("ubc-dark",        1, True),
-    ("ubc-light",       1, False),
-    ("uvic-light",      2, True),
-    ("uvic-dark",       2, False),
-    ("stedwards-dark",  3, True),
-    ("stedwards-light", 3, False),
-    ("harvard-light",   4, True),
-    ("harvard-dark",    4, False),
-    ("mit-dark",        5, True),
-    ("mit-light",       5, False),
-    ("oxford-light",    6, True),
-    ("oxford-dark",     6, False),
+    ("harvard-light",   1, True),
+    ("harvard-dark",    1, False),
+    ("mit-dark",        2, True),
+    ("mit-light",       2, False),
+    ("oxford-light",    3, True),
+    ("oxford-dark",     3, False),
+    ("ubc-dark",        4, True),
+    ("ubc-light",       4, False),
+    ("uvic-light",      5, True),
+    ("uvic-dark",       5, False),
+    ("stedwards-dark",  6, True),
+    ("stedwards-light", 6, False),
 ]
 
 

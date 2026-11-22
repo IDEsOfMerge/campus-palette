@@ -461,24 +461,24 @@ describe('color-science: auditPalette across all 80 shipped palettes', () => {
       `Expected severe deutan collision error, got: ${sevRes.errors.join(' | ')}`
     );
 
-    // Moderate tritan compression boundary on harvard-light: dE76 = 9.6 < 10.0
+    // Moderate protan compression boundary on harvard-light: dE76 = 8.4 < 10.0
     const moderate = clonePalette(loadPalette('harvard-light'));
     moderate.slug = 'synthetic-moderate-cvd';
-    moderate.tokens.accentKeyword = '#7F1423';
+    moderate.tokens.accentString = '#8F2B11';
     const modRes = cs.auditPalette(moderate);
     assert.deepEqual(modRes.errors, [], `Unexpected errors: ${modRes.errors.join(' | ')}`);
     assert.equal(modRes.metrics.severeCvdCount, 0);
     assert.equal(modRes.warnings.length, 1);
     assert.ok(
-      modRes.warnings[0].includes('moderate tritan compression') &&
-        modRes.warnings[0].includes('accentKeyword/accentString'),
+      modRes.warnings[0].includes('moderate protan compression') &&
+        modRes.warnings[0].includes('accentString/accentNumber'),
       `Unexpected warning text: ${modRes.warnings[0]}`
     );
 
     // Clear boundary control: dE76 >= 10.0
     const clear = clonePalette(loadPalette('harvard-light'));
     clear.slug = 'synthetic-cvd-clear';
-    clear.tokens.accentKeyword = '#7C1021';
+    clear.tokens.accentString = '#8C2F0A';
     const clearRes = cs.auditPalette(clear);
     assert.deepEqual(clearRes.errors, []);
     assert.deepEqual(clearRes.warnings, []);

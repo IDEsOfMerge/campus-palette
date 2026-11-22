@@ -2,8 +2,9 @@
 
 // University of Toronto (1827, Toronto, ON) -- Dark
 //
-// Deep U of T Blue midnight (`bg`, rooted in `#1E3765`) illuminated by Boundless cyan-blue
-// functions, crisp azure keywords, emerald types, and warm terracotta coral strings.
+// Deep U of T Blue midnight (`bg`, rooted in `#1E3765`) illuminated by official secondary
+// sky blue `#6FC7EA` (PMS 2985) functions, emerald-teal `#00A189` types, Warm Red `#DC4633`
+// coral strings, and PMS 7406 gold `#F1C500` numbers.
 
 module.exports = {
   slug: 'utoronto-dark',
@@ -14,7 +15,7 @@ module.exports = {
   country: "Canada",
   city: "Toronto, ON",
   year: 1827,
-  subtitle: "Convocation midnight U of T Blue #1E3765, Boundless cyan & amber",
+  subtitle: "Convocation midnight #1E3765, #6FC7EA, #00A189, #DC4633 & #F1C500",
   tokens: {
     mode: 'dark',
     bg: '#0C1623',
@@ -32,31 +33,31 @@ module.exports = {
     fgVariable: '#CDD9E8',
     fgPunct: '#A0A8B3',
     fgComment: '#8F99A7',
-    fgParameter: '#8AC9C1',
+    fgParameter: '#8AC9C2',
     fgProperty: '#8AC9DD',
     borderSubtle: '#232F3F',
     borderStrong: '#4A596C',
     accentKeyword: '#86A0C0',
-    accentStorage: '#BF8BE2',
-    accentString: '#FB8877',
+    accentStorage: '#897DB7',
+    accentString: '#FB8875',
     accentRegex: '#F3975C',
-    accentFunction: '#7BC9EF',
-    accentFunctionDim: '#9BD2FA',
-    accentType: '#65AB92',
+    accentFunction: '#10B7F0',
+    accentFunctionDim: '#68BEF8',
+    accentType: '#569C84',
     accentInterface: '#82D39F',
-    accentNumber: '#FFCC89',
-    accentDecorator: '#F581BE',
+    accentNumber: '#FBD242',
+    accentDecorator: '#FA7FB5',
     accentNamespace: '#99AFD3',
     accentCursor: '#86A0C0',
     accentFocus: '#86A0C0',
     accentBadge: '#007FA3',
     accentButton: '#31518E',
     accentStatusBar: '#1E3765',
-    colorError: '#D25C77',
+    colorError: '#C26B72',
     colorWarning: '#F4AC68',
     colorInfo: '#70C3EB',
-    gitAdd: '#71C59E',
-    gitDelete: '#D25C77',
+    gitAdd: '#6EC4B1',
+    gitDelete: '#C26B72',
     ansi: {
       black: '#141F2F',
       red: '#F76562',

@@ -2,10 +2,12 @@
 
 // University of Cambridge (1209, Cambridge, UK) -- Light
 //
-// Built directly on the University of Cambridge's official core colour architecture:
+// Built directly on the University of Cambridge's official 24-colour brand palette:
 // cool seafoam paper inspired by Cambridge Light Blue `#D1F9F1` (`bg`), Cambridge Dark
-// Blue `#133844` (PMS 547, `accentStatusBar`, `accentFunction`), AA-tuned Cambridge Warm
-// Blue (`accentKeyword`, derived from `#00BDB6`), Tudor rose (`accentString`), and Fens amber.
+// Blue `#133844` (PMS 547, `accentStatusBar`), AA-tuned Cambridge Warm Blue (`#00BDB6`,
+// `accentKeyword`), Dark Cherry `#911449` (`accentString`), Dark Indigo `#29347A` (`accentFunction`),
+// Dark Purple `#681FB1` (`accentStorage`), Dark Green `#13553A` (`accentType`),
+// Dark Crest `#DD3025` (`colorError`), and Slate 3 `#546072` / Slate 4 `#232830`.
 
 module.exports = {
   slug: 'cambridge-light',
@@ -16,7 +18,7 @@ module.exports = {
   country: "UK",
   city: "Cambridge, UK",
   year: 1209,
-  subtitle: "River Cam Light Blue #D1F9F1 mist, Cambridge Dark Blue #133844 & Tudor rose",
+  subtitle: "Cambridge Light Blue #D1F9F1, Dark Blue #133844, Dark Cherry & Dark Indigo",
   tokens: {
     mode: 'light',
     bg: '#EAF7F4',
@@ -34,31 +36,31 @@ module.exports = {
     fgVariable: '#182824',
     fgPunct: '#43504D',
     fgComment: '#4D5F5B',
-    fgParameter: '#2D5134',
-    fgProperty: '#044A5E',
+    fgParameter: '#2B5236',
+    fgProperty: '#2E4268',
     borderSubtle: '#C3D2CE',
     borderStrong: '#8F9E9A',
-    accentKeyword: '#004E48',
-    accentStorage: '#551969',
-    accentString: '#A01D64',
+    accentKeyword: '#005B58',
+    accentStorage: '#4C0687',
+    accentString: '#7B2544',
     accentRegex: '#8B3F00',
-    accentFunction: '#002334',
-    accentFunctionDim: '#002C49',
-    accentType: '#374F1D',
+    accentFunction: '#2F3B82',
+    accentFunctionDim: '#474582',
+    accentType: '#456330',
     accentInterface: '#006278',
     accentNumber: '#865906',
-    accentDecorator: '#8B1E65',
-    accentNamespace: '#37565C',
+    accentDecorator: '#93184B',
+    accentNamespace: '#455162',
     accentCursor: '#007A74',
     accentFocus: '#007A74',
     accentBadge: '#008A84',
     accentButton: '#133844',
     accentStatusBar: '#133844',
-    colorError: '#910016',
+    colorError: '#6D0B11',
     colorWarning: '#864F00',
-    colorInfo: '#005C86',
-    gitAdd: '#116C44',
-    gitDelete: '#910016',
+    colorInfo: '#3F4E97',
+    gitAdd: '#2A694C',
+    gitDelete: '#6D0B11',
     ansi: {
       black: '#101B18',
       red: '#A21829',

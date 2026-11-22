@@ -3,8 +3,8 @@
 // UCLA (1919, Los Angeles, CA) -- Dark
 //
 // Deep Westwood Pacific navy (`bg`, derived from UCLA Darkest Blue `#003B5C`) glowing
-// with coastal sky blue keywords and functions, exact official UCLA Gold `#FFD100`
-// numbers and cursor, palm emerald types, and warm sunset terracotta strings.
+// with official Lighter Blue `#8BB8E8` functions, coastal sky keywords, exact official
+// UCLA Gold `#FFD100` numbers and cursor, and palm emerald types.
 
 module.exports = {
   slug: 'ucla-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Los Angeles, CA",
   year: 1919,
-  subtitle: "Westwood Pacific Darkest Blue #003B5C, UCLA Gold #FFD100 & sky",
+  subtitle: "Darkest Blue #003B5C night, UCLA Gold #FFD100 & Lighter Blue #8BB8E8",
   tokens: {
     mode: 'dark',
     bg: '#051824',
@@ -33,31 +33,31 @@ module.exports = {
     fgVariable: '#C9DAE5',
     fgPunct: '#9DAAB2',
     fgComment: '#8B9BA5',
-    fgParameter: '#8DC9BB',
-    fgProperty: '#91C6E4',
+    fgParameter: '#91C9B4',
+    fgProperty: '#96C4E7',
     borderSubtle: '#1B3240',
     borderStrong: '#415C6C',
-    accentKeyword: '#65A8C3',
-    accentStorage: '#9B7DCC',
+    accentKeyword: '#5CC0F3',
+    accentStorage: '#A492FB',
     accentString: '#FB896C',
     accentRegex: '#F6955B',
-    accentFunction: '#7EC6FF',
-    accentFunctionDim: '#A6CEFF',
-    accentType: '#8BDAB1',
+    accentFunction: '#6D95C2',
+    accentFunctionDim: '#839ED0',
+    accentType: '#82DE9D',
     accentInterface: '#78CED7',
     accentNumber: '#FBD242',
     accentDecorator: '#F481C0',
     accentNamespace: '#90B2D2',
     accentCursor: '#FFD100',
-    accentFocus: '#65A8C3',
+    accentFocus: '#5CC0F3',
     accentBadge: '#FFB81C',
     accentButton: '#117ABF',
     accentStatusBar: '#00406A',
-    colorError: '#D25C77',
+    colorError: '#D45E60',
     colorWarning: '#F2AD67',
     colorInfo: '#77BEFF',
-    gitAdd: '#76C59A',
-    gitDelete: '#D25C77',
+    gitAdd: '#6DC889',
+    gitDelete: '#D45E60',
     ansi: {
       black: '#0A222F',
       red: '#F76562',

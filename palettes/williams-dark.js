@@ -2,9 +2,9 @@
 
 // Williams College (1793, Williamstown, MA) -- Dark
 //
-// Deep Berkshire midnight purple (`bg`, rooted in `#500082`) illuminated by luminous
-// royal orchid keywords, exact official Williams Gold `#FFBE0A` numbers and cursor,
-// Berkshire pine emerald types, and autumn crimson strings.
+// Deep Berkshire midnight purple rooted in official Williams Dark Purple `#280050` (`bg`)
+// illuminated by luminous orchid keywords, exact Williams Gold `#FFBE0A` numbers and cursor,
+// official Orange `#FF7800` strings, and Berkshire pine emerald types.
 
 module.exports = {
   slug: 'williams-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Williamstown, MA",
   year: 1793,
-  subtitle: "Berkshire midnight purple #500082, glowing Williams Gold #FFBE0A & pine",
+  subtitle: "Official Dark Purple #280050 night, Williams Gold #FFBE0A & Orange #FF7800",
   tokens: {
     mode: 'dark',
     bg: '#191127',
@@ -34,15 +34,15 @@ module.exports = {
     fgPunct: '#A9A5B2',
     fgComment: '#9A95A6',
     fgParameter: '#8FC9B7',
-    fgProperty: '#93C5E6',
+    fgProperty: '#9CC2EA',
     borderSubtle: '#322945',
     borderStrong: '#5B5272',
     accentKeyword: '#C89CFB',
-    accentStorage: '#E976BB',
-    accentString: '#E79681',
-    accentRegex: '#F6955C',
-    accentFunction: '#8FB4D7',
-    accentFunctionDim: '#9DBEF0',
+    accentStorage: '#E875C5',
+    accentString: '#FA8E33',
+    accentRegex: '#FF8C76',
+    accentFunction: '#B3CDF7',
+    accentFunctionDim: '#CAD7FF',
     accentType: '#8BDBA9',
     accentInterface: '#79CED5',
     accentNumber: '#FFCE6B',
@@ -51,7 +51,7 @@ module.exports = {
     accentCursor: '#FFBE0A',
     accentFocus: '#C89CFB',
     accentBadge: '#D99E00',
-    accentButton: '#69349A',
+    accentButton: '#4E2884',
     accentStatusBar: '#4B1C72',
     colorError: '#F55A60',
     colorWarning: '#F2AD67',

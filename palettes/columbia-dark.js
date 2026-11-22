@@ -3,8 +3,9 @@
 // Columbia University (1754, New York, NY) -- Dark
 //
 // Morningside Heights dusk slate-navy (`bg`) showcasing iconic Philolexian Society
-// Columbia Blue `#B9D9EB` (PMS 290 C) and `#6CACE4` across keywords, cursor, and
-// functions, complemented by copper-dome verdigris types and Alma Mater gold numbers.
+// Columbia Blue `#B9D9EB` (PMS 290 C) and official Secondary Blue `#6CACE4` (PMS 284 C)
+// across keywords, cursor, and functions, paired with official Accent 1 `#C75000` bronze
+// strings and Transactional Green `#228848` emerald types.
 
 module.exports = {
   slug: 'columbia-dark',
@@ -15,7 +16,7 @@ module.exports = {
   country: "USA",
   city: "New York, NY",
   year: 1754,
-  subtitle: "Morningside Heights navy, Philolexian Columbia Blue #B9D9EB & bronze",
+  subtitle: "Morningside navy, Columbia Blue #B9D9EB, #6CACE4 & Accent #C75000",
   tokens: {
     mode: 'dark',
     bg: '#091822',
@@ -33,31 +34,31 @@ module.exports = {
     fgVariable: '#CADAE6',
     fgPunct: '#9EA9B2',
     fgComment: '#8C9AA6',
-    fgParameter: '#88C8CC',
-    fgProperty: '#9DC1EA',
+    fgParameter: '#8EC9B8',
+    fgProperty: '#9BC2E9',
     borderSubtle: '#20313E',
     borderStrong: '#475B6A',
     accentKeyword: '#7BA5BA',
     accentStorage: '#BC8AE9',
-    accentString: '#FB8970',
-    accentRegex: '#F19864',
-    accentFunction: '#BDD5FF',
-    accentFunctionDim: '#D6E0FF',
-    accentType: '#7FD9CB',
-    accentInterface: '#82D2A5',
-    accentNumber: '#FFCC88',
+    accentString: '#F1934A',
+    accentRegex: '#FD8D76',
+    accentFunction: '#BBD6FF',
+    accentFunctionDim: '#D6E1FF',
+    accentType: '#8ADBAB',
+    accentInterface: '#7FCFC3',
+    accentNumber: '#F7D086',
     accentDecorator: '#F283C1',
-    accentNamespace: '#8FB1DB',
+    accentNamespace: '#A2AFC1',
     accentCursor: '#B9D9EB',
     accentFocus: '#6CACE4',
     accentBadge: '#0077C8',
     accentButton: '#2F6BBC',
     accentStatusBar: '#053B7B',
-    colorError: '#D25D6F',
+    colorError: '#F55B59',
     colorWarning: '#F4AC68',
     colorInfo: '#78BEFF',
-    gitAdd: '#77C598',
-    gitDelete: '#D25D6F',
+    gitAdd: '#74C789',
+    gitDelete: '#F55B59',
     ansi: {
       black: '#11212D',
       red: '#F76562',

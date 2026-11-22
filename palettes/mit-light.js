@@ -2,10 +2,11 @@
 
 // MIT (1861, Cambridge, MA) -- Light
 //
-// Killian Court & Infinite Corridor cool brushed silver-stone (`bg`) anchored by
-// official MIT Red `#750014` (PMS 202 C, `accentKeyword`, `accentStatusBar`) and
-// Silver Gray `#8B959E` (PMS 7543) chrome, paired with Charles River blue (`accentFunction`),
-// lab emerald (`accentType`), and signal amber (`accentNumber`).
+// Infinite Corridor cool silver-stone (`bg`, echoing official Light Gray 1 `#F2F4F8`)
+// anchored by official MIT Red `#750014` (PMS 202 C, `accentKeyword`, `accentStatusBar`)
+// and Silver Gray `#8B959E` / Dark Silver Gray `#626A73`, paired with MIT's official
+// Expanded Palette: Dark Blue `#002896` (`accentFunction`), Dark Green `#004D1A` (`accentType`),
+// Dark Purple `#3E006B` (`accentStorage`), Dark Pink `#750062` (`accentDecorator`), and Bright Red `#FF1423`.
 
 module.exports = {
   slug: 'mit-light',
@@ -16,7 +17,7 @@ module.exports = {
   country: "USA",
   city: "Cambridge, MA",
   year: 1861,
-  subtitle: "Infinite Corridor brushed silver, MIT Red #750014 & Silver Gray #8B959E",
+  subtitle: "Light Gray #F2F4F8, MIT Red #750014, Silver Gray #8B959E & Expanded hues",
   tokens: {
     mode: 'light',
     bg: '#EFF3F5',
@@ -34,31 +35,31 @@ module.exports = {
     fgVariable: '#1E2529',
     fgPunct: '#484E52',
     fgComment: '#545C61',
-    fgParameter: '#21533D',
+    fgParameter: '#2A5236',
     fgProperty: '#264467',
     borderSubtle: '#C9CDCF',
     borderStrong: '#95999C',
     accentKeyword: '#940B1F',
-    accentStorage: '#541C67',
-    accentString: '#0C677D',
+    accentStorage: '#4C177B',
+    accentString: '#0B677E',
     accentRegex: '#8D3D00',
-    accentFunction: '#03237F',
-    accentFunctionDim: '#29307E',
-    accentType: '#054710',
+    accentFunction: '#0835A1',
+    accentFunctionDim: '#37429D',
+    accentType: '#345020',
     accentInterface: '#006569',
-    accentNumber: '#865906',
-    accentDecorator: '#8D1C5F',
-    accentNamespace: '#445160',
+    accentNumber: '#7F5D06',
+    accentDecorator: '#852271',
+    accentNamespace: '#435260',
     accentCursor: '#A3001D',
     accentFocus: '#A3001D',
     accentBadge: '#FF1423',
     accentButton: '#750014',
     accentStatusBar: '#750014',
-    colorError: '#910016',
+    colorError: '#6F0600',
     colorWarning: '#874E00',
-    colorInfo: '#005797',
-    gitAdd: '#116C44',
-    gitDelete: '#910016',
+    colorInfo: '#1F50A7',
+    gitAdd: '#016E26',
+    gitDelete: '#6F0600',
     ansi: {
       black: '#14191C',
       red: '#A21829',

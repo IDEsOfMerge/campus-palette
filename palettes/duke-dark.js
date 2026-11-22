@@ -3,7 +3,8 @@
 // Duke University (1838, Durham, NC) -- Dark
 //
 // Deep Duke Navy midnight (`bg`, rooted in `#012169`) illuminated by electric Duke Royal
-// and Piedmont sky blue keywords & functions, warm copper strings, and Gardens emerald.
+// and Shale Blue keywords & functions, official Copper `#C84E00` strings, Eno `#339898`
+// teal types, Ironweed `#993399` storage, and Dandelion `#FFD960` numbers.
 
 module.exports = {
   slug: 'duke-dark',
@@ -14,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Durham, NC",
   year: 1838,
-  subtitle: "Gothic Duke Navy #012169 night, Piedmont azure, copper & garden green",
+  subtitle: "Gothic Duke Navy #012169 night, Shale Blue, Eno #339898 & Dandelion",
   tokens: {
     mode: 'dark',
     bg: '#091528',
@@ -32,30 +33,30 @@ module.exports = {
     fgVariable: '#CED8E8',
     fgPunct: '#A1A8B3',
     fgComment: '#8F99A7',
-    fgParameter: '#91C9B3',
-    fgProperty: '#A7BEEC',
+    fgParameter: '#89C6D4',
+    fgProperty: '#8CC8DF',
     borderSubtle: '#1F2F45',
     borderStrong: '#465873',
-    accentKeyword: '#659CFF',
-    accentStorage: '#9781C4',
+    accentKeyword: '#7FB8FB',
+    accentStorage: '#D87ED5',
     accentString: '#FB8B5C',
     accentRegex: '#FF888F',
-    accentFunction: '#A8B3DD',
-    accentFunctionDim: '#BABCF5',
-    accentType: '#90DAA2',
-    accentInterface: '#78CED8',
-    accentNumber: '#F7D086',
+    accentFunction: '#A1DDFF',
+    accentFunctionDim: '#C7E5FF',
+    accentType: '#63DCDC',
+    accentInterface: '#B4C972',
+    accentNumber: '#F9D359',
     accentDecorator: '#F481C3',
     accentNamespace: '#95AFDA',
-    accentCursor: '#659CFF',
-    accentFocus: '#659CFF',
+    accentCursor: '#7FB8FB',
+    accentFocus: '#7FB8FB',
     accentBadge: '#00539B',
     accentButton: '#113B92',
     accentStatusBar: '#012169',
     colorError: '#F55A61',
     colorWarning: '#F6AB69',
     colorInfo: '#77BEFF',
-    gitAdd: '#7AC58E',
+    gitAdd: '#78C49A',
     gitDelete: '#F55A61',
     ansi: {
       black: '#101E34',

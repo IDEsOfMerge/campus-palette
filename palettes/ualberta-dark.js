@@ -2,9 +2,9 @@
 
 // University of Alberta (1908, Edmonton, AB) -- Dark
 //
-// Deep Alberta boreal-spruce dark canvas (`bg`, rooted in `#275D38`) accented by glowing
-// emerald keywords, exact U of A Gold `#FECB00` numbers and cursor, river sky functions,
-// and autumn coral-rust strings.
+// Deep Alberta boreal-spruce dark canvas (`bg`, rooted in official Dark Evergreen `#1C4630`
+// and `#275D38`) accented by glowing emerald keywords, exact U of A Gold `#FECB00` numbers
+// and cursor, river sky functions, and autumn coral-rust strings.
 
 module.exports = {
   slug: 'ualberta-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "Canada",
   city: "Edmonton, AB",
   year: 1908,
-  subtitle: "Boreal spruce dark canvas, emerald keywords, U of A Gold #FECB00 & sky",
+  subtitle: "Dark Evergreen #1C4630 canvas, emerald keywords, Gold #FECB00 & sky",
   tokens: {
     mode: 'dark',
     bg: '#0C1B11',

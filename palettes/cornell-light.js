@@ -3,8 +3,9 @@
 // Cornell University (1865, Ithaca, NY) -- Light
 //
 // Ithaca gorge warm shale (`bg`) highlighting official Cornell Carnelian `#B31B1B`
-// (`accentKeyword`, `accentStatusBar`), Cayuga Lake Blue `#006699` (`accentFunction`),
-// gorge sage green (`accentType`), and Finger Lakes autumn amber (`accentNumber`).
+// (PMS 187, `accentKeyword`, `accentStatusBar`), official Link Blue `#006699` (`accentFunction`),
+// official Cornell Green `#4B7B2B` (`accentType`), Orange `#D47500` (`accentString`),
+// Navy `#073949` (`accentInterface`), and Dark Warm Gray `#A2998B`.
 
 module.exports = {
   slug: 'cornell-light',
@@ -15,7 +16,7 @@ module.exports = {
   country: "USA",
   city: "Ithaca, NY",
   year: 1865,
-  subtitle: "Finger Lakes warm shale, Carnelian #B31B1B, Cayuga Blue & gorge sage",
+  subtitle: "Finger Lakes shale, Carnelian #B31B1B, Link Blue #006699 & Green #4B7B2B",
   tokens: {
     mode: 'light',
     bg: '#F8F1ED',
@@ -33,31 +34,31 @@ module.exports = {
     fgVariable: '#2B221D',
     fgPunct: '#544B47',
     fgComment: '#635853',
-    fgParameter: '#195344',
+    fgParameter: '#2A5236',
     fgProperty: '#004B5B',
     borderSubtle: '#D3CBC7',
     borderStrong: '#9F9793',
-    accentKeyword: '#97030B',
+    accentKeyword: '#982805',
     accentStorage: '#591961',
-    accentString: '#5D3B2B',
+    accentString: '#3C1A16',
     accentRegex: '#923045',
     accentFunction: '#002432',
     accentFunctionDim: '#002D45',
-    accentType: '#40634C',
-    accentInterface: '#006568',
-    accentNumber: '#5B3B27',
+    accentType: '#3D671D',
+    accentInterface: '#236076',
+    accentNumber: '#543620',
     accentDecorator: '#892167',
-    accentNamespace: '#4B4F61',
+    accentNamespace: '#594E3D',
     accentCursor: '#B31B1B',
     accentFocus: '#B31B1B',
     accentBadge: '#B31B1B',
     accentButton: '#991717',
     accentStatusBar: '#B31B1B',
-    colorError: '#480E1C',
+    colorError: '#902800',
     colorWarning: '#874E00',
     colorInfo: '#005B89',
-    gitAdd: '#236B36',
-    gitDelete: '#480E1C',
+    gitAdd: '#3D681F',
+    gitDelete: '#902800',
     ansi: {
       black: '#1D1713',
       red: '#A21829',

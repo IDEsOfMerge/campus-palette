@@ -3,8 +3,8 @@
 // University of Texas at Austin (1883, Austin, TX) -- Dark
 //
 // Deep Austin Charcoal slate (`bg`, rooted in official PMS 432 `#333F48`) illuminated by
-// radiant Burnt Orange keywords and cursor, Barton Springs turquoise functions, Hill
-// Country sage types, and sunset terracotta strings.
+// radiant Burnt Orange keywords and cursor, official Turquoise `#00A9B7` strings, Dark Teal
+// `#005F86` azure functions, Forest Green `#579D42` / `#A6CD57` types, and Yellow `#FFD600` numbers.
 
 module.exports = {
   slug: 'utaustin-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Austin, TX",
   year: 1883,
-  subtitle: "UT Charcoal #333F48 night, glowing Burnt Orange #BF5700 & Barton cyan",
+  subtitle: "UT Charcoal #333F48 night, Burnt Orange #BF5700, Turquoise #00A9B7 & Green",
   tokens: {
     mode: 'dark',
     bg: '#0E191E',
@@ -33,21 +33,21 @@ module.exports = {
     fgVariable: '#C9DBE5',
     fgPunct: '#9DAAB1',
     fgComment: '#8A9BA5',
-    fgParameter: '#91C9B3',
-    fgProperty: '#87CBD4',
+    fgParameter: '#A2C6A1',
+    fgProperty: '#88CAD9',
     borderSubtle: '#263239',
     borderStrong: '#4D5C64',
     accentKeyword: '#FB975D',
-    accentStorage: '#C988D7',
-    accentString: '#CD7C91',
-    accentRegex: '#F99360',
-    accentFunction: '#80B1BE',
-    accentFunctionDim: '#7BBFDC',
-    accentType: '#93DAA3',
-    accentInterface: '#81C5FF',
-    accentNumber: '#EDD58B',
-    accentDecorator: '#F481C0',
-    accentNamespace: '#9EB1C0',
+    accentStorage: '#71ABD8',
+    accentString: '#34C7AB',
+    accentRegex: '#ED9C57',
+    accentFunction: '#ABDDF0',
+    accentFunctionDim: '#BFE8FF',
+    accentType: '#8FA273',
+    accentInterface: '#AACB7D',
+    accentNumber: '#F7D443',
+    accentDecorator: '#E99958',
+    accentNamespace: '#9EB1BF',
     accentCursor: '#FF8433',
     accentFocus: '#FB975D',
     accentBadge: '#BF5700',
@@ -55,8 +55,8 @@ module.exports = {
     accentStatusBar: '#642A00',
     colorError: '#F55A5F',
     colorWarning: '#F7AA69',
-    colorInfo: '#71C5E1',
-    gitAdd: '#7AC58E',
+    colorInfo: '#76C2ED',
+    gitAdd: '#8AC378',
     gitDelete: '#F55A5F',
     ansi: {
       black: '#162228',

@@ -3,8 +3,8 @@
 // Stanford University (1885, Stanford, CA) -- Dark
 //
 // Warm Stanford charcoal-espresso (`bg`, rooted in official Process Black `#2E2D29`)
-// illuminated by glowing Cardinal crimson keywords, official Palo Verde `#3AC2AE`
-// (`#279989`) redwood-teal types, Bay azure functions, and Poppy amber numbers.
+// illuminated by glowing Cardinal crimson keywords, Palo Verde `#279989` redwood-teal types,
+// Sky Light `#67AFD2` functions, Poppy Light `#F9A44A` strings, and Illuminating `#FEDD5C` numbers.
 
 module.exports = {
   slug: 'stanford-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Stanford, CA",
   year: 1885,
-  subtitle: "Process Black #2E2D29 espresso, Cardinal crimson & Palo Verde #279989",
+  subtitle: "Process Black #2E2D29, Cardinal, Palo Verde #279989 & Illuminating",
   tokens: {
     mode: 'dark',
     bg: '#1C1610',
@@ -34,20 +34,20 @@ module.exports = {
     fgPunct: '#B0A59C',
     fgComment: '#A3968A',
     fgParameter: '#88C8CA',
-    fgProperty: '#94C5E6',
+    fgProperty: '#89CADB',
     borderSubtle: '#372F28',
     borderStrong: '#61584F',
     accentKeyword: '#FB9287',
-    accentStorage: '#CB87D5',
-    accentString: '#E57342',
+    accentStorage: '#DC7DCC',
+    accentString: '#CB6E36',
     accentRegex: '#FF8C76',
-    accentFunction: '#87C3FF',
-    accentFunctionDim: '#ABCCFF',
+    accentFunction: '#47B6DF',
+    accentFunctionDim: '#77BEE8',
     accentType: '#58E0CB',
-    accentInterface: '#85D2A0',
-    accentNumber: '#F7D086',
-    accentDecorator: '#F481C0',
-    accentNamespace: '#B8AC99',
+    accentInterface: '#78CCE4',
+    accentNumber: '#F5D452',
+    accentDecorator: '#EB8EA7',
+    accentNamespace: '#A2AFC1',
     accentCursor: '#FB9287',
     accentFocus: '#FB9287',
     accentBadge: '#8C1515',
@@ -55,8 +55,8 @@ module.exports = {
     accentStatusBar: '#76080C',
     colorError: '#F55A5E',
     colorWarning: '#F4AC68',
-    colorInfo: '#78BEFF',
-    gitAdd: '#75C59E',
+    colorInfo: '#70C2F3',
+    gitAdd: '#74C2B4',
     gitDelete: '#F55A5E',
     ansi: {
       black: '#261F18',

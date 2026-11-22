@@ -2,9 +2,11 @@
 
 // Georgetown University (1789, Washington, DC) -- Light
 //
-// Healy Hall Romanesque cool granite (`bg`) paired with official Georgetown Blue
-// `#041E42` (PMS 282 C, `accentKeyword`, `accentStatusBar`) and Georgetown Gray `#63666A`
-// (Cool Gray 10 C), accented by Potomac teal (`accentType`), DC brick crimson, and gold.
+// Healy Hall Romanesque cool granite (`bg`) built from Georgetown's official Color Guide:
+// Georgetown Blue `#041E42` (PMS 282, `accentKeyword`, `accentStatusBar`), Georgetown Gray
+// `#63666A`, Secondary Blue `#003DA5` (`accentFunction`), Tertiary Red `#862633` (`accentString`),
+// Tertiary Green `#5FA343` (`accentType`), Tertiary Blue `#00B5E2` (`accentInterface`),
+// Light Red `#D50032` (`colorError`), and Tertiary Yellow `#F8E08E`.
 
 module.exports = {
   slug: 'georgetown-light',
@@ -15,7 +17,7 @@ module.exports = {
   country: "USA",
   city: "Washington, DC",
   year: 1789,
-  subtitle: "Healy Hall granite, Georgetown Blue #041E42, Gray #63666A & Potomac teal",
+  subtitle: "Healy granite, Georgetown Blue #041E42, #003DA5, #862633 & #5FA343",
   tokens: {
     mode: 'light',
     bg: '#F0F3F7',
@@ -33,30 +35,30 @@ module.exports = {
     fgVariable: '#1E252A',
     fgPunct: '#484E53',
     fgComment: '#555C62',
-    fgParameter: '#0B5159',
-    fgProperty: '#264467',
+    fgParameter: '#394F2A',
+    fgProperty: '#244466',
     borderSubtle: '#CACED1',
     borderStrong: '#969A9D',
     accentKeyword: '#284E85',
     accentStorage: '#331B4B',
-    accentString: '#A12940',
+    accentString: '#983741',
     accentRegex: '#8B3F00',
-    accentFunction: '#092777',
-    accentFunctionDim: '#2B3276',
-    accentType: '#1F756F',
-    accentInterface: '#136843',
+    accentFunction: '#002876',
+    accentFunctionDim: '#273376',
+    accentType: '#333900',
+    accentInterface: '#00617F',
     accentNumber: '#865906',
     accentDecorator: '#8B1F62',
-    accentNamespace: '#485061',
+    accentNamespace: '#455160',
     accentCursor: '#041E42',
     accentFocus: '#041E42',
-    accentBadge: '#041E42',
+    accentBadge: '#003DA5',
     accentButton: '#041E42',
     accentStatusBar: '#041E42',
     colorError: '#690C2D',
     colorWarning: '#864F00',
-    colorInfo: '#005797',
-    gitAdd: '#156B44',
+    colorInfo: '#005B88',
+    gitAdd: '#356A21',
     gitDelete: '#690C2D',
     ansi: {
       black: '#15191D',

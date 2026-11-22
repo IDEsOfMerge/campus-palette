@@ -2,9 +2,9 @@
 
 // University of Washington (1861, Seattle, WA) -- Dark
 //
-// Rich Husky Spirit Purple midnight (`bg`, rooted in `#32006E` / `#4B2E83`) lit by
-// luminous violet keywords, official Husky Gold `#E8D3A2` numbers and cursor, Puget
-// Sound teal-cyan types, and cherry-blossom rose strings.
+// Rich Husky Purple midnight (`bg`, rooted in official `#32006E` / `#4B2E83`) lit by
+// official Accent Lavender `#C5B4E3` keywords, Spirit Gold `#FFC700` numbers, Husky Gold
+// `#E8E3D3` cursor, Accent Teal `#2AD2C9` types, and Accent Pink `#E93CAC` strings.
 
 module.exports = {
   slug: 'uw-dark',
@@ -15,7 +15,7 @@ module.exports = {
   country: "USA",
   city: "Seattle, WA",
   year: 1861,
-  subtitle: "Deep Husky Spirit Purple #32006E, metallic gold #E8D3A2 & Puget cyan",
+  subtitle: "Husky Purple #32006E night, Lavender #C5B4E3, Gold #FFC700 & Teal",
   tokens: {
     mode: 'dark',
     bg: '#151327',
@@ -33,26 +33,26 @@ module.exports = {
     fgVariable: '#D6D6E7',
     fgPunct: '#A6A6B3',
     fgComment: '#9796A7',
-    fgParameter: '#8BC5D7',
-    fgProperty: '#90C6E3',
+    fgParameter: '#88C8C6',
+    fgProperty: '#95C4E7',
     borderSubtle: '#2E2C45',
     borderStrong: '#565572',
-    accentKeyword: '#B9A3FB',
-    accentStorage: '#DD7EC4',
-    accentString: '#FB8398',
+    accentKeyword: '#C5B3D8',
+    accentStorage: '#A990FB',
+    accentString: '#C778BB',
     accentRegex: '#F6955B',
-    accentFunction: '#80B7E1',
-    accentFunctionDim: '#98C0F0',
-    accentType: '#7AD8DF',
-    accentInterface: '#84D1A8',
-    accentNumber: '#EFD391',
+    accentFunction: '#8AC3FF',
+    accentFunctionDim: '#ADCCFF',
+    accentType: '#58C6AC',
+    accentInterface: '#A3CE71',
+    accentNumber: '#FFCF51',
     accentDecorator: '#ED83D1',
     accentNamespace: '#ADA9CB',
-    accentCursor: '#E8D3A2',
-    accentFocus: '#B9A3FB',
+    accentCursor: '#E8E3D3',
+    accentFocus: '#C5B3D8',
     accentBadge: '#4B2E83',
-    accentButton: '#6746AC',
-    accentStatusBar: '#45277B',
+    accentButton: '#4A278F',
+    accentStatusBar: '#300D66',
     colorError: '#F55A64',
     colorWarning: '#F2AD67',
     colorInfo: '#79BDFF',

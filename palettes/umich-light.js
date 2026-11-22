@@ -2,10 +2,11 @@
 
 // University of Michigan (1817, Ann Arbor, MI) -- Light
 //
-// Law Quad stone parchment (`bg`) paired with official Michigan Blue `#00274C`
-// (`accentStatusBar`, `accentFunction`), Matthaei Violet `#575294` (`accentKeyword`),
-// Tappan Red `#9A3324` (`accentString`), Wave Field Green (`accentType`), and Maize
-// `#FFCB05` accents.
+// Law Quad stone parchment (`bg`) built from Michigan's full official supporting palette:
+// Michigan Blue `#00274C` (`accentStatusBar`), Arboretum Blue `#2F65A7` (`accentFunction`),
+// Matthaei Violet `#575294` (`accentKeyword`), A2 Amethyst `#702082` (`accentStorage`),
+// Ross Orange `#D86018` (`accentString`), Taubman Teal `#00B2A9` (`accentType`), Peony Pink
+// `#E01F7C` (`accentDecorator`), Tappan Red `#9A3324`, Law Quad Stone `#655A52`, and Maize `#FFCB05`.
 
 module.exports = {
   slug: 'umich-light',
@@ -16,7 +17,7 @@ module.exports = {
   country: "USA",
   city: "Ann Arbor, MI",
   year: 1817,
-  subtitle: "Law Quad parchment, Michigan Blue #00274C, Maize #FFCB05 & Tappan Red",
+  subtitle: "Law Quad parchment, Blue #00274C, Maize #FFCB05, Taubman Teal & Ross",
   tokens: {
     mode: 'light',
     bg: '#EEF3F8',
@@ -34,21 +35,21 @@ module.exports = {
     fgVariable: '#1E252B',
     fgPunct: '#474E54',
     fgComment: '#535C63',
-    fgParameter: '#175345',
-    fgProperty: '#0B4960',
+    fgParameter: '#0B5159',
+    fgProperty: '#114862',
     borderSubtle: '#C8CED3',
     borderStrong: '#949A9F',
-    accentKeyword: '#4B418D',
-    accentStorage: '#4B0630',
+    accentKeyword: '#494485',
+    accentStorage: '#3B005F',
     accentString: '#963E08',
     accentRegex: '#973021',
-    accentFunction: '#13354A',
-    accentFunctionDim: '#1C3E5F',
-    accentType: '#186A41',
-    accentInterface: '#00646D',
-    accentNumber: '#51371C',
-    accentDecorator: '#8B1F61',
-    accentNamespace: '#395170',
+    accentFunction: '#013454',
+    accentFunctionDim: '#1F3C5F',
+    accentType: '#046862',
+    accentInterface: '#45622F',
+    accentNumber: '#624C27',
+    accentDecorator: '#911951',
+    accentNamespace: '#5D4C40',
     accentCursor: '#00274C',
     accentFocus: '#00274C',
     accentBadge: '#D4A000',
@@ -56,7 +57,7 @@ module.exports = {
     accentStatusBar: '#00274C',
     colorError: '#6A0C2C',
     colorWarning: '#864F00',
-    colorInfo: '#135796',
+    colorInfo: '#1F5596',
     gitAdd: '#186C40',
     gitDelete: '#6A0C2C',
     ansi: {

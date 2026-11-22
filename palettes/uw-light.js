@@ -3,8 +3,9 @@
 // University of Washington (1861, Seattle, WA) -- Light
 //
 // Suzzallo Reading Room cool Rainier mist (`bg`) anchored by official Husky Purple
-// `#4B2E83` (`accentKeyword`, `accentStatusBar`), Metallic Gold `#85754D` (`accentNumber`),
-// Puget Sound teal (`accentType`), and Quad cherry-blossom rose (`accentString`).
+// `#32006E` (PMS 2685, `accentStatusBar`) and Spirit Purple `#4B2E83` (PMS 266,
+// `accentKeyword`), Heritage Gold `#85754D` (`accentNumber`), Accent Teal `#2AD2C9`
+// (`accentType`), Accent Pink `#E93CAC` (`accentString`), and Accent Green `#AADB1E`.
 
 module.exports = {
   slug: 'uw-light',
@@ -15,7 +16,7 @@ module.exports = {
   country: "USA",
   city: "Seattle, WA",
   year: 1861,
-  subtitle: "Suzzallo mist, Husky Purple #4B2E83, Husky Gold #85754D & Puget teal",
+  subtitle: "Suzzallo mist, Husky Purple #32006E, Spirit #4B2E83, Gold & Accent Teal",
   tokens: {
     mode: 'light',
     bg: '#F2F2F8',
@@ -33,31 +34,31 @@ module.exports = {
     fgVariable: '#23232C',
     fgPunct: '#4C4C54',
     fgComment: '#5A5A64',
-    fgParameter: '#125060',
-    fgProperty: '#224566',
+    fgParameter: '#0B5252',
+    fgProperty: '#0A4960',
     borderSubtle: '#CDCDD3',
     borderStrong: '#99999F',
-    accentKeyword: '#563A90',
-    accentStorage: '#650854',
-    accentString: '#A32447',
+    accentKeyword: '#584F98',
+    accentStorage: '#411C83',
+    accentString: '#9D1D71',
     accentRegex: '#8B3F00',
-    accentFunction: '#002C6E',
-    accentFunctionDim: '#263670',
-    accentType: '#00676D',
-    accentInterface: '#136845',
+    accentFunction: '#002337',
+    accentFunctionDim: '#072B4B',
+    accentType: '#215146',
+    accentInterface: '#416400',
     accentNumber: '#795F26',
     accentDecorator: '#862271',
     accentNamespace: '#4F4B69',
     accentCursor: '#4B2E83',
     accentFocus: '#4B2E83',
     accentBadge: '#4B2E83',
-    accentButton: '#4B2E83',
-    accentStatusBar: '#4B2E83',
-    colorError: '#6B0D1B',
+    accentButton: '#32006E',
+    accentStatusBar: '#32006E',
+    colorError: '#6A0C27',
     colorWarning: '#864F00',
     colorInfo: '#005895',
     gitAdd: '#156B48',
-    gitDelete: '#6B0D1B',
+    gitDelete: '#6A0C27',
     ansi: {
       black: '#18181D',
       red: '#A21829',

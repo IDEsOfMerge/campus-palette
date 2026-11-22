@@ -47,7 +47,7 @@ module.exports = {
     accentInterface: '#7ACCE3',
     accentNumber: '#FFCE65',
     accentDecorator: '#F680BE',
-    accentNamespace: '#BDAA9B',
+    accentNamespace: '#BDAA9C',
     accentCursor: '#FABD0F',
     accentFocus: '#FB9192',
     accentBadge: '#B90E31',

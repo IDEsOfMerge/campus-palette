@@ -2,10 +2,11 @@
 
 // Duke University (1838, Durham, NC) -- Light
 //
-// Duke Chapel stone alabaster (`bg`) anchored by official Duke Navy `#012169`
-// (`accentStatusBar`) and Duke Royal `#00539B` (`accentKeyword`, `accentFunction`),
-// accented by official Duke Copper `#C84E00` (`accentString`) and Sarah P. Duke
-// Gardens emerald (`accentType`).
+// Duke Chapel stone alabaster (`bg`, echoing Whisper Gray `#F3F2F1`) built directly from
+// Duke's extended official palette: Duke Navy `#012169` (`accentStatusBar`), Duke Royal
+// `#00539B` (`accentKeyword`), Shale Blue `#0577B1` (`accentFunction`), Ironweed `#993399`
+// (`accentStorage`), Copper `#C84E00` (`accentString`), Magnolia `#1D6363` (`accentType`),
+// Piedmont `#A1B70D` (`accentInterface`), and Dandelion `#FFD960` (`accentNumber`).
 
 module.exports = {
   slug: 'duke-light',
@@ -16,7 +17,7 @@ module.exports = {
   country: "USA",
   city: "Durham, NC",
   year: 1838,
-  subtitle: "Duke Chapel limestone, Duke Royal #00539B, Duke Navy & copper",
+  subtitle: "Duke Chapel stone, Duke Navy #012169, Royal #00539B, Copper & Magnolia",
   tokens: {
     mode: 'light',
     bg: '#EFF4F8',
@@ -34,19 +35,19 @@ module.exports = {
     fgVariable: '#1E252C',
     fgPunct: '#484E54',
     fgComment: '#545C64',
-    fgParameter: '#1C5342',
-    fgProperty: '#284367',
+    fgParameter: '#095255',
+    fgProperty: '#0A4960',
     borderSubtle: '#C9CED3',
     borderStrong: '#959A9F',
     accentKeyword: '#064F92',
-    accentStorage: '#53196D',
-    accentString: '#8D0707',
+    accentStorage: '#620362',
+    accentString: '#993B09',
     accentRegex: '#9E2036',
-    accentFunction: '#082082',
-    accentFunctionDim: '#2B2E80',
-    accentType: '#1D6A38',
-    accentInterface: '#00646D',
-    accentNumber: '#7F5D06',
+    accentFunction: '#002337',
+    accentFunctionDim: '#072B4B',
+    accentType: '#10685C',
+    accentInterface: '#516000',
+    accentNumber: '#664A29',
     accentDecorator: '#8B1E65',
     accentNamespace: '#395076',
     accentCursor: '#00539B',
@@ -57,7 +58,7 @@ module.exports = {
     colorError: '#690C2D',
     colorWarning: '#894C00',
     colorInfo: '#005893',
-    gitAdd: '#1C6C3A',
+    gitAdd: '#196B45',
     gitDelete: '#690C2D',
     ansi: {
       black: '#15191D',

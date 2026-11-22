@@ -2,8 +2,9 @@
 
 // McGill University (1821, Montreal, QC) -- Dark
 //
-// Deep Montreal greystone slate (`bg`) energized by vivid McGill Red `#FF5263` keywords,
-// St. Lawrence cyan-blue functions, spruce emerald types, and warm Martlet gold numbers.
+// Deep Montreal greystone slate (`bg`) energized by vivid McGill Red `#FF5466` keywords,
+// official Bright Blue `#44C8F5` functions, Bright Teal `#27BDBE` strings, Bright Green
+// types, and official Bright Yellow `#FFD400` numbers.
 
 module.exports = {
   slug: 'mcgill-dark',
@@ -14,7 +15,7 @@ module.exports = {
   country: "Canada",
   city: "Montreal, QC",
   year: 1821,
-  subtitle: "Mount Royal greystone night, vivid McGill Red #ED1B2F & Martlet gold",
+  subtitle: "Mount Royal greystone night, McGill Red #ED1B2F, #27BDBE & #FFD400",
   tokens: {
     mode: 'dark',
     bg: '#1C1414',
@@ -32,30 +33,30 @@ module.exports = {
     fgVariable: '#E6D2D2',
     fgPunct: '#B3A3A3',
     fgComment: '#A59393',
-    fgParameter: '#89C9C2',
-    fgProperty: '#98C3E8',
+    fgParameter: '#93C8B0',
+    fgProperty: '#89CADA',
     borderSubtle: '#372C2C',
     borderStrong: '#615554',
-    accentKeyword: '#FB9194',
-    accentStorage: '#CA87D8',
-    accentString: '#6FA3A7',
-    accentRegex: '#F8935C',
-    accentFunction: '#91C1FF',
-    accentFunctionDim: '#B3CAFF',
-    accentType: '#21CDA3',
-    accentInterface: '#7DCDD8',
-    accentNumber: '#FFCC89',
-    accentDecorator: '#F780BD',
-    accentNamespace: '#A7ADC2',
-    accentCursor: '#FB9194',
-    accentFocus: '#FB9194',
+    accentKeyword: '#EE7469',
+    accentStorage: '#C68EC5',
+    accentString: '#5BA7A0',
+    accentRegex: '#F89175',
+    accentFunction: '#4CCEFC',
+    accentFunctionDim: '#8DD4FF',
+    accentType: '#9FD6A4',
+    accentInterface: '#6FCFDC',
+    accentNumber: '#F9D342',
+    accentDecorator: '#DE93B7',
+    accentNamespace: '#9FB0C0',
+    accentCursor: '#EE7469',
+    accentFocus: '#EE7469',
     accentBadge: '#ED1B2F',
     accentButton: '#C04443',
     accentStatusBar: '#760713',
     colorError: '#F55B59',
     colorWarning: '#F4AC68',
-    colorInfo: '#73C0F8',
-    gitAdd: '#71C699',
+    colorInfo: '#6DC3EF',
+    gitAdd: '#90BF93',
     gitDelete: '#F55B59',
     ansi: {
       black: '#261C1C',

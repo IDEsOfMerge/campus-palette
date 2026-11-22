@@ -3,8 +3,10 @@
 // University of Toronto (1827, Toronto, ON) -- Light
 //
 // Hart House and Convocation Hall cool limestone (`bg`) paired with official U of T Blue
-// `#1E3765` (PMS 655, `accentKeyword`, `accentStatusBar`), Boundless Blue `#006587`
-// (`accentFunction`), accent emerald (`accentType`), and terracotta crimson (`accentString`).
+// `#1E3765` (PMS 655, `accentKeyword`, `accentStatusBar`) and U of T's full published
+// secondary palette: `#007FA3` (PMS 633, `accentFunction`), `#00A189` (PMS 3285,
+// `accentType`), `#6D247A` (PMS 2613, `accentStorage`), Warm Red `#DC4633` (`accentString`),
+// and Magenta `#AB1368` (PMS 227, `accentDecorator`).
 
 module.exports = {
   slug: 'utoronto-light',
@@ -15,7 +17,7 @@ module.exports = {
   country: "Canada",
   city: "Toronto, ON",
   year: 1827,
-  subtitle: "Hart House stone, U of T Blue #1E3765, Boundless teal & terracotta",
+  subtitle: "Hart House stone, U of T Blue #1E3765, #007FA3, #00A189 & #DC4633",
   tokens: {
     mode: 'light',
     bg: '#F0F3F8',
@@ -33,31 +35,31 @@ module.exports = {
     fgVariable: '#1F252B',
     fgPunct: '#484E54',
     fgComment: '#555C63',
-    fgParameter: '#0A5350',
-    fgProperty: '#004C54',
+    fgParameter: '#0A5253',
+    fgProperty: '#004C53',
     borderSubtle: '#CACED2',
     borderStrong: '#969A9F',
     accentKeyword: '#334E7E',
-    accentStorage: '#2E1B51',
-    accentString: '#A54B2F',
+    accentStorage: '#371352',
+    accentString: '#5D2100',
     accentRegex: '#894100',
-    accentFunction: '#033844',
-    accentFunctionDim: '#004258',
-    accentType: '#036954',
+    accentFunction: '#003742',
+    accentFunctionDim: '#004155',
+    accentType: '#04695A',
     accentInterface: '#0F693C',
-    accentNumber: '#894A00',
-    accentDecorator: '#8B1F61',
+    accentNumber: '#7E5D07',
+    accentDecorator: '#8F1B58',
     accentNamespace: '#3D5070',
     accentCursor: '#1E3765',
     accentFocus: '#1E3765',
     accentBadge: '#007FA3',
     accentButton: '#1E3765',
     accentStatusBar: '#1E3765',
-    colorError: '#91001B',
+    colorError: '#6F0021',
     colorWarning: '#874E00',
     colorInfo: '#005E7E',
-    gitAdd: '#046C49',
-    gitDelete: '#91001B',
+    gitAdd: '#006A5B',
+    gitDelete: '#6F0021',
     ansi: {
       black: '#15191D',
       red: '#A21829',
