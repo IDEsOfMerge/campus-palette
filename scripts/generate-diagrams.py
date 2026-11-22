@@ -164,13 +164,13 @@ def get_theme(mode: str) -> dict:
 def build_founding_timeline_svg(mode: str, campuses: list) -> str:
     t = get_theme(mode)
     acc = t["accents"]
-    W, H = 960, 834
+    W, H = 960, 842
 
     # Piecewise chronological ruler:
     #   Medieval classics [1096..1209] mapped to x = [56..136]
     #   Subtle era break // at x = 166
     #   Modern founding era [1583..1974] mapped linearly to x = [198..906]
-    rx0, rx1, spine_y = 56.0, 906.0, 108.0
+    rx0, rx1, spine_y = 56.0, 906.0, 113.0
     break_x = 166.0
 
     def year_x(yr: int) -> float:
@@ -204,7 +204,7 @@ def build_founding_timeline_svg(mode: str, campuses: list) -> str:
         lbl_col = acc["sapphire"]["fg"] if yr in (1096, 1974) else t["text_muted"]
         fw = "700" if yr in (1096, 1974) else "500"
         ruler_parts.append(
-            f'  <text x="{x:.1f}" y="{spine_y + 21:.1f}" text-anchor="middle" '
+            f'  <text x="{x:.1f}" y="{spine_y + 24:.1f}" text-anchor="middle" '
             f'font-family="{FONT_MONO}" font-size="9.3" font-weight="{fw}" fill="{lbl_col}">{yr}</text>'
         )
 
@@ -253,8 +253,8 @@ def build_founding_timeline_svg(mode: str, campuses: list) -> str:
                 cy = spine_y + (idx - 1.5) * 5.6
                 r = 3.0
             else:
-                cy = spine_y + (idx - (n - 1) / 2.0) * 4.9
-                r = 2.6
+                cy = spine_y + (idx - (n - 1) / 2.0) * 5.0
+                r = 2.7
             ruler_parts.append(
                 f'  <circle cx="{x:.1f}" cy="{cy:.1f}" r="{r:.1f}" fill="{col}" '
                 f'stroke="{t["surface"]}" stroke-width="1.1"/>'
@@ -324,7 +324,7 @@ def build_founding_timeline_svg(mode: str, campuses: list) -> str:
             cards_parts.append(render_campus_row(cx, card_w, ry, c, fg))
 
     # Row 1: 3 equal cards (Ivy League 8, Canadian Universities 14, US Public Flagships 12)
-    row1_y, row1_h = 152.0, 366.0
+    row1_y, row1_h = 160.0, 366.0
     for i, g in enumerate(GROUPS[:3]):
         cx = 24.0 + i * (card_w + card_gap)
         items = by_group[g["key"]]
@@ -334,7 +334,7 @@ def build_founding_timeline_svg(mode: str, campuses: list) -> str:
         render_card_rows(cx, row1_y, row1_h, items, a["fg"])
 
     # Row 2: 3 equal cards (Private STEM 10, Liberal Arts 6, Global Classics 10)
-    row2_y, row2_h = 532.0, 280.0
+    row2_y, row2_h = 540.0, 280.0
     for i, g in enumerate(GROUPS[3:]):
         cx = 24.0 + i * (card_w + card_gap)
         items = by_group[g["key"]]
@@ -355,7 +355,7 @@ def build_founding_timeline_svg(mode: str, campuses: list) -> str:
   <text x="839" y="33.5" text-anchor="middle" font-family="{FONT_MONO}" font-size="9.8" font-weight="700" letter-spacing="0.4" fill="{a_sap["fg"]}">60 CAMPUSES · 120 THEMES</text>
 
   <!-- Piecewise Chronological Ruler -->
-  <rect x="24" y="66" width="912" height="74" rx="8" fill="{t["surface"]}" stroke="{t["border"]}" stroke-width="1.2"/>
+  <rect x="24" y="66" width="912" height="82" rx="8" fill="{t["surface"]}" stroke="{t["border"]}" stroke-width="1.2"/>
   <text x="38" y="87.2" font-family="{FONT_MONO}" font-size="9.0" font-weight="700" letter-spacing="0.5" fill="{t["text_muted"]}">FOUNDING CADENCE (1096 // 1583 → 1974)</text>
 {chr(10).join(ruler_parts)}
 
@@ -576,7 +576,7 @@ def main():
             build_founding_timeline_svg(mode, campuses),
             os.path.join(OUT_DIR, f"founding-timeline-{mode}.png"),
             1920,
-            1668,
+            1684,
         )
         render_png(
             build_pipeline_svg(mode),

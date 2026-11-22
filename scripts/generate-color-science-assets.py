@@ -18,10 +18,12 @@ Run with: python3 scripts/generate-color-science-assets.py
 """
 
 import csv
+import html
 import json
 import math
 import os
 import subprocess
+import tempfile
 from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
@@ -329,194 +331,448 @@ def load_all_data():
 
 # ---------- 1. Collegiate Heritage Metro Map (6 Grouping Tracks, 1096–1974) ----------
 
-def year_to_metro_x(yr: int) -> float:
+METRO_ANCHORS = [
+    (1096, 0.000),
+    (1209, 0.048),
+    # // medieval era break at frac = 0.072
+    (1583, 0.096),
+    (1636, 0.136),
+    (1701, 0.175),
+    (1740, 0.212),
+    (1775, 0.278),
+    (1800, 0.335),
+    (1825, 0.415),
+    (1850, 0.505),
+    (1875, 0.610),
+    (1895, 0.715),
+    (1919, 0.818),
+    # // inter-war gap break at frac = 0.847
+    (1957, 0.875),
+    (1974, 1.000),
+]
+
+
+def year_to_metro_frac(yr: float) -> float:
     """
-    Piecewise monotonic chronological mapping [1096..1974] -> [1.8..29.6]:
-      - Compresses the medieval gap (1209 -> 1583) behind a crisp // era break
-      - Expands 1785–1915 slightly where North American & global founding density peaks
+    Piecewise monotonic chronological mapping [1096..1974] -> [0.0..1.0]:
+      - Preserves exact vertical alignment of shared founding years across all 6 tracks
+      - Compresses medieval (1209 // 1583) and inter-war (1919 // 1957) gaps behind crisp // breaks
+      - Allocates generous resolution to the 1785-1919 institutional boom
     """
-    anchors = [
-        (1096,  1.8),
-        (1209,  3.8),
-        (1583,  6.2),
-        (1636,  7.7),
-        (1701,  9.4),
-        (1740, 10.9),
-        (1775, 13.7),
-        (1800, 15.1),
-        (1845, 18.8),
-        (1895, 23.8),
-        (1920, 26.2),
-        (1974, 29.5),
-    ]
-    if yr <= anchors[0][0]:
-        return anchors[0][1]
-    if yr >= anchors[-1][0]:
-        return anchors[-1][1]
-    for (y0, x0), (y1, x1) in zip(anchors, anchors[1:]):
+    if yr <= METRO_ANCHORS[0][0]:
+        return METRO_ANCHORS[0][1]
+    if yr >= METRO_ANCHORS[-1][0]:
+        return METRO_ANCHORS[-1][1]
+    for (y0, f0), (y1, f1) in zip(METRO_ANCHORS, METRO_ANCHORS[1:]):
         if y0 <= yr <= y1:
             t = (yr - y0) / (y1 - y0)
-            return x0 + t * (x1 - x0)
-    return anchors[-1][1]
+            return f0 + t * (f1 - f0)
+    return METRO_ANCHORS[-1][1]
+
+
+def solve_1d_non_overlapping(centers: list, half_widths: list, min_x: float, max_x: float, gap: float = 10.0) -> list:
+    """
+    Globally optimal minimum-displacement 1D non-overlapping label placement via
+    Pool Adjacent Violators (isotonic regression), clamped cleanly inside [min_x, max_x].
+    """
+    n = len(centers)
+    if n == 0:
+        return []
+    # Cumulative minimum separation offsets so x_i = z_i + off_i enforces z_{i+1} >= z_i
+    offs = [0.0] * n
+    for i in range(1, n):
+        offs[i] = offs[i - 1] + half_widths[i - 1] + half_widths[i] + gap
+
+    # PAVA blocks: (sum_target, count, indices)
+    blocks = []
+    for i in range(n):
+        blocks.append([centers[i] - offs[i], 1, [i]])
+        while len(blocks) >= 2 and (blocks[-2][0] / blocks[-2][1]) > (blocks[-1][0] / blocks[-1][1]):
+            b2 = blocks.pop()
+            b1 = blocks[-1]
+            b1[0] += b2[0]
+            b1[1] += b2[1]
+            b1[2].extend(b2[2])
+
+    xs = [0.0] * n
+    for s_val, cnt, idxs in blocks:
+        mean_z = s_val / cnt
+        for i in idxs:
+            xs[i] = mean_z + offs[i]
+
+    # Clamp inside canvas bounds while preserving minimum pairwise gaps
+    if xs[0] - half_widths[0] < min_x:
+        xs[0] = min_x + half_widths[0]
+        for i in range(1, n):
+            req = xs[i - 1] + half_widths[i - 1] + half_widths[i] + gap
+            if xs[i] < req:
+                xs[i] = req
+    if xs[-1] + half_widths[-1] > max_x:
+        xs[-1] = max_x - half_widths[-1]
+        for i in range(n - 2, -1, -1):
+            req = xs[i + 1] - half_widths[i + 1] - half_widths[i] - gap
+            if xs[i] > req:
+                xs[i] = req
+    return xs
 
 
 def render_timeline_metro(pal_meta: dict):
-    W, H = 2640, 1520
-    img = make_canvas(W, H, "#FAF9F5")
-    draw = ImageDraw.Draw(img)
+    W, H = 1600, 980
+    FONT_SANS = "'DejaVu Sans', 'Liberation Sans', sans-serif"
+    FONT_MONO = "'DejaVu Sans Mono', 'Liberation Mono', monospace"
 
-    f_title = load_font(54, "bold")
-    f_sub = load_font(25, "regular")
-    f_main = load_font(20, "bold")
-    f_yr = load_font(17, "regular")
-    f_tag = load_font(19, "bold")
-    f_leg = load_font(23, "medium")
+    def esc(s: str) -> str:
+        return html.escape(str(s), quote=True)
 
-    n_univ = len(pal_meta)
-    draw.text((120, 56), "Campus Palette — Collegiate Heritage Metro Map (1096–1974)", font=f_title, fill="#181A20")
-    draw.text(
-        (120, 124),
-        f"{n_univ} universities arranged along six collegiate grouping lines — piecewise chronological spacing preserves medieval classics alongside modern campuses.",
-        font=f_sub,
-        fill="#525866",
+    def tint_hex(h: str, mix: float = 0.10) -> str:
+        r, g, b = hex_to_rgb_tuple(h)
+        tr = int(round(r * mix + 255 * (1.0 - mix)))
+        tg = int(round(g * mix + 255 * (1.0 - mix)))
+        tb = int(round(b * mix + 255 * (1.0 - mix)))
+        return f"#{tr:02X}{tg:02X}{tb:02X}"
+
+    X0, X1 = 290.0, 1530.0
+    PW = X1 - X0
+    PLOT_L, PLOT_R = 264.0, 1572.0
+    ERA_TOP, ERA_H = 92.0, 28.0
+    LANE_TOP, LANE_H = 122.0, 128.0
+    AXIS_Y = LANE_TOP + 6 * LANE_H  # 890.0
+
+    def yr_x(yr: float) -> float:
+        return X0 + year_to_metro_frac(yr) * PW
+
+    break1_x = X0 + 0.072 * PW
+    break2_x = X0 + 0.847 * PW
+
+    era_bounds = [
+        ("I · MEDIEVAL & COLONIAL", "1096–1775", PLOT_L, yr_x(1778), "#FFFFFF", 10),
+        ("II · EARLY REPUBLIC & CONFEDERATION", "1785–1848", yr_x(1778), yr_x(1849.5), "#F4F2EA", 16),
+        ("III · RESEARCH UNIVERSITY BOOM", "1851–1919", yr_x(1849.5), break2_x, "#FFFFFF", 29),
+        ("IV · POST-WAR", "1957–1974", break2_x, PLOT_R, "#F4F2EA", 5),
+    ]
+
+    parts = []
+    # Outer framed poster card
+    parts.append(
+        f'  <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="14" fill="#FAF9F5" stroke="#DFDCD2" stroke-width="1"/>'
     )
 
-    track_y = {
-        "Global Classics":               2.55,
-        "Ivy League":                    1.53,
-        "US Public Flagships":           0.51,
-        "Liberal Arts & Regional Gems": -0.51,
-        "US Private Research & STEM":   -1.53,
-        "Canadian Universities":        -2.55,
+    # Header
+    n_univ = len(pal_meta)
+    n_countries = len({v["country"] for v in pal_meta.values()})
+    parts.append(
+        f'  <text x="32" y="42" font-family="{FONT_SANS}" font-size="22.5" font-weight="700" fill="#181A20">'
+        f'Campus Palette — Collegiate Heritage Metro Map (1096–1974)</text>'
+    )
+    parts.append(
+        f'  <text x="32" y="65" font-family="{FONT_SANS}" font-size="12.5" fill="#525866">'
+        f'{n_univ} universities pinned to exact founding years across six collegiate transit lines  ·  '
+        f'vertical guides align contemporaries across tracks  ·  white-bordered pills mark shared-year twins</text>'
+    )
+    parts.append(
+        f'  <rect x="1256" y="21" width="316" height="28" rx="14" fill="#EEF3FA" stroke="#B7CCE6" stroke-width="1"/>'
+    )
+    parts.append(
+        f'  <text x="1414" y="38.5" text-anchor="middle" font-family="{FONT_MONO}" font-size="10.6" font-weight="700" '
+        f'letter-spacing="0.4" fill="#1D4F91">{n_univ} UNIVERSITIES · {n_countries} COUNTRIES · 878 YRS</text>'
+    )
+
+    # Plot frame & shaded era columns (continuous era header bar across full plot width)
+    parts.append(
+        f'  <rect x="{PLOT_L:.1f}" y="{ERA_TOP:.1f}" width="{PLOT_R - PLOT_L:.1f}" height="{AXIS_Y - ERA_TOP:.1f}" '
+        f'rx="8" fill="#FFFFFF" stroke="#DCD8CC" stroke-width="1.1"/>'
+    )
+    for idx_e, (etitle, espan, ex0, ex1, efill, ecnt) in enumerate(era_bounds):
+        ew = ex1 - ex0
+        parts.append(
+            f'  <rect x="{ex0:.1f}" y="{ERA_TOP + 0.5:.1f}" width="{ew:.1f}" height="{AXIS_Y - ERA_TOP - 1.0:.1f}" fill="{efill}"/>'
+        )
+        hdr_fill = "#F0EDE3" if efill == "#FFFFFF" else "#E9E5D8"
+        parts.append(
+            f'  <rect x="{ex0:.1f}" y="{ERA_TOP + 0.5:.1f}" width="{ew:.1f}" height="{ERA_H:.1f}" fill="{hdr_fill}"/>'
+        )
+        if idx_e > 0:
+            parts.append(
+                f'  <line x1="{ex0:.1f}" y1="{ERA_TOP:.1f}" x2="{ex0:.1f}" y2="{AXIS_Y:.1f}" stroke="#E3DFD3" stroke-width="1"/>'
+            )
+        label_str = f"{etitle} ({ecnt})"
+        parts.append(
+            f'  <text x="{(ex0 + ex1) / 2:.1f}" y="{ERA_TOP + 18.0:.1f}" text-anchor="middle" '
+            f'font-family="{FONT_MONO}" font-size="9.4" font-weight="700" letter-spacing="0.45" fill="#505868">{esc(label_str)}</text>'
+        )
+
+    parts.append(
+        f'  <line x1="{PLOT_L:.1f}" y1="{ERA_TOP + ERA_H:.1f}" x2="{PLOT_R:.1f}" y2="{ERA_TOP + ERA_H:.1f}" stroke="#DCD8CC" stroke-width="1"/>'
+    )
+
+    # Vertical chronological milestone gridlines + bottom axis ticks
+    milestones = [
+        ("1096", 1096, True),
+        ("1209", 1209, False),
+        ("1583", 1583, False),
+        ("1636", 1636, False),
+        ("1700", 1700, False),
+        ("1750", 1750, False),
+        ("1800", 1800, False),
+        ("1825", 1825, False),
+        ("1850", 1850, False),
+        ("1875", 1875, False),
+        ("1900", 1900, False),
+        ("1919", 1919, False),
+        ("1957", 1957, False),
+        ("1974", 1974, True),
+    ]
+    for lbl, yr_val, is_end in milestones:
+        gx = yr_x(yr_val)
+        stroke_c = "#DFDBD0" if yr_val in (1800, 1850, 1900) else "#ECE8DE"
+        parts.append(
+            f'  <line x1="{gx:.1f}" y1="{LANE_TOP:.1f}" x2="{gx:.1f}" y2="{AXIS_Y:.1f}" '
+            f'stroke="{stroke_c}" stroke-width="1.0" stroke-dasharray="3,4"/>'
+        )
+        parts.append(
+            f'  <line x1="{gx:.1f}" y1="{AXIS_Y:.1f}" x2="{gx:.1f}" y2="{AXIS_Y + 6:.1f}" '
+            f'stroke="#9EA5B4" stroke-width="1.2"/>'
+        )
+        t_col = "#1D4F91" if is_end else "#5D6474"
+        t_fw = "700" if is_end or yr_val in (1800, 1850, 1900) else "500"
+        parts.append(
+            f'  <text x="{gx:.1f}" y="{AXIS_Y + 21:.1f}" text-anchor="middle" '
+            f'font-family="{FONT_MONO}" font-size="10.4" font-weight="{t_fw}" fill="{t_col}">{lbl}</text>'
+        )
+
+    # Crisp // scale-break bands (1209 // 1583 and 1919 // 1957)
+    for bx in (break1_x, break2_x):
+        parts.append(
+            f'  <rect x="{bx - 8:.1f}" y="{LANE_TOP:.1f}" width="16" height="{AXIS_Y - LANE_TOP:.1f}" fill="#FAF9F5"/>'
+        )
+        parts.append(
+            f'  <line x1="{bx - 3.2:.1f}" y1="{LANE_TOP + 2:.1f}" x2="{bx - 3.2:.1f}" y2="{AXIS_Y - 2:.1f}" '
+            f'stroke="#D5D0C3" stroke-width="1.1" stroke-dasharray="5,5"/>'
+        )
+        parts.append(
+            f'  <line x1="{bx + 3.2:.1f}" y1="{LANE_TOP + 2:.1f}" x2="{bx + 3.2:.1f}" y2="{AXIS_Y - 2:.1f}" '
+            f'stroke="#D5D0C3" stroke-width="1.1" stroke-dasharray="5,5"/>'
+        )
+        parts.append(
+            f'  <text x="{bx:.1f}" y="{AXIS_Y + 21:.1f}" text-anchor="middle" '
+            f'font-family="{FONT_MONO}" font-size="10.5" font-weight="700" fill="#8C93A4">//</text>'
+        )
+
+    # Horizontal lane dividers
+    for i in range(1, 6):
+        ly = LANE_TOP + i * LANE_H
+        parts.append(
+            f'  <line x1="{PLOT_L + 1:.1f}" y1="{ly:.1f}" x2="{PLOT_R - 1:.1f}" y2="{ly:.1f}" '
+            f'stroke="#EAE6DC" stroke-width="1.0"/>'
+        )
+
+    # Re-stroke plot outer frame cleanly over band fills
+    parts.append(
+        f'  <rect x="{PLOT_L:.1f}" y="{ERA_TOP:.1f}" width="{PLOT_R - PLOT_L:.1f}" height="{AXIS_Y - ERA_TOP:.1f}" '
+        f'rx="8" fill="none" stroke="#D5D1C5" stroke-width="1.1"/>'
+    )
+
+    # Render each of the 6 transit lines
+    placed_boxes = []
+    RAIL_LABELS = {
+        "Global Classics":              "Global Classics",
+        "Ivy League":                   "Ivy League",
+        "US Public Flagships":          "US Public Flagships",
+        "Liberal Arts & Regional Gems": "Liberal Arts & Gems",
+        "US Private Research & STEM":   "US Private STEM",
+        "Canadian Universities":        "Canadian Universities",
     }
 
-    def to_px(x, y):
-        px = 590.0 + (x - 1.8) / (29.5 - 1.8) * (W * 2 - 740.0)
-        py = 1540.0 - y * 412.0
-        return px, py
-
-    # Subtle vertical chronological milestone guides + medieval era break
-    milestones = [
-        ("1096", 1096), ("1209", 1209), ("1583", 1583), ("1650", 1650), ("1700", 1700),
-        ("1750", 1750), ("1800", 1800), ("1850", 1850), ("1900", 1900), ("1974", 1974),
-    ]
-    for yr_lbl, yr_val in milestones:
-        gx, _ = to_px(year_to_metro_x(yr_val), 0)
-        draw.line([(gx, 230), (gx, H * 2 - 235)], fill="#EAE7DF", width=2)
-        draw_text_centered(draw, gx, H * 2 - 205, yr_lbl, f_yr, fill="#7E8492")
-
-    # Crisp medieval era break band between 1209 and 1583
-    bx_mid, _ = to_px(5.0, 0)
-    draw.rectangle((bx_mid - 26, 230, bx_mid + 26, H * 2 - 235), fill="#FAF9F5")
-    for yy in range(250, H * 2 - 250, 42):
-        draw.line([(bx_mid - 6, yy), (bx_mid - 6, yy + 20)], fill="#D4D0C5", width=2)
-        draw.line([(bx_mid + 6, yy), (bx_mid + 6, yy + 20)], fill="#D4D0C5", width=2)
-    draw_text_centered(draw, bx_mid, H * 2 - 205, "//", f_tag, fill="#969BA8")
-
-    # Organize stations per grouping with guaranteed minimum spacing along each track
-    stations_by_group = {}
-    for grp in GROUP_ORDER:
+    for g_idx, grp in enumerate(GROUP_ORDER):
+        cy = LANE_TOP + (g_idx + 0.5) * LANE_H
+        g_col = GROUP_COLORS[grp]
+        g_tint = tint_hex(g_col, 0.09)
         items = [v for v in pal_meta.values() if v["group"] == grp]
         items.sort(key=lambda v: (v["year"], v["shortName"]))
-        xs = [year_to_metro_x(v["year"]) for v in items]
-        # Iterative minimum-distance relaxation along x so dense tracks (e.g. 14 Canadian stations) never collide
-        min_gap = 1.04 if len(items) >= 12 else 1.24
-        left_bound = 1.8 if grp == "Global Classics" else 5.8
-        for _ in range(80):
-            for i in range(len(xs) - 1):
-                gap = xs[i + 1] - xs[i]
-                if gap < min_gap:
-                    delta = (min_gap - gap) * 0.52
-                    xs[i] = max(left_bound, xs[i] - delta)
-                    xs[i + 1] = min(29.7, xs[i + 1] + delta)
-        # Keep strictly within bounds while preserving minimum spacing
-        if xs and xs[-1] > 29.7:
-            shift = xs[-1] - 29.7
-            xs = [x - shift for x in xs]
-        if xs and xs[0] < left_bound:
-            shift = left_bound - xs[0]
-            xs = [x + shift for x in xs]
 
-        # Alternate above / below whenever adjacent stations are within 3.6 units
-        dys = []
-        for i in range(len(items)):
-            if i == 0:
-                dys.append(0.35 if track_y[grp] >= 0 else -0.35)
+        # Left Transit Rail card
+        rx, ry, rw, rh = 32.0, cy - 27.0, 218.0, 54.0
+        parts.append(
+            f'  <rect x="{rx:.1f}" y="{ry:.1f}" width="{rw:.1f}" height="{rh:.1f}" rx="8" '
+            f'fill="{g_tint}" stroke="{g_col}" stroke-opacity="0.40" stroke-width="1.2"/>'
+        )
+        parts.append(
+            f'  <rect x="{rx + 1:.1f}" y="{ry + 6:.1f}" width="4.5" height="{rh - 12:.1f}" rx="2.25" fill="{g_col}"/>'
+        )
+        parts.append(
+            f'  <text x="{rx + 15:.1f}" y="{cy - 4:.1f}" font-family="{FONT_SANS}" font-size="12.6" '
+            f'font-weight="700" fill="{g_col}">{esc(RAIL_LABELS[grp])}</text>'
+        )
+        parts.append(
+            f'  <text x="{rx + 15:.1f}" y="{cy + 14:.1f}" font-family="{FONT_MONO}" font-size="10.0" '
+            f'font-weight="600" fill="#5D6474">{len(items)} campuses · {items[0]["year"]}–{items[-1]["year"]}</text>'
+        )
+
+        # Group items on this track by exact founding year (so shared-year twins share one interchange)
+        year_groups = []
+        for it in items:
+            if year_groups and year_groups[-1]["year"] == it["year"]:
+                year_groups[-1]["items"].append(it)
             else:
-                if xs[i] - xs[i - 1] < 3.6:
-                    dys.append(-dys[-1])
+                year_groups.append({"year": it["year"], "x": yr_x(it["year"]), "items": [it]})
+
+        x_first = year_groups[0]["x"]
+        x_last = year_groups[-1]["x"]
+
+        # Subtle dashed guide tying Left Transit Rail directly to first station
+        if x_first - 14.0 > rx + rw:
+            parts.append(
+                f'  <line x1="{rx + rw:.1f}" y1="{cy:.1f}" x2="{x_first - 10.0:.1f}" y2="{cy:.1f}" '
+                f'stroke="{g_col}" stroke-opacity="0.28" stroke-width="1.8" stroke-dasharray="3,4"/>'
+            )
+
+        # Bold Vignelli transit trunk line (exact span from oldest to newest station)
+        parts.append(
+            f'  <line x1="{x_first:.1f}" y1="{cy:.1f}" x2="{x_last:.1f}" y2="{cy:.1f}" '
+            f'stroke="{g_col}" stroke-width="5.2" stroke-linecap="round"/>'
+        )
+
+        # Clean // break slashes wherever a track spans one of the two compressed chronological breaks
+        for bx in (break1_x, break2_x):
+            if x_first < bx - 10.0 and x_last > bx + 10.0:
+                parts.append(
+                    f'  <rect x="{bx - 7.5:.1f}" y="{cy - 9:.1f}" width="15" height="18" fill="#FAF9F5"/>'
+                )
+                for dx in (-3.0, 3.0):
+                    parts.append(
+                        f'  <line x1="{bx + dx - 3.4:.1f}" y1="{cy + 8.0:.1f}" x2="{bx + dx + 3.4:.1f}" y2="{cy - 8.0:.1f}" '
+                        f'stroke="{g_col}" stroke-width="2.4" stroke-linecap="round"/>'
+                    )
+
+        # Assign above (-1) / below (+1) sides cleanly:
+        # Twins always take top (-1) and bottom (+1); singletons alternate around them
+        side_lists = {-1: [], 1: []}
+        yg_sides = {}
+        next_side = -1 if g_idx in (0, 1, 2) else 1
+        for yg_i, yg in enumerate(year_groups):
+            if len(yg["items"]) == 2:
+                side_lists[-1].append((yg["items"][0], yg["x"], True, yg_i))
+                side_lists[1].append((yg["items"][1], yg["x"], True, yg_i))
+                yg_sides[yg_i] = 0
+                next_side = -1
+            else:
+                it = yg["items"][0]
+                side_lists[next_side].append((it, yg["x"], False, yg_i))
+                yg_sides[yg_i] = next_side
+                next_side = -next_side
+
+        # Subtle vertical micro-offset (±4.2px) ONLY for ultra-tight 1–3 year singleton pairs (< 13.5px apart)
+        # so adjacent station circles NEVER eclipse each other while keeping 100% exact chronological X!
+        dot_y_off = {}
+        for yg_i, yg in enumerate(year_groups):
+            if len(yg["items"]) == 2:
+                dot_y_off[yg_i] = 0.0
+                continue
+            close_neighbor = False
+            if yg_i > 0 and (yg["x"] - year_groups[yg_i - 1]["x"]) < 13.5:
+                close_neighbor = True
+            if yg_i + 1 < len(year_groups) and (year_groups[yg_i + 1]["x"] - yg["x"]) < 13.5:
+                close_neighbor = True
+            dot_y_off[yg_i] = (yg_sides[yg_i] * 4.2) if close_neighbor else 0.0
+
+        # Solve globally optimal minimum-shift 1D label positions per side
+        for side in (-1, 1):
+            entries = side_lists[side]
+            if not entries:
+                continue
+            centers = [e[1] for e in entries]
+            half_ws = [max(len(e[0]["shortName"]) * 6.9 + 6.0, 34.0) / 2.0 for e in entries]
+            lxs = solve_1d_non_overlapping(centers, half_ws, PLOT_L + 8.0, PLOT_R - 8.0, gap=9.0)
+
+            for (it, cx, is_twin, yg_i), lx, hw in zip(entries, lxs, half_ws):
+                dy_dot = dot_y_off.get(yg_i, 0.0)
+                stem_start_y = cy + (side * 14.5 if is_twin else dy_dot + side * 6.8)
+                stem_end_y = cy + side * 22.0
+                if abs(lx - cx) <= 2.5:
+                    parts.append(
+                        f'  <line x1="{cx:.1f}" y1="{stem_start_y:.1f}" x2="{cx:.1f}" y2="{stem_end_y:.1f}" '
+                        f'stroke="#A4AAB8" stroke-width="1.35"/>'
+                    )
                 else:
-                    dys.append(0.35 if track_y[grp] >= 0 else -0.35)
-        stations_by_group[grp] = list(zip(items, xs, dys))
+                    mid_y = cy + side * (18.2 if is_twin else 15.2)
+                    parts.append(
+                        f'  <polyline points="{cx:.1f},{stem_start_y:.1f} {cx:.1f},{mid_y:.1f} {lx:.1f},{stem_end_y:.1f}" '
+                        f'fill="none" stroke="#A4AAB8" stroke-width="1.35" stroke-linejoin="round"/>'
+                    )
 
-    # Draw solid grouping lines (NO cross-grouping dashed edges!)
-    for grp in GROUP_ORDER:
-        st_list = stations_by_group[grp]
-        col_rgb = hex_to_rgb_tuple(GROUP_COLORS[grp])
-        y_val = track_y[grp]
-        for (a_it, ax, _), (b_it, bx, _) in zip(st_list, st_list[1:]):
-            x1, y1 = to_px(ax, y_val)
-            x2, y2 = to_px(bx, y_val)
-            draw.line([(x1, y1), (x2, y2)], fill=col_rgb, width=12)
+                # Label: Name always above Year for effortless natural reading on both sides
+                if side == -1:
+                    y_name = cy - 39.0
+                    y_yr = cy - 25.5
+                    box_y0, box_y1 = cy - 51.0, cy - 22.0
+                else:
+                    y_name = cy + 34.5
+                    y_yr = cy + 48.0
+                    box_y0, box_y1 = cy + 22.0, cy + 51.5
 
-        # Clean pill badge anchored cleanly to the left of each grouping's first station
-        sx, sy = to_px(st_list[0][1], y_val)
-        txt = GROUP_SHORT[grp]
-        bb = draw.textbbox((0, 0), txt, font=f_tag)
-        tw, th = bb[2] - bb[0], bb[3] - bb[1]
-        bx1 = sx - 44
-        bx0 = bx1 - tw - 30
-        by0 = sy - th / 2 - 11
-        by1 = sy + th / 2 + 11
-        tint = tuple(int(c * 0.13 + 255 * 0.87) for c in col_rgb)
-        draw.rounded_rectangle((bx0, by0, bx1, by1), radius=10, fill=tint, outline=col_rgb, width=2)
-        draw_text_centered(draw, (bx0 + bx1) / 2, sy, txt, f_tag, fill=col_rgb)
+                # Crisp subtle halo behind text so vertical gridlines never slice through letters
+                parts.append(
+                    f'  <rect x="{lx - hw:.1f}" y="{box_y0:.1f}" width="{hw * 2:.1f}" height="{box_y1 - box_y0:.1f}" '
+                    f'rx="4" fill="#FAF9F5" fill-opacity="0.88"/>'
+                )
+                parts.append(
+                    f'  <text x="{lx:.1f}" y="{y_name:.1f}" text-anchor="middle" font-family="{FONT_SANS}" '
+                    f'font-size="11.8" font-weight="700" fill="#181A20">{esc(it["shortName"])}</text>'
+                )
+                parts.append(
+                    f'  <text x="{lx:.1f}" y="{y_yr:.1f}" text-anchor="middle" font-family="{FONT_MONO}" '
+                    f'font-size="10.0" font-weight="600" fill="#636A7A">{it["year"]}</text>'
+                )
+                placed_boxes.append((f"{grp}:{it['shortName']}", lx - hw, box_y0, lx + hw, box_y1))
 
-    # Draw crisp // break mark specifically where Global Classics crosses 1209 -> 1583
-    _, gc_y = to_px(0, track_y["Global Classics"])
-    draw.rectangle((bx_mid - 16, gc_y - 18, bx_mid + 16, gc_y + 18), fill="#FAF9F5")
-    for dx in (-7, 7):
-        draw.line([(bx_mid + dx - 7, gc_y + 16), (bx_mid + dx + 7, gc_y - 16)], fill=hex_to_rgb_tuple(GROUP_COLORS["Global Classics"]), width=5)
+        # Draw sleek Vignelli station markers LAST so they sit crisply atop trunks & stems
+        for yg_i, yg in enumerate(year_groups):
+            cx = yg["x"]
+            if len(yg["items"]) == 2:
+                # Iconic metro twin-interchange pill enclosing both same-year campuses
+                parts.append(
+                    f'  <rect x="{cx - 7.6:.1f}" y="{cy - 14.4:.1f}" width="15.2" height="28.8" rx="7.6" '
+                    f'fill="#FFFFFF" stroke="#2D3340" stroke-width="1.5"/>'
+                )
+                for idx_t, it_t in enumerate(yg["items"]):
+                    ty = cy - 6.4 if idx_t == 0 else cy + 6.4
+                    st_col = it_t["stationColor"]
+                    parts.append(f'  <circle cx="{cx:.1f}" cy="{ty:.1f}" r="5.0" fill="{st_col}"/>')
+                    parts.append(f'  <circle cx="{cx:.1f}" cy="{ty:.1f}" r="1.9" fill="#FFFFFF"/>')
+            else:
+                it = yg["items"][0]
+                st_col = it["stationColor"]
+                dy_dot = dot_y_off.get(yg_i, 0.0)
+                my = cy + dy_dot
+                parts.append(
+                    f'  <circle cx="{cx:.1f}" cy="{my:.1f}" r="6.2" fill="{st_col}" stroke="#FFFFFF" stroke-width="2.0"/>'
+                )
+                parts.append(
+                    f'  <circle cx="{cx:.1f}" cy="{my:.1f}" r="5.8" fill="none" stroke="#181A20" stroke-opacity="0.18" stroke-width="0.6"/>'
+                )
+                parts.append(f'  <circle cx="{cx:.1f}" cy="{my:.1f}" r="2.2" fill="#FFFFFF"/>')
 
-    # Draw stations + zero-overlap verified labels
-    placed_boxes = []
-    for grp in GROUP_ORDER:
-        y_val = track_y[grp]
-        # Track same-side label right edges so any wide label gets gently nudged rather than overlapping
-        last_right = {True: -1e9, False: -1e9}
-        for it, x_val, dy in stations_by_group[grp]:
-            cx, cy = to_px(x_val, y_val)
-            st_col = hex_to_rgb_tuple(it["stationColor"])
-            draw_circle(draw, cx, cy, 22, fill="#FAF9F5")
-            draw_circle(draw, cx, cy, 17, fill=st_col, outline="#FFFFFF", width=3)
+    # Footer reading guide (generous horizontal clearance between left contemporaries & right legend)
+    parts.append(
+        f'  <line x1="32" y1="930" x2="{W - 32}" y2="930" stroke="#E5E1D6" stroke-width="1"/>'
+    )
+    parts.append(
+        f'  <text x="32" y="954" font-family="{FONT_SANS}" font-size="10.4" fill="#5D6474">'
+        f'Vertically aligned contemporaries: '
+        f'<tspan font-weight="700" fill="#2A303E">1789</tspan> UNC/Georgetown · '
+        f'<tspan font-weight="700" fill="#2A303E">1821</tspan> McGill/Amherst · '
+        f'<tspan font-weight="700" fill="#2A303E">1848</tspan> UW–Madison/uOttawa · '
+        f'<tspan font-weight="700" fill="#2A303E">1853</tspan> EPFL/Melbourne/UF · '
+        f'<tspan font-weight="700" fill="#2A303E">1861</tspan> MIT/UW · '
+        f'<tspan font-weight="700" fill="#2A303E">1876</tspan> JHU/Texas A&amp;M · '
+        f'<tspan font-weight="700" fill="#2A303E">1885</tspan> Stanford/Georgia Tech/St. Edward\'s</text>'
+    )
+    parts.append(
+        f'  <text x="{W - 32}" y="954" text-anchor="end" font-family="{FONT_MONO}" font-size="10.0" fill="#7D8494">'
+        f'dot color = campus accent</text>'
+    )
 
-            lx, ly = to_px(x_val, y_val + dy)
-            name = it["shortName"]
-            yr_s = str(it["year"])
-
-            bb_n = draw.textbbox((0, 0), name, font=f_main)
-            bw = (bb_n[2] - bb_n[0]) + 10
-            # Prevent same-side label collision by nudging right if needed
-            is_above = dy > 0
-            if lx - bw / 2 < last_right[is_above] + 8:
-                lx = last_right[is_above] + 8 + bw / 2
-            # Clamp cleanly within canvas margins
-            lx = min(W * 2 - 70 - bw / 2, max(70 + bw / 2, lx))
-            last_right[is_above] = lx + bw / 2
-
-            y_yr = ly + (27 if dy < 0 else -26)
-            y_top_box = min(ly, y_yr) - 13
-            y_bot_box = max(ly, y_yr) + 13
-            # Subtle leader tick if nudged horizontally off station center
-            if abs(lx - cx) > 16:
-                edge_y = y_bot_box if dy > 0 else y_top_box
-                draw.line([(cx, cy + (-22 if dy > 0 else 22)), (lx, edge_y)], fill="#C8CCD6", width=2)
-            draw.rounded_rectangle((lx - bw / 2, y_top_box, lx + bw / 2, y_bot_box), radius=6, fill="#FAF9F5")
-            draw_text_centered(draw, lx, ly, name, f_main, fill="#181A20")
-            draw_text_centered(draw, lx, y_yr, yr_s, f_yr, fill="#636978")
-            placed_boxes.append((name, lx - bw / 2, y_top_box, lx + bw / 2, y_bot_box))
-
-    # Verify zero label overlaps
+    # Verify mathematically zero label overlaps
     overlaps = 0
     for i in range(len(placed_boxes)):
         n1, x1a, y1a, x1b, y1b = placed_boxes[i]
@@ -526,19 +782,22 @@ def render_timeline_metro(pal_meta: dict):
                 overlaps += 1
                 print(f"  [WARN metro overlap] {n1} <-> {n2}")
 
-    # Bottom legend across all 6 collegiate groupings
-    leg_y = H * 2 - 96
-    draw.line([(120, leg_y - 40), (W * 2 - 120, leg_y - 40)], fill="#E2E0D8", width=2)
-    legend_items = [(grp, GROUP_COLORS[grp]) for grp in GROUP_ORDER]
-    total_leg_w = sum(draw.textbbox((0, 0), lbl, font=f_leg)[2] + 84 for lbl, _ in legend_items) - 52
-    lx = (W * 2 - total_leg_w) / 2
-    for label, col in legend_items:
-        draw_circle(draw, lx + 12, leg_y, 11, fill=hex_to_rgb_tuple(col))
-        draw.text((lx + 32, leg_y - 14), label, font=f_leg, fill="#343842")
-        lx += draw.textbbox((0, 0), label, font=f_leg)[2] + 84
-
-    save_downsampled(img, TIMELINE_ASSETS / "timeline-metro.png", W, H)
-    print(f"Saved assets/timeline/timeline-metro.png (overlaps={overlaps})")
+    svg_text = (
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
+        + "\n".join(parts)
+        + "\n</svg>\n"
+    )
+    out_path = TIMELINE_ASSETS / "timeline-metro.png"
+    with tempfile.TemporaryDirectory() as tmpdir:
+        svg_path = os.path.join(tmpdir, "timeline-metro.svg")
+        with open(svg_path, "w", encoding="utf-8") as f:
+            f.write(svg_text)
+        subprocess.run(
+            ["rsvg-convert", "-w", str(W * 2), "-h", str(H * 2), svg_path, "-o", str(out_path)],
+            check=True,
+        )
+    size_kb = out_path.stat().st_size / 1024.0
+    print(f"Saved assets/timeline/timeline-metro.png ({size_kb:.1f} KB, {W * 2}x{H * 2}, overlaps={overlaps})")
 
 
 # ---------- 2. Render 120-Theme OKLCH (a, b) Hue-Chroma Grid (10 x 12) ----------

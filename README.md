@@ -55,9 +55,9 @@ Every palette is engineered and verified in **OKLCH** perceptual color space aga
 
 ## ...and along the Collegiate Heritage Metro Map
 
-Organized as a six-line transit metro map spanning **1096 to 1974** — piecewise chronological spacing preserves medieval European foundations alongside North American, European, Asia-Pacific, and Australian research campuses across **Global Classics**, **Ivy League**, **US Public Flagships**, **Liberal Arts & Regional Gems**, **US Private Research & STEM**, and **Canadian Universities**:
+Organized as a six-line transit metro map spanning **1096 to 1974** across four historical eras — every station sits at its exact founding year so same-year contemporaries align vertically across **Global Classics**, **Ivy League**, **US Public Flagships**, **Liberal Arts & Regional Gems**, **US Private Research & STEM**, and **Canadian Universities**:
 
-<img src="assets/timeline/timeline-metro.png" alt="Campus Palette Collegiate Heritage Metro Map (1096–1974) across 60 universities on six collegiate grouping tracks: Global Classics, Ivy League, US Public Flagships, Liberal Arts &amp; Regional Gems, US Private Research &amp; STEM, and Canadian Universities" width="900">
+<img src="assets/timeline/timeline-metro.png" alt="Campus Palette Collegiate Heritage Metro Map (1096–1974) pinning all 60 universities to exact founding years across four historical eras and six collegiate transit lines: Global Classics, Ivy League, US Public Flagships, Liberal Arts &amp; Regional Gems, US Private Research &amp; STEM, and Canadian Universities" width="900">
 
 ```sh
 python3 scripts/generate-color-science-assets.py  # or: Rscript --vanilla analysis/timeline_metro.R

@@ -40,8 +40,8 @@ TRACK_Y <- c(
 )
 
 year_to_metro_x <- function(yr) {
-  anchors_y <- c(1096, 1209, 1583, 1636, 1701, 1740, 1775, 1800, 1845, 1895, 1920, 1974)
-  anchors_x <- c( 1.8,  3.8,  6.2,  7.7,  9.4, 10.9, 13.7, 15.1, 18.8, 23.8, 26.2, 29.5)
+  anchors_y <- c(1096, 1209, 1583, 1636, 1701, 1740, 1775, 1800, 1825, 1850, 1875, 1895, 1919, 1957, 1974)
+  anchors_x <- c(0.000, 0.048, 0.096, 0.136, 0.175, 0.212, 0.278, 0.335, 0.415, 0.505, 0.610, 0.715, 0.818, 0.875, 1.000) * 30
   approx(anchors_y, anchors_x, xout = yr, rule = 2)$y
 }
 
@@ -50,39 +50,24 @@ summary_df <- read.csv("analysis/data/themes_summary.csv", stringsAsFactors = FA
   mutate(
     group = factor(group, levels = GROUP_ORDER),
     y = unname(TRACK_Y[as.character(group)]),
-    x_raw = year_to_metro_x(year),
+    x = year_to_metro_x(year),
     line_color = unname(GROUP_COLORS[as.character(group)])
   ) %>%
   arrange(group, year, short_name)
 
-# Relax horizontal crowding within each grouping track
+# Keep exact chronological x per station; alternate label side cleanly above/below track
 nodes <- summary_df %>%
   group_by(group) %>%
   group_modify(function(df, key) {
-    xs <- df$x_raw
-    n <- length(xs)
-    min_gap <- if (n >= 12) 1.04 else 1.24
-    if (n > 1) {
-      for (iter in seq_len(80)) {
-        for (i in seq_len(n - 1)) {
-          gap <- xs[i + 1] - xs[i]
-          if (gap < min_gap) {
-            d <- (min_gap - gap) * 0.52
-            xs[i] <- max(1.8, xs[i] - d)
-            xs[i + 1] <- min(29.7, xs[i + 1] + d)
-          }
-        }
-      }
-    }
+    n <- nrow(df)
     dys <- numeric(n)
-    base_dir <- ifelse(df$y[1] >= 0, 0.35, -0.35)
+    base_dir <- ifelse(df$y[1] >= 0, 0.36, -0.36)
     dys[1] <- base_dir
     if (n > 1) {
       for (i in 2:n) {
-        dys[i] <- if (xs[i] - xs[i - 1] < 3.6) -dys[i - 1] else base_dir
+        dys[i] <- -dys[i - 1]
       }
     }
-    df$x <- xs
     df$label_dy <- dys
     df
   }) %>%
